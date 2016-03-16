@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Function add_contact_screen_options | Easy Property Listings 3.0 Docs</title>
+	<title>Function epl_contact_tag_remove | Easy Property Listings 3.0 Docs</title>
 
 	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
 
@@ -406,21 +406,35 @@
 
 			<h3>Functions</h3>
 			<ul>
-				<li class="active"><a href="function-add_contact_screen_options.html">add_contact_screen_options</a></li>
-				<li><a href="function-epl_add_contact_screen_opts.html">epl_add_contact_screen_opts</a></li>
-				<li><a href="function-epl_all_tags_view.html">epl_all_tags_view</a></li>
-				<li><a href="function-epl_contact_meta_view.html">epl_contact_meta_view</a></li>
-				<li><a href="function-epl_contact_notes_view.html">epl_contact_notes_view</a></li>
-				<li><a href="function-epl_contact_table_set_option.html">epl_contact_table_set_option</a></li>
-				<li><a href="function-epl_contact_tabs.html">epl_contact_tabs</a></li>
-				<li><a href="function-epl_contact_views.html">epl_contact_views</a></li>
-				<li><a href="function-epl_contacts_delete_view.html">epl_contacts_delete_view</a></li>
-				<li><a href="function-epl_contacts_list.html">epl_contacts_list</a></li>
-				<li><a href="function-epl_contacts_listing_view.html">epl_contacts_listing_view</a></li>
-				<li><a href="function-epl_contacts_page.html">epl_contacts_page</a></li>
-				<li><a href="function-epl_contacts_view.html">epl_contacts_view</a></li>
-				<li><a href="function-epl_new_contact_view.html">epl_new_contact_view</a></li>
-				<li><a href="function-epl_render_contact_view.html">epl_render_contact_view</a></li>
+				<li><a href="function-epl_before_meta_field_property_owner.html">epl_before_meta_field_property_owner</a></li>
+				<li><a href="function-epl_contact_action_menus.html">epl_contact_action_menus</a></li>
+				<li><a href="function-epl_contact_add_activity_form.html">epl_contact_add_activity_form</a></li>
+				<li><a href="function-epl_contact_add_listing_form.html">epl_contact_add_listing_form</a></li>
+				<li><a href="function-epl_contact_assign_existing_listing.html">epl_contact_assign_existing_listing</a></li>
+				<li><a href="function-epl_contact_assigned_tags.html">epl_contact_assigned_tags</a></li>
+				<li><a href="function-epl_contact_avatar.html">epl_contact_avatar</a></li>
+				<li><a href="function-epl_contact_background_info.html">epl_contact_background_info</a></li>
+				<li><a href="function-epl_contact_category_update.html">epl_contact_category_update</a></li>
+				<li><a href="function-epl_contact_contact_details.html">epl_contact_contact_details</a></li>
+				<li><a href="function-epl_contact_delete.html">epl_contact_delete</a></li>
+				<li><a href="function-epl_contact_entry_header.html">epl_contact_entry_header</a></li>
+				<li><a href="function-epl_contact_entry_header_editable.html">epl_contact_entry_header_editable</a></li>
+				<li><a href="function-epl_contact_get_activities_html.html">epl_contact_get_activities_html</a></li>
+				<li><a href="function-epl_contact_get_listings_html.html">epl_contact_get_listings_html</a></li>
+				<li><a href="function-epl_contact_recent_activities.html">epl_contact_recent_activities</a></li>
+				<li><a href="function-epl_contact_recent_interests.html">epl_contact_recent_interests</a></li>
+				<li><a href="function-epl_contact_save_listing.html">epl_contact_save_listing</a></li>
+				<li><a href="function-epl_contact_save_note.html">epl_contact_save_note</a></li>
+				<li><a href="function-epl_contact_save_note_note_tab.html">epl_contact_save_note_note_tab</a></li>
+				<li><a href="function-epl_contact_social_icons.html">epl_contact_social_icons</a></li>
+				<li><a href="function-epl_contact_tag_add.html">epl_contact_tag_add</a></li>
+				<li class="active"><a href="function-epl_contact_tag_remove.html">epl_contact_tag_remove</a></li>
+				<li><a href="function-epl_edit_contact.html">epl_edit_contact</a></li>
+				<li><a href="function-epl_meta_contact.html">epl_meta_contact</a></li>
+				<li><a href="function-epl_new_contact.html">epl_new_contact</a></li>
+				<li><a href="function-epl_search_contact.html">epl_search_contact</a></li>
+				<li><a href="function-epl_search_contact_listing.html">epl_search_contact_listing</a></li>
+				<li><a href="function-epl_search_user.html">epl_search_user</a></li>
 			</ul>
 		</div>
 	</div>
@@ -453,16 +467,16 @@
 	</div>
 
 <div id="content" class="function">
-	<h1>Function add_contact_screen_options</h1>
+	<h1>Function epl_contact_tag_remove</h1>
 
 
 	<div class="description">
-	<p>View contact listings</p>
+	<p>delete contact tags</p>
 	</div>
 
 	<div class="info">
 		
-		<b>Package:</b> <a href="package-EPL.html">EPL</a>\<a href="package-EPL.Contacts.html">Contacts</a><br>
+		<b>Package:</b> <a href="package-EPL.html">EPL</a>\<a href="package-EPL.Contacts.html">Contacts</a>\<a href="package-EPL.Contacts.Actions.html">Actions</a><br>
 				<b>Copyright:</b>
 				Copyright (c) 2016, Merv Barrett<br>
 				<b>License:</b>
@@ -470,13 +484,24 @@
 				<b>Since:</b>
 				3.0<br>
 		<b>Located at</b>
-		<a href="source-function-add_contact_screen_options.html#841-857" title="Go to source code">
-			lib/includes/admin/contacts/contacts.php
+		<a href="source-function-epl_contact_tag_remove.html#566-578" title="Go to source code">
+			lib/includes/admin/contacts/contact-actions.php
 		</a><br>
 	</div>
 
 
 
+	<table class="summary" id="returns">
+	<caption>Return value summary</caption>
+	<tr>
+		<td class="name"><code>
+			boolean
+		</code></td>
+		<td>
+			true if updated
+		</td>
+	</tr>
+	</table>
 
 
 </div>
@@ -487,6 +512,6 @@
 </div>
 </div>
 <script src="resources/combined.js?cd021bc814832c24a7cec5319ea03335bfba1caf"></script>
-<script src="elementlist.js?796dc75e4d71e3e62d1ee46453842dcf3a82bf6c"></script>
+<script src="elementlist.js?d7021d043cabd3b1905e628447b198820adb9e1f"></script>
 </body>
 </html>

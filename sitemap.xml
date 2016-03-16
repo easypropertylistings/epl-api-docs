@@ -267,28 +267,19 @@
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_Widget_Recent_Property.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/function-add_contact_screen_options.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/function-add_contact_tag_bgcolor_field.html</loc>
-</url>
-<url>
 	<loc>http://docs.easypropertylistings.com.au/function-contact_capture_form_callback.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/function-contact_category_update.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/function-contact_tag_remove.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/function-edit_contact_tag_bgcolor_field.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-EPL.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_add_contact_screen_options.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_add_contact_screen_opts.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_add_contact_tag_bgcolor_field.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_add_custom_user_profile_fields.html</loc>
@@ -399,6 +390,9 @@
 	<loc>http://docs.easypropertylistings.com.au/function-epl_compatibility_archive_class_callback.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_contact_access.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_contact_action_menus.html</loc>
 </url>
 <url>
@@ -430,6 +424,9 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_contact_capture_widget_form_fields.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_contact_category_update.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_contact_contact_details.html</loc>
@@ -484,6 +481,9 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_contact_tag_add.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_contact_tag_remove.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_contact_views.html</loc>
@@ -552,6 +552,9 @@
 	<loc>http://docs.easypropertylistings.com.au/function-epl_edit_contact.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_edit_contact_tag_bgcolor_field.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_esc_attr.html</loc>
 </url>
 <url>
@@ -600,7 +603,13 @@
 	<loc>http://docs.easypropertylistings.com.au/function-epl_get_available_locations.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_get_contact_categories.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_get_contact_tag_bgcolor.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_get_contacts.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_get_content_path.html</loc>
@@ -1092,9 +1101,6 @@
 	<loc>http://docs.easypropertylistings.com.au/function-epl_register_custom_post_type_contact.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/function-epl_register_custom_post_type_contact_listing.html</loc>
-</url>
-<url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_register_custom_post_type_land.html</loc>
 </url>
 <url>
@@ -1219,6 +1225,9 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_search_get_defaults.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_search_listing.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_search_pre_get_posts.html</loc>
@@ -1359,7 +1368,7 @@
 	<loc>http://docs.easypropertylistings.com.au/function-epl_wp_enqueue_scripts.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/function-get_contacts.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/function-get_category_label.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-get_property_meta.html</loc>
