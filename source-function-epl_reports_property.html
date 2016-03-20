@@ -727,6 +727,7 @@
 				<li><a href="function-epl_render_html_fields.html">epl_render_html_fields</a></li>
 				<li><a href="function-epl_render_single_post.html">epl_render_single_post</a></li>
 				<li><a href="function-epl_report_views.html">epl_report_views</a></li>
+				<li><a href="function-epl_reports_access.html">epl_reports_access</a></li>
 				<li><a href="function-epl_reports_business.html">epl_reports_business</a></li>
 				<li><a href="function-epl_reports_commercial.html">epl_reports_commercial</a></li>
 				<li><a href="function-epl_reports_commercial_land.html">epl_reports_commercial_land</a></li>
@@ -923,7 +924,7 @@
 </span></span><span id="82" class="l"><a href="#82"> 82: </a><span class="php-comment"> */</span>
 </span><span id="83" class="l"><a href="#83"> 83: </a><span class="php-keyword1">function</span> epl_reports_tab_reports() {
 </span><span id="84" class="l"><a href="#84"> 84: </a>
-</span><span id="85" class="l"><a href="#85"> 85: </a>    <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'manage_options'</span> ) ) {
+</span><span id="85" class="l"><a href="#85"> 85: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_reports_access() ) {
 </span><span id="86" class="l"><a href="#86"> 86: </a>        wp_die( __( <span class="php-quote">'You do not have permission to access this report'</span>, <span class="php-quote">'epl'</span> ), __( <span class="php-quote">'Error'</span>, <span class="php-quote">'epl'</span> ), <span class="php-keyword1">array</span>( <span class="php-quote">'response'</span> =&gt; <span class="php-num">403</span> ) );
 </span><span id="87" class="l"><a href="#87"> 87: </a>    }
 </span><span id="88" class="l"><a href="#88"> 88: </a>
@@ -946,7 +947,7 @@
 </span></span><span id="105" class="l"><a href="#105">105: </a><span class="php-comment"> */</span>
 </span><span id="106" class="l"><a href="#106">106: </a><span class="php-keyword1">function</span> epl_report_views() {
 </span><span id="107" class="l"><a href="#107">107: </a>
-</span><span id="108" class="l"><a href="#108">108: </a>    <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'manage_options'</span> ) ) {
+</span><span id="108" class="l"><a href="#108">108: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_reports_access() ) {
 </span><span id="109" class="l"><a href="#109">109: </a>        <span class="php-keyword1">return</span>;
 </span><span id="110" class="l"><a href="#110">110: </a>    }
 </span><span id="111" class="l"><a href="#111">111: </a>
@@ -978,7 +979,7 @@
 </span></span><span id="137" class="l"><a href="#137">137: </a><span class="php-comment"> */</span>
 </span><span id="138" class="l"><a href="#138">138: </a><span class="php-keyword1">function</span> epl_reports_property() {
 </span><span id="139" class="l"><a href="#139">139: </a>
-</span><span id="140" class="l"><a href="#140">140: </a>    <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'manage_options'</span> ) ) {
+</span><span id="140" class="l"><a href="#140">140: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_reports_access() ) {
 </span><span id="141" class="l"><a href="#141">141: </a>        <span class="php-keyword1">return</span>;
 </span><span id="142" class="l"><a href="#142">142: </a>    }
 </span><span id="143" class="l"><a href="#143">143: </a>    <span class="xlang">?&gt;</span>
@@ -998,7 +999,7 @@
 </span></span><span id="157" class="l"><a href="#157">157: </a><span class="php-comment"> */</span>
 </span><span id="158" class="l"><a href="#158">158: </a><span class="php-keyword1">function</span> epl_reports_rental() {
 </span><span id="159" class="l"><a href="#159">159: </a>
-</span><span id="160" class="l"><a href="#160">160: </a>    <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'manage_options'</span> ) ) {
+</span><span id="160" class="l"><a href="#160">160: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_reports_access() ) {
 </span><span id="161" class="l"><a href="#161">161: </a>        <span class="php-keyword1">return</span>;
 </span><span id="162" class="l"><a href="#162">162: </a>    }
 </span><span id="163" class="l"><a href="#163">163: </a>    <span class="xlang">?&gt;</span>
@@ -1018,7 +1019,7 @@
 </span></span><span id="177" class="l"><a href="#177">177: </a><span class="php-comment"> */</span>
 </span><span id="178" class="l"><a href="#178">178: </a><span class="php-keyword1">function</span> epl_reports_land() {
 </span><span id="179" class="l"><a href="#179">179: </a>
-</span><span id="180" class="l"><a href="#180">180: </a>    <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'manage_options'</span> ) ) {
+</span><span id="180" class="l"><a href="#180">180: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_reports_access() ) {
 </span><span id="181" class="l"><a href="#181">181: </a>        <span class="php-keyword1">return</span>;
 </span><span id="182" class="l"><a href="#182">182: </a>    }
 </span><span id="183" class="l"><a href="#183">183: </a>    <span class="xlang">?&gt;</span>
@@ -1038,7 +1039,7 @@
 </span></span><span id="197" class="l"><a href="#197">197: </a><span class="php-comment"> */</span>
 </span><span id="198" class="l"><a href="#198">198: </a><span class="php-keyword1">function</span> epl_reports_commercial() {
 </span><span id="199" class="l"><a href="#199">199: </a>
-</span><span id="200" class="l"><a href="#200">200: </a>    <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'manage_options'</span> ) ) {
+</span><span id="200" class="l"><a href="#200">200: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_reports_access() ) {
 </span><span id="201" class="l"><a href="#201">201: </a>        <span class="php-keyword1">return</span>;
 </span><span id="202" class="l"><a href="#202">202: </a>    }
 </span><span id="203" class="l"><a href="#203">203: </a>    <span class="xlang">?&gt;</span>
@@ -1058,7 +1059,7 @@
 </span></span><span id="217" class="l"><a href="#217">217: </a><span class="php-comment"> */</span>
 </span><span id="218" class="l"><a href="#218">218: </a><span class="php-keyword1">function</span> epl_reports_commercial_land() {
 </span><span id="219" class="l"><a href="#219">219: </a>
-</span><span id="220" class="l"><a href="#220">220: </a>    <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'manage_options'</span> ) ) {
+</span><span id="220" class="l"><a href="#220">220: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_reports_access() ) {
 </span><span id="221" class="l"><a href="#221">221: </a>        <span class="php-keyword1">return</span>;
 </span><span id="222" class="l"><a href="#222">222: </a>    }
 </span><span id="223" class="l"><a href="#223">223: </a>    <span class="xlang">?&gt;</span>
@@ -1078,7 +1079,7 @@
 </span></span><span id="237" class="l"><a href="#237">237: </a><span class="php-comment"> */</span>
 </span><span id="238" class="l"><a href="#238">238: </a><span class="php-keyword1">function</span> epl_reports_business() {
 </span><span id="239" class="l"><a href="#239">239: </a>
-</span><span id="240" class="l"><a href="#240">240: </a>    <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'manage_options'</span> ) ) {
+</span><span id="240" class="l"><a href="#240">240: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_reports_access() ) {
 </span><span id="241" class="l"><a href="#241">241: </a>        <span class="php-keyword1">return</span>;
 </span><span id="242" class="l"><a href="#242">242: </a>    }
 </span><span id="243" class="l"><a href="#243">243: </a>    <span class="xlang">?&gt;</span>
@@ -1098,7 +1099,7 @@
 </span></span><span id="257" class="l"><a href="#257">257: </a><span class="php-comment"> */</span>
 </span><span id="258" class="l"><a href="#258">258: </a><span class="php-keyword1">function</span> epl_reports_rural() {
 </span><span id="259" class="l"><a href="#259">259: </a>
-</span><span id="260" class="l"><a href="#260">260: </a>    <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'manage_options'</span> ) ) {
+</span><span id="260" class="l"><a href="#260">260: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_reports_access() ) {
 </span><span id="261" class="l"><a href="#261">261: </a>        <span class="php-keyword1">return</span>;
 </span><span id="262" class="l"><a href="#262">262: </a>    }
 </span><span id="263" class="l"><a href="#263">263: </a>    <span class="xlang">?&gt;</span>
@@ -1108,7 +1109,18 @@
 </span><span id="267" class="l"><a href="#267">267: </a>    <span class="xlang">&lt;?php</span>
 </span><span id="268" class="l"><a href="#268">268: </a>    epl_reports_graph(<span class="php-quote">'sold'</span>,<span class="php-quote">'current'</span>,<span class="php-quote">'#e50000'</span>,<span class="php-quote">'#a5df41'</span>);
 </span><span id="269" class="l"><a href="#269">269: </a>}
-</span><span id="270" class="l"><a href="#270">270: </a>add_action( <span class="php-quote">'epl_reports_view_rural'</span>, <span class="php-quote">'epl_reports_rural'</span> );</span></code></pre>
+</span><span id="270" class="l"><a href="#270">270: </a>add_action( <span class="php-quote">'epl_reports_view_rural'</span>, <span class="php-quote">'epl_reports_rural'</span> );
+</span><span id="271" class="l"><a href="#271">271: </a>
+</span><span id="272" class="l"><a href="#272">272: </a><span class="php-comment">/**
+</span></span><span id="273" class="l"><a href="#273">273: </a><span class="php-comment"> * Reports Access Roles
+</span></span><span id="274" class="l"><a href="#274">274: </a><span class="php-comment"> *
+</span></span><span id="275" class="l"><a href="#275">275: </a><span class="php-comment"> * @since  3.0
+</span></span><span id="276" class="l"><a href="#276">276: </a><span class="php-comment"> */</span>
+</span><span id="277" class="l"><a href="#277">277: </a><span class="php-keyword1">function</span> epl_reports_access() {
+</span><span id="278" class="l"><a href="#278">278: </a>    <span class="php-var">$allowed</span> = epl_get_option(<span class="php-quote">'min_reports_access'</span>);
+</span><span id="279" class="l"><a href="#279">279: </a>    <span class="php-var">$allowed</span> = <span class="php-keyword1">empty</span>(<span class="php-var">$allowed</span>) ? <span class="php-quote">'level_10'</span> : <span class="php-var">$allowed</span>;
+</span><span id="280" class="l"><a href="#280">280: </a>    <span class="php-keyword1">return</span> current_user_can(<span class="php-var">$allowed</span>) ? <span class="php-keyword1">true</span> : <span class="php-keyword1">false</span>;
+</span><span id="281" class="l"><a href="#281">281: </a>}</span></code></pre>
 
 	<div id="footer">
 		Easy Property Listings 3.0 Docs API documentation generated by <a href="http://apigen.org">ApiGen</a>
@@ -1116,6 +1128,6 @@
 </div>
 </div>
 <script src="resources/combined.js?cd021bc814832c24a7cec5319ea03335bfba1caf"></script>
-<script src="elementlist.js?d7021d043cabd3b1905e628447b198820adb9e1f"></script>
+<script src="elementlist.js?ff5c67e5352ec17990cc0edeaab7d3ad5620f343"></script>
 </body>
 </html>
