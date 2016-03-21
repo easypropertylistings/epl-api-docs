@@ -184,6 +184,18 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Taxonomy.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Templates.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Templates.Themes.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Templates.Themes.Heuman.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Templates.Themes.iThemesBuilder.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.html</loc>
 </url>
 <url>
@@ -273,6 +285,9 @@
 	<loc>http://docs.easypropertylistings.com.au/function-EPL.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_active_theme_name_twentysixteen.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_add_contact_screen_options.html</loc>
 </url>
 <url>
@@ -334,6 +349,9 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_archive_sorting.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_archive_title_callback.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_archive_utility_wrap_after.html</loc>
@@ -570,10 +588,16 @@
 	<loc>http://docs.easypropertylistings.com.au/function-epl_feedsync_format_date.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_feedsync_format_strip_currency.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_feedsync_format_sub_number.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_feeling_lucky.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_filter_listing_comments_array.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_flush_rewrite_rules.html</loc>
@@ -583,6 +607,9 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_get_active_post_types.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/function-epl_get_active_theme.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/function-epl_get_active_theme_name.html</loc>

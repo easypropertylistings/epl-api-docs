@@ -350,6 +350,29 @@
 
 						</li>
 				<li>
+					<a href="package-EPL.Templates.html">
+						Templates<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-EPL.Templates.Themes.html">
+						Themes<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="package-EPL.Templates.Themes.Heuman.html">
+						Heuman					</a>
+
+						</li>
+				<li>
+					<a href="package-EPL.Templates.Themes.iThemesBuilder.html">
+						iThemesBuilder					</a>
+
+						</li>
+							</ul></li></ul></li>
+				<li>
 					<a href="package-EPL.Widget.html">
 						Widget<span></span>
 					</a>
@@ -431,6 +454,7 @@
 			<ul>
 				<li><a href="function-contact_capture_form_callback.html">contact_capture_form_callback</a></li>
 				<li><a href="function-EPL.html">EPL</a></li>
+				<li><a href="function-epl_active_theme_name_twentysixteen.html">epl_active_theme_name_twentysixteen</a></li>
 				<li><a href="function-epl_add_contact_screen_options.html">epl_add_contact_screen_options</a></li>
 				<li><a href="function-epl_add_contact_screen_opts.html">epl_add_contact_screen_opts</a></li>
 				<li><a href="function-epl_add_contact_tag_bgcolor_field.html">epl_add_contact_tag_bgcolor_field</a></li>
@@ -452,6 +476,7 @@
 				<li><a href="function-epl_archive_custom_excerpt_length.html">epl_archive_custom_excerpt_length</a></li>
 				<li><a href="function-epl_archive_render_content.html">epl_archive_render_content</a></li>
 				<li><a href="function-epl_archive_sorting.html">epl_archive_sorting</a></li>
+				<li><a href="function-epl_archive_title_callback.html">epl_archive_title_callback</a></li>
 				<li><a href="function-epl_archive_utility_wrap_after.html">epl_archive_utility_wrap_after</a></li>
 				<li><a href="function-epl_archive_utility_wrap_before.html">epl_archive_utility_wrap_before</a></li>
 				<li><a href="function-epl_author_class.html">epl_author_class</a></li>
@@ -530,11 +555,14 @@
 				<li><a href="function-epl_excerpt_length.html">epl_excerpt_length</a></li>
 				<li><a href="function-epl_fancy_pagination.html">epl_fancy_pagination</a></li>
 				<li><a href="function-epl_feedsync_format_date.html">epl_feedsync_format_date</a></li>
+				<li><a href="function-epl_feedsync_format_strip_currency.html">epl_feedsync_format_strip_currency</a></li>
 				<li><a href="function-epl_feedsync_format_sub_number.html">epl_feedsync_format_sub_number</a></li>
 				<li><a href="function-epl_feeling_lucky.html">epl_feeling_lucky</a></li>
+				<li><a href="function-epl_filter_listing_comments_array.html">epl_filter_listing_comments_array</a></li>
 				<li><a href="function-epl_flush_rewrite_rules.html">epl_flush_rewrite_rules</a></li>
 				<li><a href="function-epl_format_amount.html">epl_format_amount</a></li>
 				<li><a href="function-epl_get_active_post_types.html">epl_get_active_post_types</a></li>
+				<li><a href="function-epl_get_active_theme.html">epl_get_active_theme</a></li>
 				<li><a href="function-epl_get_active_theme_name.html">epl_get_active_theme_name</a></li>
 				<li><a href="function-epl_get_admin_option_fields.html">epl_get_admin_option_fields</a></li>
 				<li><a href="function-epl_get_admin_option_fields_extensions_compat.html">epl_get_admin_option_fields_extensions_compat</a></li>
@@ -886,7 +914,7 @@
 </span><span id="44" class="l"><a href="#44">44: </a>        <span class="php-var">$instance</span>   = <span class="php-var">$old_instance</span>;
 </span><span id="45" class="l"><a href="#45">45: </a>        <span class="php-var">$all_fields</span> = epl_contact_capture_widget_form_fields();
 </span><span id="46" class="l"><a href="#46">46: </a>        <span class="php-keyword1">foreach</span>(<span class="php-var">$all_fields</span> <span class="php-keyword1">as</span> <span class="php-var">$all_field</span>) {
-</span><span id="47" class="l"><a href="#47">47: </a>            <span class="php-var">$instance</span>[<span class="php-var">$all_field</span>[<span class="php-quote">'key'</span>]] = epl_strip_tags(<span class="php-var">$new_instance</span>[<span class="php-var">$all_field</span>[<span class="php-quote">'key'</span>]]);
+</span><span id="47" class="l"><a href="#47">47: </a>            <span class="php-var">$instance</span>[<span class="php-var">$all_field</span>[<span class="php-quote">'key'</span>]] = epl_strip_tags( <span class="php-var">$new_instance</span>[<span class="php-var">$all_field</span>[<span class="php-quote">'key'</span>]] , apply_filters( <span class="php-quote">'epl_contact_form_description_allowed_tags'</span> , <span class="php-quote">'&lt;br&gt;&lt;p&gt;&lt;strong&gt;&lt;div&gt;&lt;span&gt;&lt;hr&gt;&lt;img&gt;'</span> ) );
 </span><span id="48" class="l"><a href="#48">48: </a>        }
 </span><span id="49" class="l"><a href="#49">49: </a>        <span class="php-keyword1">return</span> <span class="php-var">$instance</span>;
 </span><span id="50" class="l"><a href="#50">50: </a>    }
@@ -898,15 +926,14 @@
 </span><span id="56" class="l"><a href="#56">56: </a>        <span class="php-var">$instance</span> = <span class="php-keyword2">array_map</span>( <span class="php-quote">'epl_esc_attr'</span>, <span class="php-var">$instance</span> );
 </span><span id="57" class="l"><a href="#57">57: </a>        <span class="php-keyword2">extract</span>( <span class="php-var">$instance</span> );
 </span><span id="58" class="l"><a href="#58">58: </a>        <span class="php-var">$fields</span>     = epl_contact_capture_widget_form_fields();
-</span><span id="59" class="l"><a href="#59">59: </a>
-</span><span id="60" class="l"><a href="#60">60: </a>        <span class="php-keyword1">foreach</span> ( <span class="php-var">$fields</span> <span class="php-keyword1">as</span> <span class="php-var">$field</span> ) {
-</span><span id="61" class="l"><a href="#61">61: </a>            <span class="php-var">$field_value</span> = <span class="php-var">$</span>{<span class="php-var">$field</span>[<span class="php-quote">'key'</span>]};
-</span><span id="62" class="l"><a href="#62">62: </a>            epl_widget_render_backend_field( <span class="php-var">$field</span>, <span class="php-var">$this</span>, <span class="php-var">$field_value</span> );
-</span><span id="63" class="l"><a href="#63">63: </a>        }
-</span><span id="64" class="l"><a href="#64">64: </a>    }
-</span><span id="65" class="l"><a href="#65">65: </a>}
-</span><span id="66" class="l"><a href="#66">66: </a>add_action( <span class="php-quote">'widgets_init'</span>, <span class="php-keyword2">create_function</span>(<span class="php-quote">''</span>, <span class="php-quote">'return register_widget(&quot;EPL_Widget_Contact_Capture&quot;);'</span>) );
-</span><span id="67" class="l"><a href="#67">67: </a></span></code></pre>
+</span><span id="59" class="l"><a href="#59">59: </a>        <span class="php-keyword1">foreach</span> ( <span class="php-var">$fields</span> <span class="php-keyword1">as</span> <span class="php-var">$field</span> ) {
+</span><span id="60" class="l"><a href="#60">60: </a>            <span class="php-var">$field_value</span> = <span class="php-var">$</span>{<span class="php-var">$field</span>[<span class="php-quote">'key'</span>]};
+</span><span id="61" class="l"><a href="#61">61: </a>            epl_widget_render_backend_field( <span class="php-var">$field</span>, <span class="php-var">$this</span>, <span class="php-var">$field_value</span> );
+</span><span id="62" class="l"><a href="#62">62: </a>        }
+</span><span id="63" class="l"><a href="#63">63: </a>    }
+</span><span id="64" class="l"><a href="#64">64: </a>}
+</span><span id="65" class="l"><a href="#65">65: </a>add_action( <span class="php-quote">'widgets_init'</span>, <span class="php-keyword2">create_function</span>(<span class="php-quote">''</span>, <span class="php-quote">'return register_widget(&quot;EPL_Widget_Contact_Capture&quot;);'</span>) );
+</span><span id="66" class="l"><a href="#66">66: </a></span></code></pre>
 
 	<div id="footer">
 		Easy Property Listings 3.0 Docs API documentation generated by <a href="http://apigen.org">ApiGen</a>
@@ -914,6 +941,6 @@
 </div>
 </div>
 <script src="resources/combined.js?cd021bc814832c24a7cec5319ea03335bfba1caf"></script>
-<script src="elementlist.js?ff5c67e5352ec17990cc0edeaab7d3ad5620f343"></script>
+<script src="elementlist.js?f7abf8cea9f57325b3a8c26a1e0eb199029c8a1e"></script>
 </body>
 </html>
