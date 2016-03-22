@@ -1063,7 +1063,7 @@
 </span><span id="193" class="l"><a href="#193">193: </a>
 </span><span id="194" class="l"><a href="#194">194: </a>            <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$version_info</span>-&gt;download_link ) ) {
 </span><span id="195" class="l"><a href="#195">195: </a>                <span class="php-keyword2">printf</span>(
-</span><span id="196" class="l"><a href="#196">196: </a>                    __( <span class="php-quote">'There is a new version of %1$s available. %2$sView version %3$s details%4$s.'</span>, <span class="php-quote">'epl'</span> ),
+</span><span id="196" class="l"><a href="#196">196: </a>                    __( <span class="php-quote">'There is a new version of %1$s available. %2$sView version %3$s details%4$s.'</span>, <span class="php-quote">'easy-property-listings'</span>  ),
 </span><span id="197" class="l"><a href="#197">197: </a>                    esc_html( <span class="php-var">$version_info</span>-&gt;name ),
 </span><span id="198" class="l"><a href="#198">198: </a>                    <span class="php-quote">'&lt;a target=&quot;_blank&quot; class=&quot;thickbox&quot; href=&quot;'</span> . esc_url( <span class="php-var">$changelog_link</span> ) . <span class="php-quote">'&quot;&gt;'</span>,
 </span><span id="199" class="l"><a href="#199">199: </a>                    esc_html( <span class="php-var">$version_info</span>-&gt;new_version ),
@@ -1071,7 +1071,7 @@
 </span><span id="201" class="l"><a href="#201">201: </a>                );
 </span><span id="202" class="l"><a href="#202">202: </a>            } <span class="php-keyword1">else</span> {
 </span><span id="203" class="l"><a href="#203">203: </a>                <span class="php-keyword2">printf</span>(
-</span><span id="204" class="l"><a href="#204">204: </a>                    __( <span class="php-quote">'There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s.'</span>, <span class="php-quote">'epl'</span> ),
+</span><span id="204" class="l"><a href="#204">204: </a>                    __( <span class="php-quote">'There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s.'</span>, <span class="php-quote">'easy-property-listings'</span>  ),
 </span><span id="205" class="l"><a href="#205">205: </a>                    esc_html( <span class="php-var">$version_info</span>-&gt;name ),
 </span><span id="206" class="l"><a href="#206">206: </a>                    <span class="php-quote">'&lt;a target=&quot;_blank&quot; class=&quot;thickbox&quot; href=&quot;'</span> . esc_url( <span class="php-var">$changelog_link</span> ) . <span class="php-quote">'&quot;&gt;'</span>,
 </span><span id="207" class="l"><a href="#207">207: </a>                    esc_html( <span class="php-var">$version_info</span>-&gt;new_version ),
@@ -1214,7 +1214,7 @@
 </span><span id="344" class="l"><a href="#344">344: </a>        }
 </span><span id="345" class="l"><a href="#345">345: </a>
 </span><span id="346" class="l"><a href="#346">346: </a>        <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'update_plugins'</span> ) ) {
-</span><span id="347" class="l"><a href="#347">347: </a>            wp_die( __( <span class="php-quote">'You do not have permission to install plugin updates'</span>, <span class="php-quote">'epl'</span> ), __( <span class="php-quote">'Error'</span>, <span class="php-quote">'epl'</span> ), <span class="php-keyword1">array</span>( <span class="php-quote">'response'</span> =&gt; <span class="php-num">403</span> ) );
+</span><span id="347" class="l"><a href="#347">347: </a>            wp_die( __( <span class="php-quote">'You do not have permission to install plugin updates'</span>, <span class="php-quote">'easy-property-listings'</span>  ), __( <span class="php-quote">'Error'</span>, <span class="php-quote">'easy-property-listings'</span>  ), <span class="php-keyword1">array</span>( <span class="php-quote">'response'</span> =&gt; <span class="php-num">403</span> ) );
 </span><span id="348" class="l"><a href="#348">348: </a>        }
 </span><span id="349" class="l"><a href="#349">349: </a>
 </span><span id="350" class="l"><a href="#350">350: </a>        <span class="php-var">$data</span>         = <span class="php-var">$edd_plugin_data</span>[ <span class="php-var">$_REQUEST</span>[<span class="php-quote">'slug'</span>] ];

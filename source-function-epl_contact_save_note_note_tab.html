@@ -891,7 +891,7 @@
 </span></span><span id="21" class="l"><a href="#21">  21: </a><span class="php-comment"> */</span>
 </span><span id="22" class="l"><a href="#22">  22: </a><span class="php-keyword1">function</span> epl_edit_contact( <span class="php-var">$args</span> ) {
 </span><span id="23" class="l"><a href="#23">  23: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_contact_access() ) {
-</span><span id="24" class="l"><a href="#24">  24: </a>        wp_die( __( <span class="php-quote">'You do not have permission to edit this contact.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="24" class="l"><a href="#24">  24: </a>        wp_die( __( <span class="php-quote">'You do not have permission to edit this contact.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="25" class="l"><a href="#25">  25: </a>    }
 </span><span id="26" class="l"><a href="#26">  26: </a>
 </span><span id="27" class="l"><a href="#27">  27: </a>    <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$args</span> ) ) {
@@ -903,7 +903,7 @@
 </span><span id="33" class="l"><a href="#33">  33: </a>    <span class="php-var">$nonce</span>         = <span class="php-var">$args</span>[<span class="php-quote">'_wpnonce'</span>];
 </span><span id="34" class="l"><a href="#34">  34: </a>
 </span><span id="35" class="l"><a href="#35">  35: </a>    <span class="php-keyword1">if</span> ( ! wp_verify_nonce( <span class="php-var">$nonce</span>, <span class="php-quote">'edit-contact'</span> ) ) {
-</span><span id="36" class="l"><a href="#36">  36: </a>        wp_die( __( <span class="php-quote">'Cheatin\' eh?!'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="36" class="l"><a href="#36">  36: </a>        wp_die( __( <span class="php-quote">'Cheatin\' eh?!'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="37" class="l"><a href="#37">  37: </a>    }
 </span><span id="38" class="l"><a href="#38">  38: </a>
 </span><span id="39" class="l"><a href="#39">  39: </a>    <span class="php-var">$contact</span> = <span class="php-keyword1">new</span> EPL_Contact( <span class="php-var">$contact_id</span> );
@@ -920,7 +920,7 @@
 </span><span id="50" class="l"><a href="#50">  50: </a>    <span class="php-var">$contact_info</span> = wp_parse_args( <span class="php-var">$contact_info</span>, <span class="php-var">$defaults</span> );
 </span><span id="51" class="l"><a href="#51">  51: </a>
 </span><span id="52" class="l"><a href="#52">  52: </a>    <span class="php-keyword1">if</span> ( ! is_email( <span class="php-var">$contact_info</span>[<span class="php-quote">'email'</span>] ) ) {
-</span><span id="53" class="l"><a href="#53">  53: </a>        epl_set_error( <span class="php-quote">'epl-invalid-email'</span>, __( <span class="php-quote">'Please enter a valid email address.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="53" class="l"><a href="#53">  53: </a>        epl_set_error( <span class="php-quote">'epl-invalid-email'</span>, __( <span class="php-quote">'Please enter a valid email address.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="54" class="l"><a href="#54">  54: </a>    }
 </span><span id="55" class="l"><a href="#55">  55: </a>
 </span><span id="56" class="l"><a href="#56">  56: </a>    <span class="php-keyword1">if</span> ( epl_get_errors() ) {
@@ -974,7 +974,7 @@
 </span><span id="104" class="l"><a href="#104"> 104: </a><span class="php-keyword1">function</span> epl_contact_delete( <span class="php-var">$args</span> ) {
 </span><span id="105" class="l"><a href="#105"> 105: </a>
 </span><span id="106" class="l"><a href="#106"> 106: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! current_user_can( <span class="php-quote">'manage_options'</span> ) ) {
-</span><span id="107" class="l"><a href="#107"> 107: </a>        wp_die( __( <span class="php-quote">'You do not have permission to delete this contact.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="107" class="l"><a href="#107"> 107: </a>        wp_die( __( <span class="php-quote">'You do not have permission to delete this contact.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="108" class="l"><a href="#108"> 108: </a>    }
 </span><span id="109" class="l"><a href="#109"> 109: </a>
 </span><span id="110" class="l"><a href="#110"> 110: </a>    <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$args</span> ) ) {
@@ -986,11 +986,11 @@
 </span><span id="116" class="l"><a href="#116"> 116: </a>    <span class="php-var">$nonce</span>         = <span class="php-var">$args</span>[<span class="php-quote">'_wpnonce'</span>];
 </span><span id="117" class="l"><a href="#117"> 117: </a>
 </span><span id="118" class="l"><a href="#118"> 118: </a>    <span class="php-keyword1">if</span> ( ! wp_verify_nonce( <span class="php-var">$nonce</span>, <span class="php-quote">'delete-contact'</span> ) ) {
-</span><span id="119" class="l"><a href="#119"> 119: </a>        wp_die( __( <span class="php-quote">'Cheatin\' eh?!'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="119" class="l"><a href="#119"> 119: </a>        wp_die( __( <span class="php-quote">'Cheatin\' eh?!'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="120" class="l"><a href="#120"> 120: </a>    }
 </span><span id="121" class="l"><a href="#121"> 121: </a>
 </span><span id="122" class="l"><a href="#122"> 122: </a>    <span class="php-keyword1">if</span> ( ! <span class="php-var">$confirm</span> ) {
-</span><span id="123" class="l"><a href="#123"> 123: </a>        epl_set_error( <span class="php-quote">'contact-delete-no-confirm'</span>, __( <span class="php-quote">'Please confirm you want to delete this contact'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="123" class="l"><a href="#123"> 123: </a>        epl_set_error( <span class="php-quote">'contact-delete-no-confirm'</span>, __( <span class="php-quote">'Please confirm you want to delete this contact'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="124" class="l"><a href="#124"> 124: </a>    }
 </span><span id="125" class="l"><a href="#125"> 125: </a>
 </span><span id="126" class="l"><a href="#126"> 126: </a>    <span class="php-keyword1">if</span> ( epl_get_errors() ) {
@@ -1022,14 +1022,14 @@
 </span><span id="152" class="l"><a href="#152"> 152: </a>
 </span><span id="153" class="l"><a href="#153"> 153: </a>        } <span class="php-keyword1">else</span> {
 </span><span id="154" class="l"><a href="#154"> 154: </a>
-</span><span id="155" class="l"><a href="#155"> 155: </a>            epl_set_error( <span class="php-quote">'epl-contact-delete-failed'</span>, __( <span class="php-quote">'Error deleting contact'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="155" class="l"><a href="#155"> 155: </a>            epl_set_error( <span class="php-quote">'epl-contact-delete-failed'</span>, __( <span class="php-quote">'Error deleting contact'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="156" class="l"><a href="#156"> 156: </a>            <span class="php-var">$redirect</span> = admin_url( <span class="php-quote">'admin.php?page=epl-contacts&amp;view=delete&amp;id='</span> . <span class="php-var">$contact_id</span> );
 </span><span id="157" class="l"><a href="#157"> 157: </a>
 </span><span id="158" class="l"><a href="#158"> 158: </a>        }
 </span><span id="159" class="l"><a href="#159"> 159: </a>
 </span><span id="160" class="l"><a href="#160"> 160: </a>    } <span class="php-keyword1">else</span> {
 </span><span id="161" class="l"><a href="#161"> 161: </a>
-</span><span id="162" class="l"><a href="#162"> 162: </a>        epl_set_error( <span class="php-quote">'epl-contact-delete-invalid-id'</span>, __( <span class="php-quote">'Invalid Contact ID'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="162" class="l"><a href="#162"> 162: </a>        epl_set_error( <span class="php-quote">'epl-contact-delete-invalid-id'</span>, __( <span class="php-quote">'Invalid Contact ID'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="163" class="l"><a href="#163"> 163: </a>        <span class="php-var">$redirect</span> = admin_url( <span class="php-quote">'admin.php?page=epl-contacts'</span> );
 </span><span id="164" class="l"><a href="#164"> 164: </a>
 </span><span id="165" class="l"><a href="#165"> 165: </a>    }
@@ -1050,7 +1050,7 @@
 </span><span id="180" class="l"><a href="#180"> 180: </a><span class="php-keyword1">function</span> epl_contact_save_note( <span class="php-var">$args</span> ) {
 </span><span id="181" class="l"><a href="#181"> 181: </a>
 </span><span id="182" class="l"><a href="#182"> 182: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_contact_access() ) {
-</span><span id="183" class="l"><a href="#183"> 183: </a>        wp_die( __( <span class="php-quote">'You do not have permission to save note.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="183" class="l"><a href="#183"> 183: </a>        wp_die( __( <span class="php-quote">'You do not have permission to save note.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="184" class="l"><a href="#184"> 184: </a>    }
 </span><span id="185" class="l"><a href="#185"> 185: </a>
 </span><span id="186" class="l"><a href="#186"> 186: </a>    <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$args</span> ) ) {
@@ -1065,11 +1065,11 @@
 </span><span id="195" class="l"><a href="#195"> 195: </a>    <span class="php-var">$nonce</span>         = <span class="php-var">$args</span>[<span class="php-quote">'add_contact_note_nonce'</span>];
 </span><span id="196" class="l"><a href="#196"> 196: </a>
 </span><span id="197" class="l"><a href="#197"> 197: </a>    <span class="php-keyword1">if</span> ( ! wp_verify_nonce( <span class="php-var">$nonce</span>, <span class="php-quote">'add_contact_note_nonce'</span> ) ) {
-</span><span id="198" class="l"><a href="#198"> 198: </a>        wp_die( __( <span class="php-quote">'Cheatin\' eh?!'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="198" class="l"><a href="#198"> 198: </a>        wp_die( __( <span class="php-quote">'Cheatin\' eh?!'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="199" class="l"><a href="#199"> 199: </a>    }
 </span><span id="200" class="l"><a href="#200"> 200: </a>
 </span><span id="201" class="l"><a href="#201"> 201: </a>    <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$contact_note</span> ) ) {
-</span><span id="202" class="l"><a href="#202"> 202: </a>        epl_set_error( <span class="php-quote">'empty-customer-note'</span>, __( <span class="php-quote">'A note is required'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="202" class="l"><a href="#202"> 202: </a>        epl_set_error( <span class="php-quote">'empty-customer-note'</span>, __( <span class="php-quote">'A note is required'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="203" class="l"><a href="#203"> 203: </a>    }
 </span><span id="204" class="l"><a href="#204"> 204: </a>
 </span><span id="205" class="l"><a href="#205"> 205: </a>    <span class="php-keyword1">if</span> ( epl_get_errors() ) {
@@ -1140,7 +1140,7 @@
 </span><span id="270" class="l"><a href="#270"> 270: </a>    <span class="php-var">$contact_add_listing_role</span> = apply_filters( <span class="php-quote">'epl_add_contacts_listing'</span>, <span class="php-quote">'manage_options'</span> );
 </span><span id="271" class="l"><a href="#271"> 271: </a>
 </span><span id="272" class="l"><a href="#272"> 272: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! current_user_can( <span class="php-var">$contact_add_listing_role</span> ) ) {
-</span><span id="273" class="l"><a href="#273"> 273: </a>        wp_die( __( <span class="php-quote">'You do not have permission to add listing.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="273" class="l"><a href="#273"> 273: </a>        wp_die( __( <span class="php-quote">'You do not have permission to add listing.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="274" class="l"><a href="#274"> 274: </a>    }
 </span><span id="275" class="l"><a href="#275"> 275: </a>
 </span><span id="276" class="l"><a href="#276"> 276: </a>    <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$args</span> ) ) {
@@ -1154,7 +1154,7 @@
 </span><span id="284" class="l"><a href="#284"> 284: </a>    <span class="php-var">$nonce</span>         = <span class="php-var">$args</span>[<span class="php-quote">'add_contact_listing_nonce'</span>];
 </span><span id="285" class="l"><a href="#285"> 285: </a>
 </span><span id="286" class="l"><a href="#286"> 286: </a>    <span class="php-keyword1">if</span> ( ! wp_verify_nonce( <span class="php-var">$nonce</span>, <span class="php-quote">'add_contact_listing_nonce'</span> ) ) {
-</span><span id="287" class="l"><a href="#287"> 287: </a>        wp_die( __( <span class="php-quote">'Cheatin\' eh?!'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="287" class="l"><a href="#287"> 287: </a>        wp_die( __( <span class="php-quote">'Cheatin\' eh?!'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="288" class="l"><a href="#288"> 288: </a>    }
 </span><span id="289" class="l"><a href="#289"> 289: </a>    <span class="php-keyword1">if</span> ( epl_get_errors() ) {
 </span><span id="290" class="l"><a href="#290"> 290: </a>        epl_print_error();
@@ -1225,7 +1225,7 @@
 </span><span id="355" class="l"><a href="#355"> 355: </a><span class="php-keyword1">function</span> epl_contact_assign_existing_listing( <span class="php-var">$args</span> ) {
 </span><span id="356" class="l"><a href="#356"> 356: </a>
 </span><span id="357" class="l"><a href="#357"> 357: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_contact_access() ) {
-</span><span id="358" class="l"><a href="#358"> 358: </a>        wp_die( __( <span class="php-quote">'You do not have permission to assign listings.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="358" class="l"><a href="#358"> 358: </a>        wp_die( __( <span class="php-quote">'You do not have permission to assign listings.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="359" class="l"><a href="#359"> 359: </a>    }
 </span><span id="360" class="l"><a href="#360"> 360: </a>
 </span><span id="361" class="l"><a href="#361"> 361: </a>    <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$args</span> ) ) {
@@ -1283,7 +1283,7 @@
 </span><span id="413" class="l"><a href="#413"> 413: </a><span class="php-keyword1">function</span> epl_meta_contact( <span class="php-var">$args</span> ) {
 </span><span id="414" class="l"><a href="#414"> 414: </a>
 </span><span id="415" class="l"><a href="#415"> 415: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_contact_access() ) {
-</span><span id="416" class="l"><a href="#416"> 416: </a>        wp_die( __( <span class="php-quote">'You do not have permission to update this contact.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="416" class="l"><a href="#416"> 416: </a>        wp_die( __( <span class="php-quote">'You do not have permission to update this contact.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="417" class="l"><a href="#417"> 417: </a>    }
 </span><span id="418" class="l"><a href="#418"> 418: </a>
 </span><span id="419" class="l"><a href="#419"> 419: </a>    <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$args</span> ) ) {
@@ -1292,7 +1292,7 @@
 </span><span id="422" class="l"><a href="#422"> 422: </a>
 </span><span id="423" class="l"><a href="#423"> 423: </a>    <span class="php-var">$nonce</span>         = <span class="php-var">$args</span>[<span class="php-quote">'_wpnonce'</span>];
 </span><span id="424" class="l"><a href="#424"> 424: </a>    <span class="php-keyword1">if</span> ( ! wp_verify_nonce( <span class="php-var">$nonce</span>, <span class="php-quote">'meta-contact'</span> ) ) {
-</span><span id="425" class="l"><a href="#425"> 425: </a>        wp_die( __( <span class="php-quote">'Cheatin\' eh?!'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="425" class="l"><a href="#425"> 425: </a>        wp_die( __( <span class="php-quote">'Cheatin\' eh?!'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="426" class="l"><a href="#426"> 426: </a>    }
 </span><span id="427" class="l"><a href="#427"> 427: </a>
 </span><span id="428" class="l"><a href="#428"> 428: </a>    <span class="php-var">$contact_id</span>   = (int)<span class="php-var">$args</span>[<span class="php-quote">'contact_id'</span>];
@@ -1339,7 +1339,7 @@
 </span><span id="469" class="l"><a href="#469"> 469: </a><span class="php-keyword1">function</span> epl_new_contact( <span class="php-var">$args</span> ) {
 </span><span id="470" class="l"><a href="#470"> 470: </a>
 </span><span id="471" class="l"><a href="#471"> 471: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_contact_access() ) {
-</span><span id="472" class="l"><a href="#472"> 472: </a>        wp_die( __( <span class="php-quote">'You do not have permission to create contacts.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="472" class="l"><a href="#472"> 472: </a>        wp_die( __( <span class="php-quote">'You do not have permission to create contacts.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="473" class="l"><a href="#473"> 473: </a>    }
 </span><span id="474" class="l"><a href="#474"> 474: </a>
 </span><span id="475" class="l"><a href="#475"> 475: </a>    <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$args</span> ) ) {
@@ -1348,7 +1348,7 @@
 </span><span id="478" class="l"><a href="#478"> 478: </a>
 </span><span id="479" class="l"><a href="#479"> 479: </a>    <span class="php-var">$nonce</span>         = <span class="php-var">$args</span>[<span class="php-quote">'_wpnonce'</span>];
 </span><span id="480" class="l"><a href="#480"> 480: </a>    <span class="php-keyword1">if</span> ( ! wp_verify_nonce( <span class="php-var">$nonce</span>, <span class="php-quote">'new-contact'</span> ) ) {
-</span><span id="481" class="l"><a href="#481"> 481: </a>        wp_die( __( <span class="php-quote">'Cheatin\' uhh?!'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="481" class="l"><a href="#481"> 481: </a>        wp_die( __( <span class="php-quote">'Cheatin\' uhh?!'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="482" class="l"><a href="#482"> 482: </a>    }
 </span><span id="483" class="l"><a href="#483"> 483: </a>
 </span><span id="484" class="l"><a href="#484"> 484: </a>    <span class="php-var">$contact_id</span>   = (int)<span class="php-var">$args</span>[<span class="php-quote">'contact_id'</span>];
@@ -1358,7 +1358,7 @@
 </span><span id="488" class="l"><a href="#488"> 488: </a>    }
 </span><span id="489" class="l"><a href="#489"> 489: </a>
 </span><span id="490" class="l"><a href="#490"> 490: </a>    <span class="php-keyword1">if</span>( <span class="php-var">$contact</span>-&gt;contact_exists(<span class="php-var">$args</span>[<span class="php-quote">'email'</span>]) ) {
-</span><span id="491" class="l"><a href="#491"> 491: </a>        wp_die( __( <span class="php-quote">'A contact with this email already exists !'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="491" class="l"><a href="#491"> 491: </a>        wp_die( __( <span class="php-quote">'A contact with this email already exists !'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="492" class="l"><a href="#492"> 492: </a>    }
 </span><span id="493" class="l"><a href="#493"> 493: </a>    <span class="php-keyword1">if</span> ( <span class="php-var">$contact</span>-&gt;update( <span class="php-keyword1">array</span>(<span class="php-quote">'name'</span> =&gt;  <span class="php-var">$args</span>[<span class="php-quote">'title'</span>], <span class="php-quote">'email'</span> =&gt; <span class="php-var">$args</span>[<span class="php-quote">'email'</span>]  ) ) ) {
 </span><span id="494" class="l"><a href="#494"> 494: </a>        <span class="php-var">$contact</span>-&gt;update_meta(<span class="php-quote">'contact_first_name'</span>,<span class="php-var">$args</span>[<span class="php-quote">'first_name'</span>]);
@@ -1472,7 +1472,7 @@
 </span><span id="602" class="l"><a href="#602"> 602: </a>            &lt;/li&gt;
 </span><span id="603" class="l"><a href="#603"> 603: </a>
 </span><span id="604" class="l"><a href="#604"> 604: </a>            &lt;li&gt;
-</span><span id="605" class="l"><a href="#605"> 605: </a>                &lt;a <span class="php-keyword1">class</span>=<span class="php-quote">&quot;contact-action-tag&quot;</span> href=<span class="php-quote">&quot;#&quot;</span> title=<span class="php-quote">&quot;&lt;?php _e('Contact Tags' , 'epl' ); ?&gt;&quot;</span>&gt;
+</span><span id="605" class="l"><a href="#605"> 605: </a>                &lt;a <span class="php-keyword1">class</span>=<span class="php-quote">&quot;contact-action-tag&quot;</span> href=<span class="php-quote">&quot;#&quot;</span> title=<span class="php-quote">&quot;&lt;?php _e('Contact Tags' , 'easy-property-listings'  ); ?&gt;&quot;</span>&gt;
 </span><span id="606" class="l"><a href="#606"> 606: </a>                    &lt;span <span class="php-keyword1">class</span>=<span class="php-quote">&quot;dashicons dashicons-tag&quot;</span>&gt;&lt;/span&gt;
 </span><span id="607" class="l"><a href="#607"> 607: </a>                    &lt;b <span class="php-keyword1">class</span>=<span class="php-quote">&quot;caret&quot;</span>&gt;&lt;/b&gt;
 </span><span id="608" class="l"><a href="#608"> 608: </a>                &lt;/a&gt;
@@ -1592,7 +1592,7 @@
 </span></span><span id="722" class="l"><a href="#722"> 722: </a><span class="php-comment"> */</span>
 </span><span id="723" class="l"><a href="#723"> 723: </a><span class="php-keyword1">function</span> epl_contact_background_info(<span class="php-var">$contact</span>) {
 </span><span id="724" class="l"><a href="#724"> 724: </a>    <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;div class=&quot;epl-contact-bg-info-wrap&quot;&gt;'</span>;
-</span><span id="725" class="l"><a href="#725"> 725: </a>        <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;h4&gt;'</span>.__(<span class="php-quote">'Background Info'</span>,<span class="php-quote">'epl'</span>).<span class="php-quote">'&lt;/h4&gt;'</span>;
+</span><span id="725" class="l"><a href="#725"> 725: </a>        <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;h4&gt;'</span>.__(<span class="php-quote">'Background Info'</span>,<span class="php-quote">'easy-property-listings'</span> ).<span class="php-quote">'&lt;/h4&gt;'</span>;
 </span><span id="726" class="l"><a href="#726"> 726: </a>        <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;div class=&quot;epl-contact-bg-info&quot;&gt;'</span>;
 </span><span id="727" class="l"><a href="#727"> 727: </a>            <span class="php-keyword1">echo</span> <span class="php-var">$contact</span>-&gt;background_info;
 </span><span id="728" class="l"><a href="#728"> 728: </a>        <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;/div&gt;'</span>;
@@ -1676,61 +1676,61 @@
 </span><span id="806" class="l"><a href="#806"> 806: </a>    &lt;/span&gt;
 </span><span id="807" class="l"><a href="#807"> 807: </a>    &lt;span <span class="php-keyword1">class</span>=<span class="php-quote">&quot;contact-since epl-info-item&quot;</span>&gt;
 </span><span id="808" class="l"><a href="#808"> 808: </a>        &lt;span <span class="php-keyword1">class</span>=<span class="php-quote">&quot;dashicons dashicons-clock epl-contact-icons&quot;</span>&gt;&lt;/span&gt;
-</span><span id="809" class="l"><a href="#809"> 809: </a>        <span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Contact since'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>
+</span><span id="809" class="l"><a href="#809"> 809: </a>        <span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Contact since'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>
 </span><span id="810" class="l"><a href="#810"> 810: </a>        <span class="xlang">&lt;?php</span> <span class="php-keyword1">echo</span> date_i18n( get_option( <span class="php-quote">'date_format'</span> ), <span class="php-keyword2">strtotime</span>( <span class="php-var">$contact</span>-&gt;date_created ) ) <span class="xlang">?&gt;</span>
 </span><span id="811" class="l"><a href="#811"> 811: </a>    &lt;/span&gt;
 </span><span id="812" class="l"><a href="#812"> 812: </a>    &lt;span <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-contact-view-more&quot;</span>&gt;
 </span><span id="813" class="l"><a href="#813"> 813: </a>        &lt;span <span class="php-keyword1">class</span>=<span class="php-quote">&quot;dashicons dashicons-arrow-right-alt epl-contact-icons&quot;</span>&gt;&lt;/span&gt;
-</span><span id="814" class="l"><a href="#814"> 814: </a>        <span class="xlang">&lt;?php</span> _e( <span class="php-quote">'View More'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>
+</span><span id="814" class="l"><a href="#814"> 814: </a>        <span class="xlang">&lt;?php</span> _e( <span class="php-quote">'View More'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>
 </span><span id="815" class="l"><a href="#815"> 815: </a>    &lt;/span&gt;
 </span><span id="816" class="l"><a href="#816"> 816: </a><span class="xlang">&lt;?php</span>
 </span><span id="817" class="l"><a href="#817"> 817: </a>}
 </span><span id="818" class="l"><a href="#818"> 818: </a>add_action(<span class="php-quote">'epl_contact_contact_details'</span>,<span class="php-quote">'epl_contact_contact_details'</span>);
 </span><span id="819" class="l"><a href="#819"> 819: </a>
 </span><span id="820" class="l"><a href="#820"> 820: </a><span class="php-comment">/**
-</span></span><span id="821" class="l"><a href="#821"> 821: </a><span class="php-comment">function epl_contact_recent_interests($contact) { ?&gt;
-</span></span><span id="822" class="l"><a href="#822"> 822: </a><span class="php-comment">    &lt;h3&gt;&lt;?php _e( 'Listings', 'epl' ); ?&gt;&lt;/h3&gt;
-</span></span><span id="823" class="l"><a href="#823"> 823: </a><span class="php-comment">    &lt;?php
-</span></span><span id="824" class="l"><a href="#824"> 824: </a><span class="php-comment">        $listing_ids = $contact-&gt;listing_ids;
-</span></span><span id="825" class="l"><a href="#825"> 825: </a><span class="php-comment">        if( !empty($listing_ids) ) {
-</span></span><span id="826" class="l"><a href="#826"> 826: </a><span class="php-comment">            $listings    = get_posts( array( 'post__in' =&gt; $listing_ids, 'post_type'    =&gt;  epl_all_post_types() ) );
-</span></span><span id="827" class="l"><a href="#827"> 827: </a><span class="php-comment">            $listings    = array_slice( $listings, 0, 10 );
-</span></span><span id="828" class="l"><a href="#828"> 828: </a><span class="php-comment">        }
-</span></span><span id="829" class="l"><a href="#829"> 829: </a><span class="php-comment">    ?&gt;
-</span></span><span id="830" class="l"><a href="#830"> 830: </a><span class="php-comment">    &lt;table class=&quot;wp-list-table widefat striped listings&quot;&gt;
-</span></span><span id="831" class="l"><a href="#831"> 831: </a><span class="php-comment">        &lt;thead&gt;
-</span></span><span id="832" class="l"><a href="#832"> 832: </a><span class="php-comment">        &lt;tr&gt;
-</span></span><span id="833" class="l"><a href="#833"> 833: </a><span class="php-comment">            &lt;th&gt;&lt;?php _e( 'ID', 'epl' ); ?&gt;&lt;/th&gt;
-</span></span><span id="834" class="l"><a href="#834"> 834: </a><span class="php-comment">            &lt;th&gt;&lt;?php _e( 'Title', 'epl' ); ?&gt;&lt;/th&gt;
-</span></span><span id="835" class="l"><a href="#835"> 835: </a><span class="php-comment">            &lt;th&gt;&lt;?php _e( 'Published Date', 'epl' ); ?&gt;&lt;/th&gt;
-</span></span><span id="836" class="l"><a href="#836"> 836: </a><span class="php-comment">            &lt;th&gt;&lt;?php _e( 'Status', 'epl' ); ?&gt;&lt;/th&gt;
-</span></span><span id="837" class="l"><a href="#837"> 837: </a><span class="php-comment">            &lt;th&gt;&lt;?php _e( 'Actions', 'epl' ); ?&gt;&lt;/th&gt;
-</span></span><span id="838" class="l"><a href="#838"> 838: </a><span class="php-comment">        &lt;/tr&gt;
-</span></span><span id="839" class="l"><a href="#839"> 839: </a><span class="php-comment">        &lt;/thead&gt;
-</span></span><span id="840" class="l"><a href="#840"> 840: </a><span class="php-comment">        &lt;tbody&gt;
-</span></span><span id="841" class="l"><a href="#841"> 841: </a><span class="php-comment">        &lt;?php if ( ! empty( $listings ) ) : ?&gt;
-</span></span><span id="842" class="l"><a href="#842"> 842: </a><span class="php-comment">            &lt;?php foreach ( $listings as $listing ) : ?&gt;
-</span></span><span id="843" class="l"><a href="#843"> 843: </a><span class="php-comment">                &lt;tr&gt;
-</span></span><span id="844" class="l"><a href="#844"> 844: </a><span class="php-comment">                    &lt;td&gt;&lt;?php echo $listing-&gt;ID; ?&gt;&lt;/td&gt;
-</span></span><span id="845" class="l"><a href="#845"> 845: </a><span class="php-comment">                    &lt;td&gt;&lt;?php echo  $listing-&gt;post_title; ?&gt;&lt;/td&gt;
-</span></span><span id="846" class="l"><a href="#846"> 846: </a><span class="php-comment">                    &lt;td&gt;&lt;?php echo date_i18n( get_option( 'date_format' ), strtotime( $listing-&gt;post_date ) ); ?&gt;&lt;/td&gt;
-</span></span><span id="847" class="l"><a href="#847"> 847: </a><span class="php-comment">                    &lt;td&gt;&lt;?php echo get_post_meta( $listing-&gt;ID,'property_status',true) ?&gt;&lt;/td&gt;
-</span></span><span id="848" class="l"><a href="#848"> 848: </a><span class="php-comment">                    &lt;td&gt;
-</span></span><span id="849" class="l"><a href="#849"> 849: </a><span class="php-comment">                        &lt;a title=&quot;&lt;?php _e( 'View Details for Listing', 'epl' ); echo ' ' . $listing-&gt;ID; ?&gt;&quot; href=&quot;&lt;?php echo admin_url( 'post.php?&amp;action=edit&amp;post=' . $listing-&gt;ID ); ?&gt;&quot;&gt;
-</span></span><span id="850" class="l"><a href="#850"> 850: </a><span class="php-comment">                            &lt;?php _e( 'View Details', 'epl' ); ?&gt;
-</span></span><span id="851" class="l"><a href="#851"> 851: </a><span class="php-comment">                        &lt;/a&gt;
-</span></span><span id="852" class="l"><a href="#852"> 852: </a><span class="php-comment">                        &lt;?php do_action( 'epl_contact_recent_listings_actions', $contact, $listing ); ?&gt;
-</span></span><span id="853" class="l"><a href="#853"> 853: </a><span class="php-comment">                    &lt;/td&gt;
-</span></span><span id="854" class="l"><a href="#854"> 854: </a><span class="php-comment">                &lt;/tr&gt;
-</span></span><span id="855" class="l"><a href="#855"> 855: </a><span class="php-comment">            &lt;?php endforeach; ?&gt;
-</span></span><span id="856" class="l"><a href="#856"> 856: </a><span class="php-comment">        &lt;?php else: ?&gt;
-</span></span><span id="857" class="l"><a href="#857"> 857: </a><span class="php-comment">            &lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;&lt;?php _e( 'No Listings Found', 'epl' ); ?&gt;&lt;/td&gt;&lt;/tr&gt;
-</span></span><span id="858" class="l"><a href="#858"> 858: </a><span class="php-comment">        &lt;?php endif; ?&gt;
-</span></span><span id="859" class="l"><a href="#859"> 859: </a><span class="php-comment">        &lt;/tbody&gt;
-</span></span><span id="860" class="l"><a href="#860"> 860: </a><span class="php-comment">    &lt;/table&gt; &lt;?php
-</span></span><span id="861" class="l"><a href="#861"> 861: </a><span class="php-comment">}
-</span></span><span id="862" class="l"><a href="#862"> 862: </a><span class="php-comment">add_action('epl_contact_recent_interests','epl_contact_recent_interests');
-</span></span><span id="863" class="l"><a href="#863"> 863: </a><span class="php-comment">**/</span>
+</span></span><span id="821" class="l"><a href="#821"> 821: </a><span class="php-comment"> * function epl_contact_recent_interests($contact) { ?&gt;
+</span></span><span id="822" class="l"><a href="#822"> 822: </a><span class="php-comment"> *  &lt;h3&gt;&lt;?php _e( 'Listings', 'easy-property-listings'  ); ?&gt;&lt;/h3&gt;
+</span></span><span id="823" class="l"><a href="#823"> 823: </a><span class="php-comment"> *  &lt;?php
+</span></span><span id="824" class="l"><a href="#824"> 824: </a><span class="php-comment"> *      $listing_ids = $contact-&gt;listing_ids;
+</span></span><span id="825" class="l"><a href="#825"> 825: </a><span class="php-comment"> *      if( !empty($listing_ids) ) {
+</span></span><span id="826" class="l"><a href="#826"> 826: </a><span class="php-comment"> *          $listings    = get_posts( array( 'post__in' =&gt; $listing_ids, 'post_type'    =&gt;  epl_all_post_types() ) );
+</span></span><span id="827" class="l"><a href="#827"> 827: </a><span class="php-comment"> *          $listings    = array_slice( $listings, 0, 10 );
+</span></span><span id="828" class="l"><a href="#828"> 828: </a><span class="php-comment"> *      }
+</span></span><span id="829" class="l"><a href="#829"> 829: </a><span class="php-comment"> *  ?&gt;
+</span></span><span id="830" class="l"><a href="#830"> 830: </a><span class="php-comment"> *  &lt;table class=&quot;wp-list-table widefat striped listings&quot;&gt;
+</span></span><span id="831" class="l"><a href="#831"> 831: </a><span class="php-comment"> *      &lt;thead&gt;
+</span></span><span id="832" class="l"><a href="#832"> 832: </a><span class="php-comment"> *      &lt;tr&gt;
+</span></span><span id="833" class="l"><a href="#833"> 833: </a><span class="php-comment"> *          &lt;th&gt;&lt;?php _e( 'ID', 'easy-property-listings'  ); ?&gt;&lt;/th&gt;
+</span></span><span id="834" class="l"><a href="#834"> 834: </a><span class="php-comment"> *          &lt;th&gt;&lt;?php _e( 'Title', 'easy-property-listings'  ); ?&gt;&lt;/th&gt;
+</span></span><span id="835" class="l"><a href="#835"> 835: </a><span class="php-comment"> *          &lt;th&gt;&lt;?php _e( 'Published Date', 'easy-property-listings'  ); ?&gt;&lt;/th&gt;
+</span></span><span id="836" class="l"><a href="#836"> 836: </a><span class="php-comment"> *          &lt;th&gt;&lt;?php _e( 'Status', 'easy-property-listings'  ); ?&gt;&lt;/th&gt;
+</span></span><span id="837" class="l"><a href="#837"> 837: </a><span class="php-comment"> *          &lt;th&gt;&lt;?php _e( 'Actions', 'easy-property-listings'  ); ?&gt;&lt;/th&gt;
+</span></span><span id="838" class="l"><a href="#838"> 838: </a><span class="php-comment"> *      &lt;/tr&gt;
+</span></span><span id="839" class="l"><a href="#839"> 839: </a><span class="php-comment"> *      &lt;/thead&gt;
+</span></span><span id="840" class="l"><a href="#840"> 840: </a><span class="php-comment"> *      &lt;tbody&gt;
+</span></span><span id="841" class="l"><a href="#841"> 841: </a><span class="php-comment"> *      &lt;?php if ( ! empty( $listings ) ) : ?&gt;
+</span></span><span id="842" class="l"><a href="#842"> 842: </a><span class="php-comment"> *          &lt;?php foreach ( $listings as $listing ) : ?&gt;
+</span></span><span id="843" class="l"><a href="#843"> 843: </a><span class="php-comment"> *              &lt;tr&gt;
+</span></span><span id="844" class="l"><a href="#844"> 844: </a><span class="php-comment"> *                  &lt;td&gt;&lt;?php echo $listing-&gt;ID; ?&gt;&lt;/td&gt;
+</span></span><span id="845" class="l"><a href="#845"> 845: </a><span class="php-comment"> *                  &lt;td&gt;&lt;?php echo  $listing-&gt;post_title; ?&gt;&lt;/td&gt;
+</span></span><span id="846" class="l"><a href="#846"> 846: </a><span class="php-comment"> *                  &lt;td&gt;&lt;?php echo date_i18n( get_option( 'date_format' ), strtotime( $listing-&gt;post_date ) ); ?&gt;&lt;/td&gt;
+</span></span><span id="847" class="l"><a href="#847"> 847: </a><span class="php-comment"> *                  &lt;td&gt;&lt;?php echo get_post_meta( $listing-&gt;ID,'property_status',true) ?&gt;&lt;/td&gt;
+</span></span><span id="848" class="l"><a href="#848"> 848: </a><span class="php-comment"> *                  &lt;td&gt;
+</span></span><span id="849" class="l"><a href="#849"> 849: </a><span class="php-comment"> *                      &lt;a title=&quot;&lt;?php _e( 'View Details for Listing', 'easy-property-listings'  ); echo ' ' . $listing-&gt;ID; ?&gt;&quot; href=&quot;&lt;?php echo admin_url( 'post.php?&amp;action=edit&amp;post=' . $listing-&gt;ID ); ?&gt;&quot;&gt;
+</span></span><span id="850" class="l"><a href="#850"> 850: </a><span class="php-comment"> *                          &lt;?php _e( 'View Details', 'easy-property-listings'  ); ?&gt;
+</span></span><span id="851" class="l"><a href="#851"> 851: </a><span class="php-comment"> *                      &lt;/a&gt;
+</span></span><span id="852" class="l"><a href="#852"> 852: </a><span class="php-comment"> *                      &lt;?php do_action( 'epl_contact_recent_listings_actions', $contact, $listing ); ?&gt;
+</span></span><span id="853" class="l"><a href="#853"> 853: </a><span class="php-comment"> *                  &lt;/td&gt;
+</span></span><span id="854" class="l"><a href="#854"> 854: </a><span class="php-comment"> *              &lt;/tr&gt;
+</span></span><span id="855" class="l"><a href="#855"> 855: </a><span class="php-comment"> *          &lt;?php endforeach; ?&gt;
+</span></span><span id="856" class="l"><a href="#856"> 856: </a><span class="php-comment"> *      &lt;?php else: ?&gt;
+</span></span><span id="857" class="l"><a href="#857"> 857: </a><span class="php-comment"> *          &lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;&lt;?php _e( 'No Listings Found', 'easy-property-listings'  ); ?&gt;&lt;/td&gt;&lt;/tr&gt;
+</span></span><span id="858" class="l"><a href="#858"> 858: </a><span class="php-comment"> *      &lt;?php endif; ?&gt;
+</span></span><span id="859" class="l"><a href="#859"> 859: </a><span class="php-comment"> *      &lt;/tbody&gt;
+</span></span><span id="860" class="l"><a href="#860"> 860: </a><span class="php-comment"> *  &lt;/table&gt; &lt;?php
+</span></span><span id="861" class="l"><a href="#861"> 861: </a><span class="php-comment"> * }
+</span></span><span id="862" class="l"><a href="#862"> 862: </a><span class="php-comment"> * add_action('epl_contact_recent_interests','epl_contact_recent_interests');
+</span></span><span id="863" class="l"><a href="#863"> 863: </a><span class="php-comment"> */</span>
 </span><span id="864" class="l"><a href="#864"> 864: </a>
 </span><span id="865" class="l"><a href="#865"> 865: </a><span class="php-comment">/**
 </span></span><span id="866" class="l"><a href="#866"> 866: </a><span class="php-comment"> * Contact Recent Interest in Listings
@@ -1745,12 +1745,12 @@
 </span><span id="875" class="l"><a href="#875"> 875: </a><span class="php-keyword1">function</span> epl_contact_recent_interests( <span class="php-var">$contact</span> , <span class="php-var">$number</span> = <span class="php-num">10</span> , <span class="php-var">$paged</span> = <span class="php-num">1</span> , <span class="php-var">$orderby</span> = <span class="php-quote">'post_date'</span> , <span class="php-var">$order</span> = <span class="php-quote">'DESC'</span>) { <span class="xlang">?&gt;</span>
 </span><span id="876" class="l"><a href="#876"> 876: </a>    <span class="xlang">&lt;?php</span> do_action(<span class="php-quote">'epl_contact_add_listing_form'</span>, <span class="php-var">$contact</span>); <span class="xlang">?&gt;</span>
 </span><span id="877" class="l"><a href="#877"> 877: </a>    &lt;h3 <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-contact-activity-title&quot;</span>&gt;
-</span><span id="878" class="l"><a href="#878"> 878: </a>        <span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Listings'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>
+</span><span id="878" class="l"><a href="#878"> 878: </a>        <span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Listings'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>
 </span><span id="879" class="l"><a href="#879"> 879: </a>    &lt;/h3&gt;
 </span><span id="880" class="l"><a href="#880"> 880: </a>    &lt;span <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-contact-add-old-listing-form-wrap&quot;</span>&gt;
-</span><span id="881" class="l"><a href="#881"> 881: </a>        &lt;input id=<span class="php-quote">&quot;epl_contact_listing_search&quot;</span> type=<span class="php-quote">&quot;text&quot;</span> placeholder=<span class="php-quote">&quot;&lt;?php _e('Search Listings', 'epl'); ?&gt;&quot;</span>/&gt;
+</span><span id="881" class="l"><a href="#881"> 881: </a>        &lt;input id=<span class="php-quote">&quot;epl_contact_listing_search&quot;</span> type=<span class="php-quote">&quot;text&quot;</span> placeholder=<span class="php-quote">&quot;&lt;?php _e('Search Listings', 'easy-property-listings' ); ?&gt;&quot;</span>/&gt;
 </span><span id="882" class="l"><a href="#882"> 882: </a>    &lt;/span&gt;
-</span><span id="883" class="l"><a href="#883"> 883: </a>    &lt;span <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-contact-or&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e(<span class="php-quote">'Or'</span>,<span class="php-quote">'epl'</span>);<span class="xlang">?&gt;</span>&lt;/span&gt;
+</span><span id="883" class="l"><a href="#883"> 883: </a>    &lt;span <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-contact-or&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e(<span class="php-quote">'Or'</span>,<span class="php-quote">'easy-property-listings'</span> );<span class="xlang">?&gt;</span>&lt;/span&gt;
 </span><span id="884" class="l"><a href="#884"> 884: </a>    &lt;span <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-contact-add-listing&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e(<span class="php-quote">'Add New'</span>); <span class="xlang">?&gt;</span>&lt;/span&gt;
 </span><span id="885" class="l"><a href="#885"> 885: </a>
 </span><span id="886" class="l"><a href="#886"> 886: </a>    &lt;input type=<span class="php-quote">&quot;hidden&quot;</span> id=<span class="php-quote">&quot;epl-listing-table-orderby&quot;</span> value=<span class="php-quote">&quot;&lt;?php echo </span><span class="php-var">$orderby</span><span class="php-quote">; ?&gt;&quot;</span>/&gt;
@@ -1772,7 +1772,7 @@
 </span></span><span id="902" class="l"><a href="#902"> 902: </a><span class="php-comment"> */</span>
 </span><span id="903" class="l"><a href="#903"> 903: </a><span class="php-keyword1">function</span> epl_contact_recent_activities( <span class="php-var">$contact</span> , <span class="php-var">$number</span> = <span class="php-num">10</span> , <span class="php-var">$paged</span> = <span class="php-num">1</span> , <span class="php-var">$orderby</span> = <span class="php-quote">'comment_date'</span> , <span class="php-var">$order</span> = <span class="php-quote">'DESC'</span>) { <span class="xlang">?&gt;</span>
 </span><span id="904" class="l"><a href="#904"> 904: </a>    <span class="xlang">&lt;?php</span> do_action(<span class="php-quote">'epl_contact_add_activity_form'</span>, <span class="php-var">$contact</span>); <span class="xlang">?&gt;</span>
-</span><span id="905" class="l"><a href="#905"> 905: </a>    &lt;h3 <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-contact-activity-title&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Activities'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span> &lt;/h3&gt;
+</span><span id="905" class="l"><a href="#905"> 905: </a>    &lt;h3 <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-contact-activity-title&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Activities'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span> &lt;/h3&gt;
 </span><span id="906" class="l"><a href="#906"> 906: </a>    &lt;span <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-contact-add-activity&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e(<span class="php-quote">'Add New'</span>); <span class="xlang">?&gt;</span>&lt;/span&gt;
 </span><span id="907" class="l"><a href="#907"> 907: </a>    &lt;input type=<span class="php-quote">&quot;hidden&quot;</span> id=<span class="php-quote">&quot;epl-contact-table-orderby&quot;</span> value=<span class="php-quote">&quot;&lt;?php echo </span><span class="php-var">$orderby</span><span class="php-quote">; ?&gt;&quot;</span>/&gt;
 </span><span id="908" class="l"><a href="#908"> 908: </a>    &lt;input type=<span class="php-quote">&quot;hidden&quot;</span> id=<span class="php-quote">&quot;epl-contact-table-order&quot;</span> value=<span class="php-quote">&quot;&lt;?php echo </span><span class="php-var">$order</span><span class="php-quote">; ?&gt;&quot;</span>&gt;
@@ -1806,9 +1806,9 @@
 </span><span id="936" class="l"><a href="#936"> 936: </a>        &lt;table <span class="php-keyword1">class</span>=<span class="php-quote">&quot;wp-list-table widefat striped epl-contact-activities&quot;</span>&gt;
 </span><span id="937" class="l"><a href="#937"> 937: </a>            &lt;thead&gt;
 </span><span id="938" class="l"><a href="#938"> 938: </a>            &lt;tr <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-contact-activities-table-heads&quot;</span>&gt;
-</span><span id="939" class="l"><a href="#939"> 939: </a>                &lt;th <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-sorted-&lt;?php echo strtolower(</span><span class="php-var">$order</span><span class="php-quote">); ?&gt;&quot;</span> data-<span class="php-keyword2">sort</span>=<span class="php-quote">&quot;comment_type&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Type'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>&lt;/th&gt;
-</span><span id="940" class="l"><a href="#940"> 940: </a>                &lt;th <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-sorted-&lt;?php echo strtolower(</span><span class="php-var">$order</span><span class="php-quote">); ?&gt;&quot;</span> data-<span class="php-keyword2">sort</span>=<span class="php-quote">&quot;comment_content&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Comment'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>&lt;/th&gt;
-</span><span id="941" class="l"><a href="#941"> 941: </a>                &lt;th <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-sorted-&lt;?php echo strtolower(</span><span class="php-var">$order</span><span class="php-quote">); ?&gt;&quot;</span> data-<span class="php-keyword2">sort</span>=<span class="php-quote">&quot;comment_date&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Date'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>&lt;/th&gt;
+</span><span id="939" class="l"><a href="#939"> 939: </a>                &lt;th <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-sorted-&lt;?php echo strtolower(</span><span class="php-var">$order</span><span class="php-quote">); ?&gt;&quot;</span> data-<span class="php-keyword2">sort</span>=<span class="php-quote">&quot;comment_type&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Type'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>&lt;/th&gt;
+</span><span id="940" class="l"><a href="#940"> 940: </a>                &lt;th <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-sorted-&lt;?php echo strtolower(</span><span class="php-var">$order</span><span class="php-quote">); ?&gt;&quot;</span> data-<span class="php-keyword2">sort</span>=<span class="php-quote">&quot;comment_content&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Comment'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>&lt;/th&gt;
+</span><span id="941" class="l"><a href="#941"> 941: </a>                &lt;th <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-sorted-&lt;?php echo strtolower(</span><span class="php-var">$order</span><span class="php-quote">); ?&gt;&quot;</span> data-<span class="php-keyword2">sort</span>=<span class="php-quote">&quot;comment_date&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Date'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>&lt;/th&gt;
 </span><span id="942" class="l"><a href="#942"> 942: </a>            &lt;/tr&gt;
 </span><span id="943" class="l"><a href="#943"> 943: </a>            &lt;/thead&gt;
 </span><span id="944" class="l"><a href="#944"> 944: </a>            &lt;tbody&gt;
@@ -1836,7 +1836,7 @@
 </span><span id="966" class="l"><a href="#966"> 966: </a>                    &lt;/tr&gt;
 </span><span id="967" class="l"><a href="#967"> 967: </a>                <span class="xlang">&lt;?php</span> <span class="php-keyword1">endforeach</span>; <span class="xlang">?&gt;</span>
 </span><span id="968" class="l"><a href="#968"> 968: </a>            <span class="xlang">&lt;?php</span> <span class="php-keyword1">else</span>: <span class="xlang">?&gt;</span>
-</span><span id="969" class="l"><a href="#969"> 969: </a>                &lt;tr&gt;&lt;td colspan=<span class="php-quote">&quot;5&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'No Activities'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>&lt;/td&gt;&lt;/tr&gt;
+</span><span id="969" class="l"><a href="#969"> 969: </a>                &lt;tr&gt;&lt;td colspan=<span class="php-quote">&quot;5&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'No Activities'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>&lt;/td&gt;&lt;/tr&gt;
 </span><span id="970" class="l"><a href="#970"> 970: </a>            <span class="xlang">&lt;?php</span> <span class="php-keyword1">endif</span>; <span class="xlang">?&gt;</span>
 </span><span id="971" class="l"><a href="#971"> 971: </a>            &lt;/tbody&gt;
 </span><span id="972" class="l"><a href="#972"> 972: </a>        &lt;/table&gt;
@@ -1881,9 +1881,9 @@
 </span><span id="1011" class="l"><a href="#1011">1011: </a>    &lt;table <span class="php-keyword1">class</span>=<span class="php-quote">&quot;wp-list-table widefat striped epl-contact-listings&quot;</span>&gt;
 </span><span id="1012" class="l"><a href="#1012">1012: </a>        &lt;thead&gt;
 </span><span id="1013" class="l"><a href="#1013">1013: </a>        &lt;tr <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-contact-listings-table-heads&quot;</span>&gt;
-</span><span id="1014" class="l"><a href="#1014">1014: </a>            &lt;th <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-sorted-&lt;?php echo strtolower(</span><span class="php-var">$order</span><span class="php-quote">); ?&gt;&quot;</span> data-<span class="php-keyword2">sort</span>=<span class="php-quote">&quot;listing_type&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Type'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>&lt;/th&gt;
-</span><span id="1015" class="l"><a href="#1015">1015: </a>            &lt;th <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-sorted-&lt;?php echo strtolower(</span><span class="php-var">$order</span><span class="php-quote">); ?&gt;&quot;</span> data-<span class="php-keyword2">sort</span>=<span class="php-quote">&quot;post_content&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Title'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>&lt;/th&gt;
-</span><span id="1016" class="l"><a href="#1016">1016: </a>            &lt;th <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-sorted-&lt;?php echo strtolower(</span><span class="php-var">$order</span><span class="php-quote">); ?&gt;&quot;</span> data-<span class="php-keyword2">sort</span>=<span class="php-quote">&quot;listing_status&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Status'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>&lt;/th&gt;
+</span><span id="1014" class="l"><a href="#1014">1014: </a>            &lt;th <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-sorted-&lt;?php echo strtolower(</span><span class="php-var">$order</span><span class="php-quote">); ?&gt;&quot;</span> data-<span class="php-keyword2">sort</span>=<span class="php-quote">&quot;listing_type&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Type'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>&lt;/th&gt;
+</span><span id="1015" class="l"><a href="#1015">1015: </a>            &lt;th <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-sorted-&lt;?php echo strtolower(</span><span class="php-var">$order</span><span class="php-quote">); ?&gt;&quot;</span> data-<span class="php-keyword2">sort</span>=<span class="php-quote">&quot;post_content&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Title'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>&lt;/th&gt;
+</span><span id="1016" class="l"><a href="#1016">1016: </a>            &lt;th <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-sorted-&lt;?php echo strtolower(</span><span class="php-var">$order</span><span class="php-quote">); ?&gt;&quot;</span> data-<span class="php-keyword2">sort</span>=<span class="php-quote">&quot;listing_status&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Status'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>&lt;/th&gt;
 </span><span id="1017" class="l"><a href="#1017">1017: </a>        &lt;/tr&gt;
 </span><span id="1018" class="l"><a href="#1018">1018: </a>        &lt;/thead&gt;
 </span><span id="1019" class="l"><a href="#1019">1019: </a>        &lt;tbody&gt;
@@ -1902,7 +1902,7 @@
 </span><span id="1032" class="l"><a href="#1032">1032: </a>                &lt;/tr&gt;
 </span><span id="1033" class="l"><a href="#1033">1033: </a>            <span class="xlang">&lt;?php</span> <span class="php-keyword1">endforeach</span>; <span class="xlang">?&gt;</span>
 </span><span id="1034" class="l"><a href="#1034">1034: </a>        <span class="xlang">&lt;?php</span> <span class="php-keyword1">else</span>: <span class="xlang">?&gt;</span>
-</span><span id="1035" class="l"><a href="#1035">1035: </a>            &lt;tr&gt;&lt;td colspan=<span class="php-quote">&quot;5&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'No Listings Found'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>&lt;/td&gt;&lt;/tr&gt;
+</span><span id="1035" class="l"><a href="#1035">1035: </a>            &lt;tr&gt;&lt;td colspan=<span class="php-quote">&quot;5&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'No Listings Found'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>&lt;/td&gt;&lt;/tr&gt;
 </span><span id="1036" class="l"><a href="#1036">1036: </a>        <span class="xlang">&lt;?php</span> <span class="php-keyword1">endif</span>; <span class="xlang">?&gt;</span>
 </span><span id="1037" class="l"><a href="#1037">1037: </a>        &lt;/tbody&gt;
 </span><span id="1038" class="l"><a href="#1038">1038: </a>    &lt;/table&gt;
@@ -1933,7 +1933,7 @@
 </span><span id="1063" class="l"><a href="#1063">1063: </a>    }
 </span><span id="1064" class="l"><a href="#1064">1064: </a>    <span class="php-var">$fields</span> = <span class="php-keyword1">array</span>(
 </span><span id="1065" class="l"><a href="#1065">1065: </a>        <span class="php-keyword1">array</span>(
-</span><span id="1066" class="l"><a href="#1066">1066: </a>            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Add Activity'</span> , <span class="php-quote">'epl'</span>),
+</span><span id="1066" class="l"><a href="#1066">1066: </a>            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Add Activity'</span> , <span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1067" class="l"><a href="#1067">1067: </a>            <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'col-1 epl-inner-div'</span>,
 </span><span id="1068" class="l"><a href="#1068">1068: </a>            <span class="php-quote">'id'</span>        =&gt;  <span class="php-quote">'epl-contact-add-activity-wrap'</span>,
 </span><span id="1069" class="l"><a href="#1069">1069: </a>            <span class="php-quote">'help'</span>      =&gt;  <span class="php-quote">'&lt;hr/&gt;'</span>,
@@ -1957,7 +1957,7 @@
 </span><span id="1087" class="l"><a href="#1087">1087: </a>                ),
 </span><span id="1088" class="l"><a href="#1088">1088: </a>                <span class="php-keyword1">array</span>(
 </span><span id="1089" class="l"><a href="#1089">1089: </a>                    <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'epl_contact_activity_submit'</span>,
-</span><span id="1090" class="l"><a href="#1090">1090: </a>                    <span class="php-quote">'value'</span>     =&gt;  __(<span class="php-quote">'Add'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1090" class="l"><a href="#1090">1090: </a>                    <span class="php-quote">'value'</span>     =&gt;  __(<span class="php-quote">'Add'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1091" class="l"><a href="#1091">1091: </a>                    <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'button button-primary'</span>,
 </span><span id="1092" class="l"><a href="#1092">1092: </a>                    <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'submit'</span>,
 </span><span id="1093" class="l"><a href="#1093">1093: </a>                ),
@@ -1985,7 +1985,7 @@
 </span><span id="1115" class="l"><a href="#1115">1115: </a>    <span class="php-var">$listing_types</span> = epl_get_active_post_types();
 </span><span id="1116" class="l"><a href="#1116">1116: </a>    <span class="php-var">$fields</span> = <span class="php-keyword1">array</span>(
 </span><span id="1117" class="l"><a href="#1117">1117: </a>        <span class="php-keyword1">array</span>(
-</span><span id="1118" class="l"><a href="#1118">1118: </a>            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Add Listing'</span> , <span class="php-quote">'epl'</span>),
+</span><span id="1118" class="l"><a href="#1118">1118: </a>            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Add Listing'</span> , <span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1119" class="l"><a href="#1119">1119: </a>            <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'col-1 epl-inner-div'</span>,
 </span><span id="1120" class="l"><a href="#1120">1120: </a>            <span class="php-quote">'id'</span>        =&gt;  <span class="php-quote">'epl-contact-add-listing-wrap'</span>,
 </span><span id="1121" class="l"><a href="#1121">1121: </a>            <span class="php-quote">'help'</span>      =&gt;  <span class="php-quote">'&lt;hr/&gt;'</span>,
@@ -1999,7 +1999,7 @@
 </span><span id="1129" class="l"><a href="#1129">1129: </a>                ),
 </span><span id="1130" class="l"><a href="#1130">1130: </a>                <span class="php-keyword1">array</span>(
 </span><span id="1131" class="l"><a href="#1131">1131: </a>                    <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'property_address_lot_number'</span>,
-</span><span id="1132" class="l"><a href="#1132">1132: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Lot'</span>, <span class="php-quote">'epl'</span>),
+</span><span id="1132" class="l"><a href="#1132">1132: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Lot'</span>, <span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1133" class="l"><a href="#1133">1133: </a>                    <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="1134" class="l"><a href="#1134">1134: </a>                    <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'40'</span>,
 </span><span id="1135" class="l"><a href="#1135">1135: </a>                    <span class="php-quote">'include'</span>   =&gt;  <span class="php-keyword1">array</span>(<span class="php-quote">'land'</span>, <span class="php-quote">'commercial_land'</span>)
@@ -2007,7 +2007,7 @@
 </span><span id="1137" class="l"><a href="#1137">1137: </a>
 </span><span id="1138" class="l"><a href="#1138">1138: </a>                <span class="php-keyword1">array</span>(
 </span><span id="1139" class="l"><a href="#1139">1139: </a>                    <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'property_address_sub_number'</span>,
-</span><span id="1140" class="l"><a href="#1140">1140: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Unit'</span>, <span class="php-quote">'epl'</span>),
+</span><span id="1140" class="l"><a href="#1140">1140: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Unit'</span>, <span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1141" class="l"><a href="#1141">1141: </a>                    <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="1142" class="l"><a href="#1142">1142: </a>                    <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'40'</span>,
 </span><span id="1143" class="l"><a href="#1143">1143: </a>                    <span class="php-quote">'exclude'</span>   =&gt;  <span class="php-keyword1">array</span>(<span class="php-quote">'land'</span>, <span class="php-quote">'commercial_land'</span>)
@@ -2015,14 +2015,14 @@
 </span><span id="1145" class="l"><a href="#1145">1145: </a>
 </span><span id="1146" class="l"><a href="#1146">1146: </a>                <span class="php-keyword1">array</span>(
 </span><span id="1147" class="l"><a href="#1147">1147: </a>                    <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'property_address_street_number'</span>,
-</span><span id="1148" class="l"><a href="#1148">1148: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Street Number'</span>, <span class="php-quote">'epl'</span>),
+</span><span id="1148" class="l"><a href="#1148">1148: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Street Number'</span>, <span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1149" class="l"><a href="#1149">1149: </a>                    <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="1150" class="l"><a href="#1150">1150: </a>                    <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'40'</span>
 </span><span id="1151" class="l"><a href="#1151">1151: </a>                ),
 </span><span id="1152" class="l"><a href="#1152">1152: </a>
 </span><span id="1153" class="l"><a href="#1153">1153: </a>                <span class="php-keyword1">array</span>(
 </span><span id="1154" class="l"><a href="#1154">1154: </a>                    <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'property_address_street'</span>,
-</span><span id="1155" class="l"><a href="#1155">1155: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Street Name'</span>, <span class="php-quote">'epl'</span>),
+</span><span id="1155" class="l"><a href="#1155">1155: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Street Name'</span>, <span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1156" class="l"><a href="#1156">1156: </a>                    <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="1157" class="l"><a href="#1157">1157: </a>                    <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'80'</span>
 </span><span id="1158" class="l"><a href="#1158">1158: </a>                ),
@@ -2050,18 +2050,18 @@
 </span><span id="1180" class="l"><a href="#1180">1180: </a>
 </span><span id="1181" class="l"><a href="#1181">1181: </a>                <span class="php-keyword1">array</span>(
 </span><span id="1182" class="l"><a href="#1182">1182: </a>                    <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'property_address_country'</span>,
-</span><span id="1183" class="l"><a href="#1183">1183: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Country'</span>, <span class="php-quote">'epl'</span>),
+</span><span id="1183" class="l"><a href="#1183">1183: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Country'</span>, <span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1184" class="l"><a href="#1184">1184: </a>                    <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="1185" class="l"><a href="#1185">1185: </a>                    <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'40'</span>
 </span><span id="1186" class="l"><a href="#1186">1186: </a>                ),
 </span><span id="1187" class="l"><a href="#1187">1187: </a>                <span class="php-keyword1">array</span>(
 </span><span id="1188" class="l"><a href="#1188">1188: </a>                    <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'post_title'</span>,
-</span><span id="1189" class="l"><a href="#1189">1189: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Full Address'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1189" class="l"><a href="#1189">1189: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Full Address'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1190" class="l"><a href="#1190">1190: </a>                    <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="1191" class="l"><a href="#1191">1191: </a>                ),
 </span><span id="1192" class="l"><a href="#1192">1192: </a>                <span class="php-keyword1">array</span>(
 </span><span id="1193" class="l"><a href="#1193">1193: </a>                    <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'post_type'</span>,
-</span><span id="1194" class="l"><a href="#1194">1194: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Listing Type'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1194" class="l"><a href="#1194">1194: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Listing Type'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1195" class="l"><a href="#1195">1195: </a>                    <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'select'</span>,
 </span><span id="1196" class="l"><a href="#1196">1196: </a>                    <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'epl-contact-note-select'</span>,
 </span><span id="1197" class="l"><a href="#1197">1197: </a>                    <span class="php-quote">'opts'</span>      =&gt;  <span class="php-var">$listing_types</span>,
@@ -2069,20 +2069,20 @@
 </span><span id="1199" class="l"><a href="#1199">1199: </a>                ),
 </span><span id="1200" class="l"><a href="#1200">1200: </a>                <span class="php-keyword1">array</span>(
 </span><span id="1201" class="l"><a href="#1201">1201: </a>                    <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'property_status'</span>,
-</span><span id="1202" class="l"><a href="#1202">1202: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Listing Status'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1202" class="l"><a href="#1202">1202: </a>                    <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Listing Status'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1203" class="l"><a href="#1203">1203: </a>                    <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'select'</span>,
 </span><span id="1204" class="l"><a href="#1204">1204: </a>                    <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'epl-contact-note-select'</span>,
 </span><span id="1205" class="l"><a href="#1205">1205: </a>                    <span class="php-quote">'opts'</span>      =&gt; apply_filters(<span class="php-quote">'epl_contact_property_status'</span>, <span class="php-keyword1">array</span>(
-</span><span id="1206" class="l"><a href="#1206">1206: </a>                        <span class="php-quote">'current'</span>   =&gt;  __(<span class="php-quote">'Current'</span>,<span class="php-quote">'epl'</span>),
-</span><span id="1207" class="l"><a href="#1207">1207: </a>                        <span class="php-quote">'sold'</span>          =&gt;  __(<span class="php-quote">'Sold'</span>,<span class="php-quote">'epl'</span>),
-</span><span id="1208" class="l"><a href="#1208">1208: </a>                        <span class="php-quote">'leased'</span>        =&gt;  __(<span class="php-quote">'Leased'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1206" class="l"><a href="#1206">1206: </a>                        <span class="php-quote">'current'</span>   =&gt;  __(<span class="php-quote">'Current'</span>,<span class="php-quote">'easy-property-listings'</span> ),
+</span><span id="1207" class="l"><a href="#1207">1207: </a>                        <span class="php-quote">'sold'</span>          =&gt;  __(<span class="php-quote">'Sold'</span>,<span class="php-quote">'easy-property-listings'</span> ),
+</span><span id="1208" class="l"><a href="#1208">1208: </a>                        <span class="php-quote">'leased'</span>        =&gt;  __(<span class="php-quote">'Leased'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1209" class="l"><a href="#1209">1209: </a>                    )),
 </span><span id="1210" class="l"><a href="#1210">1210: </a>                    <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'200'</span>,
 </span><span id="1211" class="l"><a href="#1211">1211: </a>                ),
 </span><span id="1212" class="l"><a href="#1212">1212: </a>
 </span><span id="1213" class="l"><a href="#1213">1213: </a>                <span class="php-keyword1">array</span>(
 </span><span id="1214" class="l"><a href="#1214">1214: </a>                    <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_listing_submit'</span>,
-</span><span id="1215" class="l"><a href="#1215">1215: </a>                    <span class="php-quote">'value'</span>     =&gt;  __(<span class="php-quote">'Add'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1215" class="l"><a href="#1215">1215: </a>                    <span class="php-quote">'value'</span>     =&gt;  __(<span class="php-quote">'Add'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1216" class="l"><a href="#1216">1216: </a>                    <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'button button-primary'</span>,
 </span><span id="1217" class="l"><a href="#1217">1217: </a>                    <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'submit'</span>,
 </span><span id="1218" class="l"><a href="#1218">1218: </a>                ),
@@ -2228,7 +2228,7 @@
 </span><span id="1358" class="l"><a href="#1358">1358: </a><span class="php-keyword1">function</span> epl_contact_save_note_note_tab( <span class="php-var">$args</span> ) {
 </span><span id="1359" class="l"><a href="#1359">1359: </a>
 </span><span id="1360" class="l"><a href="#1360">1360: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_contact_access() ) {
-</span><span id="1361" class="l"><a href="#1361">1361: </a>        wp_die( __( <span class="php-quote">'You do not have permission to save note.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="1361" class="l"><a href="#1361">1361: </a>        wp_die( __( <span class="php-quote">'You do not have permission to save note.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="1362" class="l"><a href="#1362">1362: </a>    }
 </span><span id="1363" class="l"><a href="#1363">1363: </a>    <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$args</span> ) ) {
 </span><span id="1364" class="l"><a href="#1364">1364: </a>        <span class="php-keyword1">return</span>;
@@ -2240,10 +2240,10 @@
 </span><span id="1370" class="l"><a href="#1370">1370: </a>    <span class="php-var">$contact_id</span>   = (int)<span class="php-var">$args</span>[<span class="php-quote">'contact_id'</span>];
 </span><span id="1371" class="l"><a href="#1371">1371: </a>    <span class="php-var">$nonce</span>         = <span class="php-var">$args</span>[<span class="php-quote">'add_contact_note_nonce'</span>];
 </span><span id="1372" class="l"><a href="#1372">1372: </a>    <span class="php-keyword1">if</span> ( ! wp_verify_nonce( <span class="php-var">$nonce</span>, <span class="php-quote">'add-contact-note'</span> ) ) {
-</span><span id="1373" class="l"><a href="#1373">1373: </a>        wp_die( __( <span class="php-quote">'Cheatin\' eh?!'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="1373" class="l"><a href="#1373">1373: </a>        wp_die( __( <span class="php-quote">'Cheatin\' eh?!'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="1374" class="l"><a href="#1374">1374: </a>    }
 </span><span id="1375" class="l"><a href="#1375">1375: </a>    <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$contact_note</span> ) ) {
-</span><span id="1376" class="l"><a href="#1376">1376: </a>        epl_set_error( <span class="php-quote">'empty-contact-note'</span>, __( <span class="php-quote">'A note is required'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="1376" class="l"><a href="#1376">1376: </a>        epl_set_error( <span class="php-quote">'empty-contact-note'</span>, __( <span class="php-quote">'A note is required'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="1377" class="l"><a href="#1377">1377: </a>    }
 </span><span id="1378" class="l"><a href="#1378">1378: </a>    <span class="php-keyword1">if</span> ( epl_get_errors() ) {
 </span><span id="1379" class="l"><a href="#1379">1379: </a>        epl_set_error();

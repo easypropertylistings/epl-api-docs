@@ -918,7 +918,7 @@
 </span></span><span id="48" class="l"><a href="#48">48: </a><span class="php-comment">**/</span>
 </span><span id="49" class="l"><a href="#49">49: </a><span class="php-keyword1">function</span> epl_property_new_excerpt_more( <span class="php-var">$more</span> ) {
 </span><span id="50" class="l"><a href="#50">50: </a>    <span class="php-keyword1">global</span> <span class="php-var">$post</span>;
-</span><span id="51" class="l"><a href="#51">51: </a>    <span class="php-keyword1">return</span> <span class="php-quote">'...&lt;a href=&quot;'</span>. get_permalink( <span class="php-var">$post</span>-&gt;ID ) . <span class="php-quote">'&quot; class=&quot;epl-more-link&quot;&gt;'</span>.__(<span class="php-quote">'Read More'</span>, <span class="php-quote">'epl'</span>).<span class="php-quote">'&amp;rarr;&lt;/a&gt;'</span>;
+</span><span id="51" class="l"><a href="#51">51: </a>    <span class="php-keyword1">return</span> <span class="php-quote">'...&lt;a href=&quot;'</span>. get_permalink( <span class="php-var">$post</span>-&gt;ID ) . <span class="php-quote">'&quot; class=&quot;epl-more-link&quot;&gt;'</span>.__(<span class="php-quote">'Read More'</span>, <span class="php-quote">'easy-property-listings'</span> ).<span class="php-quote">'&amp;rarr;&lt;/a&gt;'</span>;
 </span><span id="52" class="l"><a href="#52">52: </a>}
 </span><span id="53" class="l"><a href="#53">53: </a>add_filter(<span class="php-quote">'excerpt_more'</span>, <span class="php-quote">'epl_property_new_excerpt_more'</span>);
 </span><span id="54" class="l"><a href="#54">54: </a>

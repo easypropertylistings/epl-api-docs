@@ -904,9 +904,9 @@
 </span><span id="34" class="l"><a href="#34">34: </a>                <span class="xlang">&lt;?php</span>
 </span><span id="35" class="l"><a href="#35">35: </a>
 </span><span id="36" class="l"><a href="#36">36: </a>                    <span class="php-keyword1">if</span>( has_filter(<span class="php-quote">'epl_button_label_'</span>.<span class="php-var">$key</span>) ) {
-</span><span id="37" class="l"><a href="#37">37: </a>                        <span class="php-var">$label</span> = apply_filters(<span class="php-quote">'epl_button_label_'</span>.<span class="php-var">$key</span>,__(<span class="php-quote">'Tour '</span>.<span class="php-var">$count</span>, <span class="php-quote">'epl'</span>) );
+</span><span id="37" class="l"><a href="#37">37: </a>                        <span class="php-var">$label</span> = apply_filters(<span class="php-quote">'epl_button_label_'</span> . <span class="php-var">$key</span> , __(<span class="php-quote">'Tour '</span>, <span class="php-quote">'easy-property-listings'</span>) . <span class="php-var">$count</span> );
 </span><span id="38" class="l"><a href="#38">38: </a>                    } <span class="php-keyword1">else</span> {
-</span><span id="39" class="l"><a href="#39">39: </a>                        <span class="php-var">$label</span> = apply_filters( <span class="php-quote">'epl_button_label_tour'</span> , __(<span class="php-quote">'Tour '</span>.<span class="php-var">$count</span>, <span class="php-quote">'epl'</span>) );
+</span><span id="39" class="l"><a href="#39">39: </a>                        <span class="php-var">$label</span> = apply_filters( <span class="php-quote">'epl_button_label_tour'</span> , __(<span class="php-quote">'Tour '</span>, <span class="php-quote">'easy-property-listings'</span>) . <span class="php-var">$count</span> );
 </span><span id="40" class="l"><a href="#40">40: </a>                    }
 </span><span id="41" class="l"><a href="#41">41: </a>                <span class="xlang">?&gt;</span>
 </span><span id="42" class="l"><a href="#42">42: </a>                <span class="xlang">&lt;?php</span> <span class="php-keyword1">echo</span> <span class="php-var">$label</span> <span class="xlang">?&gt;</span>

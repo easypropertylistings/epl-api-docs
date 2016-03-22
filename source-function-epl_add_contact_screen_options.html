@@ -936,14 +936,14 @@
 </span><span id="66" class="l"><a href="#66"> 66: </a>
 </span><span id="67" class="l"><a href="#67"> 67: </a>    <span class="xlang">?&gt;</span>
 </span><span id="68" class="l"><a href="#68"> 68: </a>    &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;wrap&quot;</span>&gt;
-</span><span id="69" class="l"><a href="#69"> 69: </a>        &lt;h2&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Contacts'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>
-</span><span id="70" class="l"><a href="#70"> 70: </a>            &lt;a <span class="php-keyword1">class</span>=<span class="php-quote">&quot;add-new-h2&quot;</span> href=<span class="php-quote">&quot;&lt;?php echo admin_url('admin.php?page=epl-contacts&amp;view=new-contact'); ?&gt;&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e(<span class="php-quote">'Add New'</span>,<span class="php-quote">'epl'</span>); <span class="xlang">?&gt;</span>&lt;/a&gt;
-</span><span id="71" class="l"><a href="#71"> 71: </a>            &lt;a <span class="php-keyword1">class</span>=<span class="php-quote">&quot;add-new-h2 epl-contact-tags-page&quot;</span> href=<span class="php-quote">&quot;&lt;?php echo admin_url('admin.php?page=epl-contacts&amp;view=all_tags'); ?&gt;&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e(<span class="php-quote">'Tags'</span>,<span class="php-quote">'epl'</span>); <span class="xlang">?&gt;</span>&lt;/a&gt;
+</span><span id="69" class="l"><a href="#69"> 69: </a>        &lt;h2&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Contacts'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>
+</span><span id="70" class="l"><a href="#70"> 70: </a>            &lt;a <span class="php-keyword1">class</span>=<span class="php-quote">&quot;add-new-h2&quot;</span> href=<span class="php-quote">&quot;&lt;?php echo admin_url('admin.php?page=epl-contacts&amp;view=new-contact'); ?&gt;&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e(<span class="php-quote">'Add New'</span>,<span class="php-quote">'easy-property-listings'</span> ); <span class="xlang">?&gt;</span>&lt;/a&gt;
+</span><span id="71" class="l"><a href="#71"> 71: </a>            &lt;a <span class="php-keyword1">class</span>=<span class="php-quote">&quot;add-new-h2 epl-contact-tags-page&quot;</span> href=<span class="php-quote">&quot;&lt;?php echo admin_url('admin.php?page=epl-contacts&amp;view=all_tags'); ?&gt;&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e(<span class="php-quote">'Tags'</span>,<span class="php-quote">'easy-property-listings'</span> ); <span class="xlang">?&gt;</span>&lt;/a&gt;
 </span><span id="72" class="l"><a href="#72"> 72: </a>        &lt;/h2&gt;
 </span><span id="73" class="l"><a href="#73"> 73: </a>        <span class="xlang">&lt;?php</span> do_action( <span class="php-quote">'epl_contacts_table_top'</span> ); <span class="xlang">?&gt;</span>
 </span><span id="74" class="l"><a href="#74"> 74: </a>        &lt;form id=<span class="php-quote">&quot;epl-contacts-filter&quot;</span> method=<span class="php-quote">&quot;get&quot;</span> action=<span class="php-quote">&quot;&lt;?php echo admin_url( 'admin.php?page=epl-contacts' ); ?&gt;&quot;</span>&gt;
 </span><span id="75" class="l"><a href="#75"> 75: </a>            <span class="xlang">&lt;?php</span>
-</span><span id="76" class="l"><a href="#76"> 76: </a>            <span class="php-var">$epl_contacts_table</span>-&gt;search_box( __( <span class="php-quote">'Search Contacts'</span>, <span class="php-quote">'epl'</span> ), <span class="php-quote">'epl-contacts'</span> );
+</span><span id="76" class="l"><a href="#76"> 76: </a>            <span class="php-var">$epl_contacts_table</span>-&gt;search_box( __( <span class="php-quote">'Search Contacts'</span>, <span class="php-quote">'easy-property-listings'</span>  ), <span class="php-quote">'epl-contacts'</span> );
 </span><span id="77" class="l"><a href="#77"> 77: </a>            <span class="php-var">$epl_contacts_table</span>-&gt;display();
 </span><span id="78" class="l"><a href="#78"> 78: </a>            <span class="xlang">?&gt;</span>
 </span><span id="79" class="l"><a href="#79"> 79: </a>            &lt;input type=<span class="php-quote">&quot;hidden&quot;</span> name=<span class="php-quote">&quot;page&quot;</span> value=<span class="php-quote">&quot;epl-contacts&quot;</span> /&gt;
@@ -967,7 +967,7 @@
 </span><span id="97" class="l"><a href="#97"> 97: </a>    <span class="php-var">$render</span> = <span class="php-keyword1">true</span>;
 </span><span id="98" class="l"><a href="#98"> 98: </a>
 </span><span id="99" class="l"><a href="#99"> 99: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_contact_access() ) {
-</span><span id="100" class="l"><a href="#100">100: </a>        epl_set_error( <span class="php-quote">'epl-no-access'</span>, __( <span class="php-quote">'You are not permitted to view this data.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="100" class="l"><a href="#100">100: </a>        epl_set_error( <span class="php-quote">'epl-no-access'</span>, __( <span class="php-quote">'You are not permitted to view this data.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="101" class="l"><a href="#101">101: </a>        <span class="php-var">$render</span> = <span class="php-keyword1">false</span>;
 </span><span id="102" class="l"><a href="#102">102: </a>    }
 </span><span id="103" class="l"><a href="#103">103: </a>    <span class="php-keyword1">if</span>(<span class="php-var">$view</span> == <span class="php-quote">'new-contact'</span> || <span class="php-var">$view</span> == <span class="php-quote">'all_tags'</span>) {
@@ -976,7 +976,7 @@
 </span><span id="106" class="l"><a href="#106">106: </a>    }
 </span><span id="107" class="l"><a href="#107">107: </a>
 </span><span id="108" class="l"><a href="#108">108: </a>    <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">isset</span>( <span class="php-var">$_GET</span>[<span class="php-quote">'id'</span>] ) || ! <span class="php-keyword2">is_numeric</span>( <span class="php-var">$_GET</span>[<span class="php-quote">'id'</span>] ) ) {
-</span><span id="109" class="l"><a href="#109">109: </a>        epl_set_error( <span class="php-quote">'epl-invalid_contact'</span>, __( <span class="php-quote">'Invalid Contact ID Provided.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="109" class="l"><a href="#109">109: </a>        epl_set_error( <span class="php-quote">'epl-invalid_contact'</span>, __( <span class="php-quote">'Invalid Contact ID Provided.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="110" class="l"><a href="#110">110: </a>        <span class="php-var">$render</span> = <span class="php-keyword1">false</span>;
 </span><span id="111" class="l"><a href="#111">111: </a>    }
 </span><span id="112" class="l"><a href="#112">112: </a>
@@ -984,7 +984,7 @@
 </span><span id="114" class="l"><a href="#114">114: </a>    <span class="php-var">$contact</span>    = <span class="php-keyword1">new</span> EPL_Contact( <span class="php-var">$contact_id</span> );
 </span><span id="115" class="l"><a href="#115">115: </a>
 </span><span id="116" class="l"><a href="#116">116: </a>    <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$contact</span>-&gt;ID ) ) {
-</span><span id="117" class="l"><a href="#117">117: </a>        epl_set_error( <span class="php-quote">'epl-invalid_contact'</span>, __( <span class="php-quote">'Invalid Contact ID Provided.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="117" class="l"><a href="#117">117: </a>        epl_set_error( <span class="php-quote">'epl-invalid_contact'</span>, __( <span class="php-quote">'Invalid Contact ID Provided.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="118" class="l"><a href="#118">118: </a>        <span class="php-var">$render</span> = <span class="php-keyword1">false</span>;
 </span><span id="119" class="l"><a href="#119">119: </a>    }
 </span><span id="120" class="l"><a href="#120">120: </a>
@@ -992,7 +992,7 @@
 </span><span id="122" class="l"><a href="#122">122: </a>    <span class="xlang">?&gt;</span>
 </span><span id="123" class="l"><a href="#123">123: </a>
 </span><span id="124" class="l"><a href="#124">124: </a>    &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">'wrap'</span>&gt;
-</span><span id="125" class="l"><a href="#125">125: </a>        &lt;h2&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Contact Details'</span>, <span class="php-quote">'epl'</span> );<span class="xlang">?&gt;</span>&lt;/h2&gt;
+</span><span id="125" class="l"><a href="#125">125: </a>        &lt;h2&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Contact Details'</span>, <span class="php-quote">'easy-property-listings'</span>  );<span class="xlang">?&gt;</span>&lt;/h2&gt;
 </span><span id="126" class="l"><a href="#126">126: </a>        <span class="xlang">&lt;?php</span> <span class="php-keyword1">if</span> ( epl_get_errors() ) :<span class="xlang">?&gt;</span>
 </span><span id="127" class="l"><a href="#127">127: </a>            &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;error settings-error&quot;</span>&gt;
 </span><span id="128" class="l"><a href="#128">128: </a>                <span class="xlang">&lt;?php</span> epl_print_errors(); <span class="xlang">?&gt;</span>
@@ -1057,7 +1057,7 @@
 </span><span id="187" class="l"><a href="#187">187: </a>        }
 </span><span id="188" class="l"><a href="#188">188: </a>    <span class="xlang">?&gt;</span>
 </span><span id="189" class="l"><a href="#189">189: </a>    &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">'wrap'</span>&gt;
-</span><span id="190" class="l"><a href="#190">190: </a>        &lt;h2&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Add Contact'</span>, <span class="php-quote">'epl'</span> );<span class="xlang">?&gt;</span>&lt;/h2&gt;
+</span><span id="190" class="l"><a href="#190">190: </a>        &lt;h2&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Add Contact'</span>, <span class="php-quote">'easy-property-listings'</span>  );<span class="xlang">?&gt;</span>&lt;/h2&gt;
 </span><span id="191" class="l"><a href="#191">191: </a>        <span class="xlang">&lt;?php</span> <span class="php-keyword1">if</span> ( epl_get_errors() ) :<span class="xlang">?&gt;</span>
 </span><span id="192" class="l"><a href="#192">192: </a>            &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;error settings-error&quot;</span>&gt;
 </span><span id="193" class="l"><a href="#193">193: </a>                <span class="xlang">&lt;?php</span> epl_print_errors(); <span class="xlang">?&gt;</span>
@@ -1074,7 +1074,7 @@
 </span><span id="204" class="l"><a href="#204">204: </a>                    <span class="php-var">$args</span> = <span class="php-keyword1">array</span>(
 </span><span id="205" class="l"><a href="#205">205: </a>                        <span class="php-quote">'post_type'</span> =&gt;  <span class="php-quote">'epl_contact'</span>,
 </span><span id="206" class="l"><a href="#206">206: </a>                        <span class="php-quote">'post_status'</span>   =&gt;  <span class="php-quote">'auto-draft'</span>,
-</span><span id="207" class="l"><a href="#207">207: </a>                        <span class="php-quote">'post_title'</span>    =&gt;  __(<span class="php-quote">'Contact Name'</span>,<span class="php-quote">'epl'</span>)
+</span><span id="207" class="l"><a href="#207">207: </a>                        <span class="php-quote">'post_title'</span>    =&gt;  __(<span class="php-quote">'Contact Name'</span>,<span class="php-quote">'easy-property-listings'</span> )
 </span><span id="208" class="l"><a href="#208">208: </a>                    );
 </span><span id="209" class="l"><a href="#209">209: </a>                    <span class="php-var">$contact_id</span> = wp_insert_post(<span class="php-var">$args</span>);
 </span><span id="210" class="l"><a href="#210">210: </a>                    <span class="php-keyword1">if</span>(<span class="php-var">$contact_id</span> ):
@@ -1093,35 +1093,35 @@
 </span><span id="223" class="l"><a href="#223">223: </a>
 </span><span id="224" class="l"><a href="#224">224: </a>                                    <span class="php-keyword1">array</span>(
 </span><span id="225" class="l"><a href="#225">225: </a>                                        <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'title'</span>,
-</span><span id="226" class="l"><a href="#226">226: </a>                                        <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Summary'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="226" class="l"><a href="#226">226: </a>                                        <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Summary'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="227" class="l"><a href="#227">227: </a>                                        <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="228" class="l"><a href="#228">228: </a>                                        <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="229" class="l"><a href="#229">229: </a>                                        <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;name
 </span><span id="230" class="l"><a href="#230">230: </a>                                    ),
 </span><span id="231" class="l"><a href="#231">231: </a>                                    <span class="php-keyword1">array</span>(
 </span><span id="232" class="l"><a href="#232">232: </a>                                        <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'first_name'</span>,
-</span><span id="233" class="l"><a href="#233">233: </a>                                        <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'First Name'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="233" class="l"><a href="#233">233: </a>                                        <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'First Name'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="234" class="l"><a href="#234">234: </a>                                        <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="235" class="l"><a href="#235">235: </a>                                        <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="236" class="l"><a href="#236">236: </a>                                        <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_first_name'</span>)
 </span><span id="237" class="l"><a href="#237">237: </a>                                    ),
 </span><span id="238" class="l"><a href="#238">238: </a>                                    <span class="php-keyword1">array</span>(
 </span><span id="239" class="l"><a href="#239">239: </a>                                        <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'last_name'</span>,
-</span><span id="240" class="l"><a href="#240">240: </a>                                        <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Last Name'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="240" class="l"><a href="#240">240: </a>                                        <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Last Name'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="241" class="l"><a href="#241">241: </a>                                        <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="242" class="l"><a href="#242">242: </a>                                        <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="243" class="l"><a href="#243">243: </a>                                        <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_last_name'</span>)
 </span><span id="244" class="l"><a href="#244">244: </a>                                    ),
 </span><span id="245" class="l"><a href="#245">245: </a>                                    <span class="php-keyword1">array</span>(
 </span><span id="246" class="l"><a href="#246">246: </a>                                        <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'email'</span>,
-</span><span id="247" class="l"><a href="#247">247: </a>                                        <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Email'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="247" class="l"><a href="#247">247: </a>                                        <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Email'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="248" class="l"><a href="#248">248: </a>                                        <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'email'</span>,
 </span><span id="249" class="l"><a href="#249">249: </a>                                        <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="250" class="l"><a href="#250">250: </a>                                        <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_primary_email(<span class="php-var">$contact</span>-&gt;ID)
 </span><span id="251" class="l"><a href="#251">251: </a>                                    ),
 </span><span id="252" class="l"><a href="#252">252: </a>                                    <span class="php-keyword1">array</span>(
 </span><span id="253" class="l"><a href="#253">253: </a>                                        <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'phone'</span>,
-</span><span id="254" class="l"><a href="#254">254: </a>                                        <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Phone'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="254" class="l"><a href="#254">254: </a>                                        <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Phone'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="255" class="l"><a href="#255">255: </a>                                        <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="256" class="l"><a href="#256">256: </a>                                        <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="257" class="l"><a href="#257">257: </a>                                        <span class="php-quote">'value'</span>     =&gt;  <span class="php-quote">''</span>
@@ -1139,7 +1139,7 @@
 </span><span id="269" class="l"><a href="#269">269: </a>                            &lt;input type=<span class="php-quote">&quot;hidden&quot;</span> name=<span class="php-quote">&quot;ID&quot;</span> value=<span class="php-quote">&quot;&lt;?php echo </span><span class="php-var">$contact</span><span class="php-quote">-&gt;ID; ?&gt;&quot;</span> /&gt;
 </span><span id="270" class="l"><a href="#270">270: </a>                            <span class="xlang">&lt;?php</span> wp_nonce_field( <span class="php-quote">'new-contact'</span>, <span class="php-quote">'_wpnonce'</span>, <span class="php-keyword1">false</span>, <span class="php-keyword1">true</span> ); <span class="xlang">?&gt;</span>
 </span><span id="271" class="l"><a href="#271">271: </a>                            &lt;input type=<span class="php-quote">&quot;hidden&quot;</span> name=<span class="php-quote">&quot;epl_action&quot;</span> value=<span class="php-quote">&quot;new-contact&quot;</span> /&gt;
-</span><span id="272" class="l"><a href="#272">272: </a>                            &lt;input type=<span class="php-quote">&quot;submit&quot;</span> id=<span class="php-quote">&quot;epl-new-contact&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;button-primary&quot;</span> value=<span class="php-quote">&quot;&lt;?php _e( 'Create', 'epl' ); ?&gt;&quot;</span> /&gt;
+</span><span id="272" class="l"><a href="#272">272: </a>                            &lt;input type=<span class="php-quote">&quot;submit&quot;</span> id=<span class="php-quote">&quot;epl-new-contact&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;button-primary&quot;</span> value=<span class="php-quote">&quot;&lt;?php _e( 'Create', 'easy-property-listings'  ); ?&gt;&quot;</span> /&gt;
 </span><span id="273" class="l"><a href="#273">273: </a>                        &lt;/span&gt;
 </span><span id="274" class="l"><a href="#274">274: </a>                    &lt;/div&gt;
 </span><span id="275" class="l"><a href="#275">275: </a>                &lt;/form&gt;
@@ -1224,7 +1224,7 @@
 </span><span id="354" class="l"><a href="#354">354: </a>
 </span><span id="355" class="l"><a href="#355">355: </a>    <span class="php-var">$this_user</span> = wp_get_current_user();
 </span><span id="356" class="l"><a href="#356">356: </a>    <span class="php-keyword1">if</span> ( ! is_admin() || ! epl_contact_access() ) {
-</span><span id="357" class="l"><a href="#357">357: </a>        wp_die( __( <span class="php-quote">'You do not have permission to see this page.'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="357" class="l"><a href="#357">357: </a>        wp_die( __( <span class="php-quote">'You do not have permission to see this page.'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="358" class="l"><a href="#358">358: </a>    }
 </span><span id="359" class="l"><a href="#359">359: </a>    <span class="xlang">?&gt;</span>
 </span><span id="360" class="l"><a href="#360">360: </a>
@@ -1287,18 +1287,18 @@
 </span><span id="417" class="l"><a href="#417">417: </a>                                    <span class="php-quote">'label'</span>     =&gt;  <span class="php-quote">''</span>,
 </span><span id="418" class="l"><a href="#418">418: </a>                                    <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'col-1 epl-inner-div'</span>,
 </span><span id="419" class="l"><a href="#419">419: </a>                                    <span class="php-quote">'id'</span>        =&gt;  <span class="php-quote">'epl-contact-professional-details'</span>,
-</span><span id="420" class="l"><a href="#420">420: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Professional Details'</span> , <span class="php-quote">'epl'</span>) . <span class="php-quote">'&lt;hr/&gt;'</span>,
+</span><span id="420" class="l"><a href="#420">420: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Professional Details'</span> , <span class="php-quote">'easy-property-listings'</span> ) . <span class="php-quote">'&lt;hr/&gt;'</span>,
 </span><span id="421" class="l"><a href="#421">421: </a>                                    <span class="php-quote">'fields'</span>    =&gt;  apply_filters(<span class="php-quote">'epl_contact_professional_fields'</span>,
 </span><span id="422" class="l"><a href="#422">422: </a>                                        <span class="php-keyword1">array</span>(
 </span><span id="423" class="l"><a href="#423">423: </a>                                            <span class="php-keyword1">array</span>(
 </span><span id="424" class="l"><a href="#424">424: </a>                                                <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_title'</span>,
-</span><span id="425" class="l"><a href="#425">425: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Title'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="425" class="l"><a href="#425">425: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Title'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="426" class="l"><a href="#426">426: </a>                                                <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="427" class="l"><a href="#427">427: </a>                                                <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_title'</span>)
 </span><span id="428" class="l"><a href="#428">428: </a>                                            ),
 </span><span id="429" class="l"><a href="#429">429: </a>                                            <span class="php-keyword1">array</span>(
 </span><span id="430" class="l"><a href="#430">430: </a>                                                <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_company'</span>,
-</span><span id="431" class="l"><a href="#431">431: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Company'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="431" class="l"><a href="#431">431: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Company'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="432" class="l"><a href="#432">432: </a>                                                <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="433" class="l"><a href="#433">433: </a>                                                <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_company'</span>)
 </span><span id="434" class="l"><a href="#434">434: </a>                                            ),
@@ -1309,12 +1309,12 @@
 </span><span id="439" class="l"><a href="#439">439: </a>                                    <span class="php-quote">'label'</span>     =&gt;  <span class="php-quote">''</span>,
 </span><span id="440" class="l"><a href="#440">440: </a>                                    <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'col-1 epl-inner-div'</span>,
 </span><span id="441" class="l"><a href="#441">441: </a>                                    <span class="php-quote">'id'</span>        =&gt;  <span class="php-quote">'epl-contact-contact-details'</span>,
-</span><span id="442" class="l"><a href="#442">442: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Contact Details'</span> , <span class="php-quote">'epl'</span>) . <span class="php-quote">'&lt;hr/&gt;'</span>,
+</span><span id="442" class="l"><a href="#442">442: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Contact Details'</span> , <span class="php-quote">'easy-property-listings'</span> ) . <span class="php-quote">'&lt;hr/&gt;'</span>,
 </span><span id="443" class="l"><a href="#443">443: </a>                                    <span class="php-quote">'fields'</span>    =&gt;  apply_filters(<span class="php-quote">'epl_contact_contact_fields'</span>,
 </span><span id="444" class="l"><a href="#444">444: </a>                                        <span class="php-keyword1">array</span>(
 </span><span id="445" class="l"><a href="#445">445: </a>                                            <span class="php-keyword1">array</span>(
 </span><span id="446" class="l"><a href="#446">446: </a>                                                <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">&quot;contact_phones[phone]&quot;</span>,
-</span><span id="447" class="l"><a href="#447">447: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Phone'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="447" class="l"><a href="#447">447: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Phone'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="448" class="l"><a href="#448">448: </a>                                                <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="449" class="l"><a href="#449">449: </a>                                                <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'epl-contact-addable'</span>,
 </span><span id="450" class="l"><a href="#450">450: </a>                                                <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
@@ -1323,7 +1323,7 @@
 </span><span id="453" class="l"><a href="#453">453: </a>
 </span><span id="454" class="l"><a href="#454">454: </a>                                            <span class="php-keyword1">array</span>(
 </span><span id="455" class="l"><a href="#455">455: </a>                                                <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">&quot;contact_emails[email]&quot;</span>,
-</span><span id="456" class="l"><a href="#456">456: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Email'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="456" class="l"><a href="#456">456: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Email'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="457" class="l"><a href="#457">457: </a>                                                <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'email'</span>,
 </span><span id="458" class="l"><a href="#458">458: </a>                                                <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'epl-contact-addable-email'</span>,
 </span><span id="459" class="l"><a href="#459">459: </a>                                                <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
@@ -1332,7 +1332,7 @@
 </span><span id="462" class="l"><a href="#462">462: </a>
 </span><span id="463" class="l"><a href="#463">463: </a>                                            <span class="php-keyword1">array</span>(
 </span><span id="464" class="l"><a href="#464">464: </a>                                                <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_website'</span>,
-</span><span id="465" class="l"><a href="#465">465: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Website'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="465" class="l"><a href="#465">465: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Website'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="466" class="l"><a href="#466">466: </a>                                                <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="467" class="l"><a href="#467">467: </a>                                                <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="468" class="l"><a href="#468">468: </a>                                                <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_website'</span>)
@@ -1344,26 +1344,26 @@
 </span><span id="474" class="l"><a href="#474">474: </a>                                    <span class="php-quote">'label'</span>     =&gt;  <span class="php-quote">''</span>,
 </span><span id="475" class="l"><a href="#475">475: </a>                                    <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'col-1 epl-inner-div'</span>,
 </span><span id="476" class="l"><a href="#476">476: </a>                                    <span class="php-quote">'id'</span>        =&gt;  <span class="php-quote">'epl-contact-custom-details'</span>,
-</span><span id="477" class="l"><a href="#477">477: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Custom Fields'</span> , <span class="php-quote">'epl'</span>) . <span class="php-quote">'&lt;hr/&gt;'</span>,
+</span><span id="477" class="l"><a href="#477">477: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Custom Fields'</span> , <span class="php-quote">'easy-property-listings'</span> ) . <span class="php-quote">'&lt;hr/&gt;'</span>,
 </span><span id="478" class="l"><a href="#478">478: </a>                                    <span class="php-quote">'fields'</span>    =&gt;  apply_filters(<span class="php-quote">'epl_contact_custom_fields'</span>,
 </span><span id="479" class="l"><a href="#479">479: </a>                                        <span class="php-keyword1">array</span>(
 </span><span id="480" class="l"><a href="#480">480: </a>                                            <span class="php-keyword1">array</span>(
 </span><span id="481" class="l"><a href="#481">481: </a>                                                <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_referred_by'</span>,
-</span><span id="482" class="l"><a href="#482">482: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Referred By'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="482" class="l"><a href="#482">482: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Referred By'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="483" class="l"><a href="#483">483: </a>                                                <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="484" class="l"><a href="#484">484: </a>                                                <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="485" class="l"><a href="#485">485: </a>                                                <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_referred_by'</span>)
 </span><span id="486" class="l"><a href="#486">486: </a>                                            ),
 </span><span id="487" class="l"><a href="#487">487: </a>                                            <span class="php-keyword1">array</span>(
 </span><span id="488" class="l"><a href="#488">488: </a>                                                <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_custom_1'</span>,
-</span><span id="489" class="l"><a href="#489">489: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Custom Field 1'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="489" class="l"><a href="#489">489: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Custom Field 1'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="490" class="l"><a href="#490">490: </a>                                                <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="491" class="l"><a href="#491">491: </a>                                                <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="492" class="l"><a href="#492">492: </a>                                                <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_custom_1'</span>)
 </span><span id="493" class="l"><a href="#493">493: </a>                                            ),
 </span><span id="494" class="l"><a href="#494">494: </a>                                            <span class="php-keyword1">array</span>(
 </span><span id="495" class="l"><a href="#495">495: </a>                                                <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_custom_2'</span>,
-</span><span id="496" class="l"><a href="#496">496: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Custom Field 2'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="496" class="l"><a href="#496">496: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Custom Field 2'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="497" class="l"><a href="#497">497: </a>                                                <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="498" class="l"><a href="#498">498: </a>                                                <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="499" class="l"><a href="#499">499: </a>                                                <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_custom_2'</span>)
@@ -1375,34 +1375,34 @@
 </span><span id="505" class="l"><a href="#505">505: </a>                                    <span class="php-quote">'label'</span>     =&gt;  <span class="php-quote">''</span>,
 </span><span id="506" class="l"><a href="#506">506: </a>                                    <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'col-1 epl-inner-div'</span>,
 </span><span id="507" class="l"><a href="#507">507: </a>                                    <span class="php-quote">'id'</span>        =&gt;  <span class="php-quote">'epl-contact-social-details'</span>,
-</span><span id="508" class="l"><a href="#508">508: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Social Networks'</span> , <span class="php-quote">'epl'</span>) . <span class="php-quote">'&lt;hr/&gt;'</span>,
+</span><span id="508" class="l"><a href="#508">508: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Social Networks'</span> , <span class="php-quote">'easy-property-listings'</span> ) . <span class="php-quote">'&lt;hr/&gt;'</span>,
 </span><span id="509" class="l"><a href="#509">509: </a>                                    <span class="php-quote">'fields'</span>    =&gt;  apply_filters(<span class="php-quote">'epl_contact_social_fields'</span>,
 </span><span id="510" class="l"><a href="#510">510: </a>                                        <span class="php-keyword1">array</span>(
 </span><span id="511" class="l"><a href="#511">511: </a>
 </span><span id="512" class="l"><a href="#512">512: </a>                                            <span class="php-keyword1">array</span>(
 </span><span id="513" class="l"><a href="#513">513: </a>                                                <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_facebook'</span>,
-</span><span id="514" class="l"><a href="#514">514: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Facebook'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="514" class="l"><a href="#514">514: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Facebook'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="515" class="l"><a href="#515">515: </a>                                                <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="516" class="l"><a href="#516">516: </a>                                                <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="517" class="l"><a href="#517">517: </a>                                                <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_facebook'</span>)
 </span><span id="518" class="l"><a href="#518">518: </a>                                            ),
 </span><span id="519" class="l"><a href="#519">519: </a>                                            <span class="php-keyword1">array</span>(
 </span><span id="520" class="l"><a href="#520">520: </a>                                                <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_twitter'</span>,
-</span><span id="521" class="l"><a href="#521">521: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Twitter'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="521" class="l"><a href="#521">521: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Twitter'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="522" class="l"><a href="#522">522: </a>                                                <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="523" class="l"><a href="#523">523: </a>                                                <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="524" class="l"><a href="#524">524: </a>                                                <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_twitter'</span>)
 </span><span id="525" class="l"><a href="#525">525: </a>                                            ),
 </span><span id="526" class="l"><a href="#526">526: </a>                                            <span class="php-keyword1">array</span>(
 </span><span id="527" class="l"><a href="#527">527: </a>                                                <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_google_plus'</span>,
-</span><span id="528" class="l"><a href="#528">528: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Google Plus'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="528" class="l"><a href="#528">528: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Google Plus'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="529" class="l"><a href="#529">529: </a>                                                <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="530" class="l"><a href="#530">530: </a>                                                <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="531" class="l"><a href="#531">531: </a>                                                <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_google_plus'</span>)
 </span><span id="532" class="l"><a href="#532">532: </a>                                            ),
 </span><span id="533" class="l"><a href="#533">533: </a>                                            <span class="php-keyword1">array</span>(
 </span><span id="534" class="l"><a href="#534">534: </a>                                                <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_linked_in'</span>,
-</span><span id="535" class="l"><a href="#535">535: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Linked In'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="535" class="l"><a href="#535">535: </a>                                                <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Linked In'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="536" class="l"><a href="#536">536: </a>                                                <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="537" class="l"><a href="#537">537: </a>                                                <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'60'</span>,
 </span><span id="538" class="l"><a href="#538">538: </a>                                                <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_linked_in'</span>)
@@ -1414,46 +1414,46 @@
 </span><span id="544" class="l"><a href="#544">544: </a>                                    <span class="php-quote">'label'</span>     =&gt;  <span class="php-quote">''</span>,
 </span><span id="545" class="l"><a href="#545">545: </a>                                    <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'col-1 epl-inner-div'</span>,
 </span><span id="546" class="l"><a href="#546">546: </a>                                    <span class="php-quote">'id'</span>        =&gt;  <span class="php-quote">'epl-contact-address-details'</span>,
-</span><span id="547" class="l"><a href="#547">547: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Address'</span> , <span class="php-quote">'epl'</span>) . <span class="php-quote">'&lt;hr/&gt;'</span>,
+</span><span id="547" class="l"><a href="#547">547: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Address'</span> , <span class="php-quote">'easy-property-listings'</span> ) . <span class="php-quote">'&lt;hr/&gt;'</span>,
 </span><span id="548" class="l"><a href="#548">548: </a>                                    <span class="php-quote">'fields'</span>    =&gt;  <span class="php-keyword1">array</span>(
 </span><span id="549" class="l"><a href="#549">549: </a>                                        <span class="php-keyword1">array</span>(
 </span><span id="550" class="l"><a href="#550">550: </a>                                            <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_street_number'</span>,
-</span><span id="551" class="l"><a href="#551">551: </a>                                            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Street Number'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="551" class="l"><a href="#551">551: </a>                                            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Street Number'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="552" class="l"><a href="#552">552: </a>                                            <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="553" class="l"><a href="#553">553: </a>                                            <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'200'</span>,
 </span><span id="554" class="l"><a href="#554">554: </a>                                            <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_street_number'</span>)
 </span><span id="555" class="l"><a href="#555">555: </a>                                        ),
 </span><span id="556" class="l"><a href="#556">556: </a>                                        <span class="php-keyword1">array</span>(
 </span><span id="557" class="l"><a href="#557">557: </a>                                            <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_street_name'</span>,
-</span><span id="558" class="l"><a href="#558">558: </a>                                            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Street Name'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="558" class="l"><a href="#558">558: </a>                                            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Street Name'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="559" class="l"><a href="#559">559: </a>                                            <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="560" class="l"><a href="#560">560: </a>                                            <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'200'</span>,
 </span><span id="561" class="l"><a href="#561">561: </a>                                            <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_street_name'</span>)
 </span><span id="562" class="l"><a href="#562">562: </a>                                        ),
 </span><span id="563" class="l"><a href="#563">563: </a>                                        <span class="php-keyword1">array</span>(
 </span><span id="564" class="l"><a href="#564">564: </a>                                            <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_suburb'</span>,
-</span><span id="565" class="l"><a href="#565">565: </a>                                            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Suburb'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="565" class="l"><a href="#565">565: </a>                                            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Suburb'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="566" class="l"><a href="#566">566: </a>                                            <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="567" class="l"><a href="#567">567: </a>                                            <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'200'</span>,
 </span><span id="568" class="l"><a href="#568">568: </a>                                            <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_suburb'</span>)
 </span><span id="569" class="l"><a href="#569">569: </a>                                        ),
 </span><span id="570" class="l"><a href="#570">570: </a>                                        <span class="php-keyword1">array</span>(
 </span><span id="571" class="l"><a href="#571">571: </a>                                            <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_state'</span>,
-</span><span id="572" class="l"><a href="#572">572: </a>                                            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'State'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="572" class="l"><a href="#572">572: </a>                                            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'State'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="573" class="l"><a href="#573">573: </a>                                            <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="574" class="l"><a href="#574">574: </a>                                            <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'200'</span>,
 </span><span id="575" class="l"><a href="#575">575: </a>                                            <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_state'</span>)
 </span><span id="576" class="l"><a href="#576">576: </a>                                        ),
 </span><span id="577" class="l"><a href="#577">577: </a>                                        <span class="php-keyword1">array</span>(
 </span><span id="578" class="l"><a href="#578">578: </a>                                            <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_postcode'</span>,
-</span><span id="579" class="l"><a href="#579">579: </a>                                            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Postcode'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="579" class="l"><a href="#579">579: </a>                                            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Postcode'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="580" class="l"><a href="#580">580: </a>                                            <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="581" class="l"><a href="#581">581: </a>                                            <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'200'</span>,
 </span><span id="582" class="l"><a href="#582">582: </a>                                            <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_postcode'</span>)
 </span><span id="583" class="l"><a href="#583">583: </a>                                        ),
 </span><span id="584" class="l"><a href="#584">584: </a>                                        <span class="php-keyword1">array</span>(
 </span><span id="585" class="l"><a href="#585">585: </a>                                            <span class="php-quote">'name'</span>      =&gt;  <span class="php-quote">'contact_country'</span>,
-</span><span id="586" class="l"><a href="#586">586: </a>                                            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Country'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="586" class="l"><a href="#586">586: </a>                                            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Country'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="587" class="l"><a href="#587">587: </a>                                            <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'text'</span>,
 </span><span id="588" class="l"><a href="#588">588: </a>                                            <span class="php-quote">'maxlength'</span> =&gt;  <span class="php-quote">'200'</span>,
 </span><span id="589" class="l"><a href="#589">589: </a>                                            <span class="php-quote">'value'</span>     =&gt;  <span class="php-var">$contact</span>-&gt;get_meta(<span class="php-quote">'contact_country'</span>)
@@ -1464,7 +1464,7 @@
 </span><span id="594" class="l"><a href="#594">594: </a>                                    <span class="php-quote">'label'</span>     =&gt;  <span class="php-quote">''</span>,
 </span><span id="595" class="l"><a href="#595">595: </a>                                    <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'col-1 epl-inner-div'</span>,
 </span><span id="596" class="l"><a href="#596">596: </a>                                    <span class="php-quote">'id'</span>        =&gt;  <span class="php-quote">'epl-contact-wpuser-details'</span>,
-</span><span id="597" class="l"><a href="#597">597: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Author'</span> , <span class="php-quote">'epl'</span>) . <span class="php-quote">'&lt;hr/&gt;'</span>,
+</span><span id="597" class="l"><a href="#597">597: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Author'</span> , <span class="php-quote">'easy-property-listings'</span> ) . <span class="php-quote">'&lt;hr/&gt;'</span>,
 </span><span id="598" class="l"><a href="#598">598: </a>                                    <span class="php-quote">'fields'</span>    =&gt;  apply_filters(<span class="php-quote">'epl_contact_wpuser_info_fields'</span>,
 </span><span id="599" class="l"><a href="#599">599: </a>                                        <span class="php-keyword1">array</span>(
 </span><span id="600" class="l"><a href="#600">600: </a>                                            <span class="php-keyword1">array</span>(
@@ -1487,7 +1487,7 @@
 </span><span id="617" class="l"><a href="#617">617: </a>                                    <span class="php-quote">'label'</span>     =&gt;  <span class="php-quote">''</span>,
 </span><span id="618" class="l"><a href="#618">618: </a>                                    <span class="php-quote">'class'</span>     =&gt;  <span class="php-quote">'col-1 epl-inner-div'</span>,
 </span><span id="619" class="l"><a href="#619">619: </a>                                    <span class="php-quote">'id'</span>        =&gt;  <span class="php-quote">'epl-contact-bginfo-details'</span>,
-</span><span id="620" class="l"><a href="#620">620: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Background Info'</span> , <span class="php-quote">'epl'</span>) . <span class="php-quote">'&lt;hr/&gt;'</span>,
+</span><span id="620" class="l"><a href="#620">620: </a>                                    <span class="php-quote">'help'</span>      =&gt;  __(<span class="php-quote">'Background Info'</span> , <span class="php-quote">'easy-property-listings'</span> ) . <span class="php-quote">'&lt;hr/&gt;'</span>,
 </span><span id="621" class="l"><a href="#621">621: </a>                                    <span class="php-quote">'fields'</span>    =&gt;  apply_filters(<span class="php-quote">'epl_contact_background_info_fields'</span>,
 </span><span id="622" class="l"><a href="#622">622: </a>                                        <span class="php-keyword1">array</span>(
 </span><span id="623" class="l"><a href="#623">623: </a>                                            <span class="php-keyword1">array</span>(
@@ -1507,7 +1507,7 @@
 </span><span id="637" class="l"><a href="#637">637: </a>                            &lt;input type=<span class="php-quote">&quot;hidden&quot;</span> name=<span class="php-quote">&quot;contact_id&quot;</span> value=<span class="php-quote">&quot;&lt;?php echo </span><span class="php-var">$contact</span><span class="php-quote">-&gt;ID; ?&gt;&quot;</span> /&gt;
 </span><span id="638" class="l"><a href="#638">638: </a>                            <span class="xlang">&lt;?php</span> wp_nonce_field( <span class="php-quote">'meta-contact'</span>, <span class="php-quote">'_wpnonce'</span>, <span class="php-keyword1">false</span>, <span class="php-keyword1">true</span> ); <span class="xlang">?&gt;</span>
 </span><span id="639" class="l"><a href="#639">639: </a>                            &lt;input type=<span class="php-quote">&quot;hidden&quot;</span> name=<span class="php-quote">&quot;epl_action&quot;</span> value=<span class="php-quote">&quot;meta-contact&quot;</span> /&gt;
-</span><span id="640" class="l"><a href="#640">640: </a>                            &lt;input type=<span class="php-quote">&quot;submit&quot;</span> id=<span class="php-quote">&quot;epl-meta-contact&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;button-primary&quot;</span> value=<span class="php-quote">&quot;&lt;?php _e( 'Update', 'epl' ); ?&gt;&quot;</span> /&gt;
+</span><span id="640" class="l"><a href="#640">640: </a>                            &lt;input type=<span class="php-quote">&quot;submit&quot;</span> id=<span class="php-quote">&quot;epl-meta-contact&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;button-primary&quot;</span> value=<span class="php-quote">&quot;&lt;?php _e( 'Update', 'easy-property-listings'  ); ?&gt;&quot;</span> /&gt;
 </span><span id="641" class="l"><a href="#641">641: </a>                        &lt;/span&gt;
 </span><span id="642" class="l"><a href="#642">642: </a>
 </span><span id="643" class="l"><a href="#643">643: </a>                    &lt;/div&gt;
@@ -1544,7 +1544,7 @@
 </span><span id="674" class="l"><a href="#674">674: </a>        &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-item-notes-header&quot;</span>&gt;
 </span><span id="675" class="l"><a href="#675">675: </a>            <span class="xlang">&lt;?php</span> <span class="php-keyword1">echo</span> get_avatar( <span class="php-var">$contact</span>-&gt;email, <span class="php-num">30</span> ); <span class="xlang">?&gt;</span> &lt;span&gt;<span class="xlang">&lt;?php</span> <span class="php-keyword1">echo</span> <span class="php-var">$contact</span>-&gt;name; <span class="xlang">?&gt;</span>&lt;/span&gt;
 </span><span id="676" class="l"><a href="#676">676: </a>        &lt;/div&gt;
-</span><span id="677" class="l"><a href="#677">677: </a>        &lt;h3&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Notes'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>&lt;/h3&gt;
+</span><span id="677" class="l"><a href="#677">677: </a>        &lt;h3&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Notes'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>&lt;/h3&gt;
 </span><span id="678" class="l"><a href="#678">678: </a>
 </span><span id="679" class="l"><a href="#679">679: </a>        <span class="xlang">&lt;?php</span> <span class="php-keyword1">if</span> ( <span class="php-num">1</span> == <span class="php-var">$paged</span> ) : <span class="xlang">?&gt;</span>
 </span><span id="680" class="l"><a href="#680">680: </a>        &lt;div style=<span class="php-quote">&quot;display: block; margin-bottom: 35px;&quot;</span>&gt;
@@ -1556,7 +1556,7 @@
 </span><span id="686" class="l"><a href="#686">686: </a>                &lt;br /&gt;
 </span><span id="687" class="l"><a href="#687">687: </a>                &lt;label <span class="php-keyword1">class</span> =<span class="php-quote">&quot;epl-contact-select-label&quot;</span> &gt;
 </span><span id="688" class="l"><a href="#688">688: </a>                    &lt;select <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-contact-note-select&quot;</span> id=<span class="php-quote">&quot;contact-note-listing&quot;</span>&gt;
-</span><span id="689" class="l"><a href="#689">689: </a>                        &lt;option value=<span class="php-quote">''</span>&gt;<span class="xlang">&lt;?php</span> _e(<span class="php-quote">'Note for Listing'</span>, <span class="php-quote">'epl'</span>); <span class="xlang">?&gt;</span>&lt;/option&gt;
+</span><span id="689" class="l"><a href="#689">689: </a>                        &lt;option value=<span class="php-quote">''</span>&gt;<span class="xlang">&lt;?php</span> _e(<span class="php-quote">'Note for Listing'</span>, <span class="php-quote">'easy-property-listings'</span> ); <span class="xlang">?&gt;</span>&lt;/option&gt;
 </span><span id="690" class="l"><a href="#690">690: </a>                        <span class="xlang">&lt;?php</span>
 </span><span id="691" class="l"><a href="#691">691: </a>                            <span class="php-keyword1">if</span>( !<span class="php-keyword1">empty</span>(<span class="php-var">$contact</span>-&gt;listing_ids) ) {
 </span><span id="692" class="l"><a href="#692">692: </a>                                <span class="php-keyword1">foreach</span>( <span class="php-var">$contact</span>-&gt;listing_ids <span class="php-keyword1">as</span> <span class="php-var">$listing_id</span> ) {
@@ -1615,7 +1615,7 @@
 </span><span id="745" class="l"><a href="#745">745: </a>            <span class="xlang">&lt;?php</span> <span class="php-keyword1">endforeach</span>; <span class="xlang">?&gt;</span>
 </span><span id="746" class="l"><a href="#746">746: </a>        <span class="xlang">&lt;?php</span> <span class="php-keyword1">else</span>: <span class="xlang">?&gt;</span>
 </span><span id="747" class="l"><a href="#747">747: </a>            &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-no-contact-notes&quot;</span>&gt;
-</span><span id="748" class="l"><a href="#748">748: </a>                <span class="xlang">&lt;?php</span> _e( <span class="php-quote">'No Contact Notes'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>
+</span><span id="748" class="l"><a href="#748">748: </a>                <span class="xlang">&lt;?php</span> _e( <span class="php-quote">'No Contact Notes'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>
 </span><span id="749" class="l"><a href="#749">749: </a>            &lt;/div&gt;
 </span><span id="750" class="l"><a href="#750">750: </a>        <span class="xlang">&lt;?php</span> <span class="php-keyword1">endif</span>; <span class="xlang">?&gt;</span>
 </span><span id="751" class="l"><a href="#751">751: </a>        &lt;/div&gt;
@@ -1655,7 +1655,7 @@
 </span><span id="785" class="l"><a href="#785">785: </a>                &lt;span <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-delete-contact-options&quot;</span>&gt;
 </span><span id="786" class="l"><a href="#786">786: </a>                    &lt;p&gt;
 </span><span id="787" class="l"><a href="#787">787: </a>                        &lt;input type=<span class="php-quote">&quot;checkbox&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-checkbox epl-contact-delete-confirm&quot;</span> id=<span class="php-quote">&quot;epl-contact-delete-confirm&quot;</span> name=<span class="php-quote">&quot;epl-contact-delete-confirm&quot;</span>&gt;
-</span><span id="788" class="l"><a href="#788">788: </a>                        &lt;label <span class="php-keyword1">for</span>=<span class="php-quote">&quot;epl-contact-delete-confirm&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Are you sure you want to delete this contact?'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>&lt;/label&gt;
+</span><span id="788" class="l"><a href="#788">788: </a>                        &lt;label <span class="php-keyword1">for</span>=<span class="php-quote">&quot;epl-contact-delete-confirm&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Are you sure you want to delete this contact?'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>&lt;/label&gt;
 </span><span id="789" class="l"><a href="#789">789: </a>                    &lt;/p&gt;
 </span><span id="790" class="l"><a href="#790">790: </a>
 </span><span id="791" class="l"><a href="#791">791: </a>                    <span class="xlang">&lt;?php</span> do_action( <span class="php-quote">'epl_contact_delete_inputs'</span>, <span class="php-var">$contact</span> ); <span class="xlang">?&gt;</span>
@@ -1665,8 +1665,8 @@
 </span><span id="795" class="l"><a href="#795">795: </a>                    &lt;input type=<span class="php-quote">&quot;hidden&quot;</span> name=<span class="php-quote">&quot;contact_id&quot;</span> value=<span class="php-quote">&quot;&lt;?php echo </span><span class="php-var">$contact</span><span class="php-quote">-&gt;id; ?&gt;&quot;</span> /&gt;
 </span><span id="796" class="l"><a href="#796">796: </a>                    <span class="xlang">&lt;?php</span> wp_nonce_field( <span class="php-quote">'delete-contact'</span>, <span class="php-quote">'_wpnonce'</span>, <span class="php-keyword1">false</span>, <span class="php-keyword1">true</span> ); <span class="xlang">?&gt;</span>
 </span><span id="797" class="l"><a href="#797">797: </a>                    &lt;input type=<span class="php-quote">&quot;hidden&quot;</span> name=<span class="php-quote">&quot;epl_action&quot;</span> value=<span class="php-quote">&quot;delete-contact&quot;</span> /&gt;
-</span><span id="798" class="l"><a href="#798">798: </a>                    &lt;input type=<span class="php-quote">&quot;submit&quot;</span> disabled=<span class="php-quote">&quot;disabled&quot;</span> id=<span class="php-quote">&quot;epl-delete-contact&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;button-primary&quot;</span> value=<span class="php-quote">&quot;&lt;?php _e( 'Delete Contact', 'epl' ); ?&gt;&quot;</span> /&gt;
-</span><span id="799" class="l"><a href="#799">799: </a>                    &lt;a id=<span class="php-quote">&quot;epl-delete-contact-cancel&quot;</span> href=<span class="php-quote">&quot;&lt;?php echo admin_url( 'admin.php?page=epl-contacts&amp;view=overview&amp;id=' . </span><span class="php-var">$contact</span><span class="php-quote">-&gt;id ); ?&gt;&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;delete&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Cancel'</span>, <span class="php-quote">'epl'</span> ); <span class="xlang">?&gt;</span>&lt;/a&gt;
+</span><span id="798" class="l"><a href="#798">798: </a>                    &lt;input type=<span class="php-quote">&quot;submit&quot;</span> disabled=<span class="php-quote">&quot;disabled&quot;</span> id=<span class="php-quote">&quot;epl-delete-contact&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;button-primary&quot;</span> value=<span class="php-quote">&quot;&lt;?php _e( 'Delete Contact', 'easy-property-listings'  ); ?&gt;&quot;</span> /&gt;
+</span><span id="799" class="l"><a href="#799">799: </a>                    &lt;a id=<span class="php-quote">&quot;epl-delete-contact-cancel&quot;</span> href=<span class="php-quote">&quot;&lt;?php echo admin_url( 'admin.php?page=epl-contacts&amp;view=overview&amp;id=' . </span><span class="php-var">$contact</span><span class="php-quote">-&gt;id ); ?&gt;&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;delete&quot;</span>&gt;<span class="xlang">&lt;?php</span> _e( <span class="php-quote">'Cancel'</span>, <span class="php-quote">'easy-property-listings'</span>  ); <span class="xlang">?&gt;</span>&lt;/a&gt;
 </span><span id="800" class="l"><a href="#800">800: </a>                &lt;/span&gt;
 </span><span id="801" class="l"><a href="#801">801: </a>
 </span><span id="802" class="l"><a href="#802">802: </a>            &lt;/div&gt;
@@ -1744,7 +1744,7 @@
 </span><span id="874" class="l"><a href="#874">874: </a>    <span class="php-keyword1">global</span> <span class="php-var">$epl_contacts_table</span>;
 </span><span id="875" class="l"><a href="#875">875: </a>    <span class="php-var">$option</span> = <span class="php-quote">'per_page'</span>;
 </span><span id="876" class="l"><a href="#876">876: </a>    <span class="php-var">$args</span> = <span class="php-keyword1">array</span>(
-</span><span id="877" class="l"><a href="#877">877: </a>        <span class="php-quote">'label'</span>     =&gt; __(<span class="php-quote">'Contacts'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="877" class="l"><a href="#877">877: </a>        <span class="php-quote">'label'</span>     =&gt; __(<span class="php-quote">'Contacts'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="878" class="l"><a href="#878">878: </a>        <span class="php-quote">'default'</span>   =&gt; <span class="php-num">10</span>,
 </span><span id="879" class="l"><a href="#879">879: </a>        <span class="php-quote">'option'</span>    =&gt; <span class="php-quote">'contacts_per_page'</span>
 </span><span id="880" class="l"><a href="#880">880: </a>    );

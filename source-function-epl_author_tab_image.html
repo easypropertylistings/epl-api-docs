@@ -1230,7 +1230,7 @@
 </span></span><span id="360" class="l"><a href="#360"> 360: </a><span class="php-comment"> *
 </span></span><span id="361" class="l"><a href="#361"> 361: </a><span class="php-comment"> * @since 1.0
 </span></span><span id="362" class="l"><a href="#362"> 362: </a><span class="php-comment"> */</span>
-</span><span id="363" class="l"><a href="#363"> 363: </a><span class="php-keyword1">function</span> epl_property_widget( <span class="php-var">$display</span> , <span class="php-var">$image</span> , <span class="php-var">$title</span> , <span class="php-var">$icons</span> , <span class="php-var">$more_text</span> = <span class="php-quote">&quot;__('Read More','epl')&quot;</span> , <span class="php-var">$d_excerpt</span> , <span class="php-var">$d_suburb</span> , <span class="php-var">$d_street</span> , <span class="php-var">$d_price</span> , <span class="php-var">$d_more</span>  ) {
+</span><span id="363" class="l"><a href="#363"> 363: </a><span class="php-keyword1">function</span> epl_property_widget( <span class="php-var">$display</span> , <span class="php-var">$image</span> , <span class="php-var">$title</span> , <span class="php-var">$icons</span> , <span class="php-var">$more_text</span> = <span class="php-quote">&quot;__('Read More','easy-property-listings' )&quot;</span> , <span class="php-var">$d_excerpt</span> , <span class="php-var">$d_suburb</span> , <span class="php-var">$d_street</span> , <span class="php-var">$d_price</span> , <span class="php-var">$d_more</span>  ) {
 </span><span id="364" class="l"><a href="#364"> 364: </a>    <span class="php-keyword1">global</span> <span class="php-var">$property</span>;
 </span><span id="365" class="l"><a href="#365"> 365: </a>    <span class="php-var">$property_status</span> = <span class="php-var">$property</span>-&gt;get_property_meta(<span class="php-quote">'property_status'</span>);
 </span><span id="366" class="l"><a href="#366"> 366: </a>
@@ -1488,7 +1488,7 @@
 </span><span id="618" class="l"><a href="#618"> 618: </a>    <span class="php-keyword1">global</span> <span class="php-var">$property</span>;
 </span><span id="619" class="l"><a href="#619"> 619: </a>    <span class="php-keyword1">if</span> ( <span class="php-var">$property</span>-&gt;post_type == <span class="php-quote">'commercial'</span> ) {
 </span><span id="620" class="l"><a href="#620"> 620: </a>        <span class="php-keyword1">if</span> ( <span class="php-var">$property</span>-&gt;get_property_meta(<span class="php-quote">'property_com_plus_outgoings'</span>) == <span class="php-num">1</span>) {
-</span><span id="621" class="l"><a href="#621"> 621: </a>            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;div class=&quot;price-type&quot;&gt;'</span>. apply_filters( <span class="php-quote">'epl_property_sub_title_plus_outgoings_label'</span> , __(<span class="php-quote">'Plus Outgoings'</span>, <span class="php-quote">'epl'</span>) ) . <span class="php-quote">'&lt;/div&gt;'</span>;
+</span><span id="621" class="l"><a href="#621"> 621: </a>            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;div class=&quot;price-type&quot;&gt;'</span>. apply_filters( <span class="php-quote">'epl_property_sub_title_plus_outgoings_label'</span> , __(<span class="php-quote">'Plus Outgoings'</span>, <span class="php-quote">'easy-property-listings'</span> ) ) . <span class="php-quote">'&lt;/div&gt;'</span>;
 </span><span id="622" class="l"><a href="#622"> 622: </a>        }
 </span><span id="623" class="l"><a href="#623"> 623: </a>        <span class="php-keyword1">echo</span> <span class="php-var">$property</span>-&gt;get_property_commercial_category();
 </span><span id="624" class="l"><a href="#624"> 624: </a>    }
@@ -1505,7 +1505,7 @@
 </span><span id="635" class="l"><a href="#635"> 635: </a>    <span class="php-keyword1">global</span> <span class="php-var">$property</span>;
 </span><span id="636" class="l"><a href="#636"> 636: </a>    <span class="php-keyword1">if</span>( <span class="php-quote">'rental'</span> == <span class="php-var">$property</span>-&gt;post_type &amp;&amp; <span class="php-var">$property</span>-&gt;get_property_meta(<span class="php-quote">'property_date_available'</span>) != <span class="php-quote">''</span> &amp;&amp; <span class="php-var">$property</span>-&gt;get_property_meta(<span class="php-quote">'property_status'</span>) != <span class="php-quote">'leased'</span> ) {
 </span><span id="637" class="l"><a href="#637"> 637: </a>        <span class="php-comment">// Rental Specifics</span>
-</span><span id="638" class="l"><a href="#638"> 638: </a>        <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;div class=&quot;property-meta date-available&quot;&gt;'</span>. apply_filters( <span class="php-quote">'epl_property_sub_title_available_from_label'</span> , __(<span class="php-quote">'Available from'</span>, <span class="php-quote">'epl'</span>) ) .<span class="php-quote">' '</span>, <span class="php-var">$property</span>-&gt;get_property_available() , <span class="php-quote">'&lt;/div&gt;'</span>;
+</span><span id="638" class="l"><a href="#638"> 638: </a>        <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;div class=&quot;property-meta date-available&quot;&gt;'</span>. apply_filters( <span class="php-quote">'epl_property_sub_title_available_from_label'</span> , __(<span class="php-quote">'Available from'</span>, <span class="php-quote">'easy-property-listings'</span> ) ) .<span class="php-quote">' '</span>, <span class="php-var">$property</span>-&gt;get_property_available() , <span class="php-quote">'&lt;/div&gt;'</span>;
 </span><span id="639" class="l"><a href="#639"> 639: </a>    }
 </span><span id="640" class="l"><a href="#640"> 640: </a>}
 </span><span id="641" class="l"><a href="#641"> 641: </a>add_action(<span class="php-quote">'epl_property_available_dates'</span>,<span class="php-quote">'epl_property_available_dates'</span>);
@@ -1707,7 +1707,7 @@
 </span><span id="837" class="l"><a href="#837"> 837: </a>    }
 </span><span id="838" class="l"><a href="#838"> 838: </a>
 </span><span id="839" class="l"><a href="#839"> 839: </a>    <span class="php-keyword1">if</span> ( <span class="php-var">$property</span>-&gt;post_type != <span class="php-quote">'land'</span> || <span class="php-var">$property</span>-&gt;post_type != <span class="php-quote">'business'</span>) { <span class="xlang">?&gt;</span>
-</span><span id="840" class="l"><a href="#840"> 840: </a>        &lt;h5 <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-tab-title epl-tab-title-property-features tab-title&quot;</span>&gt;<span class="xlang">&lt;?php</span> apply_filters( <span class="php-quote">'epl_property_sub_title_property_features'</span> , _e(<span class="php-quote">'Property Features'</span>, <span class="php-quote">'epl'</span>) ); <span class="xlang">?&gt;</span>&lt;/h5&gt;
+</span><span id="840" class="l"><a href="#840"> 840: </a>        &lt;h5 <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-tab-title epl-tab-title-property-features tab-title&quot;</span>&gt;<span class="xlang">&lt;?php</span> apply_filters( <span class="php-quote">'epl_property_sub_title_property_features'</span> , _e(<span class="php-quote">'Property Features'</span>, <span class="php-quote">'easy-property-listings'</span> ) ); <span class="xlang">?&gt;</span>&lt;/h5&gt;
 </span><span id="841" class="l"><a href="#841"> 841: </a>            &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-tab-content tab-content&quot;</span>&gt;
 </span><span id="842" class="l"><a href="#842"> 842: </a>                &lt;ul <span class="php-keyword1">class</span>=<span class="php-quote">&quot;listing-info epl-tab-&lt;?php echo </span><span class="php-var">$property</span><span class="php-quote">-&gt;get_epl_settings('display_feature_columns'); ?&gt;-columns&quot;</span>&gt;
 </span><span id="843" class="l"><a href="#843"> 843: </a>                    <span class="xlang">&lt;?php</span> <span class="php-keyword1">echo</span> <span class="php-var">$the_property_feature_list</span>.<span class="php-quote">' '</span>.<span class="php-var">$property</span>-&gt;get_features_from_taxonomy(); <span class="xlang">?&gt;</span>
@@ -1725,7 +1725,7 @@
 </span><span id="855" class="l"><a href="#855"> 855: </a>            <span class="php-comment">//Commercial Options</span>
 </span><span id="856" class="l"><a href="#856"> 856: </a>            <span class="php-keyword1">if</span> ( <span class="php-var">$property</span>-&gt;post_type == <span class="php-quote">'commercial'</span> ) {
 </span><span id="857" class="l"><a href="#857"> 857: </a>                <span class="php-keyword1">if</span> ( <span class="php-var">$property</span>-&gt;get_property_meta(<span class="php-quote">'property_com_plus_outgoings'</span>) == <span class="php-num">1</span>) {
-</span><span id="858" class="l"><a href="#858"> 858: </a>                    <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;div class=&quot;epl-commercial-outgoings price-type&quot;&gt;'</span> . apply_filters( <span class="php-quote">'epl_property_sub_title_plus_outgoings'</span> ,__(<span class="php-quote">'Plus Outgoings'</span>, <span class="php-quote">'epl'</span>) ) .<span class="php-quote">'&lt;/div&gt;'</span>;
+</span><span id="858" class="l"><a href="#858"> 858: </a>                    <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;div class=&quot;epl-commercial-outgoings price-type&quot;&gt;'</span> . apply_filters( <span class="php-quote">'epl_property_sub_title_plus_outgoings'</span> ,__(<span class="php-quote">'Plus Outgoings'</span>, <span class="php-quote">'easy-property-listings'</span> ) ) .<span class="php-quote">'&lt;/div&gt;'</span>;
 </span><span id="859" class="l"><a href="#859"> 859: </a>                }
 </span><span id="860" class="l"><a href="#860"> 860: </a>                <span class="php-comment">// echo $property-&gt;get_property_commercial_category();</span>
 </span><span id="861" class="l"><a href="#861"> 861: </a>            }
@@ -1760,7 +1760,7 @@
 </span><span id="890" class="l"><a href="#890"> 890: </a>
 </span><span id="891" class="l"><a href="#891"> 891: </a>    <span class="xlang">?&gt;</span>
 </span><span id="892" class="l"><a href="#892"> 892: </a>        &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-tab-section epl-tab-section-commercial-features&quot;</span>&gt;
-</span><span id="893" class="l"><a href="#893"> 893: </a>            &lt;h5 <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-tab-title epl-tab-title-commercial-features tab-title&quot;</span>&gt;<span class="xlang">&lt;?php</span> apply_filters( <span class="php-quote">'epl_property_sub_title_commercial_features'</span> , _e(<span class="php-quote">'Commercial Features'</span>, <span class="php-quote">'epl'</span>) ); <span class="xlang">?&gt;</span>&lt;/h5&gt;
+</span><span id="893" class="l"><a href="#893"> 893: </a>            &lt;h5 <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-tab-title epl-tab-title-commercial-features tab-title&quot;</span>&gt;<span class="xlang">&lt;?php</span> apply_filters( <span class="php-quote">'epl_property_sub_title_commercial_features'</span> , _e(<span class="php-quote">'Commercial Features'</span>, <span class="php-quote">'easy-property-listings'</span> ) ); <span class="xlang">?&gt;</span>&lt;/h5&gt;
 </span><span id="894" class="l"><a href="#894"> 894: </a>            &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-tab-content tab-content&quot;</span>&gt;
 </span><span id="895" class="l"><a href="#895"> 895: </a>                &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-commercial-features listing-info&quot;</span>&gt;
 </span><span id="896" class="l"><a href="#896"> 896: </a>                    <span class="xlang">&lt;?php</span> <span class="php-keyword1">echo</span> <span class="php-var">$the_property_commercial_feature_list</span>; <span class="xlang">?&gt;</span>
@@ -1786,7 +1786,7 @@
 </span><span id="916" class="l"><a href="#916"> 916: </a>
 </span><span id="917" class="l"><a href="#917"> 917: </a>    <span class="xlang">?&gt;</span>
 </span><span id="918" class="l"><a href="#918"> 918: </a>        &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-tab-section epl-tab-section-rural-features&quot;</span>&gt;
-</span><span id="919" class="l"><a href="#919"> 919: </a>            &lt;h5 <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-tab-title epl-tab-title-rural-features tab-title&quot;</span>&gt;<span class="xlang">&lt;?php</span> apply_filters( <span class="php-quote">'epl_property_sub_title_rural_features'</span> , _e(<span class="php-quote">'Rural Features'</span>, <span class="php-quote">'epl'</span>) ); <span class="xlang">?&gt;</span>&lt;/h5&gt;
+</span><span id="919" class="l"><a href="#919"> 919: </a>            &lt;h5 <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-tab-title epl-tab-title-rural-features tab-title&quot;</span>&gt;<span class="xlang">&lt;?php</span> apply_filters( <span class="php-quote">'epl_property_sub_title_rural_features'</span> , _e(<span class="php-quote">'Rural Features'</span>, <span class="php-quote">'easy-property-listings'</span> ) ); <span class="xlang">?&gt;</span>&lt;/h5&gt;
 </span><span id="920" class="l"><a href="#920"> 920: </a>            &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-tab-content tab-content&quot;</span>&gt;
 </span><span id="921" class="l"><a href="#921"> 921: </a>                &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-rural-features listing-info&quot;</span>&gt;
 </span><span id="922" class="l"><a href="#922"> 922: </a>                    <span class="xlang">&lt;?php</span> <span class="php-keyword1">echo</span> <span class="php-var">$the_property_rural_feature_list</span>; <span class="xlang">?&gt;</span>
@@ -1869,7 +1869,7 @@
 </span><span id="999" class="l"><a href="#999"> 999: </a>    <span class="php-keyword1">return</span> apply_filters(<span class="php-quote">'epl_sorting_options'</span>,<span class="php-keyword1">array</span>(
 </span><span id="1000" class="l"><a href="#1000">1000: </a>        <span class="php-keyword1">array</span>(
 </span><span id="1001" class="l"><a href="#1001">1001: </a>            <span class="php-quote">'id'</span>        =&gt;  <span class="php-quote">'high'</span>,
-</span><span id="1002" class="l"><a href="#1002">1002: </a>            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Price: High to Low'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1002" class="l"><a href="#1002">1002: </a>            <span class="php-quote">'label'</span>     =&gt;  __(<span class="php-quote">'Price: High to Low'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1003" class="l"><a href="#1003">1003: </a>            <span class="php-quote">'type'</span>      =&gt;  <span class="php-quote">'meta'</span>,
 </span><span id="1004" class="l"><a href="#1004">1004: </a>            <span class="php-quote">'key'</span>       =&gt;  is_post_type_archive( <span class="php-keyword1">array</span>(<span class="php-quote">'rental'</span>) ) ? <span class="php-quote">'property_rent'</span>:<span class="php-quote">'property_price'</span>,
 </span><span id="1005" class="l"><a href="#1005">1005: </a>            <span class="php-quote">'order'</span>     =&gt;  <span class="php-quote">'DESC'</span>,
@@ -1877,7 +1877,7 @@
 </span><span id="1007" class="l"><a href="#1007">1007: </a>        ),
 </span><span id="1008" class="l"><a href="#1008">1008: </a>        <span class="php-keyword1">array</span>(
 </span><span id="1009" class="l"><a href="#1009">1009: </a>            <span class="php-quote">'id'</span>    =&gt;  <span class="php-quote">'low'</span>,
-</span><span id="1010" class="l"><a href="#1010">1010: </a>            <span class="php-quote">'label'</span> =&gt;  __(<span class="php-quote">'Price: Low to High'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1010" class="l"><a href="#1010">1010: </a>            <span class="php-quote">'label'</span> =&gt;  __(<span class="php-quote">'Price: Low to High'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1011" class="l"><a href="#1011">1011: </a>            <span class="php-quote">'type'</span>  =&gt;  <span class="php-quote">'meta'</span>,
 </span><span id="1012" class="l"><a href="#1012">1012: </a>            <span class="php-quote">'key'</span>   =&gt;  is_post_type_archive( <span class="php-keyword1">array</span>(<span class="php-quote">'rental'</span>) ) ? <span class="php-quote">'property_rent'</span>:<span class="php-quote">'property_price'</span>,
 </span><span id="1013" class="l"><a href="#1013">1013: </a>            <span class="php-quote">'order'</span> =&gt;  <span class="php-quote">'ASC'</span>,
@@ -1886,7 +1886,7 @@
 </span><span id="1016" class="l"><a href="#1016">1016: </a>        ),
 </span><span id="1017" class="l"><a href="#1017">1017: </a>        <span class="php-keyword1">array</span>(
 </span><span id="1018" class="l"><a href="#1018">1018: </a>            <span class="php-quote">'id'</span>    =&gt;  <span class="php-quote">'new'</span>,
-</span><span id="1019" class="l"><a href="#1019">1019: </a>            <span class="php-quote">'label'</span> =&gt;  __(<span class="php-quote">'Date: Newest First'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1019" class="l"><a href="#1019">1019: </a>            <span class="php-quote">'label'</span> =&gt;  __(<span class="php-quote">'Date: Newest First'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1020" class="l"><a href="#1020">1020: </a>            <span class="php-quote">'type'</span>  =&gt;  <span class="php-quote">'post'</span>,
 </span><span id="1021" class="l"><a href="#1021">1021: </a>            <span class="php-quote">'key'</span>   =&gt;  <span class="php-quote">'post_date'</span>,
 </span><span id="1022" class="l"><a href="#1022">1022: </a>            <span class="php-quote">'order'</span> =&gt;  <span class="php-quote">'DESC'</span>
@@ -1895,14 +1895,14 @@
 </span><span id="1025" class="l"><a href="#1025">1025: </a>        ),
 </span><span id="1026" class="l"><a href="#1026">1026: </a>        <span class="php-keyword1">array</span>(
 </span><span id="1027" class="l"><a href="#1027">1027: </a>            <span class="php-quote">'id'</span>    =&gt;  <span class="php-quote">'old'</span>,
-</span><span id="1028" class="l"><a href="#1028">1028: </a>            <span class="php-quote">'label'</span> =&gt;  __(<span class="php-quote">'Date: Oldest First'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1028" class="l"><a href="#1028">1028: </a>            <span class="php-quote">'label'</span> =&gt;  __(<span class="php-quote">'Date: Oldest First'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1029" class="l"><a href="#1029">1029: </a>            <span class="php-quote">'type'</span>  =&gt;  <span class="php-quote">'post'</span>,
 </span><span id="1030" class="l"><a href="#1030">1030: </a>            <span class="php-quote">'key'</span>   =&gt;  <span class="php-quote">'post_date'</span>,
 </span><span id="1031" class="l"><a href="#1031">1031: </a>            <span class="php-quote">'order'</span> =&gt;  <span class="php-quote">'ASC'</span>
 </span><span id="1032" class="l"><a href="#1032">1032: </a>        ),
 </span><span id="1033" class="l"><a href="#1033">1033: </a>        <span class="php-keyword1">array</span>(
 </span><span id="1034" class="l"><a href="#1034">1034: </a>            <span class="php-quote">'id'</span>    =&gt;  <span class="php-quote">'status_asc'</span>,
-</span><span id="1035" class="l"><a href="#1035">1035: </a>            <span class="php-quote">'label'</span> =&gt;  __(<span class="php-quote">'Status : Current First'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1035" class="l"><a href="#1035">1035: </a>            <span class="php-quote">'label'</span> =&gt;  __(<span class="php-quote">'Status : Current First'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1036" class="l"><a href="#1036">1036: </a>            <span class="php-quote">'type'</span>  =&gt;  <span class="php-quote">'meta'</span>,
 </span><span id="1037" class="l"><a href="#1037">1037: </a>            <span class="php-quote">'key'</span>   =&gt;  <span class="php-quote">'property_status'</span>,
 </span><span id="1038" class="l"><a href="#1038">1038: </a>            <span class="php-quote">'order'</span> =&gt;  <span class="php-quote">'ASC'</span>,
@@ -1911,7 +1911,7 @@
 </span><span id="1041" class="l"><a href="#1041">1041: </a>        ),
 </span><span id="1042" class="l"><a href="#1042">1042: </a>        <span class="php-keyword1">array</span>(
 </span><span id="1043" class="l"><a href="#1043">1043: </a>            <span class="php-quote">'id'</span>    =&gt;  <span class="php-quote">'status_desc'</span>,
-</span><span id="1044" class="l"><a href="#1044">1044: </a>            <span class="php-quote">'label'</span> =&gt;  __(<span class="php-quote">'Status : Sold/Leased First'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1044" class="l"><a href="#1044">1044: </a>            <span class="php-quote">'label'</span> =&gt;  __(<span class="php-quote">'Status : Sold/Leased First'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1045" class="l"><a href="#1045">1045: </a>            <span class="php-quote">'type'</span>  =&gt;  <span class="php-quote">'meta'</span>,
 </span><span id="1046" class="l"><a href="#1046">1046: </a>            <span class="php-quote">'key'</span>   =&gt;  <span class="php-quote">'property_status'</span>,
 </span><span id="1047" class="l"><a href="#1047">1047: </a>            <span class="php-quote">'order'</span> =&gt;  <span class="php-quote">'DESC'</span>,
@@ -1920,7 +1920,7 @@
 </span><span id="1050" class="l"><a href="#1050">1050: </a>        ),
 </span><span id="1051" class="l"><a href="#1051">1051: </a>        <span class="php-keyword1">array</span>(
 </span><span id="1052" class="l"><a href="#1052">1052: </a>            <span class="php-quote">'id'</span>    =&gt;  <span class="php-quote">'location_asc'</span>,
-</span><span id="1053" class="l"><a href="#1053">1053: </a>            <span class="php-quote">'label'</span> =&gt;  epl_labels(<span class="php-quote">'label_suburb'</span>). __(<span class="php-quote">' A-Z'</span>),
+</span><span id="1053" class="l"><a href="#1053">1053: </a>            <span class="php-quote">'label'</span> =&gt;  epl_labels(<span class="php-quote">'label_suburb'</span>). __(<span class="php-quote">' A-Z'</span> , <span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1054" class="l"><a href="#1054">1054: </a>            <span class="php-quote">'type'</span>  =&gt;  <span class="php-quote">'meta'</span>,
 </span><span id="1055" class="l"><a href="#1055">1055: </a>            <span class="php-quote">'key'</span>   =&gt;  <span class="php-quote">'property_address_suburb'</span>,
 </span><span id="1056" class="l"><a href="#1056">1056: </a>            <span class="php-quote">'order'</span> =&gt;  <span class="php-quote">'ASC'</span>,
@@ -1929,7 +1929,7 @@
 </span><span id="1059" class="l"><a href="#1059">1059: </a>        ),
 </span><span id="1060" class="l"><a href="#1060">1060: </a>        <span class="php-keyword1">array</span>(
 </span><span id="1061" class="l"><a href="#1061">1061: </a>            <span class="php-quote">'id'</span>    =&gt;  <span class="php-quote">'location_desc'</span>,
-</span><span id="1062" class="l"><a href="#1062">1062: </a>            <span class="php-quote">'label'</span> =&gt;  epl_labels(<span class="php-quote">'label_suburb'</span>). __(<span class="php-quote">' Z-A'</span>),
+</span><span id="1062" class="l"><a href="#1062">1062: </a>            <span class="php-quote">'label'</span> =&gt;  epl_labels(<span class="php-quote">'label_suburb'</span>). __(<span class="php-quote">' Z-A'</span> , <span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1063" class="l"><a href="#1063">1063: </a>            <span class="php-quote">'type'</span>  =&gt;  <span class="php-quote">'meta'</span>,
 </span><span id="1064" class="l"><a href="#1064">1064: </a>            <span class="php-quote">'key'</span>   =&gt;  <span class="php-quote">'property_address_suburb'</span>,
 </span><span id="1065" class="l"><a href="#1065">1065: </a>            <span class="php-quote">'order'</span> =&gt;  <span class="php-quote">'DESC'</span>,
@@ -1956,7 +1956,7 @@
 </span><span id="1086" class="l"><a href="#1086">1086: </a>        <span class="xlang">&lt;?php</span> do_action(<span class="php-quote">'epl_add_custom_menus'</span>); <span class="xlang">?&gt;</span>
 </span><span id="1087" class="l"><a href="#1087">1087: </a>        &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-properties-sorting epl-clearfix&quot;</span>&gt;
 </span><span id="1088" class="l"><a href="#1088">1088: </a>            &lt;select id=<span class="php-quote">&quot;epl-sort-listings&quot;</span>&gt;
-</span><span id="1089" class="l"><a href="#1089">1089: </a>                &lt;option <span class="xlang">&lt;?php</span> selected( <span class="php-var">$sortby</span>, <span class="php-quote">''</span> ); <span class="xlang">?&gt;</span> value=<span class="php-quote">&quot;&quot;</span>&gt;<span class="xlang">&lt;?php</span> apply_filters( <span class="php-quote">'epl_switch_views_sorting_title_sort'</span> , _e(<span class="php-quote">'Sort'</span>,<span class="php-quote">'epl'</span>) ); <span class="xlang">?&gt;</span>&lt;/option&gt;
+</span><span id="1089" class="l"><a href="#1089">1089: </a>                &lt;option <span class="xlang">&lt;?php</span> selected( <span class="php-var">$sortby</span>, <span class="php-quote">''</span> ); <span class="xlang">?&gt;</span> value=<span class="php-quote">&quot;&quot;</span>&gt;<span class="xlang">&lt;?php</span> apply_filters( <span class="php-quote">'epl_switch_views_sorting_title_sort'</span> , _e(<span class="php-quote">'Sort'</span>,<span class="php-quote">'easy-property-listings'</span> ) ); <span class="xlang">?&gt;</span>&lt;/option&gt;
 </span><span id="1090" class="l"><a href="#1090">1090: </a>                <span class="xlang">&lt;?php</span>
 </span><span id="1091" class="l"><a href="#1091">1091: </a>                    <span class="php-keyword1">foreach</span>(<span class="php-var">$sorters</span> <span class="php-keyword1">as</span> <span class="php-var">$sorter</span>) { <span class="xlang">?&gt;</span>
 </span><span id="1092" class="l"><a href="#1092">1092: </a>                        &lt;option <span class="xlang">&lt;?php</span> selected( <span class="php-var">$sortby</span>, <span class="php-var">$sorter</span>[<span class="php-quote">'id'</span>] ); <span class="xlang">?&gt;</span> value=<span class="php-quote">&quot;&lt;?php echo </span><span class="php-var">$sorter</span><span class="php-quote">['id']; ?&gt;&quot;</span>&gt;
@@ -2020,10 +2020,10 @@
 </span><span id="1150" class="l"><a href="#1150">1150: </a><span class="php-keyword1">function</span> epl_author_tabs () {
 </span><span id="1151" class="l"><a href="#1151">1151: </a>    <span class="php-keyword1">global</span> <span class="php-var">$epl_author</span>;
 </span><span id="1152" class="l"><a href="#1152">1152: </a>    <span class="php-var">$author_tabs</span>    =   <span class="php-keyword1">array</span>(
-</span><span id="1153" class="l"><a href="#1153">1153: </a>        <span class="php-quote">'author_id'</span>     =&gt;  __(<span class="php-quote">'About'</span>,<span class="php-quote">'epl'</span>),
-</span><span id="1154" class="l"><a href="#1154">1154: </a>        <span class="php-quote">'description'</span>       =&gt;  __(<span class="php-quote">'Bio'</span>,<span class="php-quote">'epl'</span>),
-</span><span id="1155" class="l"><a href="#1155">1155: </a>        <span class="php-quote">'video'</span>         =&gt;  __(<span class="php-quote">'Video'</span>,<span class="php-quote">'epl'</span>),
-</span><span id="1156" class="l"><a href="#1156">1156: </a>        <span class="php-quote">'contact_form'</span>      =&gt;  __(<span class="php-quote">'Contact'</span>,<span class="php-quote">'epl'</span>),
+</span><span id="1153" class="l"><a href="#1153">1153: </a>        <span class="php-quote">'author_id'</span>     =&gt;  __(<span class="php-quote">'About'</span>,<span class="php-quote">'easy-property-listings'</span> ),
+</span><span id="1154" class="l"><a href="#1154">1154: </a>        <span class="php-quote">'description'</span>       =&gt;  __(<span class="php-quote">'Bio'</span>,<span class="php-quote">'easy-property-listings'</span> ),
+</span><span id="1155" class="l"><a href="#1155">1155: </a>        <span class="php-quote">'video'</span>         =&gt;  __(<span class="php-quote">'Video'</span>,<span class="php-quote">'easy-property-listings'</span> ),
+</span><span id="1156" class="l"><a href="#1156">1156: </a>        <span class="php-quote">'contact_form'</span>      =&gt;  __(<span class="php-quote">'Contact'</span>,<span class="php-quote">'easy-property-listings'</span> ),
 </span><span id="1157" class="l"><a href="#1157">1157: </a>    );
 </span><span id="1158" class="l"><a href="#1158">1158: </a>
 </span><span id="1159" class="l"><a href="#1159">1159: </a>    <span class="php-keyword1">return</span> <span class="php-var">$author_tabs</span> = apply_filters(<span class="php-quote">'epl_author_tabs'</span>,<span class="php-var">$author_tabs</span>);
@@ -2218,9 +2218,9 @@
 </span><span id="1348" class="l"><a href="#1348">1348: </a><span class="php-keyword1">function</span> epl_switch_views () { <span class="xlang">?&gt;</span>
 </span><span id="1349" class="l"><a href="#1349">1349: </a>    &lt;div <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-switch-view epl-clearfix&quot;</span>&gt;
 </span><span id="1350" class="l"><a href="#1350">1350: </a>        &lt;ul&gt;
-</span><span id="1351" class="l"><a href="#1351">1351: </a>            &lt;li title=<span class="php-quote">&quot;&lt;?php apply_filters( 'epl_switch_views_sorting_title_list' , _e('List','epl') ); ?&gt;&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-current-view view-list&quot;</span> data-view=<span class="php-quote">&quot;list&quot;</span>&gt;
+</span><span id="1351" class="l"><a href="#1351">1351: </a>            &lt;li title=<span class="php-quote">&quot;&lt;?php apply_filters( 'epl_switch_views_sorting_title_list' , _e('List','easy-property-listings' ) ); ?&gt;&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-current-view view-list&quot;</span> data-view=<span class="php-quote">&quot;list&quot;</span>&gt;
 </span><span id="1352" class="l"><a href="#1352">1352: </a>            &lt;/li&gt;
-</span><span id="1353" class="l"><a href="#1353">1353: </a>            &lt;li title=<span class="php-quote">&quot;&lt;?php apply_filters( 'epl_switch_views_sorting_title_grid' , _e('Grid','epl') ); ?&gt;&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;view-grid&quot;</span> data-view=<span class="php-quote">&quot;grid&quot;</span>&gt;
+</span><span id="1353" class="l"><a href="#1353">1353: </a>            &lt;li title=<span class="php-quote">&quot;&lt;?php apply_filters( 'epl_switch_views_sorting_title_grid' , _e('Grid','easy-property-listings' ) ); ?&gt;&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;view-grid&quot;</span> data-view=<span class="php-quote">&quot;grid&quot;</span>&gt;
 </span><span id="1354" class="l"><a href="#1354">1354: </a>            &lt;/li&gt;
 </span><span id="1355" class="l"><a href="#1355">1355: </a>        &lt;/ul&gt;
 </span><span id="1356" class="l"><a href="#1356">1356: </a>    &lt;/div&gt; <span class="xlang">&lt;?php</span>
@@ -2915,10 +2915,10 @@
 </span><span id="2045" class="l"><a href="#2045">2045: </a>
 </span><span id="2046" class="l"><a href="#2046">2046: </a>    <span class="php-keyword1">if</span> ( is_tax() &amp;&amp; <span class="php-keyword2">function_exists</span>( <span class="php-quote">'epl_is_search'</span> ) &amp;&amp; <span class="php-keyword1">false</span> == epl_is_search() ) { <span class="php-comment">// Tag Archive</span>
 </span><span id="2047" class="l"><a href="#2047">2047: </a>        <span class="php-var">$term</span> = get_term_by( <span class="php-quote">'slug'</span>, get_query_var( <span class="php-quote">'term'</span> ), get_query_var( <span class="php-quote">'taxonomy'</span> ) );
-</span><span id="2048" class="l"><a href="#2048">2048: </a>        <span class="php-var">$title</span> = <span class="php-keyword2">sprintf</span>( __( <span class="php-quote">'Property in %s'</span>, <span class="php-quote">'epl'</span> ), <span class="php-var">$term</span>-&gt;name );
+</span><span id="2048" class="l"><a href="#2048">2048: </a>        <span class="php-var">$title</span> = <span class="php-keyword2">sprintf</span>( __( <span class="php-quote">'Property in %s'</span>, <span class="php-quote">'easy-property-listings'</span>  ), <span class="php-var">$term</span>-&gt;name );
 </span><span id="2049" class="l"><a href="#2049">2049: </a>    }
 </span><span id="2050" class="l"><a href="#2050">2050: </a>    <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> ( <span class="php-keyword2">function_exists</span>( <span class="php-quote">'epl_is_search'</span> ) &amp;&amp; epl_is_search() ) { <span class="php-comment">// Search Result</span>
-</span><span id="2051" class="l"><a href="#2051">2051: </a>        <span class="php-var">$title</span> = apply_filters( <span class="php-quote">'epl_archive_title_search_result'</span> , __( <span class="php-quote">'Search Result'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="2051" class="l"><a href="#2051">2051: </a>        <span class="php-var">$title</span> = apply_filters( <span class="php-quote">'epl_archive_title_search_result'</span> , __( <span class="php-quote">'Search Result'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="2052" class="l"><a href="#2052">2052: </a>    }
 </span><span id="2053" class="l"><a href="#2053">2053: </a>
 </span><span id="2054" class="l"><a href="#2054">2054: </a>    <span class="php-keyword1">else</span> <span class="php-keyword1">if</span> ( <span class="php-keyword2">function_exists</span>( <span class="php-quote">'is_post_type_archive'</span> ) &amp;&amp; is_post_type_archive() &amp;&amp; <span class="php-keyword2">function_exists</span>( <span class="php-quote">'post_type_archive_title'</span> ) ) { <span class="php-comment">// Post Type Archive</span>
@@ -2926,7 +2926,7 @@
 </span><span id="2056" class="l"><a href="#2056">2056: </a>    }
 </span><span id="2057" class="l"><a href="#2057">2057: </a>
 </span><span id="2058" class="l"><a href="#2058">2058: </a>    <span class="php-keyword1">else</span> { <span class="php-comment">// Default catchall just in case</span>
-</span><span id="2059" class="l"><a href="#2059">2059: </a>        <span class="php-var">$title</span> = apply_filters( <span class="php-quote">'epl_archive_title_fallback'</span> , __( <span class="php-quote">'Listing'</span>, <span class="php-quote">'epl'</span> ) );
+</span><span id="2059" class="l"><a href="#2059">2059: </a>        <span class="php-var">$title</span> = apply_filters( <span class="php-quote">'epl_archive_title_fallback'</span> , __( <span class="php-quote">'Listing'</span>, <span class="php-quote">'easy-property-listings'</span>  ) );
 </span><span id="2060" class="l"><a href="#2060">2060: </a>    }
 </span><span id="2061" class="l"><a href="#2061">2061: </a>
 </span><span id="2062" class="l"><a href="#2062">2062: </a>    <span class="php-keyword1">if</span> ( is_paged() )
