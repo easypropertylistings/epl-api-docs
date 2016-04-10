@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Function epl_switch_views | Easy Property Listings 3.0.1 Docs</title>
+	<title>Function epl_switch_views | Easy Property Listings 3.0.2 Code Reference</title>
 
-	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
 
 	<script>
 		var _gaq = _gaq || [];
@@ -21,404 +22,367 @@
 </head>
 
 <body>
-<div id="left">
-	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.0.2 Code Reference</a>
+			</div>
+			<div class="collapse navbar-collapse">
 
+				<form id="search" class="navbar-form navbar-left" role="search">
+					<input type="hidden" name="cx" value="">
+					<input type="hidden" name="ie" value="UTF-8">
+					<div class="form-group">
+						<input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+<span>Package</span>					</li>
+					<li class="active">
+<span>Function</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+					<li class="divider-vertical"></li>
+
+					<li class="hooks">
+						<a href="hook-docs.html" title="Hooks"><span>Hook Reference</span></a>
+					</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
 
 		<div id="groups">
 				<h3>Packages</h3>
 			<ul>
-				<li>
-					<a href="package-EPL.html">
-						EPL<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Admin.html">
-						Admin<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Admin.Actions.html">
-						Actions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.DashboardWidget.html">
-						DashboardWidget					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.Functions.html">
-						Functions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.Help.html">
-						Help					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.Menus.html">
-						Menus					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.Plugins.html">
-						Plugins					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.Reports.html">
-						Reports					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.User.html">
-						User					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.Welcome.html">
-						Welcome					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Classes.html">
-						Classes<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Classes.Author.html">
-						Author					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.Contact.html">
-						Contact					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.CPT.html">
-						CPT					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.Forms.html">
-						Forms					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.License.html">
-						License					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.Metaboxs.html">
-						Metaboxs					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.PropertyMeta.html">
-						PropertyMeta					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.Search.html">
-						Search					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.Updater.html">
-						Updater					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Compatibility.html">
-						Compatibility<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Compatibility.Extensions.html">
-						Extensions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Compatibility.Functions.html">
-						Functions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Compatibility.Shortcodes.html">
-						Shortcodes					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Contacts.html">
-						Contacts<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Contacts.Actions.html">
-						Actions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Contacts.Functions.html">
-						Functions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Contacts.Table.html">
-						Table					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Functions.html">
-						Functions<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Functions.Actions.html">
-						Actions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.ConditionalTags.html">
-						ConditionalTags					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.CPT.html">
-						CPT					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.ErrorTracking.html">
-						ErrorTracking					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.Formatting.html">
-						Formatting					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.Front.html">
-						Front					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.FrontEnd.html">
-						FrontEnd					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.Global.html">
-						Global					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.Install.html">
-						Install					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.Pagination.html">
-						Pagination					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.Templates.html">
-						Templates					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Hooks.html">
-						Hooks<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Hooks.ExternalLinks.html">
-						ExternalLinks					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Hooks.FloorPlan.html">
-						FloorPlan					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Hooks.Map.html">
-						Map					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Hooks.Read.html">
-						Read<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Hooks.Read.More.html">
-						More					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Hooks.WebLink.html">
-						WebLink					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Meta.html">
-						Meta					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Scripts.html">
-						Scripts<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Scripts.Styles.html">
-						Styles					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Settings.html">
-						Settings					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Shortcode.html">
-						Shortcode<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Shortcode.ContactForm.html">
-						ContactForm					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Shortcode.Listing.html">
-						Listing					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Shortcode.ListingCategory.html">
-						ListingCategory					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Shortcode.ListingLocation.html">
-						ListingLocation					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Shortcode.ListingOpen.html">
-						ListingOpen					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Shortcode.Map.html">
-						Map					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Taxonomy.html">
-						Taxonomy					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Templates.html">
-						Templates<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Templates.Themes.html">
-						Themes<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Templates.Themes.Heuman.html">
-						Heuman					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Templates.Themes.iThemesBuilder.html">
-						iThemesBuilder					</a>
-
-						</li>
-							</ul></li></ul></li>
-				<li>
-					<a href="package-EPL.Widget.html">
-						Widget<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Widget.Author.html">
-						Author					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Widget.Contact.html">
-						Contact					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Widget.Gallery.html">
-						Gallery					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Widget.Recent.html">
-						Recent<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Widget.Recent.Property.html">
-						Property					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Widget.Search.html">
-						Search					</a>
-
-						</li>
-							</ul></li></ul></li>
-				<li>
-					<a href="package-None.html">
-						None					</a>
-
-						</li>
+					<li class="main">
+						<a href="package-EPL.html">
+							EPL<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Admin.html">
+							Admin<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Admin.Actions.html">
+							Actions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.DashboardWidget.html">
+							DashboardWidget						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Functions.html">
+							Functions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Help.html">
+							Help						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Menus.html">
+							Menus						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Plugins.html">
+							Plugins						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Reports.html">
+							Reports						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.User.html">
+							User						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Welcome.html">
+							Welcome						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Classes.html">
+							Classes<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Classes.Author.html">
+							Author						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Contact.html">
+							Contact						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.CPT.html">
+							CPT						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Forms.html">
+							Forms						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.License.html">
+							License						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Metaboxs.html">
+							Metaboxs						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.PropertyMeta.html">
+							PropertyMeta						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Search.html">
+							Search						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Updater.html">
+							Updater						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Compatibility.html">
+							Compatibility<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Compatibility.Extensions.html">
+							Extensions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Compatibility.Functions.html">
+							Functions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Compatibility.Shortcodes.html">
+							Shortcodes						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Contacts.html">
+							Contacts<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Contacts.Actions.html">
+							Actions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Contacts.Functions.html">
+							Functions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Contacts.Table.html">
+							Table						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Functions.html">
+							Functions<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Functions.Actions.html">
+							Actions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.ConditionalTags.html">
+							ConditionalTags						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.CPT.html">
+							CPT						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.ErrorTracking.html">
+							ErrorTracking						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.Formatting.html">
+							Formatting						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.Front.html">
+							Front						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.FrontEnd.html">
+							FrontEnd						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.Global.html">
+							Global						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.Install.html">
+							Install						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.Pagination.html">
+							Pagination						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.Templates.html">
+							Templates						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Hooks.html">
+							Hooks<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Hooks.ExternalLinks.html">
+							ExternalLinks						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Hooks.FloorPlan.html">
+							FloorPlan						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Hooks.Map.html">
+							Map						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Hooks.Read.html">
+							Read<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Hooks.Read.More.html">
+							More						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Hooks.WebLink.html">
+							WebLink						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Meta.html">
+							Meta						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Scripts.html">
+							Scripts<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Scripts.Styles.html">
+							Styles						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Settings.html">
+							Settings						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Shortcode.html">
+							Shortcode<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Shortcode.ContactForm.html">
+							ContactForm						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Shortcode.Listing.html">
+							Listing						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Shortcode.ListingCategory.html">
+							ListingCategory						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Shortcode.ListingLocation.html">
+							ListingLocation						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Shortcode.ListingOpen.html">
+							ListingOpen						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Shortcode.Map.html">
+							Map						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Taxonomy.html">
+							Taxonomy						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Templates.html">
+							Templates<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Templates.Themes.html">
+							Themes<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Templates.Themes.Heuman.html">
+							Heuman						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Templates.Themes.iThemesBuilder.html">
+							iThemesBuilder						</a>
+							</li>
+								</ul></li></ul></li>
+					<li class="main">
+						<a href="package-EPL.Widget.html">
+							Widget<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Widget.Author.html">
+							Author						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Widget.Contact.html">
+							Contact						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Widget.Gallery.html">
+							Gallery						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Widget.Listing.html">
+							Listing						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Widget.Search.html">
+							Search						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="package-None.html">
+							None						</a>
+							</li>
 			</ul>
 		</div>
-
-		<hr>
 
 
 		<div id="elements">
@@ -530,29 +494,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="">
-		<input type="hidden" name="ie" value="UTF-8">
-		<input type="text" name="q" class="text" placeholder="Search">
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-<span>Package</span>			</li>
-			<li class="active">
-<span>Function</span>			</li>
-		</ul>
-		<ul>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="function">
 	<h1>Function epl_switch_views</h1>
 
@@ -561,7 +503,7 @@
 	<p>Switch Views</p>
 	</div>
 
-	<div class="info">
+	<div class="alert alert-info">
 		
 		<b>Package:</b> <a href="package-EPL.html">EPL</a>\<a href="package-EPL.Functions.html">Functions</a>\<a href="package-EPL.Functions.Templates.html">Templates</a><br>
 				<b>Copyright:</b>
@@ -578,27 +520,29 @@
 
 
 
-	<table class="summary" id="returns">
-	<caption>Return value summary</caption>
-	<tr>
-		<td class="name"><code>
-			string
-		</code></td>
-		<td>
-			string
-		</td>
-	</tr>
-	</table>
+	<div class="panel panel-default">
+		<div class="panel-heading"><h2>Return value summary</h2></div>
+		<table class="summary table table-bordered table-striped" id="returns">
+		<tr>
+			<td class="name"><code>
+				string
+			</code></td>
+			<td>
+				string
+			</td>
+		</tr>
+		</table>
+	</div>
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.0.1 Docs API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.0.2 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
-</div>
-<script src="resources/combined.js?cd021bc814832c24a7cec5319ea03335bfba1caf"></script>
+<script src="resources/combined.js?cbef3f9ce5d56cd9035f1d2078dbba925910f027"></script>
 <script src="elementlist.js?be98cd4b937bd8144823cfe14488f7ad29f49cbd"></script>
 </body>
 </html>

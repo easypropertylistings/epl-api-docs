@@ -4,9 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="robots" content="noindex">
 
-	<title>File lib/includes/EPL_SL_Plugin_Updater.php | Easy Property Listings 3.0.1 Docs</title>
+	<title>File lib/includes/EPL_SL_Plugin_Updater.php | Easy Property Listings 3.0.2 Code Reference</title>
 
-	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
 
 	<script>
 		var _gaq = _gaq || [];
@@ -22,410 +23,372 @@
 </head>
 
 <body>
-<div id="left">
-	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.0.2 Code Reference</a>
+			</div>
+			<div class="collapse navbar-collapse">
 
+				<form id="search" class="navbar-form navbar-left" role="search">
+					<input type="hidden" name="cx" value="">
+					<input type="hidden" name="ie" value="UTF-8">
+					<div class="form-group">
+						<input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+<span>Package</span>					</li>
+					<li>
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+					<li class="divider-vertical"></li>
+
+					<li class="hooks">
+						<a href="hook-docs.html" title="Hooks"><span>Hook Reference</span></a>
+					</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
 
 		<div id="groups">
 				<h3>Packages</h3>
 			<ul>
-				<li>
-					<a href="package-EPL.html">
-						EPL<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Admin.html">
-						Admin<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Admin.Actions.html">
-						Actions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.DashboardWidget.html">
-						DashboardWidget					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.Functions.html">
-						Functions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.Help.html">
-						Help					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.Menus.html">
-						Menus					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.Plugins.html">
-						Plugins					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.Reports.html">
-						Reports					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.User.html">
-						User					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Admin.Welcome.html">
-						Welcome					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Classes.html">
-						Classes<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Classes.Author.html">
-						Author					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.Contact.html">
-						Contact					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.CPT.html">
-						CPT					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.Forms.html">
-						Forms					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.License.html">
-						License					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.Metaboxs.html">
-						Metaboxs					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.PropertyMeta.html">
-						PropertyMeta					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.Search.html">
-						Search					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Classes.Updater.html">
-						Updater					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Compatibility.html">
-						Compatibility<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Compatibility.Extensions.html">
-						Extensions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Compatibility.Functions.html">
-						Functions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Compatibility.Shortcodes.html">
-						Shortcodes					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Contacts.html">
-						Contacts<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Contacts.Actions.html">
-						Actions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Contacts.Functions.html">
-						Functions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Contacts.Table.html">
-						Table					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Functions.html">
-						Functions<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Functions.Actions.html">
-						Actions					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.ConditionalTags.html">
-						ConditionalTags					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.CPT.html">
-						CPT					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.ErrorTracking.html">
-						ErrorTracking					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.Formatting.html">
-						Formatting					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.Front.html">
-						Front					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.FrontEnd.html">
-						FrontEnd					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.Global.html">
-						Global					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.Install.html">
-						Install					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.Pagination.html">
-						Pagination					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Functions.Templates.html">
-						Templates					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Hooks.html">
-						Hooks<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Hooks.ExternalLinks.html">
-						ExternalLinks					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Hooks.FloorPlan.html">
-						FloorPlan					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Hooks.Map.html">
-						Map					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Hooks.Read.html">
-						Read<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Hooks.Read.More.html">
-						More					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Hooks.WebLink.html">
-						WebLink					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Meta.html">
-						Meta					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Scripts.html">
-						Scripts<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Scripts.Styles.html">
-						Styles					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Settings.html">
-						Settings					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Shortcode.html">
-						Shortcode<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Shortcode.ContactForm.html">
-						ContactForm					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Shortcode.Listing.html">
-						Listing					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Shortcode.ListingCategory.html">
-						ListingCategory					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Shortcode.ListingLocation.html">
-						ListingLocation					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Shortcode.ListingOpen.html">
-						ListingOpen					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Shortcode.Map.html">
-						Map					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Taxonomy.html">
-						Taxonomy					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Templates.html">
-						Templates<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Templates.Themes.html">
-						Themes<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Templates.Themes.Heuman.html">
-						Heuman					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Templates.Themes.iThemesBuilder.html">
-						iThemesBuilder					</a>
-
-						</li>
-							</ul></li></ul></li>
-				<li>
-					<a href="package-EPL.Widget.html">
-						Widget<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Widget.Author.html">
-						Author					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Widget.Contact.html">
-						Contact					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Widget.Gallery.html">
-						Gallery					</a>
-
-						</li>
-				<li>
-					<a href="package-EPL.Widget.Recent.html">
-						Recent<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="package-EPL.Widget.Recent.Property.html">
-						Property					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="package-EPL.Widget.Search.html">
-						Search					</a>
-
-						</li>
-							</ul></li></ul></li>
-				<li>
-					<a href="package-None.html">
-						None					</a>
-
-						</li>
+					<li class="main">
+						<a href="package-EPL.html">
+							EPL<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Admin.html">
+							Admin<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Admin.Actions.html">
+							Actions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.DashboardWidget.html">
+							DashboardWidget						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Functions.html">
+							Functions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Help.html">
+							Help						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Menus.html">
+							Menus						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Plugins.html">
+							Plugins						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Reports.html">
+							Reports						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.User.html">
+							User						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Welcome.html">
+							Welcome						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Classes.html">
+							Classes<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Classes.Author.html">
+							Author						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Contact.html">
+							Contact						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.CPT.html">
+							CPT						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Forms.html">
+							Forms						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.License.html">
+							License						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Metaboxs.html">
+							Metaboxs						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.PropertyMeta.html">
+							PropertyMeta						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Search.html">
+							Search						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Updater.html">
+							Updater						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Compatibility.html">
+							Compatibility<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Compatibility.Extensions.html">
+							Extensions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Compatibility.Functions.html">
+							Functions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Compatibility.Shortcodes.html">
+							Shortcodes						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Contacts.html">
+							Contacts<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Contacts.Actions.html">
+							Actions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Contacts.Functions.html">
+							Functions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Contacts.Table.html">
+							Table						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Functions.html">
+							Functions<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Functions.Actions.html">
+							Actions						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.ConditionalTags.html">
+							ConditionalTags						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.CPT.html">
+							CPT						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.ErrorTracking.html">
+							ErrorTracking						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.Formatting.html">
+							Formatting						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.Front.html">
+							Front						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.FrontEnd.html">
+							FrontEnd						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.Global.html">
+							Global						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.Install.html">
+							Install						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.Pagination.html">
+							Pagination						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Functions.Templates.html">
+							Templates						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Hooks.html">
+							Hooks<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Hooks.ExternalLinks.html">
+							ExternalLinks						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Hooks.FloorPlan.html">
+							FloorPlan						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Hooks.Map.html">
+							Map						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Hooks.Read.html">
+							Read<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Hooks.Read.More.html">
+							More						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Hooks.WebLink.html">
+							WebLink						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Meta.html">
+							Meta						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Scripts.html">
+							Scripts<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Scripts.Styles.html">
+							Styles						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Settings.html">
+							Settings						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Shortcode.html">
+							Shortcode<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Shortcode.ContactForm.html">
+							ContactForm						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Shortcode.Listing.html">
+							Listing						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Shortcode.ListingCategory.html">
+							ListingCategory						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Shortcode.ListingLocation.html">
+							ListingLocation						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Shortcode.ListingOpen.html">
+							ListingOpen						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Shortcode.Map.html">
+							Map						</a>
+							</li>
+								</ul></li>
+					<li class="main">
+						<a href="package-EPL.Taxonomy.html">
+							Taxonomy						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Templates.html">
+							Templates<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Templates.Themes.html">
+							Themes<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Templates.Themes.Heuman.html">
+							Heuman						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Templates.Themes.iThemesBuilder.html">
+							iThemesBuilder						</a>
+							</li>
+								</ul></li></ul></li>
+					<li class="main">
+						<a href="package-EPL.Widget.html">
+							Widget<span></span>
+						</a>
+							<ul>
+					<li class="main">
+						<a href="package-EPL.Widget.Author.html">
+							Author						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Widget.Contact.html">
+							Contact						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Widget.Gallery.html">
+							Gallery						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Widget.Listing.html">
+							Listing						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Widget.Search.html">
+							Search						</a>
+							</li>
+								</ul></li></ul></li>
+					<li>
+						<a href="package-None.html">
+							None						</a>
+							</li>
 			</ul>
 		</div>
-
-		<hr>
 
 
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Easy_Property_Listings.html">Easy_Property_Listings</a></li>
 				<li><a href="class-EPL_Author_Meta.html">EPL_Author_Meta</a></li>
 				<li><a href="class-EPL_Contact.html">EPL_Contact</a></li>
 				<li><a href="class-EPL_Contact_Reports_Table.html">EPL_Contact_Reports_Table</a></li>
@@ -434,7 +397,6 @@
 				<li><a href="class-EPL_Graph.html">EPL_Graph</a></li>
 				<li><a href="class-EPL_License.html">EPL_License</a></li>
 				<li><a href="class-EPL_METABOX.html">EPL_METABOX</a></li>
-				<li><a href="class-epl_pagination_Call.html">epl_pagination_Call</a></li>
 				<li><a href="class-EPL_Property_Meta.html">EPL_Property_Meta</a></li>
 				<li><a href="class-EPL_Search_Fields.html">EPL_Search_Fields</a></li>
 				<li><a href="class-EPL_SL_Plugin_Updater.html">EPL_SL_Plugin_Updater</a></li>
@@ -452,392 +414,7 @@
 
 			<h3>Functions</h3>
 			<ul>
-				<li><a href="function-contact_capture_form_callback.html">contact_capture_form_callback</a></li>
 				<li><a href="function-EPL.html">EPL</a></li>
-				<li><a href="function-epl_active_theme_name_twentysixteen.html">epl_active_theme_name_twentysixteen</a></li>
-				<li><a href="function-epl_add_admin_body_class.html">epl_add_admin_body_class</a></li>
-				<li><a href="function-epl_add_contact_screen_options.html">epl_add_contact_screen_options</a></li>
-				<li><a href="function-epl_add_contact_screen_opts.html">epl_add_contact_screen_opts</a></li>
-				<li><a href="function-epl_add_contact_tag_bgcolor_field.html">epl_add_contact_tag_bgcolor_field</a></li>
-				<li><a href="function-epl_add_custom_user_profile_fields.html">epl_add_custom_user_profile_fields</a></li>
-				<li><a href="function-epl_add_dashboard_widgets.html">epl_add_dashboard_widgets</a></li>
-				<li><a href="function-epl_add_ons_get_feed.html">epl_add_ons_get_feed</a></li>
-				<li><a href="function-epl_add_ons_init.html">epl_add_ons_init</a></li>
-				<li><a href="function-epl_add_ons_page.html">epl_add_ons_page</a></li>
-				<li><a href="function-epl_admin_enqueue_scripts.html">epl_admin_enqueue_scripts</a></li>
-				<li><a href="function-epl_admin_listing_map.html">epl_admin_listing_map</a></li>
-				<li><a href="function-epl_admin_menu.html">epl_admin_menu</a></li>
-				<li><a href="function-epl_admin_posts_filter.html">epl_admin_posts_filter</a></li>
-				<li><a href="function-epl_admin_sidebar.html">epl_admin_sidebar</a></li>
-				<li><a href="function-epl_admin_styles.html">epl_admin_styles</a></li>
-				<li><a href="function-epl_after_install.html">epl_after_install</a></li>
-				<li><a href="function-epl_all_post_types.html">epl_all_post_types</a></li>
-				<li><a href="function-epl_all_tags_view.html">epl_all_tags_view</a></li>
-				<li><a href="function-epl_apply_feeling_lucky_config.html">epl_apply_feeling_lucky_config</a></li>
-				<li><a href="function-epl_archive_custom_excerpt_length.html">epl_archive_custom_excerpt_length</a></li>
-				<li><a href="function-epl_archive_render_content.html">epl_archive_render_content</a></li>
-				<li><a href="function-epl_archive_sorting.html">epl_archive_sorting</a></li>
-				<li><a href="function-epl_archive_title_callback.html">epl_archive_title_callback</a></li>
-				<li><a href="function-epl_archive_utility_wrap_after.html">epl_archive_utility_wrap_after</a></li>
-				<li><a href="function-epl_archive_utility_wrap_before.html">epl_archive_utility_wrap_before</a></li>
-				<li><a href="function-epl_author_class.html">epl_author_class</a></li>
-				<li><a href="function-epl_author_tab_author_id.html">epl_author_tab_author_id</a></li>
-				<li><a href="function-epl_author_tab_contact_form.html">epl_author_tab_contact_form</a></li>
-				<li><a href="function-epl_author_tab_description.html">epl_author_tab_description</a></li>
-				<li><a href="function-epl_author_tab_image.html">epl_author_tab_image</a></li>
-				<li><a href="function-epl_author_tab_video.html">epl_author_tab_video</a></li>
-				<li><a href="function-epl_author_tabs.html">epl_author_tabs</a></li>
-				<li><a href="function-epl_before_meta_field_property_owner.html">epl_before_meta_field_property_owner</a></li>
-				<li><a href="function-epl_button_external_link.html">epl_button_external_link</a></li>
-				<li><a href="function-epl_button_floor_plan.html">epl_button_floor_plan</a></li>
-				<li><a href="function-epl_button_mini_web.html">epl_button_mini_web</a></li>
-				<li><a href="function-epl_button_read_more.html">epl_button_read_more</a></li>
-				<li><a href="function-epl_buttons_wrapper_after.html">epl_buttons_wrapper_after</a></li>
-				<li><a href="function-epl_buttons_wrapper_before.html">epl_buttons_wrapper_before</a></li>
-				<li><a href="function-epl_clear_errors.html">epl_clear_errors</a></li>
-				<li><a href="function-epl_compatibility_archive_class_callback.html">epl_compatibility_archive_class_callback</a></li>
-				<li><a href="function-epl_contact_access.html">epl_contact_access</a></li>
-				<li><a href="function-epl_contact_action_menus.html">epl_contact_action_menus</a></li>
-				<li><a href="function-epl_contact_add_activity_form.html">epl_contact_add_activity_form</a></li>
-				<li><a href="function-epl_contact_add_listing_form.html">epl_contact_add_listing_form</a></li>
-				<li><a href="function-epl_contact_assign_existing_listing.html">epl_contact_assign_existing_listing</a></li>
-				<li><a href="function-epl_contact_assigned_tags.html">epl_contact_assigned_tags</a></li>
-				<li><a href="function-epl_contact_avatar.html">epl_contact_avatar</a></li>
-				<li><a href="function-epl_contact_background_info.html">epl_contact_background_info</a></li>
-				<li><a href="function-epl_contact_capture_form.html">epl_contact_capture_form</a></li>
-				<li><a href="function-epl_contact_capture_get_widget_defaults.html">epl_contact_capture_get_widget_defaults</a></li>
-				<li><a href="function-epl_contact_capture_get_widget_fields.html">epl_contact_capture_get_widget_fields</a></li>
-				<li><a href="function-epl_contact_capture_widget_form_fields.html">epl_contact_capture_widget_form_fields</a></li>
-				<li><a href="function-epl_contact_category_update.html">epl_contact_category_update</a></li>
-				<li><a href="function-epl_contact_contact_details.html">epl_contact_contact_details</a></li>
-				<li><a href="function-epl_contact_contact_fields.html">epl_contact_contact_fields</a></li>
-				<li><a href="function-epl_contact_delete.html">epl_contact_delete</a></li>
-				<li><a href="function-epl_contact_entry_header.html">epl_contact_entry_header</a></li>
-				<li><a href="function-epl_contact_entry_header_editable.html">epl_contact_entry_header_editable</a></li>
-				<li><a href="function-epl_contact_get_activities_html.html">epl_contact_get_activities_html</a></li>
-				<li><a href="function-epl_contact_get_listings_html.html">epl_contact_get_listings_html</a></li>
-				<li><a href="function-epl_contact_meta_view.html">epl_contact_meta_view</a></li>
-				<li><a href="function-epl_contact_notes_view.html">epl_contact_notes_view</a></li>
-				<li><a href="function-epl_contact_recent_activities.html">epl_contact_recent_activities</a></li>
-				<li><a href="function-epl_contact_recent_interests.html">epl_contact_recent_interests</a></li>
-				<li><a href="function-epl_contact_save_listing.html">epl_contact_save_listing</a></li>
-				<li><a href="function-epl_contact_save_note.html">epl_contact_save_note</a></li>
-				<li><a href="function-epl_contact_save_note_note_tab.html">epl_contact_save_note_note_tab</a></li>
-				<li><a href="function-epl_contact_social_icons.html">epl_contact_social_icons</a></li>
-				<li><a href="function-epl_contact_table_set_option.html">epl_contact_table_set_option</a></li>
-				<li><a href="function-epl_contact_tabs.html">epl_contact_tabs</a></li>
-				<li><a href="function-epl_contact_tag_add.html">epl_contact_tag_add</a></li>
-				<li><a href="function-epl_contact_tag_remove.html">epl_contact_tag_remove</a></li>
-				<li><a href="function-epl_contact_views.html">epl_contact_views</a></li>
-				<li><a href="function-epl_contacts_delete_view.html">epl_contacts_delete_view</a></li>
-				<li><a href="function-epl_contacts_list.html">epl_contacts_list</a></li>
-				<li><a href="function-epl_contacts_listing_view.html">epl_contacts_listing_view</a></li>
-				<li><a href="function-epl_contacts_page.html">epl_contacts_page</a></li>
-				<li><a href="function-epl_contacts_view.html">epl_contacts_view</a></li>
-				<li><a href="function-epl_count_total_contacts.html">epl_count_total_contacts</a></li>
-				<li><a href="function-epl_create_ical_file.html">epl_create_ical_file</a></li>
-				<li><a href="function-epl_create_property_object.html">epl_create_property_object</a></li>
-				<li><a href="function-epl_currency_decimal_filter.html">epl_currency_decimal_filter</a></li>
-				<li><a href="function-epl_currency_filter.html">epl_currency_filter</a></li>
-				<li><a href="function-epl_currency_formatted_amount.html">epl_currency_formatted_amount</a></li>
-				<li><a href="function-epl_custom_orderby.html">epl_custom_orderby</a></li>
-				<li><a href="function-epl_custom_post_author_archive.html">epl_custom_post_author_archive</a></li>
-				<li><a href="function-epl_custom_restrict_manage_posts.html">epl_custom_restrict_manage_posts</a></li>
-				<li><a href="function-epl_dashboard_activity_widget.html">epl_dashboard_activity_widget</a></li>
-				<li><a href="function-epl_dashboard_recent_comments.html">epl_dashboard_recent_comments</a></li>
-				<li><a href="function-epl_dashboard_recent_posts.html">epl_dashboard_recent_posts</a></li>
-				<li><a href="function-epl_display_label_bond.html">epl_display_label_bond</a></li>
-				<li><a href="function-epl_display_label_postcode.html">epl_display_label_postcode</a></li>
-				<li><a href="function-epl_display_label_suburb.html">epl_display_label_suburb</a></li>
-				<li><a href="function-epl_edit_contact.html">epl_edit_contact</a></li>
-				<li><a href="function-epl_edit_contact_tag_bgcolor_field.html">epl_edit_contact_tag_bgcolor_field</a></li>
-				<li><a href="function-epl_esc_attr.html">epl_esc_attr</a></li>
-				<li><a href="function-epl_esc_like.html">epl_esc_like</a></li>
-				<li><a href="function-epl_excerpt_length.html">epl_excerpt_length</a></li>
-				<li><a href="function-epl_fancy_pagination.html">epl_fancy_pagination</a></li>
-				<li><a href="function-epl_feedsync_format_date.html">epl_feedsync_format_date</a></li>
-				<li><a href="function-epl_feedsync_format_strip_currency.html">epl_feedsync_format_strip_currency</a></li>
-				<li><a href="function-epl_feedsync_format_sub_number.html">epl_feedsync_format_sub_number</a></li>
-				<li><a href="function-epl_feeling_lucky.html">epl_feeling_lucky</a></li>
-				<li><a href="function-epl_filter_listing_comments_array.html">epl_filter_listing_comments_array</a></li>
-				<li><a href="function-epl_flush_rewrite_rules.html">epl_flush_rewrite_rules</a></li>
-				<li><a href="function-epl_format_amount.html">epl_format_amount</a></li>
-				<li><a href="function-epl_get_active_post_types.html">epl_get_active_post_types</a></li>
-				<li><a href="function-epl_get_active_theme.html">epl_get_active_theme</a></li>
-				<li><a href="function-epl_get_active_theme_name.html">epl_get_active_theme_name</a></li>
-				<li><a href="function-epl_get_admin_option_fields.html">epl_get_admin_option_fields</a></li>
-				<li><a href="function-epl_get_admin_option_fields_extensions_compat.html">epl_get_admin_option_fields_extensions_compat</a></li>
-				<li><a href="function-epl_get_admin_option_licence_fields.html">epl_get_admin_option_licence_fields</a></li>
-				<li><a href="function-epl_get_author_meta.html">epl_get_author_meta</a></li>
-				<li><a href="function-epl_get_available_locations.html">epl_get_available_locations</a></li>
-				<li><a href="function-epl_get_contact_categories.html">epl_get_contact_categories</a></li>
-				<li><a href="function-epl_get_contact_tag_bgcolor.html">epl_get_contact_tag_bgcolor</a></li>
-				<li><a href="function-epl_get_contacts.html">epl_get_contacts</a></li>
-				<li><a href="function-epl_get_content_path.html">epl_get_content_path</a></li>
-				<li><a href="function-epl_get_core_post_types.html">epl_get_core_post_types</a></li>
-				<li><a href="function-epl_get_core_rental_post_types.html">epl_get_core_rental_post_types</a></li>
-				<li><a href="function-epl_get_core_sales_post_types.html">epl_get_core_sales_post_types</a></li>
-				<li><a href="function-epl_get_currencies.html">epl_get_currencies</a></li>
-				<li><a href="function-epl_get_currency.html">epl_get_currency</a></li>
-				<li><a href="function-epl_get_currency_position.html">epl_get_currency_position</a></li>
-				<li><a href="function-epl_get_custom_user_profile_fields.html">epl_get_custom_user_profile_fields</a></li>
-				<li><a href="function-epl_get_decimal_separator.html">epl_get_decimal_separator</a></li>
-				<li><a href="function-epl_get_errors.html">epl_get_errors</a></li>
-				<li><a href="function-epl_get_fallback_content_path.html">epl_get_fallback_content_path</a></li>
-				<li><a href="function-epl_get_meta_values.html">epl_get_meta_values</a></li>
-				<li><a href="function-epl_get_multipage_link.html">epl_get_multipage_link</a></li>
-				<li><a href="function-epl_get_new_admin_option_fields.html">epl_get_new_admin_option_fields</a></li>
-				<li><a href="function-epl_get_next_contact_link.html">epl_get_next_contact_link</a></li>
-				<li><a href="function-epl_get_option.html">epl_get_option</a></li>
-				<li><a href="function-epl_get_plural.html">epl_get_plural</a></li>
-				<li><a href="function-epl_get_post_count.html">epl_get_post_count</a></li>
-				<li><a href="function-epl_get_post_types.html">epl_get_post_types</a></li>
-				<li><a href="function-epl_get_prev_contact_link.html">epl_get_prev_contact_link</a></li>
-				<li><a href="function-epl_get_price_sticker.html">epl_get_price_sticker</a></li>
-				<li><a href="function-epl_get_property_address.html">epl_get_property_address</a></li>
-				<li><a href="function-epl_get_property_bb_icons.html">epl_get_property_bb_icons</a></li>
-				<li><a href="function-epl_get_property_heading.html">epl_get_property_heading</a></li>
-				<li><a href="function-epl_get_property_icons.html">epl_get_property_icons</a></li>
-				<li><a href="function-epl_get_property_meta.html">epl_get_property_meta</a></li>
-				<li><a href="function-epl_get_property_price.html">epl_get_property_price</a></li>
-				<li><a href="function-epl_get_report_dates.html">epl_get_report_dates</a></li>
-				<li><a href="function-epl_get_reporting_view.html">epl_get_reporting_view</a></li>
-				<li><a href="function-epl_get_sales_by_date.html">epl_get_sales_by_date</a></li>
-				<li><a href="function-epl_get_settings.html">epl_get_settings</a></li>
-				<li><a href="function-epl_get_template_part.html">epl_get_template_part</a></li>
-				<li><a href="function-epl_get_the_excerpt.html">epl_get_the_excerpt</a></li>
-				<li><a href="function-epl_get_the_term_list.html">epl_get_the_term_list</a></li>
-				<li><a href="function-epl_get_thousands_separator.html">epl_get_thousands_separator</a></li>
-				<li><a href="function-epl_get_thumbnail_sizes.html">epl_get_thumbnail_sizes</a></li>
-				<li><a href="function-epl_get_unique_post_meta_values.html">epl_get_unique_post_meta_values</a></li>
-				<li><a href="function-epl_get_video_html.html">epl_get_video_html</a></li>
-				<li><a href="function-epl_get_youtube_id_from_url.html">epl_get_youtube_id_from_url</a></li>
-				<li><a href="function-epl_hide_author_box_from_front.html">epl_hide_author_box_from_front</a></li>
-				<li><a href="function-epl_hide_map_from_front.html">epl_hide_map_from_front</a></li>
-				<li><a href="function-epl_home_pagination_fix.html">epl_home_pagination_fix</a></li>
-				<li><a href="function-epl_image_size_names_choose.html">epl_image_size_names_choose</a></li>
-				<li><a href="function-epl_image_sizes.html">epl_image_sizes</a></li>
-				<li><a href="function-epl_inspection_format.html">epl_inspection_format</a></li>
-				<li><a href="function-epl_install.html">epl_install</a></li>
-				<li><a href="function-epl_is_builder_framework_theme.html">epl_is_builder_framework_theme</a></li>
-				<li><a href="function-epl_is_genesis_framework_theme.html">epl_is_genesis_framework_theme</a></li>
-				<li><a href="function-epl_is_search.html">epl_is_search</a></li>
-				<li><a href="function-epl_labels.html">epl_labels</a></li>
-				<li><a href="function-epl_leased_label_status_filter_callback.html">epl_leased_label_status_filter_callback</a></li>
-				<li><a href="function-epl_license_key_callback.html">epl_license_key_callback</a></li>
-				<li><a href="function-epl_listing_load_meta_commercial_category.html">epl_listing_load_meta_commercial_category</a></li>
-				<li><a href="function-epl_listing_load_meta_commercial_category_value.html">epl_listing_load_meta_commercial_category_value</a></li>
-				<li><a href="function-epl_listing_load_meta_commercial_rent_period.html">epl_listing_load_meta_commercial_rent_period</a></li>
-				<li><a href="function-epl_listing_load_meta_commercial_rent_period_value.html">epl_listing_load_meta_commercial_rent_period_value</a></li>
-				<li><a href="function-epl_listing_load_meta_land_category.html">epl_listing_load_meta_land_category</a></li>
-				<li><a href="function-epl_listing_load_meta_property_category.html">epl_listing_load_meta_property_category</a></li>
-				<li><a href="function-epl_listing_load_meta_rural_category.html">epl_listing_load_meta_rural_category</a></li>
-				<li><a href="function-epl_listing_load_meta_rural_category_value.html">epl_listing_load_meta_rural_category_value</a></li>
-				<li><a href="function-epl_listing_meta_land_category_value.html">epl_listing_meta_land_category_value</a></li>
-				<li><a href="function-epl_listing_meta_property_category_value.html">epl_listing_meta_property_category_value</a></li>
-				<li><a href="function-epl_listings_contextual_help.html">epl_listings_contextual_help</a></li>
-				<li><a href="function-epl_listings_where.html">epl_listings_where</a></li>
-				<li><a href="function-epl_load_core_templates.html">epl_load_core_templates</a></li>
-				<li><a href="function-epl_manage_business_columns_heading.html">epl_manage_business_columns_heading</a></li>
-				<li><a href="function-epl_manage_business_columns_value.html">epl_manage_business_columns_value</a></li>
-				<li><a href="function-epl_manage_business_sortable_columns.html">epl_manage_business_sortable_columns</a></li>
-				<li><a href="function-epl_manage_commercial_columns_value.html">epl_manage_commercial_columns_value</a></li>
-				<li><a href="function-epl_manage_commercial_heading.html">epl_manage_commercial_heading</a></li>
-				<li><a href="function-epl_manage_commercial_land_columns_heading.html">epl_manage_commercial_land_columns_heading</a></li>
-				<li><a href="function-epl_manage_commercial_land_columns_value.html">epl_manage_commercial_land_columns_value</a></li>
-				<li><a href="function-epl_manage_land_columns_heading.html">epl_manage_land_columns_heading</a></li>
-				<li><a href="function-epl_manage_land_columns_value.html">epl_manage_land_columns_value</a></li>
-				<li><a href="function-epl_manage_listing_column_agent_callback.html">epl_manage_listing_column_agent_callback</a></li>
-				<li><a href="function-epl_manage_listing_column_geo_callback.html">epl_manage_listing_column_geo_callback</a></li>
-				<li><a href="function-epl_manage_listing_column_listing_callback.html">epl_manage_listing_column_listing_callback</a></li>
-				<li><a href="function-epl_manage_listing_column_listing_id_callback.html">epl_manage_listing_column_listing_id_callback</a></li>
-				<li><a href="function-epl_manage_listing_column_listing_type_callback.html">epl_manage_listing_column_listing_type_callback</a></li>
-				<li><a href="function-epl_manage_listing_column_price_callback.html">epl_manage_listing_column_price_callback</a></li>
-				<li><a href="function-epl_manage_listing_column_property_status_callback.html">epl_manage_listing_column_property_status_callback</a></li>
-				<li><a href="function-epl_manage_listing_column_property_thumb_callback.html">epl_manage_listing_column_property_thumb_callback</a></li>
-				<li><a href="function-epl_manage_listings_sortable_columns.html">epl_manage_listings_sortable_columns</a></li>
-				<li><a href="function-epl_manage_property_columns_heading.html">epl_manage_property_columns_heading</a></li>
-				<li><a href="function-epl_manage_property_columns_value.html">epl_manage_property_columns_value</a></li>
-				<li><a href="function-epl_manage_rental_columns_heading.html">epl_manage_rental_columns_heading</a></li>
-				<li><a href="function-epl_manage_rental_columns_value.html">epl_manage_rental_columns_value</a></li>
-				<li><a href="function-epl_manage_rural_columns_heading.html">epl_manage_rural_columns_heading</a></li>
-				<li><a href="function-epl_manage_rural_columns_value.html">epl_manage_rural_columns_value</a></li>
-				<li><a href="function-epl_menu_addons.html">epl_menu_addons</a></li>
-				<li><a href="function-epl_menu_extensions.html">epl_menu_extensions</a></li>
-				<li><a href="function-epl_menu_extensions_compat.html">epl_menu_extensions_compat</a></li>
-				<li><a href="function-epl_menu_general.html">epl_menu_general</a></li>
-				<li><a href="function-epl_menu_help.html">epl_menu_help</a></li>
-				<li><a href="function-epl_menu_licenses.html">epl_menu_licenses</a></li>
-				<li><a href="function-epl_menu_settings.html">epl_menu_settings</a></li>
-				<li><a href="function-epl_meta_box_init.html">epl_meta_box_init</a></li>
-				<li><a href="function-epl_meta_contact.html">epl_meta_contact</a></li>
-				<li><a href="function-epl_meta_location_label.html">epl_meta_location_label</a></li>
-				<li><a href="function-epl_meta_under_offer_label.html">epl_meta_under_offer_label</a></li>
-				<li><a href="function-epl_month_num_to_name.html">epl_month_num_to_name</a></li>
-				<li><a href="function-epl_new_contact.html">epl_new_contact</a></li>
-				<li><a href="function-epl_new_contact_view.html">epl_new_contact_view</a></li>
-				<li><a href="function-epl_nopaging.html">epl_nopaging</a></li>
-				<li><a href="function-epl_number_suffix_callback.html">epl_number_suffix_callback</a></li>
-				<li><a href="function-epl_pagination.html">epl_pagination</a></li>
-				<li><a href="function-epl_pagination_html.html">epl_pagination_html</a></li>
-				<li><a href="function-epl_plugin_action_links.html">epl_plugin_action_links</a></li>
-				<li><a href="function-epl_plugin_row_meta.html">epl_plugin_row_meta</a></li>
-				<li><a href="function-epl_plugin_updates.html">epl_plugin_updates</a></li>
-				<li><a href="function-epl_populate_post_author_email.html">epl_populate_post_author_email</a></li>
-				<li><a href="function-epl_posts_highlights.html">epl_posts_highlights</a></li>
-				<li><a href="function-epl_preprocess_search_meta_query.html">epl_preprocess_search_meta_query</a></li>
-				<li><a href="function-epl_print_errors.html">epl_print_errors</a></li>
-				<li><a href="function-epl_print_r.html">epl_print_r</a></li>
-				<li><a href="function-epl_process_actions.html">epl_process_actions</a></li>
-				<li><a href="function-epl_process_admin_actions.html">epl_process_admin_actions</a></li>
-				<li><a href="function-epl_process_event_cal_request.html">epl_process_event_cal_request</a></li>
-				<li><a href="function-epl_property_address_suburb_column_orderby.html">epl_property_address_suburb_column_orderby</a></li>
-				<li><a href="function-epl_property_admin_contact.html">epl_property_admin_contact</a></li>
-				<li><a href="function-epl_property_archive_featured_image.html">epl_property_archive_featured_image</a></li>
-				<li><a href="function-epl_property_author_archives.html">epl_property_author_archives</a></li>
-				<li><a href="function-epl_property_author_box.html">epl_property_author_box</a></li>
-				<li><a href="function-epl_property_author_box_simple_card.html">epl_property_author_box_simple_card</a></li>
-				<li><a href="function-epl_property_author_box_simple_card_tall.html">epl_property_author_box_simple_card_tall</a></li>
-				<li><a href="function-epl_property_author_box_simple_grav.html">epl_property_author_box_simple_grav</a></li>
-				<li><a href="function-epl_property_author_card.html">epl_property_author_card</a></li>
-				<li><a href="function-epl_property_available_dates.html">epl_property_available_dates</a></li>
-				<li><a href="function-epl_property_blog.html">epl_property_blog</a></li>
-				<li><a href="function-epl_property_blog_default.html">epl_property_blog_default</a></li>
-				<li><a href="function-epl_property_blog_slim.html">epl_property_blog_slim</a></li>
-				<li><a href="function-epl_property_blog_table.html">epl_property_blog_table</a></li>
-				<li><a href="function-epl_property_blog_table_open.html">epl_property_blog_table_open</a></li>
-				<li><a href="function-epl_property_category.html">epl_property_category</a></li>
-				<li><a href="function-epl_property_commercial_category.html">epl_property_commercial_category</a></li>
-				<li><a href="function-epl_property_featured_image.html">epl_property_featured_image</a></li>
-				<li><a href="function-epl_property_gallery.html">epl_property_gallery</a></li>
-				<li><a href="function-epl_property_get_the_full_address.html">epl_property_get_the_full_address</a></li>
-				<li><a href="function-epl_property_heading.html">epl_property_heading</a></li>
-				<li><a href="function-epl_property_icons.html">epl_property_icons</a></li>
-				<li><a href="function-epl_property_inspection_times.html">epl_property_inspection_times</a></li>
-				<li><a href="function-epl_property_land_category.html">epl_property_land_category</a></li>
-				<li><a href="function-epl_property_map_default_callback.html">epl_property_map_default_callback</a></li>
-				<li><a href="function-epl_property_new_excerpt_more.html">epl_property_new_excerpt_more</a></li>
-				<li><a href="function-epl_property_price.html">epl_property_price</a></li>
-				<li><a href="function-epl_property_secondary_heading.html">epl_property_secondary_heading</a></li>
-				<li><a href="function-epl_property_single.html">epl_property_single</a></li>
-				<li><a href="function-epl_property_single_default.html">epl_property_single_default</a></li>
-				<li><a href="function-epl_property_sold_leased.html">epl_property_sold_leased</a></li>
-				<li><a href="function-epl_property_suburb.html">epl_property_suburb</a></li>
-				<li><a href="function-epl_property_tab_section.html">epl_property_tab_section</a></li>
-				<li><a href="function-epl_property_tab_section_after.html">epl_property_tab_section_after</a></li>
-				<li><a href="function-epl_property_the_address.html">epl_property_the_address</a></li>
-				<li><a href="function-epl_property_video_callback.html">epl_property_video_callback</a></li>
-				<li><a href="function-epl_property_widget.html">epl_property_widget</a></li>
-				<li><a href="function-epl_property_widget_image_only_option.html">epl_property_widget_image_only_option</a></li>
-				<li><a href="function-epl_property_widget_list_option.html">epl_property_widget_list_option</a></li>
-				<li><a href="function-epl_property_widget_status_class.html">epl_property_widget_status_class</a></li>
-				<li><a href="function-epl_property_widgets_featured_image.html">epl_property_widgets_featured_image</a></li>
-				<li><a href="function-epl_register_custom_post_type_business.html">epl_register_custom_post_type_business</a></li>
-				<li><a href="function-epl_register_custom_post_type_commercial.html">epl_register_custom_post_type_commercial</a></li>
-				<li><a href="function-epl_register_custom_post_type_commercial_land.html">epl_register_custom_post_type_commercial_land</a></li>
-				<li><a href="function-epl_register_custom_post_type_contact.html">epl_register_custom_post_type_contact</a></li>
-				<li><a href="function-epl_register_custom_post_type_land.html">epl_register_custom_post_type_land</a></li>
-				<li><a href="function-epl_register_custom_post_type_property.html">epl_register_custom_post_type_property</a></li>
-				<li><a href="function-epl_register_custom_post_type_rental.html">epl_register_custom_post_type_rental</a></li>
-				<li><a href="function-epl_register_custom_post_type_rural.html">epl_register_custom_post_type_rural</a></li>
-				<li><a href="function-epl_register_default_contact_tabs.html">epl_register_default_contact_tabs</a></li>
-				<li><a href="function-epl_register_default_contact_views.html">epl_register_default_contact_views</a></li>
-				<li><a href="function-epl_register_delete_contact_tab.html">epl_register_delete_contact_tab</a></li>
-				<li><a href="function-epl_register_post_type.html">epl_register_post_type</a></li>
-				<li><a href="function-epl_register_taxonomy_business_listings.html">epl_register_taxonomy_business_listings</a></li>
-				<li><a href="function-epl_register_taxonomy_contact_tag.html">epl_register_taxonomy_contact_tag</a></li>
-				<li><a href="function-epl_register_taxonomy_features.html">epl_register_taxonomy_features</a></li>
-				<li><a href="function-epl_register_taxonomy_location.html">epl_register_taxonomy_location</a></li>
-				<li><a href="function-epl_remote_url_get.html">epl_remote_url_get</a></li>
-				<li><a href="function-epl_remove_archive_thumbnail.html">epl_remove_archive_thumbnail</a></li>
-				<li><a href="function-epl_remove_single_thumbnail.html">epl_remove_single_thumbnail</a></li>
-				<li><a href="function-epl_render_archive_post.html">epl_render_archive_post</a></li>
-				<li><a href="function-epl_render_contact_view.html">epl_render_contact_view</a></li>
-				<li><a href="function-epl_render_html_fields.html">epl_render_html_fields</a></li>
-				<li><a href="function-epl_render_single_post.html">epl_render_single_post</a></li>
-				<li><a href="function-epl_report_views.html">epl_report_views</a></li>
-				<li><a href="function-epl_reports_access.html">epl_reports_access</a></li>
-				<li><a href="function-epl_reports_business.html">epl_reports_business</a></li>
-				<li><a href="function-epl_reports_commercial.html">epl_reports_commercial</a></li>
-				<li><a href="function-epl_reports_commercial_land.html">epl_reports_commercial_land</a></li>
-				<li><a href="function-epl_reports_default_views.html">epl_reports_default_views</a></li>
-				<li><a href="function-epl_reports_graph.html">epl_reports_graph</a></li>
-				<li><a href="function-epl_reports_graph_controls.html">epl_reports_graph_controls</a></li>
-				<li><a href="function-epl_reports_land.html">epl_reports_land</a></li>
-				<li><a href="function-epl_reports_page.html">epl_reports_page</a></li>
-				<li><a href="function-epl_reports_property.html">epl_reports_property</a></li>
-				<li><a href="function-epl_reports_rental.html">epl_reports_rental</a></li>
-				<li><a href="function-epl_reports_rural.html">epl_reports_rural</a></li>
-				<li><a href="function-epl_reports_tab_reports.html">epl_reports_tab_reports</a></li>
-				<li><a href="function-epl_reset_post_author.html">epl_reset_post_author</a></li>
-				<li><a href="function-epl_reset_property_object.html">epl_reset_property_object</a></li>
-				<li><a href="function-epl_sanitize_amount.html">epl_sanitize_amount</a></li>
-				<li><a href="function-epl_save_contact_tag_bgcolor.html">epl_save_contact_tag_bgcolor</a></li>
-				<li><a href="function-epl_save_custom_user_profile_fields.html">epl_save_custom_user_profile_fields</a></li>
-				<li><a href="function-epl_sd_author_box_compat.html">epl_sd_author_box_compat</a></li>
-				<li><a href="function-epl_search.html">epl_search</a></li>
-				<li><a href="function-epl_search_contact.html">epl_search_contact</a></li>
-				<li><a href="function-epl_search_contact_listing.html">epl_search_contact_listing</a></li>
-				<li><a href="function-epl_search_get_defaults.html">epl_search_get_defaults</a></li>
-				<li><a href="function-epl_search_listing.html">epl_search_listing</a></li>
-				<li><a href="function-epl_search_pre_get_posts.html">epl_search_pre_get_posts</a></li>
-				<li><a href="function-epl_search_user.html">epl_search_user</a></li>
-				<li><a href="function-epl_search_widget_fields.html">epl_search_widget_fields</a></li>
-				<li><a href="function-epl_search_widget_fields_frontend.html">epl_search_widget_fields_frontend</a></li>
-				<li><a href="function-epl_session_end.html">epl_session_end</a></li>
-				<li><a href="function-epl_session_start.html">epl_session_start</a></li>
-				<li><a href="function-epl_set_error.html">epl_set_error</a></li>
-				<li><a href="function-epl_settings.html">epl_settings</a></li>
-				<li><a href="function-epl_shortcode_googlemap_callback.html">epl_shortcode_googlemap_callback</a></li>
-				<li><a href="function-epl_shortcode_listing_auction_callback.html">epl_shortcode_listing_auction_callback</a></li>
-				<li><a href="function-epl_shortcode_listing_callback.html">epl_shortcode_listing_callback</a></li>
-				<li><a href="function-epl_shortcode_listing_category_callback.html">epl_shortcode_listing_category_callback</a></li>
-				<li><a href="function-epl_shortcode_listing_search_callback.html">epl_shortcode_listing_search_callback</a></li>
-				<li><a href="function-epl_shortcode_listing_tax_feature_callback.html">epl_shortcode_listing_tax_feature_callback</a></li>
-				<li><a href="function-epl_shortcode_listing_tax_location_callback.html">epl_shortcode_listing_tax_location_callback</a></li>
-				<li><a href="function-epl_shortcode_property_open_callback.html">epl_shortcode_property_open_callback</a></li>
-				<li><a href="function-epl_single_render_content.html">epl_single_render_content</a></li>
-				<li><a href="function-epl_sold_label_status_filter_callback.html">epl_sold_label_status_filter_callback</a></li>
-				<li><a href="function-epl_sorting_options.html">epl_sorting_options</a></li>
-				<li><a href="function-epl_sorting_options_callback.html">epl_sorting_options_callback</a></li>
-				<li><a href="function-epl_status_dashboard_widget_callback.html">epl_status_dashboard_widget_callback</a></li>
-				<li><a href="function-epl_strip_tags.html">epl_strip_tags</a></li>
-				<li><a href="function-epl_switch_views.html">epl_switch_views</a></li>
-				<li><a href="function-epl_switch_views_sorting.html">epl_switch_views_sorting</a></li>
-				<li><a href="function-epl_syntax_highlight.html">epl_syntax_highlight</a></li>
-				<li><a href="function-epl_tax_location_label.html">epl_tax_location_label</a></li>
-				<li><a href="function-epl_template_class.html">epl_template_class</a></li>
-				<li><a href="function-epl_template_path.html">epl_template_path</a></li>
-				<li><a href="function-epl_the_content.html">epl_the_content</a></li>
-				<li><a href="function-epl_the_content_filters.html">epl_the_content_filters</a></li>
-				<li><a href="function-epl_the_excerpt.html">epl_the_excerpt</a></li>
-				<li><a href="function-epl_the_property_address.html">epl_the_property_address</a></li>
-				<li><a href="function-epl_the_property_meta.html">epl_the_property_meta</a></li>
-				<li><a href="function-epl_trim_excerpt.html">epl_trim_excerpt</a></li>
-				<li><a href="function-epl_under_offer_label_status_filter_callback.html">epl_under_offer_label_status_filter_callback</a></li>
-				<li><a href="function-epl_uninstall.html">epl_uninstall</a></li>
-				<li><a href="function-epl_unset_error.html">epl_unset_error</a></li>
-				<li><a href="function-epl_update_contact_tag_bgcolor.html">epl_update_contact_tag_bgcolor</a></li>
-				<li><a href="function-epl_update_default_view.html">epl_update_default_view</a></li>
-				<li><a href="function-epl_update_listing_coordinates.html">epl_update_listing_coordinates</a></li>
-				<li><a href="function-epl_var_dump.html">epl_var_dump</a></li>
-				<li><a href="function-epl_widget_listing_address.html">epl_widget_listing_address</a></li>
-				<li><a href="function-epl_widget_render_backend_field.html">epl_widget_render_backend_field</a></li>
-				<li><a href="function-epl_widget_render_frontend_fields.html">epl_widget_render_frontend_fields</a></li>
-				<li><a href="function-epl_wp_default_pagination.html">epl_wp_default_pagination</a></li>
-				<li><a href="function-epl_wp_enqueue_scripts.html">epl_wp_enqueue_scripts</a></li>
-				<li><a href="function-get_category_label.html">get_category_label</a></li>
-				<li><a href="function-get_property_meta.html">get_property_meta</a></li>
-				<li><a href="function-is_epl_core_post.html">is_epl_core_post</a></li>
-				<li><a href="function-is_epl_post.html">is_epl_post</a></li>
-				<li><a href="function-is_epl_post_archive.html">is_epl_post_archive</a></li>
-				<li><a href="function-is_epl_post_single.html">is_epl_post_single</a></li>
-				<li><a href="function-is_epl_post_type.html">is_epl_post_type</a></li>
-				<li><a href="function-is_epl_rental_post.html">is_epl_rental_post</a></li>
-				<li><a href="function-is_epl_sales_post.html">is_epl_sales_post</a></li>
-				<li><a href="function-render_content.html">render_content</a></li>
-				<li><a href="function-shortcode_exists.html">shortcode_exists</a></li>
-				<li><a href="function-the_property_meta.html">the_property_meta</a></li>
 			</ul>
 		</div>
 	</div>
@@ -846,424 +423,405 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="">
-		<input type="hidden" name="ie" value="UTF-8">
-		<input type="text" name="q" class="text" placeholder="Search">
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-<span>Package</span>			</li>
-			<li>
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-		</ul>
-		<ul>
-		</ul>
+	<div id="rightInner">
+<div id="source">
+	<pre class="numbers"><code><span class="l"><a href="#1">  1 </a></span><span class="l"><a href="#2">  2 </a></span></span><span class="l"><a href="#3">  3 </a></span></span><span class="l"><a href="#4">  4 </a></span></span><span class="l"><a href="#5">  5 </a></span></span><span class="l"><a href="#6">  6 </a></span></span><span class="l"><a href="#7">  7 </a></span></span><span class="l"><a href="#8">  8 </a></span></span><span class="l"><a href="#9">  9 </a></span></span><span class="l"><a href="#10"> 10 </a></span><span class="l"><a href="#11"> 11 </a></span><span class="l"><a href="#12"> 12 </a></span><span class="l"><a href="#13"> 13 </a></span><span class="l"><a href="#14"> 14 </a></span><span class="l"><a href="#15"> 15 </a></span><span class="l"><a href="#16"> 16 </a></span><span class="l"><a href="#17"> 17 </a></span><span class="l"><a href="#18"> 18 </a></span></span><span class="l"><a href="#19"> 19 </a></span></span><span class="l"><a href="#20"> 20 </a></span></span><span class="l"><a href="#21"> 21 </a></span></span><span class="l"><a href="#22"> 22 </a></span></span><span class="l"><a href="#23"> 23 </a></span></span><span class="l"><a href="#24"> 24 </a></span><span class="l"><a href="#25"> 25 </a></span><span class="l"><a href="#26"> 26 </a></span><span class="l"><a href="#27"> 27 </a></span><span class="l"><a href="#28"> 28 </a></span><span class="l"><a href="#29"> 29 </a></span><span class="l"><a href="#30"> 30 </a></span><span class="l"><a href="#31"> 31 </a></span><span class="l"><a href="#32"> 32 </a></span></span><span class="l"><a href="#33"> 33 </a></span></span><span class="l"><a href="#34"> 34 </a></span></span><span class="l"><a href="#35"> 35 </a></span></span><span class="l"><a href="#36"> 36 </a></span></span><span class="l"><a href="#37"> 37 </a></span></span><span class="l"><a href="#38"> 38 </a></span></span><span class="l"><a href="#39"> 39 </a></span></span><span class="l"><a href="#40"> 40 </a></span></span><span class="l"><a href="#41"> 41 </a></span><span class="l"><a href="#42"> 42 </a></span><span class="l"><a href="#43"> 43 </a></span><span class="l"><a href="#44"> 44 </a></span><span class="l"><a href="#45"> 45 </a></span><span class="l"><a href="#46"> 46 </a></span><span class="l"><a href="#47"> 47 </a></span><span class="l"><a href="#48"> 48 </a></span><span class="l"><a href="#49"> 49 </a></span><span class="l"><a href="#50"> 50 </a></span><span class="l"><a href="#51"> 51 </a></span><span class="l"><a href="#52"> 52 </a></span><span class="l"><a href="#53"> 53 </a></span><span class="l"><a href="#54"> 54 </a></span><span class="l"><a href="#55"> 55 </a></span><span class="l"><a href="#56"> 56 </a></span><span class="l"><a href="#57"> 57 </a></span><span class="l"><a href="#58"> 58 </a></span><span class="l"><a href="#59"> 59 </a></span></span><span class="l"><a href="#60"> 60 </a></span></span><span class="l"><a href="#61"> 61 </a></span></span><span class="l"><a href="#62"> 62 </a></span></span><span class="l"><a href="#63"> 63 </a></span></span><span class="l"><a href="#64"> 64 </a></span></span><span class="l"><a href="#65"> 65 </a></span><span class="l"><a href="#66"> 66 </a></span><span class="l"><a href="#67"> 67 </a></span><span class="l"><a href="#68"> 68 </a></span><span class="l"><a href="#69"> 69 </a></span><span class="l"><a href="#70"> 70 </a></span><span class="l"><a href="#71"> 71 </a></span><span class="l"><a href="#72"> 72 </a></span><span class="l"><a href="#73"> 73 </a></span><span class="l"><a href="#74"> 74 </a></span><span class="l"><a href="#75"> 75 </a></span><span class="l"><a href="#76"> 76 </a></span></span><span class="l"><a href="#77"> 77 </a></span></span><span class="l"><a href="#78"> 78 </a></span></span><span class="l"><a href="#79"> 79 </a></span></span><span class="l"><a href="#80"> 80 </a></span></span><span class="l"><a href="#81"> 81 </a></span></span><span class="l"><a href="#82"> 82 </a></span></span><span class="l"><a href="#83"> 83 </a></span></span><span class="l"><a href="#84"> 84 </a></span></span><span class="l"><a href="#85"> 85 </a></span></span><span class="l"><a href="#86"> 86 </a></span></span><span class="l"><a href="#87"> 87 </a></span></span><span class="l"><a href="#88"> 88 </a></span><span class="l"><a href="#89"> 89 </a></span><span class="l"><a href="#90"> 90 </a></span><span class="l"><a href="#91"> 91 </a></span><span class="l"><a href="#92"> 92 </a></span><span class="l"><a href="#93"> 93 </a></span><span class="l"><a href="#94"> 94 </a></span><span class="l"><a href="#95"> 95 </a></span><span class="l"><a href="#96"> 96 </a></span><span class="l"><a href="#97"> 97 </a></span><span class="l"><a href="#98"> 98 </a></span><span class="l"><a href="#99"> 99 </a></span><span class="l"><a href="#100">100 </a></span><span class="l"><a href="#101">101 </a></span><span class="l"><a href="#102">102 </a></span><span class="l"><a href="#103">103 </a></span><span class="l"><a href="#104">104 </a></span><span class="l"><a href="#105">105 </a></span><span class="l"><a href="#106">106 </a></span><span class="l"><a href="#107">107 </a></span><span class="l"><a href="#108">108 </a></span><span class="l"><a href="#109">109 </a></span><span class="l"><a href="#110">110 </a></span><span class="l"><a href="#111">111 </a></span><span class="l"><a href="#112">112 </a></span><span class="l"><a href="#113">113 </a></span><span class="l"><a href="#114">114 </a></span><span class="l"><a href="#115">115 </a></span><span class="l"><a href="#116">116 </a></span><span class="l"><a href="#117">117 </a></span><span class="l"><a href="#118">118 </a></span><span class="l"><a href="#119">119 </a></span><span class="l"><a href="#120">120 </a></span><span class="l"><a href="#121">121 </a></span><span class="l"><a href="#122">122 </a></span><span class="l"><a href="#123">123 </a></span></span><span class="l"><a href="#124">124 </a></span></span><span class="l"><a href="#125">125 </a></span></span><span class="l"><a href="#126">126 </a></span></span><span class="l"><a href="#127">127 </a></span></span><span class="l"><a href="#128">128 </a></span><span class="l"><a href="#129">129 </a></span><span class="l"><a href="#130">130 </a></span><span class="l"><a href="#131">131 </a></span><span class="l"><a href="#132">132 </a></span><span class="l"><a href="#133">133 </a></span><span class="l"><a href="#134">134 </a></span><span class="l"><a href="#135">135 </a></span><span class="l"><a href="#136">136 </a></span><span class="l"><a href="#137">137 </a></span><span class="l"><a href="#138">138 </a></span><span class="l"><a href="#139">139 </a></span><span class="l"><a href="#140">140 </a></span><span class="l"><a href="#141">141 </a></span><span class="l"><a href="#142">142 </a></span><span class="l"><a href="#143">143 </a></span><span class="l"><a href="#144">144 </a></span><span class="l"><a href="#145">145 </a></span><span class="l"><a href="#146">146 </a></span><span class="l"><a href="#147">147 </a></span><span class="l"><a href="#148">148 </a></span><span class="l"><a href="#149">149 </a></span><span class="l"><a href="#150">150 </a></span><span class="l"><a href="#151">151 </a></span><span class="l"><a href="#152">152 </a></span><span class="l"><a href="#153">153 </a></span><span class="l"><a href="#154">154 </a></span><span class="l"><a href="#155">155 </a></span><span class="l"><a href="#156">156 </a></span><span class="l"><a href="#157">157 </a></span><span class="l"><a href="#158">158 </a></span><span class="l"><a href="#159">159 </a></span><span class="l"><a href="#160">160 </a></span><span class="l"><a href="#161">161 </a></span><span class="l"><a href="#162">162 </a></span><span class="l"><a href="#163">163 </a></span><span class="l"><a href="#164">164 </a></span><span class="l"><a href="#165">165 </a></span><span class="l"><a href="#166">166 </a></span><span class="l"><a href="#167">167 </a></span><span class="l"><a href="#168">168 </a></span><span class="l"><a href="#169">169 </a></span><span class="l"><a href="#170">170 </a></span><span class="l"><a href="#171">171 </a></span><span class="l"><a href="#172">172 </a></span><span class="l"><a href="#173">173 </a></span><span class="l"><a href="#174">174 </a></span><span class="l"><a href="#175">175 </a></span><span class="l"><a href="#176">176 </a></span><span class="l"><a href="#177">177 </a></span><span class="l"><a href="#178">178 </a></span><span class="l"><a href="#179">179 </a></span><span class="l"><a href="#180">180 </a></span><span class="l"><a href="#181">181 </a></span><span class="l"><a href="#182">182 </a></span><span class="l"><a href="#183">183 </a></span><span class="l"><a href="#184">184 </a></span><span class="l"><a href="#185">185 </a></span><span class="l"><a href="#186">186 </a></span><span class="l"><a href="#187">187 </a></span><span class="l"><a href="#188">188 </a></span><span class="l"><a href="#189">189 </a></span><span class="l"><a href="#190">190 </a></span><span class="l"><a href="#191">191 </a></span><span class="l"><a href="#192">192 </a></span><span class="l"><a href="#193">193 </a></span><span class="l"><a href="#194">194 </a></span><span class="l"><a href="#195">195 </a></span><span class="l"><a href="#196">196 </a></span><span class="l"><a href="#197">197 </a></span><span class="l"><a href="#198">198 </a></span><span class="l"><a href="#199">199 </a></span><span class="l"><a href="#200">200 </a></span><span class="l"><a href="#201">201 </a></span><span class="l"><a href="#202">202 </a></span><span class="l"><a href="#203">203 </a></span><span class="l"><a href="#204">204 </a></span><span class="l"><a href="#205">205 </a></span><span class="l"><a href="#206">206 </a></span><span class="l"><a href="#207">207 </a></span><span class="l"><a href="#208">208 </a></span><span class="l"><a href="#209">209 </a></span><span class="l"><a href="#210">210 </a></span><span class="l"><a href="#211">211 </a></span><span class="l"><a href="#212">212 </a></span><span class="l"><a href="#213">213 </a></span><span class="l"><a href="#214">214 </a></span><span class="l"><a href="#215">215 </a></span><span class="l"><a href="#216">216 </a></span><span class="l"><a href="#217">217 </a></span><span class="l"><a href="#218">218 </a></span><span class="l"><a href="#219">219 </a></span><span class="l"><a href="#220">220 </a></span><span class="l"><a href="#221">221 </a></span></span><span class="l"><a href="#222">222 </a></span></span><span class="l"><a href="#223">223 </a></span></span><span class="l"><a href="#224">224 </a></span></span><span class="l"><a href="#225">225 </a></span></span><span class="l"><a href="#226">226 </a></span></span><span class="l"><a href="#227">227 </a></span></span><span class="l"><a href="#228">228 </a></span></span><span class="l"><a href="#229">229 </a></span></span><span class="l"><a href="#230">230 </a></span><span class="l"><a href="#231">231 </a></span><span class="l"><a href="#232">232 </a></span><span class="l"><a href="#233">233 </a></span><span class="l"><a href="#234">234 </a></span><span class="l"><a href="#235">235 </a></span><span class="l"><a href="#236">236 </a></span><span class="l"><a href="#237">237 </a></span><span class="l"><a href="#238">238 </a></span><span class="l"><a href="#239">239 </a></span><span class="l"><a href="#240">240 </a></span><span class="l"><a href="#241">241 </a></span><span class="l"><a href="#242">242 </a></span><span class="l"><a href="#243">243 </a></span><span class="l"><a href="#244">244 </a></span><span class="l"><a href="#245">245 </a></span><span class="l"><a href="#246">246 </a></span><span class="l"><a href="#247">247 </a></span><span class="l"><a href="#248">248 </a></span><span class="l"><a href="#249">249 </a></span><span class="l"><a href="#250">250 </a></span><span class="l"><a href="#251">251 </a></span><span class="l"><a href="#252">252 </a></span><span class="l"><a href="#253">253 </a></span><span class="l"><a href="#254">254 </a></span><span class="l"><a href="#255">255 </a></span><span class="l"><a href="#256">256 </a></span><span class="l"><a href="#257">257 </a></span><span class="l"><a href="#258">258 </a></span><span class="l"><a href="#259">259 </a></span><span class="l"><a href="#260">260 </a></span><span class="l"><a href="#261">261 </a></span><span class="l"><a href="#262">262 </a></span><span class="l"><a href="#263">263 </a></span><span class="l"><a href="#264">264 </a></span><span class="l"><a href="#265">265 </a></span></span><span class="l"><a href="#266">266 </a></span></span><span class="l"><a href="#267">267 </a></span></span><span class="l"><a href="#268">268 </a></span></span><span class="l"><a href="#269">269 </a></span></span><span class="l"><a href="#270">270 </a></span></span><span class="l"><a href="#271">271 </a></span><span class="l"><a href="#272">272 </a></span><span class="l"><a href="#273">273 </a></span><span class="l"><a href="#274">274 </a></span><span class="l"><a href="#275">275 </a></span><span class="l"><a href="#276">276 </a></span><span class="l"><a href="#277">277 </a></span><span class="l"><a href="#278">278 </a></span><span class="l"><a href="#279">279 </a></span><span class="l"><a href="#280">280 </a></span></span><span class="l"><a href="#281">281 </a></span></span><span class="l"><a href="#282">282 </a></span></span><span class="l"><a href="#283">283 </a></span></span><span class="l"><a href="#284">284 </a></span></span><span class="l"><a href="#285">285 </a></span></span><span class="l"><a href="#286">286 </a></span></span><span class="l"><a href="#287">287 </a></span></span><span class="l"><a href="#288">288 </a></span></span><span class="l"><a href="#289">289 </a></span></span><span class="l"><a href="#290">290 </a></span><span class="l"><a href="#291">291 </a></span><span class="l"><a href="#292">292 </a></span><span class="l"><a href="#293">293 </a></span><span class="l"><a href="#294">294 </a></span><span class="l"><a href="#295">295 </a></span><span class="l"><a href="#296">296 </a></span><span class="l"><a href="#297">297 </a></span><span class="l"><a href="#298">298 </a></span><span class="l"><a href="#299">299 </a></span><span class="l"><a href="#300">300 </a></span><span class="l"><a href="#301">301 </a></span><span class="l"><a href="#302">302 </a></span><span class="l"><a href="#303">303 </a></span><span class="l"><a href="#304">304 </a></span><span class="l"><a href="#305">305 </a></span><span class="l"><a href="#306">306 </a></span><span class="l"><a href="#307">307 </a></span><span class="l"><a href="#308">308 </a></span><span class="l"><a href="#309">309 </a></span><span class="l"><a href="#310">310 </a></span><span class="l"><a href="#311">311 </a></span><span class="l"><a href="#312">312 </a></span><span class="l"><a href="#313">313 </a></span><span class="l"><a href="#314">314 </a></span><span class="l"><a href="#315">315 </a></span><span class="l"><a href="#316">316 </a></span><span class="l"><a href="#317">317 </a></span><span class="l"><a href="#318">318 </a></span><span class="l"><a href="#319">319 </a></span><span class="l"><a href="#320">320 </a></span><span class="l"><a href="#321">321 </a></span><span class="l"><a href="#322">322 </a></span><span class="l"><a href="#323">323 </a></span><span class="l"><a href="#324">324 </a></span><span class="l"><a href="#325">325 </a></span><span class="l"><a href="#326">326 </a></span><span class="l"><a href="#327">327 </a></span><span class="l"><a href="#328">328 </a></span><span class="l"><a href="#329">329 </a></span><span class="l"><a href="#330">330 </a></span><span class="l"><a href="#331">331 </a></span><span class="l"><a href="#332">332 </a></span><span class="l"><a href="#333">333 </a></span><span class="l"><a href="#334">334 </a></span><span class="l"><a href="#335">335 </a></span><span class="l"><a href="#336">336 </a></span><span class="l"><a href="#337">337 </a></span><span class="l"><a href="#338">338 </a></span><span class="l"><a href="#339">339 </a></span><span class="l"><a href="#340">340 </a></span><span class="l"><a href="#341">341 </a></span><span class="l"><a href="#342">342 </a></span><span class="l"><a href="#343">343 </a></span><span class="l"><a href="#344">344 </a></span><span class="l"><a href="#345">345 </a></span><span class="l"><a href="#346">346 </a></span><span class="l"><a href="#347">347 </a></span><span class="l"><a href="#348">348 </a></span><span class="l"><a href="#349">349 </a></span><span class="l"><a href="#350">350 </a></span><span class="l"><a href="#351">351 </a></span><span class="l"><a href="#352">352 </a></span><span class="l"><a href="#353">353 </a></span><span class="l"><a href="#354">354 </a></span><span class="l"><a href="#355">355 </a></span><span class="l"><a href="#356">356 </a></span><span class="l"><a href="#357">357 </a></span><span class="l"><a href="#358">358 </a></span><span class="l"><a href="#359">359 </a></span><span class="l"><a href="#360">360 </a></span><span class="l"><a href="#361">361 </a></span><span class="l"><a href="#362">362 </a></span><span class="l"><a href="#363">363 </a></span><span class="l"><a href="#364">364 </a></span><span class="l"><a href="#365">365 </a></span><span class="l"><a href="#366">366 </a></span><span class="l"><a href="#367">367 </a></span><span class="l"><a href="#368">368 </a></span><span class="l"><a href="#369">369 </a></span><span class="l"><a href="#370">370 </a></span><span class="l"><a href="#371">371 </a></span><span class="l"><a href="#372">372 </a></span><span class="l"><a href="#373">373 </a></span><span class="l"><a href="#374">374 </a></span><span class="l"><a href="#375">375 </a></span><span class="l"><a href="#376">376 </a></span><span class="l"><a href="#377">377 </a></span><span class="l"><a href="#378">378 </a></span><span class="l"><a href="#379">379 </a></span><span class="l"><a href="#380">380 </a></span><span class="l"><a href="#381">381 </a></span><span class="l"><a href="#382">382 </a></span><span class="l"><a href="#383">383 </a></span><span class="l"><a href="#384">384 </a></span><span class="l"><a href="#385">385 </a></span><span class="l"><a href="#386">386 </a></span><span class="l"><a href="#387">387 </a></span><span class="l"><a href="#388">388 </a></span></code></pre>
+	<pre class="code"><code><span id="1" class="l"><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><span class="php-comment">/**
+</span></span><span id="3" class="l"><span class="php-comment"> * EPL Updater
+</span></span><span id="4" class="l"><span class="php-comment"> *
+</span></span><span id="5" class="l"><span class="php-comment"> * @package     EPL
+</span></span><span id="6" class="l"><span class="php-comment"> * @subpackage  Classes/Updater
+</span></span><span id="7" class="l"><span class="php-comment"> * @copyright   Copyright (c) 2016, Merv Barrett
+</span></span><span id="8" class="l"><span class="php-comment"> * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
+</span></span><span id="9" class="l"><span class="php-comment"> * @since       1.0
+</span></span><span id="10" class="l"><span class="php-comment"> */</span>
+</span><span id="11" class="l">
+</span><span id="12" class="l"><span class="php-comment">// uncomment this line for testing</span>
+</span><span id="13" class="l"><span class="php-comment">//set_site_transient( 'update_plugins', null );</span>
+</span><span id="14" class="l">
+</span><span id="15" class="l"><span class="php-comment">// Exit if accessed directly</span>
+</span><span id="16" class="l"><span class="php-keyword1">if</span> ( ! <span class="php-keyword2">defined</span>( <span class="php-quote">'ABSPATH'</span> ) ) <span class="php-keyword1">exit</span>;
+</span><span id="17" class="l">
+</span><span id="18" class="l"><span class="php-comment">/**
+</span></span><span id="19" class="l"><span class="php-comment"> * Allows plugins to use their own update API.
+</span></span><span id="20" class="l"><span class="php-comment"> *
+</span></span><span id="21" class="l"><span class="php-comment"> * @author Pippin Williamson
+</span></span><span id="22" class="l"><span class="php-comment"> * @version 1.6.3
+</span></span><span id="23" class="l"><span class="php-comment"> * @since 1.0
+</span></span><span id="24" class="l"><span class="php-comment"> */</span>
+</span><span id="25" class="l"><span class="php-keyword1">class</span> EPL_SL_Plugin_Updater {
+</span><span id="26" class="l">    <span class="php-keyword1">private</span> <span class="php-var">$api_url</span>   = <span class="php-quote">''</span>;
+</span><span id="27" class="l">    <span class="php-keyword1">private</span> <span class="php-var">$api_data</span>  = <span class="php-keyword1">array</span>();
+</span><span id="28" class="l">    <span class="php-keyword1">private</span> <span class="php-var">$name</span>      = <span class="php-quote">''</span>;
+</span><span id="29" class="l">    <span class="php-keyword1">private</span> <span class="php-var">$slug</span>      = <span class="php-quote">''</span>;
+</span><span id="30" class="l">    <span class="php-keyword1">private</span> <span class="php-var">$version</span>   = <span class="php-quote">''</span>;
+</span><span id="31" class="l">
+</span><span id="32" class="l">    <span class="php-comment">/**
+</span></span><span id="33" class="l"><span class="php-comment">     * Class constructor.
+</span></span><span id="34" class="l"><span class="php-comment">     *
+</span></span><span id="35" class="l"><span class="php-comment">     * @uses plugin_basename()
+</span></span><span id="36" class="l"><span class="php-comment">     * @uses hook()
+</span></span><span id="37" class="l"><span class="php-comment">     *
+</span></span><span id="38" class="l"><span class="php-comment">     * @param string  $_api_url     The URL pointing to the custom API endpoint.
+</span></span><span id="39" class="l"><span class="php-comment">     * @param string  $_plugin_file Path to the plugin file.
+</span></span><span id="40" class="l"><span class="php-comment">     * @param array   $_api_data    Optional data to send with API calls.
+</span></span><span id="41" class="l"><span class="php-comment">     */</span>
+</span><span id="42" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct( <span class="php-var">$_api_url</span>, <span class="php-var">$_plugin_file</span>, <span class="php-var">$_api_data</span> = <span class="php-keyword1">null</span> ) {
+</span><span id="43" class="l">
+</span><span id="44" class="l">        <span class="php-keyword1">global</span> <span class="php-var">$edd_plugin_data</span>;
+</span><span id="45" class="l">
+</span><span id="46" class="l">        <span class="php-var">$this</span>-&gt;api_url  = trailingslashit( <span class="php-var">$_api_url</span> );
+</span><span id="47" class="l">        <span class="php-var">$this</span>-&gt;api_data = <span class="php-var">$_api_data</span>;
+</span><span id="48" class="l">        <span class="php-var">$this</span>-&gt;name     = plugin_basename( <span class="php-var">$_plugin_file</span> );
+</span><span id="49" class="l">        <span class="php-var">$this</span>-&gt;slug     = <span class="php-keyword2">basename</span>( <span class="php-var">$_plugin_file</span>, <span class="php-quote">'.php'</span> );
+</span><span id="50" class="l">        <span class="php-var">$this</span>-&gt;version  = <span class="php-var">$_api_data</span>[<span class="php-quote">'version'</span>];
+</span><span id="51" class="l">
+</span><span id="52" class="l">        <span class="php-var">$edd_plugin_data</span>[ <span class="php-var">$this</span>-&gt;slug ] = <span class="php-var">$this</span>-&gt;api_data;
+</span><span id="53" class="l">
+</span><span id="54" class="l">        <span class="php-comment">// Set up hooks.</span>
+</span><span id="55" class="l">        <span class="php-var">$this</span>-&gt;init();
+</span><span id="56" class="l">
+</span><span id="57" class="l">    }
+</span><span id="58" class="l">
+</span><span id="59" class="l">    <span class="php-comment">/**
+</span></span><span id="60" class="l"><span class="php-comment">     * Set up WordPress filters to hook into WP's update process.
+</span></span><span id="61" class="l"><span class="php-comment">     *
+</span></span><span id="62" class="l"><span class="php-comment">     * @uses add_filter()
+</span></span><span id="63" class="l"><span class="php-comment">     *
+</span></span><span id="64" class="l"><span class="php-comment">     * @return void
+</span></span><span id="65" class="l"><span class="php-comment">     */</span>
+</span><span id="66" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> init() {
+</span><span id="67" class="l">
+</span><span id="68" class="l">        add_filter( <span class="php-quote">'pre_set_site_transient_update_plugins'</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'check_update'</span> ) );
+</span><span id="69" class="l">        add_filter( <span class="php-quote">'plugins_api'</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'plugins_api_filter'</span> ), <span class="php-num">10</span>, <span class="php-num">3</span> );
+</span><span id="70" class="l">        remove_action( <span class="php-quote">'after_plugin_row_'</span> . <span class="php-var">$this</span>-&gt;name, <span class="php-quote">'wp_plugin_update_row'</span>, <span class="php-num">10</span>, <span class="php-num">2</span> );
+</span><span id="71" class="l">        add_action( <span class="php-quote">'after_plugin_row_'</span> . <span class="php-var">$this</span>-&gt;name, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'show_update_notification'</span> ), <span class="php-num">10</span>, <span class="php-num">2</span> );
+</span><span id="72" class="l">        add_action( <span class="php-quote">'admin_init'</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'show_changelog'</span> ) );
+</span><span id="73" class="l">
+</span><span id="74" class="l">    }
+</span><span id="75" class="l">
+</span><span id="76" class="l">    <span class="php-comment">/**
+</span></span><span id="77" class="l"><span class="php-comment">     * Check for Updates at the defined API endpoint and modify the update array.
+</span></span><span id="78" class="l"><span class="php-comment">     *
+</span></span><span id="79" class="l"><span class="php-comment">     * This function dives into the update API just when WordPress creates its update array,
+</span></span><span id="80" class="l"><span class="php-comment">     * then adds a custom API call and injects the custom plugin data retrieved from the API.
+</span></span><span id="81" class="l"><span class="php-comment">     * It is reassembled from parts of the native WordPress plugin update code.
+</span></span><span id="82" class="l"><span class="php-comment">     * See wp-includes/update.php line 121 for the original wp_update_plugins() function.
+</span></span><span id="83" class="l"><span class="php-comment">     *
+</span></span><span id="84" class="l"><span class="php-comment">     * @uses api_request()
+</span></span><span id="85" class="l"><span class="php-comment">     *
+</span></span><span id="86" class="l"><span class="php-comment">     * @param array   $_transient_data Update array build by WordPress.
+</span></span><span id="87" class="l"><span class="php-comment">     * @return array Modified update array with custom plugin data.
+</span></span><span id="88" class="l"><span class="php-comment">     */</span>
+</span><span id="89" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> check_update( <span class="php-var">$_transient_data</span> ) {
+</span><span id="90" class="l">
+</span><span id="91" class="l">        <span class="php-keyword1">global</span> <span class="php-var">$pagenow</span>;
+</span><span id="92" class="l">
+</span><span id="93" class="l">        <span class="php-keyword1">if</span>( ! <span class="php-keyword2">is_object</span>( <span class="php-var">$_transient_data</span> ) ) {
+</span><span id="94" class="l">            <span class="php-var">$_transient_data</span> = <span class="php-keyword1">new</span> stdClass;
+</span><span id="95" class="l">        }
+</span><span id="96" class="l">
+</span><span id="97" class="l">        <span class="php-keyword1">if</span>( <span class="php-quote">'plugins.php'</span> == <span class="php-var">$pagenow</span> &amp;&amp; is_multisite() ) {
+</span><span id="98" class="l">            <span class="php-keyword1">return</span> <span class="php-var">$_transient_data</span>;
+</span><span id="99" class="l">        }
+</span><span id="100" class="l">
+</span><span id="101" class="l">        <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$_transient_data</span>-&gt;response ) || <span class="php-keyword1">empty</span>( <span class="php-var">$_transient_data</span>-&gt;response[ <span class="php-var">$this</span>-&gt;name ] ) ) {
+</span><span id="102" class="l">
+</span><span id="103" class="l">            <span class="php-var">$version_info</span> = <span class="php-var">$this</span>-&gt;api_request( <span class="php-quote">'plugin_latest_version'</span>, <span class="php-keyword1">array</span>( <span class="php-quote">'slug'</span> =&gt; <span class="php-var">$this</span>-&gt;slug ) );
+</span><span id="104" class="l">
+</span><span id="105" class="l">            <span class="php-keyword1">if</span> ( <span class="php-keyword1">false</span> !== <span class="php-var">$version_info</span> &amp;&amp; <span class="php-keyword2">is_object</span>( <span class="php-var">$version_info</span> ) &amp;&amp; <span class="php-keyword1">isset</span>( <span class="php-var">$version_info</span>-&gt;new_version ) ) {
+</span><span id="106" class="l">
+</span><span id="107" class="l">                <span class="php-keyword1">if</span>( <span class="php-keyword2">version_compare</span>( <span class="php-var">$this</span>-&gt;version, <span class="php-var">$version_info</span>-&gt;new_version, <span class="php-quote">'&lt;'</span> ) ) {
+</span><span id="108" class="l">
+</span><span id="109" class="l">                    <span class="php-var">$_transient_data</span>-&gt;response[ <span class="php-var">$this</span>-&gt;name ] = <span class="php-var">$version_info</span>;
+</span><span id="110" class="l">
+</span><span id="111" class="l">                }
+</span><span id="112" class="l">
+</span><span id="113" class="l">                <span class="php-var">$_transient_data</span>-&gt;last_checked = <span class="php-keyword2">time</span>();
+</span><span id="114" class="l">                <span class="php-var">$_transient_data</span>-&gt;checked[ <span class="php-var">$this</span>-&gt;name ] = <span class="php-var">$this</span>-&gt;version;
+</span><span id="115" class="l">
+</span><span id="116" class="l">            }
+</span><span id="117" class="l">
+</span><span id="118" class="l">        }
+</span><span id="119" class="l">
+</span><span id="120" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$_transient_data</span>;
+</span><span id="121" class="l">    }
+</span><span id="122" class="l">
+</span><span id="123" class="l">    <span class="php-comment">/**
+</span></span><span id="124" class="l"><span class="php-comment">     * show update nofication row -- needed for multisite subsites, because WP won't tell you otherwise!
+</span></span><span id="125" class="l"><span class="php-comment">     *
+</span></span><span id="126" class="l"><span class="php-comment">     * @param string  $file
+</span></span><span id="127" class="l"><span class="php-comment">     * @param array   $plugin
+</span></span><span id="128" class="l"><span class="php-comment">     */</span>
+</span><span id="129" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> show_update_notification( <span class="php-var">$file</span>, <span class="php-var">$plugin</span> ) {
+</span><span id="130" class="l">
+</span><span id="131" class="l">        <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'update_plugins'</span> ) ) {
+</span><span id="132" class="l">            <span class="php-keyword1">return</span>;
+</span><span id="133" class="l">        }
+</span><span id="134" class="l">
+</span><span id="135" class="l">        <span class="php-keyword1">if</span>( ! is_multisite() ) {
+</span><span id="136" class="l">            <span class="php-keyword1">return</span>;
+</span><span id="137" class="l">        }
+</span><span id="138" class="l">
+</span><span id="139" class="l">        <span class="php-keyword1">if</span> ( <span class="php-var">$this</span>-&gt;name != <span class="php-var">$file</span> ) {
+</span><span id="140" class="l">            <span class="php-keyword1">return</span>;
+</span><span id="141" class="l">        }
+</span><span id="142" class="l">
+</span><span id="143" class="l">        <span class="php-comment">// Remove our filter on the site transient</span>
+</span><span id="144" class="l">        remove_filter( <span class="php-quote">'pre_set_site_transient_update_plugins'</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'check_update'</span> ), <span class="php-num">10</span> );
+</span><span id="145" class="l">
+</span><span id="146" class="l">        <span class="php-var">$update_cache</span> = get_site_transient( <span class="php-quote">'update_plugins'</span> );
+</span><span id="147" class="l">
+</span><span id="148" class="l">        <span class="php-var">$update_cache</span> = <span class="php-keyword2">is_object</span>( <span class="php-var">$update_cache</span> ) ? <span class="php-var">$update_cache</span> : <span class="php-keyword1">new</span> stdClass();
+</span><span id="149" class="l">
+</span><span id="150" class="l">        <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$update_cache</span>-&gt;response ) || <span class="php-keyword1">empty</span>( <span class="php-var">$update_cache</span>-&gt;response[ <span class="php-var">$this</span>-&gt;name ] ) ) {
+</span><span id="151" class="l">
+</span><span id="152" class="l">            <span class="php-var">$cache_key</span>    = <span class="php-keyword2">md5</span>( <span class="php-quote">'edd_plugin_'</span> . sanitize_key( <span class="php-var">$this</span>-&gt;name ) . <span class="php-quote">'_version_info'</span> );
+</span><span id="153" class="l">            <span class="php-var">$version_info</span> = get_transient( <span class="php-var">$cache_key</span> );
+</span><span id="154" class="l">
+</span><span id="155" class="l">            <span class="php-keyword1">if</span>( <span class="php-keyword1">false</span> === <span class="php-var">$version_info</span> ) {
+</span><span id="156" class="l">
+</span><span id="157" class="l">                <span class="php-var">$version_info</span> = <span class="php-var">$this</span>-&gt;api_request( <span class="php-quote">'plugin_latest_version'</span>, <span class="php-keyword1">array</span>( <span class="php-quote">'slug'</span> =&gt; <span class="php-var">$this</span>-&gt;slug ) );
+</span><span id="158" class="l">
+</span><span id="159" class="l">                set_transient( <span class="php-var">$cache_key</span>, <span class="php-var">$version_info</span>, <span class="php-num">3600</span> );
+</span><span id="160" class="l">            }
+</span><span id="161" class="l">
+</span><span id="162" class="l">            <span class="php-keyword1">if</span>( ! <span class="php-keyword2">is_object</span>( <span class="php-var">$version_info</span> ) ) {
+</span><span id="163" class="l">                <span class="php-keyword1">return</span>;
+</span><span id="164" class="l">            }
+</span><span id="165" class="l">
+</span><span id="166" class="l">            <span class="php-keyword1">if</span>( <span class="php-keyword2">version_compare</span>( <span class="php-var">$this</span>-&gt;version, <span class="php-var">$version_info</span>-&gt;new_version, <span class="php-quote">'&lt;'</span> ) ) {
+</span><span id="167" class="l">
+</span><span id="168" class="l">                <span class="php-var">$update_cache</span>-&gt;response[ <span class="php-var">$this</span>-&gt;name ] = <span class="php-var">$version_info</span>;
+</span><span id="169" class="l">
+</span><span id="170" class="l">            }
+</span><span id="171" class="l">
+</span><span id="172" class="l">            <span class="php-var">$update_cache</span>-&gt;last_checked = <span class="php-keyword2">time</span>();
+</span><span id="173" class="l">            <span class="php-var">$update_cache</span>-&gt;checked[ <span class="php-var">$this</span>-&gt;name ] = <span class="php-var">$this</span>-&gt;version;
+</span><span id="174" class="l">
+</span><span id="175" class="l">            set_site_transient( <span class="php-quote">'update_plugins'</span>, <span class="php-var">$update_cache</span> );
+</span><span id="176" class="l">
+</span><span id="177" class="l">        } <span class="php-keyword1">else</span> {
+</span><span id="178" class="l">
+</span><span id="179" class="l">            <span class="php-var">$version_info</span> = <span class="php-var">$update_cache</span>-&gt;response[ <span class="php-var">$this</span>-&gt;name ];
+</span><span id="180" class="l">
+</span><span id="181" class="l">        }
+</span><span id="182" class="l">
+</span><span id="183" class="l">        <span class="php-comment">// Restore our filter</span>
+</span><span id="184" class="l">        add_filter( <span class="php-quote">'pre_set_site_transient_update_plugins'</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'check_update'</span> ) );
+</span><span id="185" class="l">
+</span><span id="186" class="l">        <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$update_cache</span>-&gt;response[ <span class="php-var">$this</span>-&gt;name ] ) &amp;&amp; <span class="php-keyword2">version_compare</span>( <span class="php-var">$this</span>-&gt;version, <span class="php-var">$version_info</span>-&gt;new_version, <span class="php-quote">'&lt;'</span> ) ) {
+</span><span id="187" class="l">
+</span><span id="188" class="l">            <span class="php-comment">// build a plugin list row, with update notification</span>
+</span><span id="189" class="l">            <span class="php-var">$wp_list_table</span> = _get_list_table( <span class="php-quote">'WP_Plugins_List_Table'</span> );
+</span><span id="190" class="l">            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;tr class=&quot;plugin-update-tr&quot;&gt;&lt;td colspan=&quot;'</span> . <span class="php-var">$wp_list_table</span>-&gt;get_column_count() . <span class="php-quote">'&quot; class=&quot;plugin-update colspanchange&quot;&gt;&lt;div class=&quot;update-message&quot;&gt;'</span>;
+</span><span id="191" class="l">
+</span><span id="192" class="l">            <span class="php-var">$changelog_link</span> = self_admin_url( <span class="php-quote">'index.php?edd_sl_action=view_plugin_changelog&amp;plugin='</span> . <span class="php-var">$this</span>-&gt;name . <span class="php-quote">'&amp;slug='</span> . <span class="php-var">$this</span>-&gt;slug . <span class="php-quote">'&amp;TB_iframe=true&amp;width=772&amp;height=911'</span> );
+</span><span id="193" class="l">
+</span><span id="194" class="l">            <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$version_info</span>-&gt;download_link ) ) {
+</span><span id="195" class="l">                <span class="php-keyword2">printf</span>(
+</span><span id="196" class="l">                    __( <span class="php-quote">'There is a new version of %1$s available. %2$s View version %3$s details %4$s.'</span>, <span class="php-quote">'easy-property-listings'</span>  ),
+</span><span id="197" class="l">                    esc_html( <span class="php-var">$version_info</span>-&gt;name ),
+</span><span id="198" class="l">                    <span class="php-quote">'&lt;a target=&quot;_blank&quot; class=&quot;thickbox&quot; href=&quot;'</span> . esc_url( <span class="php-var">$changelog_link</span> ) . <span class="php-quote">'&quot;&gt;'</span>,
+</span><span id="199" class="l">                    esc_html( <span class="php-var">$version_info</span>-&gt;new_version ),
+</span><span id="200" class="l">                    <span class="php-quote">'&lt;/a&gt;'</span>
+</span><span id="201" class="l">                );
+</span><span id="202" class="l">            } <span class="php-keyword1">else</span> {
+</span><span id="203" class="l">                <span class="php-keyword2">printf</span>(
+</span><span id="204" class="l">                    __( <span class="php-quote">'There is a new version of %1$s available. %2$s View version %3$s details %4$s or %5$s update now %6$s.'</span>, <span class="php-quote">'easy-property-listings'</span>  ),
+</span><span id="205" class="l">                    esc_html( <span class="php-var">$version_info</span>-&gt;name ),
+</span><span id="206" class="l">                    <span class="php-quote">'&lt;a target=&quot;_blank&quot; class=&quot;thickbox&quot; href=&quot;'</span> . esc_url( <span class="php-var">$changelog_link</span> ) . <span class="php-quote">'&quot;&gt;'</span>,
+</span><span id="207" class="l">                    esc_html( <span class="php-var">$version_info</span>-&gt;new_version ),
+</span><span id="208" class="l">                    <span class="php-quote">'&lt;/a&gt;'</span>,
+</span><span id="209" class="l">                    <span class="php-quote">'&lt;a href=&quot;'</span> . esc_url( wp_nonce_url( self_admin_url( <span class="php-quote">'update.php?action=upgrade-plugin&amp;plugin='</span> ) . <span class="php-var">$this</span>-&gt;name, <span class="php-quote">'upgrade-plugin_'</span> . <span class="php-var">$this</span>-&gt;name ) ) .<span class="php-quote">'&quot;&gt;'</span>,
+</span><span id="210" class="l">                    <span class="php-quote">'&lt;/a&gt;'</span>
+</span><span id="211" class="l">                );
+</span><span id="212" class="l">            }
+</span><span id="213" class="l">
+</span><span id="214" class="l">            do_action( <span class="php-quote">&quot;in_plugin_update_message-</span><span class="php-var">{$file}</span><span class="php-quote">&quot;</span>, <span class="php-var">$plugin</span>, <span class="php-var">$version_info</span> );
+</span><span id="215" class="l">
+</span><span id="216" class="l">            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;'</span>;
+</span><span id="217" class="l">        }
+</span><span id="218" class="l">    }
+</span><span id="219" class="l">
+</span><span id="220" class="l">
+</span><span id="221" class="l">    <span class="php-comment">/**
+</span></span><span id="222" class="l"><span class="php-comment">     * Updates information on the &quot;View version x.x details&quot; page with custom data.
+</span></span><span id="223" class="l"><span class="php-comment">     *
+</span></span><span id="224" class="l"><span class="php-comment">     * @uses api_request()
+</span></span><span id="225" class="l"><span class="php-comment">     *
+</span></span><span id="226" class="l"><span class="php-comment">     * @param mixed   $_data
+</span></span><span id="227" class="l"><span class="php-comment">     * @param string  $_action
+</span></span><span id="228" class="l"><span class="php-comment">     * @param object  $_args
+</span></span><span id="229" class="l"><span class="php-comment">     * @return object $_data
+</span></span><span id="230" class="l"><span class="php-comment">     */</span>
+</span><span id="231" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> plugins_api_filter( <span class="php-var">$_data</span>, <span class="php-var">$_action</span> = <span class="php-quote">''</span>, <span class="php-var">$_args</span> = <span class="php-keyword1">null</span> ) {
+</span><span id="232" class="l">
+</span><span id="233" class="l">
+</span><span id="234" class="l">        <span class="php-keyword1">if</span> ( <span class="php-var">$_action</span> != <span class="php-quote">'plugin_information'</span> ) {
+</span><span id="235" class="l">
+</span><span id="236" class="l">            <span class="php-keyword1">return</span> <span class="php-var">$_data</span>;
+</span><span id="237" class="l">
+</span><span id="238" class="l">        }
+</span><span id="239" class="l">
+</span><span id="240" class="l">        <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">isset</span>( <span class="php-var">$_args</span>-&gt;slug ) || ( <span class="php-var">$_args</span>-&gt;slug != <span class="php-var">$this</span>-&gt;slug ) ) {
+</span><span id="241" class="l">
+</span><span id="242" class="l">            <span class="php-keyword1">return</span> <span class="php-var">$_data</span>;
+</span><span id="243" class="l">
+</span><span id="244" class="l">        }
+</span><span id="245" class="l">
+</span><span id="246" class="l">        <span class="php-var">$to_send</span> = <span class="php-keyword1">array</span>(
+</span><span id="247" class="l">            <span class="php-quote">'slug'</span>   =&gt; <span class="php-var">$this</span>-&gt;slug,
+</span><span id="248" class="l">            <span class="php-quote">'is_ssl'</span> =&gt; is_ssl(),
+</span><span id="249" class="l">            <span class="php-quote">'fields'</span> =&gt; <span class="php-keyword1">array</span>(
+</span><span id="250" class="l">                <span class="php-quote">'banners'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-comment">// These will be supported soon hopefully</span>
+</span><span id="251" class="l">                <span class="php-quote">'reviews'</span> =&gt; <span class="php-keyword1">false</span>
+</span><span id="252" class="l">            )
+</span><span id="253" class="l">        );
+</span><span id="254" class="l">
+</span><span id="255" class="l">        <span class="php-var">$api_response</span> = <span class="php-var">$this</span>-&gt;api_request( <span class="php-quote">'plugin_information'</span>, <span class="php-var">$to_send</span> );
+</span><span id="256" class="l">
+</span><span id="257" class="l">        <span class="php-keyword1">if</span> ( <span class="php-keyword1">false</span> !== <span class="php-var">$api_response</span> ) {
+</span><span id="258" class="l">            <span class="php-var">$_data</span> = <span class="php-var">$api_response</span>;
+</span><span id="259" class="l">        }
+</span><span id="260" class="l">
+</span><span id="261" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$_data</span>;
+</span><span id="262" class="l">    }
+</span><span id="263" class="l">
+</span><span id="264" class="l">
+</span><span id="265" class="l">    <span class="php-comment">/**
+</span></span><span id="266" class="l"><span class="php-comment">     * Disable SSL verification in order to prevent download update failures
+</span></span><span id="267" class="l"><span class="php-comment">     *
+</span></span><span id="268" class="l"><span class="php-comment">     * @param array   $args
+</span></span><span id="269" class="l"><span class="php-comment">     * @param string  $url
+</span></span><span id="270" class="l"><span class="php-comment">     * @return object $array
+</span></span><span id="271" class="l"><span class="php-comment">     */</span>
+</span><span id="272" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> http_request_args( <span class="php-var">$args</span>, <span class="php-var">$url</span> ) {
+</span><span id="273" class="l">        <span class="php-comment">// If it is an https request and we are performing a package download, disable ssl verification</span>
+</span><span id="274" class="l">        <span class="php-keyword1">if</span> ( <span class="php-keyword2">strpos</span>( <span class="php-var">$url</span>, <span class="php-quote">'https://'</span> ) !== <span class="php-keyword1">false</span> &amp;&amp; <span class="php-keyword2">strpos</span>( <span class="php-var">$url</span>, <span class="php-quote">'edd_action=package_download'</span> ) ) {
+</span><span id="275" class="l">            <span class="php-var">$args</span>[<span class="php-quote">'sslverify'</span>] = <span class="php-keyword1">false</span>;
+</span><span id="276" class="l">        }
+</span><span id="277" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$args</span>;
+</span><span id="278" class="l">    }
+</span><span id="279" class="l">
+</span><span id="280" class="l">    <span class="php-comment">/**
+</span></span><span id="281" class="l"><span class="php-comment">     * Calls the API and, if successfull, returns the object delivered by the API.
+</span></span><span id="282" class="l"><span class="php-comment">     *
+</span></span><span id="283" class="l"><span class="php-comment">     * @uses get_bloginfo()
+</span></span><span id="284" class="l"><span class="php-comment">     * @uses wp_remote_post()
+</span></span><span id="285" class="l"><span class="php-comment">     * @uses is_wp_error()
+</span></span><span id="286" class="l"><span class="php-comment">     *
+</span></span><span id="287" class="l"><span class="php-comment">     * @param string  $_action The requested action.
+</span></span><span id="288" class="l"><span class="php-comment">     * @param array   $_data   Parameters for the API action.
+</span></span><span id="289" class="l"><span class="php-comment">     * @return false|object
+</span></span><span id="290" class="l"><span class="php-comment">     */</span>
+</span><span id="291" class="l">    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> api_request( <span class="php-var">$_action</span>, <span class="php-var">$_data</span> ) {
+</span><span id="292" class="l">
+</span><span id="293" class="l">        <span class="php-keyword1">global</span> <span class="php-var">$wp_version</span>;
+</span><span id="294" class="l">
+</span><span id="295" class="l">        <span class="php-var">$data</span> = <span class="php-keyword2">array_merge</span>( <span class="php-var">$this</span>-&gt;api_data, <span class="php-var">$_data</span> );
+</span><span id="296" class="l">
+</span><span id="297" class="l">        <span class="php-keyword1">if</span> ( <span class="php-var">$data</span>[<span class="php-quote">'slug'</span>] != <span class="php-var">$this</span>-&gt;slug ) {
+</span><span id="298" class="l">            <span class="php-keyword1">return</span>;
+</span><span id="299" class="l">        }
+</span><span id="300" class="l">
+</span><span id="301" class="l">        <span class="php-keyword1">if</span>( <span class="php-var">$this</span>-&gt;api_url == home_url() ) {
+</span><span id="302" class="l">            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>; <span class="php-comment">// Don't allow a plugin to ping itself</span>
+</span><span id="303" class="l">        }
+</span><span id="304" class="l">
+</span><span id="305" class="l">        <span class="php-var">$api_params</span> = <span class="php-keyword1">array</span>(
+</span><span id="306" class="l">            <span class="php-quote">'edd_action'</span> =&gt; <span class="php-quote">'get_version'</span>,
+</span><span id="307" class="l">            <span class="php-quote">'license'</span>    =&gt; ! <span class="php-keyword1">empty</span>( <span class="php-var">$data</span>[<span class="php-quote">'license'</span>] ) ? <span class="php-var">$data</span>[<span class="php-quote">'license'</span>] : <span class="php-quote">''</span>,
+</span><span id="308" class="l">            <span class="php-quote">'item_name'</span>  =&gt; <span class="php-keyword1">isset</span>( <span class="php-var">$data</span>[<span class="php-quote">'item_name'</span>] ) ? <span class="php-var">$data</span>[<span class="php-quote">'item_name'</span>] : <span class="php-keyword1">false</span>,
+</span><span id="309" class="l">            <span class="php-quote">'item_id'</span>    =&gt; <span class="php-keyword1">isset</span>( <span class="php-var">$data</span>[<span class="php-quote">'item_id'</span>] ) ? <span class="php-var">$data</span>[<span class="php-quote">'item_id'</span>] : <span class="php-keyword1">false</span>,
+</span><span id="310" class="l">            <span class="php-quote">'slug'</span>       =&gt; <span class="php-var">$data</span>[<span class="php-quote">'slug'</span>],
+</span><span id="311" class="l">            <span class="php-quote">'author'</span>     =&gt; <span class="php-var">$data</span>[<span class="php-quote">'author'</span>],
+</span><span id="312" class="l">            <span class="php-quote">'url'</span>        =&gt; home_url()
+</span><span id="313" class="l">        );
+</span><span id="314" class="l">
+</span><span id="315" class="l">        <span class="php-var">$request</span> = wp_remote_post( <span class="php-var">$this</span>-&gt;api_url, <span class="php-keyword1">array</span>( <span class="php-quote">'timeout'</span> =&gt; <span class="php-num">15</span>, <span class="php-quote">'sslverify'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'body'</span> =&gt; <span class="php-var">$api_params</span> ) );
+</span><span id="316" class="l">
+</span><span id="317" class="l">        <span class="php-keyword1">if</span> ( ! is_wp_error( <span class="php-var">$request</span> ) ) {
+</span><span id="318" class="l">            <span class="php-var">$request</span> = <span class="php-keyword2">json_decode</span>( wp_remote_retrieve_body( <span class="php-var">$request</span> ) );
+</span><span id="319" class="l">        }
+</span><span id="320" class="l">
+</span><span id="321" class="l">        <span class="php-keyword1">if</span> ( <span class="php-var">$request</span> &amp;&amp; <span class="php-keyword1">isset</span>( <span class="php-var">$request</span>-&gt;sections ) ) {
+</span><span id="322" class="l">            <span class="php-var">$request</span>-&gt;sections = maybe_unserialize( <span class="php-var">$request</span>-&gt;sections );
+</span><span id="323" class="l">        } <span class="php-keyword1">else</span> {
+</span><span id="324" class="l">            <span class="php-var">$request</span> = <span class="php-keyword1">false</span>;
+</span><span id="325" class="l">        }
+</span><span id="326" class="l">
+</span><span id="327" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$request</span>;
+</span><span id="328" class="l">    }
+</span><span id="329" class="l">
+</span><span id="330" class="l">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> show_changelog() {
+</span><span id="331" class="l">
+</span><span id="332" class="l">        <span class="php-keyword1">global</span> <span class="php-var">$edd_plugin_data</span>;
+</span><span id="333" class="l">
+</span><span id="334" class="l">        <span class="php-keyword1">if</span>( <span class="php-keyword1">empty</span>( <span class="php-var">$_REQUEST</span>[<span class="php-quote">'edd_sl_action'</span>] ) || <span class="php-quote">'view_plugin_changelog'</span> != <span class="php-var">$_REQUEST</span>[<span class="php-quote">'edd_sl_action'</span>] ) {
+</span><span id="335" class="l">            <span class="php-keyword1">return</span>;
+</span><span id="336" class="l">        }
+</span><span id="337" class="l">
+</span><span id="338" class="l">        <span class="php-keyword1">if</span>( <span class="php-keyword1">empty</span>( <span class="php-var">$_REQUEST</span>[<span class="php-quote">'plugin'</span>] ) ) {
+</span><span id="339" class="l">            <span class="php-keyword1">return</span>;
+</span><span id="340" class="l">        }
+</span><span id="341" class="l">
+</span><span id="342" class="l">        <span class="php-keyword1">if</span>( <span class="php-keyword1">empty</span>( <span class="php-var">$_REQUEST</span>[<span class="php-quote">'slug'</span>] ) ) {
+</span><span id="343" class="l">            <span class="php-keyword1">return</span>;
+</span><span id="344" class="l">        }
+</span><span id="345" class="l">
+</span><span id="346" class="l">        <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'update_plugins'</span> ) ) {
+</span><span id="347" class="l">            wp_die( __( <span class="php-quote">'You do not have permission to install plugin updates'</span>, <span class="php-quote">'easy-property-listings'</span>  ), __( <span class="php-quote">'Error'</span>, <span class="php-quote">'easy-property-listings'</span>  ), <span class="php-keyword1">array</span>( <span class="php-quote">'response'</span> =&gt; <span class="php-num">403</span> ) );
+</span><span id="348" class="l">        }
+</span><span id="349" class="l">
+</span><span id="350" class="l">        <span class="php-var">$data</span>         = <span class="php-var">$edd_plugin_data</span>[ <span class="php-var">$_REQUEST</span>[<span class="php-quote">'slug'</span>] ];
+</span><span id="351" class="l">        <span class="php-var">$cache_key</span>    = <span class="php-keyword2">md5</span>( <span class="php-quote">'edd_plugin_'</span> . sanitize_key( <span class="php-var">$_REQUEST</span>[<span class="php-quote">'plugin'</span>] ) . <span class="php-quote">'_version_info'</span> );
+</span><span id="352" class="l">        <span class="php-var">$version_info</span> = get_transient( <span class="php-var">$cache_key</span> );
+</span><span id="353" class="l">
+</span><span id="354" class="l">        <span class="php-keyword1">if</span>( <span class="php-keyword1">false</span> === <span class="php-var">$version_info</span> ) {
+</span><span id="355" class="l">
+</span><span id="356" class="l">            <span class="php-var">$api_params</span> = <span class="php-keyword1">array</span>(
+</span><span id="357" class="l">                <span class="php-quote">'edd_action'</span> =&gt; <span class="php-quote">'get_version'</span>,
+</span><span id="358" class="l">                <span class="php-quote">'item_name'</span>  =&gt; <span class="php-keyword1">isset</span>( <span class="php-var">$data</span>[<span class="php-quote">'item_name'</span>] ) ? <span class="php-var">$data</span>[<span class="php-quote">'item_name'</span>] : <span class="php-keyword1">false</span>,
+</span><span id="359" class="l">                <span class="php-quote">'item_id'</span>    =&gt; <span class="php-keyword1">isset</span>( <span class="php-var">$data</span>[<span class="php-quote">'item_id'</span>] ) ? <span class="php-var">$data</span>[<span class="php-quote">'item_id'</span>] : <span class="php-keyword1">false</span>,
+</span><span id="360" class="l">                <span class="php-quote">'slug'</span>       =&gt; <span class="php-var">$_REQUEST</span>[<span class="php-quote">'slug'</span>],
+</span><span id="361" class="l">                <span class="php-quote">'author'</span>     =&gt; <span class="php-var">$data</span>[<span class="php-quote">'author'</span>],
+</span><span id="362" class="l">                <span class="php-quote">'url'</span>        =&gt; home_url()
+</span><span id="363" class="l">            );
+</span><span id="364" class="l">
+</span><span id="365" class="l">            <span class="php-var">$request</span> = wp_remote_post( <span class="php-var">$this</span>-&gt;api_url, <span class="php-keyword1">array</span>( <span class="php-quote">'timeout'</span> =&gt; <span class="php-num">15</span>, <span class="php-quote">'sslverify'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'body'</span> =&gt; <span class="php-var">$api_params</span> ) );
+</span><span id="366" class="l">
+</span><span id="367" class="l">            <span class="php-keyword1">if</span> ( ! is_wp_error( <span class="php-var">$request</span> ) ) {
+</span><span id="368" class="l">                <span class="php-var">$version_info</span> = <span class="php-keyword2">json_decode</span>( wp_remote_retrieve_body( <span class="php-var">$request</span> ) );
+</span><span id="369" class="l">            }
+</span><span id="370" class="l">
+</span><span id="371" class="l">            <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$version_info</span> ) &amp;&amp; <span class="php-keyword1">isset</span>( <span class="php-var">$version_info</span>-&gt;sections ) ) {
+</span><span id="372" class="l">                <span class="php-var">$version_info</span>-&gt;sections = maybe_unserialize( <span class="php-var">$version_info</span>-&gt;sections );
+</span><span id="373" class="l">            } <span class="php-keyword1">else</span> {
+</span><span id="374" class="l">                <span class="php-var">$version_info</span> = <span class="php-keyword1">false</span>;
+</span><span id="375" class="l">            }
+</span><span id="376" class="l">
+</span><span id="377" class="l">            set_transient( <span class="php-var">$cache_key</span>, <span class="php-var">$version_info</span>, <span class="php-num">3600</span> );
+</span><span id="378" class="l">
+</span><span id="379" class="l">        }
+</span><span id="380" class="l">
+</span><span id="381" class="l">        <span class="php-keyword1">if</span>( ! <span class="php-keyword1">empty</span>( <span class="php-var">$version_info</span> ) &amp;&amp; <span class="php-keyword1">isset</span>( <span class="php-var">$version_info</span>-&gt;sections[<span class="php-quote">'changelog'</span>] ) ) {
+</span><span id="382" class="l">            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;div style=&quot;background:#fff;padding:10px;&quot;&gt;'</span> . <span class="php-var">$version_info</span>-&gt;sections[<span class="php-quote">'changelog'</span>] . <span class="php-quote">'&lt;/div&gt;'</span>;
+</span><span id="383" class="l">        }
+</span><span id="384" class="l">
+</span><span id="385" class="l">        <span class="php-keyword1">exit</span>;
+</span><span id="386" class="l">    }
+</span><span id="387" class="l">
+</span><span id="388" class="l">}</span></code></pre>
+</div>
 	</div>
-
-<pre><code><span id="1" class="l"><a href="#1">  1: </a><span class="xlang">&lt;?php</span>
-</span><span id="2" class="l"><a href="#2">  2: </a><span class="php-comment">/**
-</span></span><span id="3" class="l"><a href="#3">  3: </a><span class="php-comment"> * EPL Updater
-</span></span><span id="4" class="l"><a href="#4">  4: </a><span class="php-comment"> *
-</span></span><span id="5" class="l"><a href="#5">  5: </a><span class="php-comment"> * @package     EPL
-</span></span><span id="6" class="l"><a href="#6">  6: </a><span class="php-comment"> * @subpackage  Classes/Updater
-</span></span><span id="7" class="l"><a href="#7">  7: </a><span class="php-comment"> * @copyright   Copyright (c) 2016, Merv Barrett
-</span></span><span id="8" class="l"><a href="#8">  8: </a><span class="php-comment"> * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
-</span></span><span id="9" class="l"><a href="#9">  9: </a><span class="php-comment"> * @since       1.0
-</span></span><span id="10" class="l"><a href="#10"> 10: </a><span class="php-comment"> */</span>
-</span><span id="11" class="l"><a href="#11"> 11: </a>
-</span><span id="12" class="l"><a href="#12"> 12: </a><span class="php-comment">// uncomment this line for testing</span>
-</span><span id="13" class="l"><a href="#13"> 13: </a><span class="php-comment">//set_site_transient( 'update_plugins', null );</span>
-</span><span id="14" class="l"><a href="#14"> 14: </a>
-</span><span id="15" class="l"><a href="#15"> 15: </a><span class="php-comment">// Exit if accessed directly</span>
-</span><span id="16" class="l"><a href="#16"> 16: </a><span class="php-keyword1">if</span> ( ! <span class="php-keyword2">defined</span>( <span class="php-quote">'ABSPATH'</span> ) ) <span class="php-keyword1">exit</span>;
-</span><span id="17" class="l"><a href="#17"> 17: </a>
-</span><span id="18" class="l"><a href="#18"> 18: </a><span class="php-comment">/**
-</span></span><span id="19" class="l"><a href="#19"> 19: </a><span class="php-comment"> * Allows plugins to use their own update API.
-</span></span><span id="20" class="l"><a href="#20"> 20: </a><span class="php-comment"> *
-</span></span><span id="21" class="l"><a href="#21"> 21: </a><span class="php-comment"> * @author Pippin Williamson
-</span></span><span id="22" class="l"><a href="#22"> 22: </a><span class="php-comment"> * @version 1.6.3
-</span></span><span id="23" class="l"><a href="#23"> 23: </a><span class="php-comment"> * @since 1.0
-</span></span><span id="24" class="l"><a href="#24"> 24: </a><span class="php-comment"> */</span>
-</span><span id="25" class="l"><a href="#25"> 25: </a><span class="php-keyword1">class</span> EPL_SL_Plugin_Updater {
-</span><span id="26" class="l"><a href="#26"> 26: </a>    <span class="php-keyword1">private</span> <span class="php-var">$api_url</span>   = <span class="php-quote">''</span>;
-</span><span id="27" class="l"><a href="#27"> 27: </a>    <span class="php-keyword1">private</span> <span class="php-var">$api_data</span>  = <span class="php-keyword1">array</span>();
-</span><span id="28" class="l"><a href="#28"> 28: </a>    <span class="php-keyword1">private</span> <span class="php-var">$name</span>      = <span class="php-quote">''</span>;
-</span><span id="29" class="l"><a href="#29"> 29: </a>    <span class="php-keyword1">private</span> <span class="php-var">$slug</span>      = <span class="php-quote">''</span>;
-</span><span id="30" class="l"><a href="#30"> 30: </a>    <span class="php-keyword1">private</span> <span class="php-var">$version</span>   = <span class="php-quote">''</span>;
-</span><span id="31" class="l"><a href="#31"> 31: </a>
-</span><span id="32" class="l"><a href="#32"> 32: </a>    <span class="php-comment">/**
-</span></span><span id="33" class="l"><a href="#33"> 33: </a><span class="php-comment">     * Class constructor.
-</span></span><span id="34" class="l"><a href="#34"> 34: </a><span class="php-comment">     *
-</span></span><span id="35" class="l"><a href="#35"> 35: </a><span class="php-comment">     * @uses plugin_basename()
-</span></span><span id="36" class="l"><a href="#36"> 36: </a><span class="php-comment">     * @uses hook()
-</span></span><span id="37" class="l"><a href="#37"> 37: </a><span class="php-comment">     *
-</span></span><span id="38" class="l"><a href="#38"> 38: </a><span class="php-comment">     * @param string  $_api_url     The URL pointing to the custom API endpoint.
-</span></span><span id="39" class="l"><a href="#39"> 39: </a><span class="php-comment">     * @param string  $_plugin_file Path to the plugin file.
-</span></span><span id="40" class="l"><a href="#40"> 40: </a><span class="php-comment">     * @param array   $_api_data    Optional data to send with API calls.
-</span></span><span id="41" class="l"><a href="#41"> 41: </a><span class="php-comment">     */</span>
-</span><span id="42" class="l"><a href="#42"> 42: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct( <span class="php-var">$_api_url</span>, <span class="php-var">$_plugin_file</span>, <span class="php-var">$_api_data</span> = <span class="php-keyword1">null</span> ) {
-</span><span id="43" class="l"><a href="#43"> 43: </a>
-</span><span id="44" class="l"><a href="#44"> 44: </a>        <span class="php-keyword1">global</span> <span class="php-var">$edd_plugin_data</span>;
-</span><span id="45" class="l"><a href="#45"> 45: </a>
-</span><span id="46" class="l"><a href="#46"> 46: </a>        <span class="php-var">$this</span>-&gt;api_url  = trailingslashit( <span class="php-var">$_api_url</span> );
-</span><span id="47" class="l"><a href="#47"> 47: </a>        <span class="php-var">$this</span>-&gt;api_data = <span class="php-var">$_api_data</span>;
-</span><span id="48" class="l"><a href="#48"> 48: </a>        <span class="php-var">$this</span>-&gt;name     = plugin_basename( <span class="php-var">$_plugin_file</span> );
-</span><span id="49" class="l"><a href="#49"> 49: </a>        <span class="php-var">$this</span>-&gt;slug     = <span class="php-keyword2">basename</span>( <span class="php-var">$_plugin_file</span>, <span class="php-quote">'.php'</span> );
-</span><span id="50" class="l"><a href="#50"> 50: </a>        <span class="php-var">$this</span>-&gt;version  = <span class="php-var">$_api_data</span>[<span class="php-quote">'version'</span>];
-</span><span id="51" class="l"><a href="#51"> 51: </a>
-</span><span id="52" class="l"><a href="#52"> 52: </a>        <span class="php-var">$edd_plugin_data</span>[ <span class="php-var">$this</span>-&gt;slug ] = <span class="php-var">$this</span>-&gt;api_data;
-</span><span id="53" class="l"><a href="#53"> 53: </a>
-</span><span id="54" class="l"><a href="#54"> 54: </a>        <span class="php-comment">// Set up hooks.</span>
-</span><span id="55" class="l"><a href="#55"> 55: </a>        <span class="php-var">$this</span>-&gt;init();
-</span><span id="56" class="l"><a href="#56"> 56: </a>
-</span><span id="57" class="l"><a href="#57"> 57: </a>    }
-</span><span id="58" class="l"><a href="#58"> 58: </a>
-</span><span id="59" class="l"><a href="#59"> 59: </a>    <span class="php-comment">/**
-</span></span><span id="60" class="l"><a href="#60"> 60: </a><span class="php-comment">     * Set up WordPress filters to hook into WP's update process.
-</span></span><span id="61" class="l"><a href="#61"> 61: </a><span class="php-comment">     *
-</span></span><span id="62" class="l"><a href="#62"> 62: </a><span class="php-comment">     * @uses add_filter()
-</span></span><span id="63" class="l"><a href="#63"> 63: </a><span class="php-comment">     *
-</span></span><span id="64" class="l"><a href="#64"> 64: </a><span class="php-comment">     * @return void
-</span></span><span id="65" class="l"><a href="#65"> 65: </a><span class="php-comment">     */</span>
-</span><span id="66" class="l"><a href="#66"> 66: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> init() {
-</span><span id="67" class="l"><a href="#67"> 67: </a>
-</span><span id="68" class="l"><a href="#68"> 68: </a>        add_filter( <span class="php-quote">'pre_set_site_transient_update_plugins'</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'check_update'</span> ) );
-</span><span id="69" class="l"><a href="#69"> 69: </a>        add_filter( <span class="php-quote">'plugins_api'</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'plugins_api_filter'</span> ), <span class="php-num">10</span>, <span class="php-num">3</span> );
-</span><span id="70" class="l"><a href="#70"> 70: </a>        remove_action( <span class="php-quote">'after_plugin_row_'</span> . <span class="php-var">$this</span>-&gt;name, <span class="php-quote">'wp_plugin_update_row'</span>, <span class="php-num">10</span>, <span class="php-num">2</span> );
-</span><span id="71" class="l"><a href="#71"> 71: </a>        add_action( <span class="php-quote">'after_plugin_row_'</span> . <span class="php-var">$this</span>-&gt;name, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'show_update_notification'</span> ), <span class="php-num">10</span>, <span class="php-num">2</span> );
-</span><span id="72" class="l"><a href="#72"> 72: </a>        add_action( <span class="php-quote">'admin_init'</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'show_changelog'</span> ) );
-</span><span id="73" class="l"><a href="#73"> 73: </a>
-</span><span id="74" class="l"><a href="#74"> 74: </a>    }
-</span><span id="75" class="l"><a href="#75"> 75: </a>
-</span><span id="76" class="l"><a href="#76"> 76: </a>    <span class="php-comment">/**
-</span></span><span id="77" class="l"><a href="#77"> 77: </a><span class="php-comment">     * Check for Updates at the defined API endpoint and modify the update array.
-</span></span><span id="78" class="l"><a href="#78"> 78: </a><span class="php-comment">     *
-</span></span><span id="79" class="l"><a href="#79"> 79: </a><span class="php-comment">     * This function dives into the update API just when WordPress creates its update array,
-</span></span><span id="80" class="l"><a href="#80"> 80: </a><span class="php-comment">     * then adds a custom API call and injects the custom plugin data retrieved from the API.
-</span></span><span id="81" class="l"><a href="#81"> 81: </a><span class="php-comment">     * It is reassembled from parts of the native WordPress plugin update code.
-</span></span><span id="82" class="l"><a href="#82"> 82: </a><span class="php-comment">     * See wp-includes/update.php line 121 for the original wp_update_plugins() function.
-</span></span><span id="83" class="l"><a href="#83"> 83: </a><span class="php-comment">     *
-</span></span><span id="84" class="l"><a href="#84"> 84: </a><span class="php-comment">     * @uses api_request()
-</span></span><span id="85" class="l"><a href="#85"> 85: </a><span class="php-comment">     *
-</span></span><span id="86" class="l"><a href="#86"> 86: </a><span class="php-comment">     * @param array   $_transient_data Update array build by WordPress.
-</span></span><span id="87" class="l"><a href="#87"> 87: </a><span class="php-comment">     * @return array Modified update array with custom plugin data.
-</span></span><span id="88" class="l"><a href="#88"> 88: </a><span class="php-comment">     */</span>
-</span><span id="89" class="l"><a href="#89"> 89: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> check_update( <span class="php-var">$_transient_data</span> ) {
-</span><span id="90" class="l"><a href="#90"> 90: </a>
-</span><span id="91" class="l"><a href="#91"> 91: </a>        <span class="php-keyword1">global</span> <span class="php-var">$pagenow</span>;
-</span><span id="92" class="l"><a href="#92"> 92: </a>
-</span><span id="93" class="l"><a href="#93"> 93: </a>        <span class="php-keyword1">if</span>( ! <span class="php-keyword2">is_object</span>( <span class="php-var">$_transient_data</span> ) ) {
-</span><span id="94" class="l"><a href="#94"> 94: </a>            <span class="php-var">$_transient_data</span> = <span class="php-keyword1">new</span> stdClass;
-</span><span id="95" class="l"><a href="#95"> 95: </a>        }
-</span><span id="96" class="l"><a href="#96"> 96: </a>
-</span><span id="97" class="l"><a href="#97"> 97: </a>        <span class="php-keyword1">if</span>( <span class="php-quote">'plugins.php'</span> == <span class="php-var">$pagenow</span> &amp;&amp; is_multisite() ) {
-</span><span id="98" class="l"><a href="#98"> 98: </a>            <span class="php-keyword1">return</span> <span class="php-var">$_transient_data</span>;
-</span><span id="99" class="l"><a href="#99"> 99: </a>        }
-</span><span id="100" class="l"><a href="#100">100: </a>
-</span><span id="101" class="l"><a href="#101">101: </a>        <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$_transient_data</span>-&gt;response ) || <span class="php-keyword1">empty</span>( <span class="php-var">$_transient_data</span>-&gt;response[ <span class="php-var">$this</span>-&gt;name ] ) ) {
-</span><span id="102" class="l"><a href="#102">102: </a>
-</span><span id="103" class="l"><a href="#103">103: </a>            <span class="php-var">$version_info</span> = <span class="php-var">$this</span>-&gt;api_request( <span class="php-quote">'plugin_latest_version'</span>, <span class="php-keyword1">array</span>( <span class="php-quote">'slug'</span> =&gt; <span class="php-var">$this</span>-&gt;slug ) );
-</span><span id="104" class="l"><a href="#104">104: </a>
-</span><span id="105" class="l"><a href="#105">105: </a>            <span class="php-keyword1">if</span> ( <span class="php-keyword1">false</span> !== <span class="php-var">$version_info</span> &amp;&amp; <span class="php-keyword2">is_object</span>( <span class="php-var">$version_info</span> ) &amp;&amp; <span class="php-keyword1">isset</span>( <span class="php-var">$version_info</span>-&gt;new_version ) ) {
-</span><span id="106" class="l"><a href="#106">106: </a>
-</span><span id="107" class="l"><a href="#107">107: </a>                <span class="php-keyword1">if</span>( <span class="php-keyword2">version_compare</span>( <span class="php-var">$this</span>-&gt;version, <span class="php-var">$version_info</span>-&gt;new_version, <span class="php-quote">'&lt;'</span> ) ) {
-</span><span id="108" class="l"><a href="#108">108: </a>
-</span><span id="109" class="l"><a href="#109">109: </a>                    <span class="php-var">$_transient_data</span>-&gt;response[ <span class="php-var">$this</span>-&gt;name ] = <span class="php-var">$version_info</span>;
-</span><span id="110" class="l"><a href="#110">110: </a>
-</span><span id="111" class="l"><a href="#111">111: </a>                }
-</span><span id="112" class="l"><a href="#112">112: </a>
-</span><span id="113" class="l"><a href="#113">113: </a>                <span class="php-var">$_transient_data</span>-&gt;last_checked = <span class="php-keyword2">time</span>();
-</span><span id="114" class="l"><a href="#114">114: </a>                <span class="php-var">$_transient_data</span>-&gt;checked[ <span class="php-var">$this</span>-&gt;name ] = <span class="php-var">$this</span>-&gt;version;
-</span><span id="115" class="l"><a href="#115">115: </a>
-</span><span id="116" class="l"><a href="#116">116: </a>            }
-</span><span id="117" class="l"><a href="#117">117: </a>
-</span><span id="118" class="l"><a href="#118">118: </a>        }
-</span><span id="119" class="l"><a href="#119">119: </a>
-</span><span id="120" class="l"><a href="#120">120: </a>        <span class="php-keyword1">return</span> <span class="php-var">$_transient_data</span>;
-</span><span id="121" class="l"><a href="#121">121: </a>    }
-</span><span id="122" class="l"><a href="#122">122: </a>
-</span><span id="123" class="l"><a href="#123">123: </a>    <span class="php-comment">/**
-</span></span><span id="124" class="l"><a href="#124">124: </a><span class="php-comment">     * show update nofication row -- needed for multisite subsites, because WP won't tell you otherwise!
-</span></span><span id="125" class="l"><a href="#125">125: </a><span class="php-comment">     *
-</span></span><span id="126" class="l"><a href="#126">126: </a><span class="php-comment">     * @param string  $file
-</span></span><span id="127" class="l"><a href="#127">127: </a><span class="php-comment">     * @param array   $plugin
-</span></span><span id="128" class="l"><a href="#128">128: </a><span class="php-comment">     */</span>
-</span><span id="129" class="l"><a href="#129">129: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> show_update_notification( <span class="php-var">$file</span>, <span class="php-var">$plugin</span> ) {
-</span><span id="130" class="l"><a href="#130">130: </a>
-</span><span id="131" class="l"><a href="#131">131: </a>        <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'update_plugins'</span> ) ) {
-</span><span id="132" class="l"><a href="#132">132: </a>            <span class="php-keyword1">return</span>;
-</span><span id="133" class="l"><a href="#133">133: </a>        }
-</span><span id="134" class="l"><a href="#134">134: </a>
-</span><span id="135" class="l"><a href="#135">135: </a>        <span class="php-keyword1">if</span>( ! is_multisite() ) {
-</span><span id="136" class="l"><a href="#136">136: </a>            <span class="php-keyword1">return</span>;
-</span><span id="137" class="l"><a href="#137">137: </a>        }
-</span><span id="138" class="l"><a href="#138">138: </a>
-</span><span id="139" class="l"><a href="#139">139: </a>        <span class="php-keyword1">if</span> ( <span class="php-var">$this</span>-&gt;name != <span class="php-var">$file</span> ) {
-</span><span id="140" class="l"><a href="#140">140: </a>            <span class="php-keyword1">return</span>;
-</span><span id="141" class="l"><a href="#141">141: </a>        }
-</span><span id="142" class="l"><a href="#142">142: </a>
-</span><span id="143" class="l"><a href="#143">143: </a>        <span class="php-comment">// Remove our filter on the site transient</span>
-</span><span id="144" class="l"><a href="#144">144: </a>        remove_filter( <span class="php-quote">'pre_set_site_transient_update_plugins'</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'check_update'</span> ), <span class="php-num">10</span> );
-</span><span id="145" class="l"><a href="#145">145: </a>
-</span><span id="146" class="l"><a href="#146">146: </a>        <span class="php-var">$update_cache</span> = get_site_transient( <span class="php-quote">'update_plugins'</span> );
-</span><span id="147" class="l"><a href="#147">147: </a>
-</span><span id="148" class="l"><a href="#148">148: </a>        <span class="php-var">$update_cache</span> = <span class="php-keyword2">is_object</span>( <span class="php-var">$update_cache</span> ) ? <span class="php-var">$update_cache</span> : <span class="php-keyword1">new</span> stdClass();
-</span><span id="149" class="l"><a href="#149">149: </a>
-</span><span id="150" class="l"><a href="#150">150: </a>        <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$update_cache</span>-&gt;response ) || <span class="php-keyword1">empty</span>( <span class="php-var">$update_cache</span>-&gt;response[ <span class="php-var">$this</span>-&gt;name ] ) ) {
-</span><span id="151" class="l"><a href="#151">151: </a>
-</span><span id="152" class="l"><a href="#152">152: </a>            <span class="php-var">$cache_key</span>    = <span class="php-keyword2">md5</span>( <span class="php-quote">'edd_plugin_'</span> . sanitize_key( <span class="php-var">$this</span>-&gt;name ) . <span class="php-quote">'_version_info'</span> );
-</span><span id="153" class="l"><a href="#153">153: </a>            <span class="php-var">$version_info</span> = get_transient( <span class="php-var">$cache_key</span> );
-</span><span id="154" class="l"><a href="#154">154: </a>
-</span><span id="155" class="l"><a href="#155">155: </a>            <span class="php-keyword1">if</span>( <span class="php-keyword1">false</span> === <span class="php-var">$version_info</span> ) {
-</span><span id="156" class="l"><a href="#156">156: </a>
-</span><span id="157" class="l"><a href="#157">157: </a>                <span class="php-var">$version_info</span> = <span class="php-var">$this</span>-&gt;api_request( <span class="php-quote">'plugin_latest_version'</span>, <span class="php-keyword1">array</span>( <span class="php-quote">'slug'</span> =&gt; <span class="php-var">$this</span>-&gt;slug ) );
-</span><span id="158" class="l"><a href="#158">158: </a>
-</span><span id="159" class="l"><a href="#159">159: </a>                set_transient( <span class="php-var">$cache_key</span>, <span class="php-var">$version_info</span>, <span class="php-num">3600</span> );
-</span><span id="160" class="l"><a href="#160">160: </a>            }
-</span><span id="161" class="l"><a href="#161">161: </a>
-</span><span id="162" class="l"><a href="#162">162: </a>            <span class="php-keyword1">if</span>( ! <span class="php-keyword2">is_object</span>( <span class="php-var">$version_info</span> ) ) {
-</span><span id="163" class="l"><a href="#163">163: </a>                <span class="php-keyword1">return</span>;
-</span><span id="164" class="l"><a href="#164">164: </a>            }
-</span><span id="165" class="l"><a href="#165">165: </a>
-</span><span id="166" class="l"><a href="#166">166: </a>            <span class="php-keyword1">if</span>( <span class="php-keyword2">version_compare</span>( <span class="php-var">$this</span>-&gt;version, <span class="php-var">$version_info</span>-&gt;new_version, <span class="php-quote">'&lt;'</span> ) ) {
-</span><span id="167" class="l"><a href="#167">167: </a>
-</span><span id="168" class="l"><a href="#168">168: </a>                <span class="php-var">$update_cache</span>-&gt;response[ <span class="php-var">$this</span>-&gt;name ] = <span class="php-var">$version_info</span>;
-</span><span id="169" class="l"><a href="#169">169: </a>
-</span><span id="170" class="l"><a href="#170">170: </a>            }
-</span><span id="171" class="l"><a href="#171">171: </a>
-</span><span id="172" class="l"><a href="#172">172: </a>            <span class="php-var">$update_cache</span>-&gt;last_checked = <span class="php-keyword2">time</span>();
-</span><span id="173" class="l"><a href="#173">173: </a>            <span class="php-var">$update_cache</span>-&gt;checked[ <span class="php-var">$this</span>-&gt;name ] = <span class="php-var">$this</span>-&gt;version;
-</span><span id="174" class="l"><a href="#174">174: </a>
-</span><span id="175" class="l"><a href="#175">175: </a>            set_site_transient( <span class="php-quote">'update_plugins'</span>, <span class="php-var">$update_cache</span> );
-</span><span id="176" class="l"><a href="#176">176: </a>
-</span><span id="177" class="l"><a href="#177">177: </a>        } <span class="php-keyword1">else</span> {
-</span><span id="178" class="l"><a href="#178">178: </a>
-</span><span id="179" class="l"><a href="#179">179: </a>            <span class="php-var">$version_info</span> = <span class="php-var">$update_cache</span>-&gt;response[ <span class="php-var">$this</span>-&gt;name ];
-</span><span id="180" class="l"><a href="#180">180: </a>
-</span><span id="181" class="l"><a href="#181">181: </a>        }
-</span><span id="182" class="l"><a href="#182">182: </a>
-</span><span id="183" class="l"><a href="#183">183: </a>        <span class="php-comment">// Restore our filter</span>
-</span><span id="184" class="l"><a href="#184">184: </a>        add_filter( <span class="php-quote">'pre_set_site_transient_update_plugins'</span>, <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'check_update'</span> ) );
-</span><span id="185" class="l"><a href="#185">185: </a>
-</span><span id="186" class="l"><a href="#186">186: </a>        <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$update_cache</span>-&gt;response[ <span class="php-var">$this</span>-&gt;name ] ) &amp;&amp; <span class="php-keyword2">version_compare</span>( <span class="php-var">$this</span>-&gt;version, <span class="php-var">$version_info</span>-&gt;new_version, <span class="php-quote">'&lt;'</span> ) ) {
-</span><span id="187" class="l"><a href="#187">187: </a>
-</span><span id="188" class="l"><a href="#188">188: </a>            <span class="php-comment">// build a plugin list row, with update notification</span>
-</span><span id="189" class="l"><a href="#189">189: </a>            <span class="php-var">$wp_list_table</span> = _get_list_table( <span class="php-quote">'WP_Plugins_List_Table'</span> );
-</span><span id="190" class="l"><a href="#190">190: </a>            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;tr class=&quot;plugin-update-tr&quot;&gt;&lt;td colspan=&quot;'</span> . <span class="php-var">$wp_list_table</span>-&gt;get_column_count() . <span class="php-quote">'&quot; class=&quot;plugin-update colspanchange&quot;&gt;&lt;div class=&quot;update-message&quot;&gt;'</span>;
-</span><span id="191" class="l"><a href="#191">191: </a>
-</span><span id="192" class="l"><a href="#192">192: </a>            <span class="php-var">$changelog_link</span> = self_admin_url( <span class="php-quote">'index.php?edd_sl_action=view_plugin_changelog&amp;plugin='</span> . <span class="php-var">$this</span>-&gt;name . <span class="php-quote">'&amp;slug='</span> . <span class="php-var">$this</span>-&gt;slug . <span class="php-quote">'&amp;TB_iframe=true&amp;width=772&amp;height=911'</span> );
-</span><span id="193" class="l"><a href="#193">193: </a>
-</span><span id="194" class="l"><a href="#194">194: </a>            <span class="php-keyword1">if</span> ( <span class="php-keyword1">empty</span>( <span class="php-var">$version_info</span>-&gt;download_link ) ) {
-</span><span id="195" class="l"><a href="#195">195: </a>                <span class="php-keyword2">printf</span>(
-</span><span id="196" class="l"><a href="#196">196: </a>                    __( <span class="php-quote">'There is a new version of %1$s available. %2$s View version %3$s details %4$s.'</span>, <span class="php-quote">'easy-property-listings'</span>  ),
-</span><span id="197" class="l"><a href="#197">197: </a>                    esc_html( <span class="php-var">$version_info</span>-&gt;name ),
-</span><span id="198" class="l"><a href="#198">198: </a>                    <span class="php-quote">'&lt;a target=&quot;_blank&quot; class=&quot;thickbox&quot; href=&quot;'</span> . esc_url( <span class="php-var">$changelog_link</span> ) . <span class="php-quote">'&quot;&gt;'</span>,
-</span><span id="199" class="l"><a href="#199">199: </a>                    esc_html( <span class="php-var">$version_info</span>-&gt;new_version ),
-</span><span id="200" class="l"><a href="#200">200: </a>                    <span class="php-quote">'&lt;/a&gt;'</span>
-</span><span id="201" class="l"><a href="#201">201: </a>                );
-</span><span id="202" class="l"><a href="#202">202: </a>            } <span class="php-keyword1">else</span> {
-</span><span id="203" class="l"><a href="#203">203: </a>                <span class="php-keyword2">printf</span>(
-</span><span id="204" class="l"><a href="#204">204: </a>                    __( <span class="php-quote">'There is a new version of %1$s available. %2$s View version %3$s details %4$s or %5$s update now %6$s.'</span>, <span class="php-quote">'easy-property-listings'</span>  ),
-</span><span id="205" class="l"><a href="#205">205: </a>                    esc_html( <span class="php-var">$version_info</span>-&gt;name ),
-</span><span id="206" class="l"><a href="#206">206: </a>                    <span class="php-quote">'&lt;a target=&quot;_blank&quot; class=&quot;thickbox&quot; href=&quot;'</span> . esc_url( <span class="php-var">$changelog_link</span> ) . <span class="php-quote">'&quot;&gt;'</span>,
-</span><span id="207" class="l"><a href="#207">207: </a>                    esc_html( <span class="php-var">$version_info</span>-&gt;new_version ),
-</span><span id="208" class="l"><a href="#208">208: </a>                    <span class="php-quote">'&lt;/a&gt;'</span>,
-</span><span id="209" class="l"><a href="#209">209: </a>                    <span class="php-quote">'&lt;a href=&quot;'</span> . esc_url( wp_nonce_url( self_admin_url( <span class="php-quote">'update.php?action=upgrade-plugin&amp;plugin='</span> ) . <span class="php-var">$this</span>-&gt;name, <span class="php-quote">'upgrade-plugin_'</span> . <span class="php-var">$this</span>-&gt;name ) ) .<span class="php-quote">'&quot;&gt;'</span>,
-</span><span id="210" class="l"><a href="#210">210: </a>                    <span class="php-quote">'&lt;/a&gt;'</span>
-</span><span id="211" class="l"><a href="#211">211: </a>                );
-</span><span id="212" class="l"><a href="#212">212: </a>            }
-</span><span id="213" class="l"><a href="#213">213: </a>
-</span><span id="214" class="l"><a href="#214">214: </a>            do_action( <span class="php-quote">&quot;in_plugin_update_message-</span><span class="php-var">{$file}</span><span class="php-quote">&quot;</span>, <span class="php-var">$plugin</span>, <span class="php-var">$version_info</span> );
-</span><span id="215" class="l"><a href="#215">215: </a>
-</span><span id="216" class="l"><a href="#216">216: </a>            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;'</span>;
-</span><span id="217" class="l"><a href="#217">217: </a>        }
-</span><span id="218" class="l"><a href="#218">218: </a>    }
-</span><span id="219" class="l"><a href="#219">219: </a>
-</span><span id="220" class="l"><a href="#220">220: </a>
-</span><span id="221" class="l"><a href="#221">221: </a>    <span class="php-comment">/**
-</span></span><span id="222" class="l"><a href="#222">222: </a><span class="php-comment">     * Updates information on the &quot;View version x.x details&quot; page with custom data.
-</span></span><span id="223" class="l"><a href="#223">223: </a><span class="php-comment">     *
-</span></span><span id="224" class="l"><a href="#224">224: </a><span class="php-comment">     * @uses api_request()
-</span></span><span id="225" class="l"><a href="#225">225: </a><span class="php-comment">     *
-</span></span><span id="226" class="l"><a href="#226">226: </a><span class="php-comment">     * @param mixed   $_data
-</span></span><span id="227" class="l"><a href="#227">227: </a><span class="php-comment">     * @param string  $_action
-</span></span><span id="228" class="l"><a href="#228">228: </a><span class="php-comment">     * @param object  $_args
-</span></span><span id="229" class="l"><a href="#229">229: </a><span class="php-comment">     * @return object $_data
-</span></span><span id="230" class="l"><a href="#230">230: </a><span class="php-comment">     */</span>
-</span><span id="231" class="l"><a href="#231">231: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> plugins_api_filter( <span class="php-var">$_data</span>, <span class="php-var">$_action</span> = <span class="php-quote">''</span>, <span class="php-var">$_args</span> = <span class="php-keyword1">null</span> ) {
-</span><span id="232" class="l"><a href="#232">232: </a>
-</span><span id="233" class="l"><a href="#233">233: </a>
-</span><span id="234" class="l"><a href="#234">234: </a>        <span class="php-keyword1">if</span> ( <span class="php-var">$_action</span> != <span class="php-quote">'plugin_information'</span> ) {
-</span><span id="235" class="l"><a href="#235">235: </a>
-</span><span id="236" class="l"><a href="#236">236: </a>            <span class="php-keyword1">return</span> <span class="php-var">$_data</span>;
-</span><span id="237" class="l"><a href="#237">237: </a>
-</span><span id="238" class="l"><a href="#238">238: </a>        }
-</span><span id="239" class="l"><a href="#239">239: </a>
-</span><span id="240" class="l"><a href="#240">240: </a>        <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">isset</span>( <span class="php-var">$_args</span>-&gt;slug ) || ( <span class="php-var">$_args</span>-&gt;slug != <span class="php-var">$this</span>-&gt;slug ) ) {
-</span><span id="241" class="l"><a href="#241">241: </a>
-</span><span id="242" class="l"><a href="#242">242: </a>            <span class="php-keyword1">return</span> <span class="php-var">$_data</span>;
-</span><span id="243" class="l"><a href="#243">243: </a>
-</span><span id="244" class="l"><a href="#244">244: </a>        }
-</span><span id="245" class="l"><a href="#245">245: </a>
-</span><span id="246" class="l"><a href="#246">246: </a>        <span class="php-var">$to_send</span> = <span class="php-keyword1">array</span>(
-</span><span id="247" class="l"><a href="#247">247: </a>            <span class="php-quote">'slug'</span>   =&gt; <span class="php-var">$this</span>-&gt;slug,
-</span><span id="248" class="l"><a href="#248">248: </a>            <span class="php-quote">'is_ssl'</span> =&gt; is_ssl(),
-</span><span id="249" class="l"><a href="#249">249: </a>            <span class="php-quote">'fields'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="250" class="l"><a href="#250">250: </a>                <span class="php-quote">'banners'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-comment">// These will be supported soon hopefully</span>
-</span><span id="251" class="l"><a href="#251">251: </a>                <span class="php-quote">'reviews'</span> =&gt; <span class="php-keyword1">false</span>
-</span><span id="252" class="l"><a href="#252">252: </a>            )
-</span><span id="253" class="l"><a href="#253">253: </a>        );
-</span><span id="254" class="l"><a href="#254">254: </a>
-</span><span id="255" class="l"><a href="#255">255: </a>        <span class="php-var">$api_response</span> = <span class="php-var">$this</span>-&gt;api_request( <span class="php-quote">'plugin_information'</span>, <span class="php-var">$to_send</span> );
-</span><span id="256" class="l"><a href="#256">256: </a>
-</span><span id="257" class="l"><a href="#257">257: </a>        <span class="php-keyword1">if</span> ( <span class="php-keyword1">false</span> !== <span class="php-var">$api_response</span> ) {
-</span><span id="258" class="l"><a href="#258">258: </a>            <span class="php-var">$_data</span> = <span class="php-var">$api_response</span>;
-</span><span id="259" class="l"><a href="#259">259: </a>        }
-</span><span id="260" class="l"><a href="#260">260: </a>
-</span><span id="261" class="l"><a href="#261">261: </a>        <span class="php-keyword1">return</span> <span class="php-var">$_data</span>;
-</span><span id="262" class="l"><a href="#262">262: </a>    }
-</span><span id="263" class="l"><a href="#263">263: </a>
-</span><span id="264" class="l"><a href="#264">264: </a>
-</span><span id="265" class="l"><a href="#265">265: </a>    <span class="php-comment">/**
-</span></span><span id="266" class="l"><a href="#266">266: </a><span class="php-comment">     * Disable SSL verification in order to prevent download update failures
-</span></span><span id="267" class="l"><a href="#267">267: </a><span class="php-comment">     *
-</span></span><span id="268" class="l"><a href="#268">268: </a><span class="php-comment">     * @param array   $args
-</span></span><span id="269" class="l"><a href="#269">269: </a><span class="php-comment">     * @param string  $url
-</span></span><span id="270" class="l"><a href="#270">270: </a><span class="php-comment">     * @return object $array
-</span></span><span id="271" class="l"><a href="#271">271: </a><span class="php-comment">     */</span>
-</span><span id="272" class="l"><a href="#272">272: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> http_request_args( <span class="php-var">$args</span>, <span class="php-var">$url</span> ) {
-</span><span id="273" class="l"><a href="#273">273: </a>        <span class="php-comment">// If it is an https request and we are performing a package download, disable ssl verification</span>
-</span><span id="274" class="l"><a href="#274">274: </a>        <span class="php-keyword1">if</span> ( <span class="php-keyword2">strpos</span>( <span class="php-var">$url</span>, <span class="php-quote">'https://'</span> ) !== <span class="php-keyword1">false</span> &amp;&amp; <span class="php-keyword2">strpos</span>( <span class="php-var">$url</span>, <span class="php-quote">'edd_action=package_download'</span> ) ) {
-</span><span id="275" class="l"><a href="#275">275: </a>            <span class="php-var">$args</span>[<span class="php-quote">'sslverify'</span>] = <span class="php-keyword1">false</span>;
-</span><span id="276" class="l"><a href="#276">276: </a>        }
-</span><span id="277" class="l"><a href="#277">277: </a>        <span class="php-keyword1">return</span> <span class="php-var">$args</span>;
-</span><span id="278" class="l"><a href="#278">278: </a>    }
-</span><span id="279" class="l"><a href="#279">279: </a>
-</span><span id="280" class="l"><a href="#280">280: </a>    <span class="php-comment">/**
-</span></span><span id="281" class="l"><a href="#281">281: </a><span class="php-comment">     * Calls the API and, if successfull, returns the object delivered by the API.
-</span></span><span id="282" class="l"><a href="#282">282: </a><span class="php-comment">     *
-</span></span><span id="283" class="l"><a href="#283">283: </a><span class="php-comment">     * @uses get_bloginfo()
-</span></span><span id="284" class="l"><a href="#284">284: </a><span class="php-comment">     * @uses wp_remote_post()
-</span></span><span id="285" class="l"><a href="#285">285: </a><span class="php-comment">     * @uses is_wp_error()
-</span></span><span id="286" class="l"><a href="#286">286: </a><span class="php-comment">     *
-</span></span><span id="287" class="l"><a href="#287">287: </a><span class="php-comment">     * @param string  $_action The requested action.
-</span></span><span id="288" class="l"><a href="#288">288: </a><span class="php-comment">     * @param array   $_data   Parameters for the API action.
-</span></span><span id="289" class="l"><a href="#289">289: </a><span class="php-comment">     * @return false|object
-</span></span><span id="290" class="l"><a href="#290">290: </a><span class="php-comment">     */</span>
-</span><span id="291" class="l"><a href="#291">291: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> api_request( <span class="php-var">$_action</span>, <span class="php-var">$_data</span> ) {
-</span><span id="292" class="l"><a href="#292">292: </a>
-</span><span id="293" class="l"><a href="#293">293: </a>        <span class="php-keyword1">global</span> <span class="php-var">$wp_version</span>;
-</span><span id="294" class="l"><a href="#294">294: </a>
-</span><span id="295" class="l"><a href="#295">295: </a>        <span class="php-var">$data</span> = <span class="php-keyword2">array_merge</span>( <span class="php-var">$this</span>-&gt;api_data, <span class="php-var">$_data</span> );
-</span><span id="296" class="l"><a href="#296">296: </a>
-</span><span id="297" class="l"><a href="#297">297: </a>        <span class="php-keyword1">if</span> ( <span class="php-var">$data</span>[<span class="php-quote">'slug'</span>] != <span class="php-var">$this</span>-&gt;slug ) {
-</span><span id="298" class="l"><a href="#298">298: </a>            <span class="php-keyword1">return</span>;
-</span><span id="299" class="l"><a href="#299">299: </a>        }
-</span><span id="300" class="l"><a href="#300">300: </a>
-</span><span id="301" class="l"><a href="#301">301: </a>        <span class="php-keyword1">if</span>( <span class="php-var">$this</span>-&gt;api_url == home_url() ) {
-</span><span id="302" class="l"><a href="#302">302: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>; <span class="php-comment">// Don't allow a plugin to ping itself</span>
-</span><span id="303" class="l"><a href="#303">303: </a>        }
-</span><span id="304" class="l"><a href="#304">304: </a>
-</span><span id="305" class="l"><a href="#305">305: </a>        <span class="php-var">$api_params</span> = <span class="php-keyword1">array</span>(
-</span><span id="306" class="l"><a href="#306">306: </a>            <span class="php-quote">'edd_action'</span> =&gt; <span class="php-quote">'get_version'</span>,
-</span><span id="307" class="l"><a href="#307">307: </a>            <span class="php-quote">'license'</span>    =&gt; ! <span class="php-keyword1">empty</span>( <span class="php-var">$data</span>[<span class="php-quote">'license'</span>] ) ? <span class="php-var">$data</span>[<span class="php-quote">'license'</span>] : <span class="php-quote">''</span>,
-</span><span id="308" class="l"><a href="#308">308: </a>            <span class="php-quote">'item_name'</span>  =&gt; <span class="php-keyword1">isset</span>( <span class="php-var">$data</span>[<span class="php-quote">'item_name'</span>] ) ? <span class="php-var">$data</span>[<span class="php-quote">'item_name'</span>] : <span class="php-keyword1">false</span>,
-</span><span id="309" class="l"><a href="#309">309: </a>            <span class="php-quote">'item_id'</span>    =&gt; <span class="php-keyword1">isset</span>( <span class="php-var">$data</span>[<span class="php-quote">'item_id'</span>] ) ? <span class="php-var">$data</span>[<span class="php-quote">'item_id'</span>] : <span class="php-keyword1">false</span>,
-</span><span id="310" class="l"><a href="#310">310: </a>            <span class="php-quote">'slug'</span>       =&gt; <span class="php-var">$data</span>[<span class="php-quote">'slug'</span>],
-</span><span id="311" class="l"><a href="#311">311: </a>            <span class="php-quote">'author'</span>     =&gt; <span class="php-var">$data</span>[<span class="php-quote">'author'</span>],
-</span><span id="312" class="l"><a href="#312">312: </a>            <span class="php-quote">'url'</span>        =&gt; home_url()
-</span><span id="313" class="l"><a href="#313">313: </a>        );
-</span><span id="314" class="l"><a href="#314">314: </a>
-</span><span id="315" class="l"><a href="#315">315: </a>        <span class="php-var">$request</span> = wp_remote_post( <span class="php-var">$this</span>-&gt;api_url, <span class="php-keyword1">array</span>( <span class="php-quote">'timeout'</span> =&gt; <span class="php-num">15</span>, <span class="php-quote">'sslverify'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'body'</span> =&gt; <span class="php-var">$api_params</span> ) );
-</span><span id="316" class="l"><a href="#316">316: </a>
-</span><span id="317" class="l"><a href="#317">317: </a>        <span class="php-keyword1">if</span> ( ! is_wp_error( <span class="php-var">$request</span> ) ) {
-</span><span id="318" class="l"><a href="#318">318: </a>            <span class="php-var">$request</span> = <span class="php-keyword2">json_decode</span>( wp_remote_retrieve_body( <span class="php-var">$request</span> ) );
-</span><span id="319" class="l"><a href="#319">319: </a>        }
-</span><span id="320" class="l"><a href="#320">320: </a>
-</span><span id="321" class="l"><a href="#321">321: </a>        <span class="php-keyword1">if</span> ( <span class="php-var">$request</span> &amp;&amp; <span class="php-keyword1">isset</span>( <span class="php-var">$request</span>-&gt;sections ) ) {
-</span><span id="322" class="l"><a href="#322">322: </a>            <span class="php-var">$request</span>-&gt;sections = maybe_unserialize( <span class="php-var">$request</span>-&gt;sections );
-</span><span id="323" class="l"><a href="#323">323: </a>        } <span class="php-keyword1">else</span> {
-</span><span id="324" class="l"><a href="#324">324: </a>            <span class="php-var">$request</span> = <span class="php-keyword1">false</span>;
-</span><span id="325" class="l"><a href="#325">325: </a>        }
-</span><span id="326" class="l"><a href="#326">326: </a>
-</span><span id="327" class="l"><a href="#327">327: </a>        <span class="php-keyword1">return</span> <span class="php-var">$request</span>;
-</span><span id="328" class="l"><a href="#328">328: </a>    }
-</span><span id="329" class="l"><a href="#329">329: </a>
-</span><span id="330" class="l"><a href="#330">330: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> show_changelog() {
-</span><span id="331" class="l"><a href="#331">331: </a>
-</span><span id="332" class="l"><a href="#332">332: </a>        <span class="php-keyword1">global</span> <span class="php-var">$edd_plugin_data</span>;
-</span><span id="333" class="l"><a href="#333">333: </a>
-</span><span id="334" class="l"><a href="#334">334: </a>        <span class="php-keyword1">if</span>( <span class="php-keyword1">empty</span>( <span class="php-var">$_REQUEST</span>[<span class="php-quote">'edd_sl_action'</span>] ) || <span class="php-quote">'view_plugin_changelog'</span> != <span class="php-var">$_REQUEST</span>[<span class="php-quote">'edd_sl_action'</span>] ) {
-</span><span id="335" class="l"><a href="#335">335: </a>            <span class="php-keyword1">return</span>;
-</span><span id="336" class="l"><a href="#336">336: </a>        }
-</span><span id="337" class="l"><a href="#337">337: </a>
-</span><span id="338" class="l"><a href="#338">338: </a>        <span class="php-keyword1">if</span>( <span class="php-keyword1">empty</span>( <span class="php-var">$_REQUEST</span>[<span class="php-quote">'plugin'</span>] ) ) {
-</span><span id="339" class="l"><a href="#339">339: </a>            <span class="php-keyword1">return</span>;
-</span><span id="340" class="l"><a href="#340">340: </a>        }
-</span><span id="341" class="l"><a href="#341">341: </a>
-</span><span id="342" class="l"><a href="#342">342: </a>        <span class="php-keyword1">if</span>( <span class="php-keyword1">empty</span>( <span class="php-var">$_REQUEST</span>[<span class="php-quote">'slug'</span>] ) ) {
-</span><span id="343" class="l"><a href="#343">343: </a>            <span class="php-keyword1">return</span>;
-</span><span id="344" class="l"><a href="#344">344: </a>        }
-</span><span id="345" class="l"><a href="#345">345: </a>
-</span><span id="346" class="l"><a href="#346">346: </a>        <span class="php-keyword1">if</span>( ! current_user_can( <span class="php-quote">'update_plugins'</span> ) ) {
-</span><span id="347" class="l"><a href="#347">347: </a>            wp_die( __( <span class="php-quote">'You do not have permission to install plugin updates'</span>, <span class="php-quote">'easy-property-listings'</span>  ), __( <span class="php-quote">'Error'</span>, <span class="php-quote">'easy-property-listings'</span>  ), <span class="php-keyword1">array</span>( <span class="php-quote">'response'</span> =&gt; <span class="php-num">403</span> ) );
-</span><span id="348" class="l"><a href="#348">348: </a>        }
-</span><span id="349" class="l"><a href="#349">349: </a>
-</span><span id="350" class="l"><a href="#350">350: </a>        <span class="php-var">$data</span>         = <span class="php-var">$edd_plugin_data</span>[ <span class="php-var">$_REQUEST</span>[<span class="php-quote">'slug'</span>] ];
-</span><span id="351" class="l"><a href="#351">351: </a>        <span class="php-var">$cache_key</span>    = <span class="php-keyword2">md5</span>( <span class="php-quote">'edd_plugin_'</span> . sanitize_key( <span class="php-var">$_REQUEST</span>[<span class="php-quote">'plugin'</span>] ) . <span class="php-quote">'_version_info'</span> );
-</span><span id="352" class="l"><a href="#352">352: </a>        <span class="php-var">$version_info</span> = get_transient( <span class="php-var">$cache_key</span> );
-</span><span id="353" class="l"><a href="#353">353: </a>
-</span><span id="354" class="l"><a href="#354">354: </a>        <span class="php-keyword1">if</span>( <span class="php-keyword1">false</span> === <span class="php-var">$version_info</span> ) {
-</span><span id="355" class="l"><a href="#355">355: </a>
-</span><span id="356" class="l"><a href="#356">356: </a>            <span class="php-var">$api_params</span> = <span class="php-keyword1">array</span>(
-</span><span id="357" class="l"><a href="#357">357: </a>                <span class="php-quote">'edd_action'</span> =&gt; <span class="php-quote">'get_version'</span>,
-</span><span id="358" class="l"><a href="#358">358: </a>                <span class="php-quote">'item_name'</span>  =&gt; <span class="php-keyword1">isset</span>( <span class="php-var">$data</span>[<span class="php-quote">'item_name'</span>] ) ? <span class="php-var">$data</span>[<span class="php-quote">'item_name'</span>] : <span class="php-keyword1">false</span>,
-</span><span id="359" class="l"><a href="#359">359: </a>                <span class="php-quote">'item_id'</span>    =&gt; <span class="php-keyword1">isset</span>( <span class="php-var">$data</span>[<span class="php-quote">'item_id'</span>] ) ? <span class="php-var">$data</span>[<span class="php-quote">'item_id'</span>] : <span class="php-keyword1">false</span>,
-</span><span id="360" class="l"><a href="#360">360: </a>                <span class="php-quote">'slug'</span>       =&gt; <span class="php-var">$_REQUEST</span>[<span class="php-quote">'slug'</span>],
-</span><span id="361" class="l"><a href="#361">361: </a>                <span class="php-quote">'author'</span>     =&gt; <span class="php-var">$data</span>[<span class="php-quote">'author'</span>],
-</span><span id="362" class="l"><a href="#362">362: </a>                <span class="php-quote">'url'</span>        =&gt; home_url()
-</span><span id="363" class="l"><a href="#363">363: </a>            );
-</span><span id="364" class="l"><a href="#364">364: </a>
-</span><span id="365" class="l"><a href="#365">365: </a>            <span class="php-var">$request</span> = wp_remote_post( <span class="php-var">$this</span>-&gt;api_url, <span class="php-keyword1">array</span>( <span class="php-quote">'timeout'</span> =&gt; <span class="php-num">15</span>, <span class="php-quote">'sslverify'</span> =&gt; <span class="php-keyword1">false</span>, <span class="php-quote">'body'</span> =&gt; <span class="php-var">$api_params</span> ) );
-</span><span id="366" class="l"><a href="#366">366: </a>
-</span><span id="367" class="l"><a href="#367">367: </a>            <span class="php-keyword1">if</span> ( ! is_wp_error( <span class="php-var">$request</span> ) ) {
-</span><span id="368" class="l"><a href="#368">368: </a>                <span class="php-var">$version_info</span> = <span class="php-keyword2">json_decode</span>( wp_remote_retrieve_body( <span class="php-var">$request</span> ) );
-</span><span id="369" class="l"><a href="#369">369: </a>            }
-</span><span id="370" class="l"><a href="#370">370: </a>
-</span><span id="371" class="l"><a href="#371">371: </a>            <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$version_info</span> ) &amp;&amp; <span class="php-keyword1">isset</span>( <span class="php-var">$version_info</span>-&gt;sections ) ) {
-</span><span id="372" class="l"><a href="#372">372: </a>                <span class="php-var">$version_info</span>-&gt;sections = maybe_unserialize( <span class="php-var">$version_info</span>-&gt;sections );
-</span><span id="373" class="l"><a href="#373">373: </a>            } <span class="php-keyword1">else</span> {
-</span><span id="374" class="l"><a href="#374">374: </a>                <span class="php-var">$version_info</span> = <span class="php-keyword1">false</span>;
-</span><span id="375" class="l"><a href="#375">375: </a>            }
-</span><span id="376" class="l"><a href="#376">376: </a>
-</span><span id="377" class="l"><a href="#377">377: </a>            set_transient( <span class="php-var">$cache_key</span>, <span class="php-var">$version_info</span>, <span class="php-num">3600</span> );
-</span><span id="378" class="l"><a href="#378">378: </a>
-</span><span id="379" class="l"><a href="#379">379: </a>        }
-</span><span id="380" class="l"><a href="#380">380: </a>
-</span><span id="381" class="l"><a href="#381">381: </a>        <span class="php-keyword1">if</span>( ! <span class="php-keyword1">empty</span>( <span class="php-var">$version_info</span> ) &amp;&amp; <span class="php-keyword1">isset</span>( <span class="php-var">$version_info</span>-&gt;sections[<span class="php-quote">'changelog'</span>] ) ) {
-</span><span id="382" class="l"><a href="#382">382: </a>            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;div style=&quot;background:#fff;padding:10px;&quot;&gt;'</span> . <span class="php-var">$version_info</span>-&gt;sections[<span class="php-quote">'changelog'</span>] . <span class="php-quote">'&lt;/div&gt;'</span>;
-</span><span id="383" class="l"><a href="#383">383: </a>        }
-</span><span id="384" class="l"><a href="#384">384: </a>
-</span><span id="385" class="l"><a href="#385">385: </a>        <span class="php-keyword1">exit</span>;
-</span><span id="386" class="l"><a href="#386">386: </a>    }
-</span><span id="387" class="l"><a href="#387">387: </a>
-</span><span id="388" class="l"><a href="#388">388: </a>}</span></code></pre>
 
 	<div id="footer">
-		Easy Property Listings 3.0.1 Docs API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.0.2 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
-</div>
-<script src="resources/combined.js?cd021bc814832c24a7cec5319ea03335bfba1caf"></script>
+<script src="resources/combined.js?cbef3f9ce5d56cd9035f1d2078dbba925910f027"></script>
 <script src="elementlist.js?be98cd4b937bd8144823cfe14488f7ad29f49cbd"></script>
 </body>
 </html>
