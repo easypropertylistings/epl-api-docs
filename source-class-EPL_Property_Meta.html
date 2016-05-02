@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="robots" content="noindex">
 
-	<title>File lib/includes/class-epl-property-meta.php | Easy Property Listings 3.0.2 Code Reference</title>
+	<title>File lib/includes/class-epl-property-meta.php | Easy Property Listings 3.0.3 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -26,7 +26,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.0.2 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.0.3 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -585,7 +585,7 @@
 </span><span id="157" class="l">                    <span class="php-keyword1">if</span>(<span class="php-keyword2">is_numeric</span>(<span class="php-var">$item</span>[<span class="php-num">0</span>])) {
 </span><span id="158" class="l">                        <span class="php-var">$timearr</span> = <span class="php-keyword2">explode</span>(<span class="php-quote">' '</span>,<span class="php-var">$item</span>);
 </span><span id="159" class="l">                        <span class="php-var">$endtime</span> = <span class="php-keyword2">current</span>(<span class="php-var">$timearr</span>).<span class="php-quote">' '</span>.<span class="php-keyword2">end</span>(<span class="php-var">$timearr</span>);
-</span><span id="160" class="l">                        <span class="php-keyword1">if</span>(<span class="php-keyword2">strtotime</span>(<span class="php-var">$endtime</span>) &gt; <span class="php-keyword2">time</span>()) {
+</span><span id="160" class="l">                        <span class="php-keyword1">if</span>(<span class="php-keyword2">strtotime</span>(<span class="php-var">$endtime</span>) &gt; current_time( <span class="php-quote">'timestamp'</span> ) ) {
 </span><span id="161" class="l">                            <span class="php-var">$item</span> = <span class="php-keyword2">trim</span>(<span class="php-var">$item</span>);
 </span><span id="162" class="l">                            <span class="php-var">$inspectarray</span>[<span class="php-keyword2">strtotime</span>(<span class="php-var">$endtime</span>)] = <span class="php-var">$item</span>;
 </span><span id="163" class="l">                        } <span class="php-keyword1">else</span> {
@@ -819,7 +819,7 @@
 </span><span id="391" class="l">                    <span class="php-var">$av_date_array</span> = <span class="php-keyword2">date_parse</span>(<span class="php-var">$this</span>-&gt;meta[<span class="php-quote">'property_date_available'</span>][<span class="php-num">0</span>]);
 </span><span id="392" class="l">                    <span class="php-var">$av_date</span> = ( <span class="php-keyword1">isset</span>(<span class="php-var">$av_date_array</span>[<span class="php-quote">'year'</span>]) &amp;&amp; <span class="php-keyword1">isset</span>(<span class="php-var">$av_date_array</span>[<span class="php-quote">'month'</span>]) &amp;&amp; <span class="php-keyword1">isset</span>(<span class="php-var">$av_date_array</span>[<span class="php-quote">'day'</span>]) ) ?
 </span><span id="393" class="l">                        <span class="php-var">$av_date_array</span>[<span class="php-quote">'year'</span>].<span class="php-quote">'-'</span>.<span class="php-var">$av_date_array</span>[<span class="php-quote">'month'</span>].<span class="php-quote">'-'</span>.<span class="php-var">$av_date_array</span>[<span class="php-quote">'day'</span>]: <span class="php-var">$this</span>-&gt;meta[<span class="php-quote">'property_date_available'</span>][<span class="php-num">0</span>];
-</span><span id="394" class="l">                    <span class="php-keyword1">if</span>(<span class="php-keyword2">time</span>() &gt; <span class="php-keyword2">strtotime</span>(<span class="php-var">$av_date</span>) ) {
+</span><span id="394" class="l">                    <span class="php-keyword1">if</span>(current_time( <span class="php-quote">'timestamp'</span> ) &gt; <span class="php-keyword2">strtotime</span>(<span class="php-var">$av_date</span>) ) {
 </span><span id="395" class="l">                        <span class="php-keyword1">return</span> apply_filters( <span class="php-quote">'epl_property_sub_title_available_now_label'</span> , __(<span class="php-quote">'now'</span>,<span class="php-quote">'easy-property-listings'</span> ) );
 </span><span id="396" class="l">                    } <span class="php-keyword1">else</span> {
 </span><span id="397" class="l">                        <span class="php-keyword1">return</span> apply_filters(<span class="php-quote">'epl_get_property_available'</span>,<span class="php-keyword2">date</span>( <span class="php-var">$format</span>, <span class="php-keyword2">strtotime</span>(<span class="php-var">$av_date</span>) ));
@@ -1639,7 +1639,7 @@
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.0.2 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.0.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js?cbef3f9ce5d56cd9035f1d2078dbba925910f027"></script>
