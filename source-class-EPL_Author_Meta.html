@@ -139,6 +139,10 @@
 							CPT						</a>
 							</li>
 					<li class="main">
+						<a href="package-EPL.Classes.Cron.html">
+							Cron						</a>
+							</li>
+					<li class="main">
 						<a href="package-EPL.Classes.Forms.html">
 							Forms						</a>
 							</li>
@@ -393,11 +397,13 @@
 				<li><a href="class-EPL_Contact.html">EPL_Contact</a></li>
 				<li><a href="class-EPL_Contact_Reports_Table.html">EPL_Contact_Reports_Table</a></li>
 				<li><a href="class-EPL_CPT.html">EPL_CPT</a></li>
+				<li><a href="class-EPL_Cron.html">EPL_Cron</a></li>
 				<li><a href="class-EPL_FORM_BUILDER.html">EPL_FORM_BUILDER</a></li>
 				<li><a href="class-EPL_Graph.html">EPL_Graph</a></li>
 				<li><a href="class-EPL_License.html">EPL_License</a></li>
 				<li><a href="class-EPL_METABOX.html">EPL_METABOX</a></li>
 				<li><a href="class-EPL_Property_Meta.html">EPL_Property_Meta</a></li>
+				<li><a href="class-EPL_SEARCH.html">EPL_SEARCH</a></li>
 				<li><a href="class-EPL_Search_Fields.html">EPL_Search_Fields</a></li>
 				<li><a href="class-EPL_SL_Plugin_Updater.html">EPL_SL_Plugin_Updater</a></li>
 				<li><a href="class-EPL_Welcome.html">EPL_Welcome</a></li>
@@ -509,7 +515,7 @@
 </span><span id="81" class="l">                    apply_filters( <span class="php-quote">'epl_author_icon_email'</span> , __(<span class="php-quote">'Email'</span>, <span class="php-quote">'easy-property-listings'</span> )).
 </span><span id="82" class="l">                <span class="php-quote">'&lt;/a&gt;'</span>;
 </span><span id="83" class="l">        }
-</span><span id="84" class="l">        <span class="php-var">$html</span> = apply_filters(<span class="php-quote">'epl_author_email_html'</span>,<span class="php-var">$html</span>);
+</span><span id="84" class="l">        <span class="php-var">$html</span> = apply_filters(<span class="php-quote">'epl_author_email_html'</span>,<span class="php-var">$html</span>,<span class="php-var">$this</span>);
 </span><span id="85" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$html</span> ;
 </span><span id="86" class="l">    }
 </span><span id="87" class="l">
@@ -526,7 +532,7 @@
 </span><span id="98" class="l">                    apply_filters( <span class="php-quote">'epl_author_icon_twitter'</span> , __(<span class="php-quote">'Twitter'</span>, <span class="php-quote">'easy-property-listings'</span> )).
 </span><span id="99" class="l">                <span class="php-quote">'&lt;/a&gt;'</span>;
 </span><span id="100" class="l">        }
-</span><span id="101" class="l">        <span class="php-var">$html</span> = apply_filters(<span class="php-quote">'epl_author_twitter_html'</span>,<span class="php-var">$html</span>);
+</span><span id="101" class="l">        <span class="php-var">$html</span> = apply_filters(<span class="php-quote">'epl_author_twitter_html'</span>,<span class="php-var">$html</span>,<span class="php-var">$this</span>);
 </span><span id="102" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$html</span>;
 </span><span id="103" class="l">    }
 </span><span id="104" class="l">
@@ -543,7 +549,7 @@
 </span><span id="115" class="l">                    apply_filters( <span class="php-quote">'epl_author_icon_google'</span> , __(<span class="php-quote">'Google'</span>, <span class="php-quote">'easy-property-listings'</span> )).
 </span><span id="116" class="l">                <span class="php-quote">'&lt;/a&gt;'</span>;
 </span><span id="117" class="l">        }
-</span><span id="118" class="l">        <span class="php-var">$html</span> = apply_filters(<span class="php-quote">'epl_author_google_html'</span>,<span class="php-var">$html</span>);
+</span><span id="118" class="l">        <span class="php-var">$html</span> = apply_filters(<span class="php-quote">'epl_author_google_html'</span>,<span class="php-var">$html</span>,<span class="php-var">$this</span>);
 </span><span id="119" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$html</span>;
 </span><span id="120" class="l">    }
 </span><span id="121" class="l">
@@ -560,7 +566,7 @@
 </span><span id="132" class="l">                    apply_filters( <span class="php-quote">'epl_author_icon_facebook'</span> , __(<span class="php-quote">'Facebook'</span>, <span class="php-quote">'easy-property-listings'</span> )).
 </span><span id="133" class="l">                <span class="php-quote">'&lt;/a&gt;'</span>;
 </span><span id="134" class="l">        }
-</span><span id="135" class="l">        <span class="php-var">$html</span> = apply_filters(<span class="php-quote">'epl_author_facebook_html'</span>,<span class="php-var">$html</span>);
+</span><span id="135" class="l">        <span class="php-var">$html</span> = apply_filters(<span class="php-quote">'epl_author_facebook_html'</span>,<span class="php-var">$html</span>,<span class="php-var">$this</span>);
 </span><span id="136" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$html</span>;
 </span><span id="137" class="l">    }
 </span><span id="138" class="l">
@@ -572,13 +578,13 @@
 </span><span id="144" class="l">    <span class="php-keyword1">function</span> get_linkedin_html(<span class="php-var">$html</span> = <span class="php-quote">''</span>) {
 </span><span id="145" class="l">        <span class="php-keyword1">if</span> ( <span class="php-var">$this</span>-&gt;linkedin != <span class="php-quote">''</span> ) {
 </span><span id="146" class="l">
-</span><span id="147" class="l">            <span class="php-keyword1">if</span>(<span class="php-keyword2">strpos</span>(<span class="php-quote">'linkedin'</span>,<span class="php-var">$this</span>-&gt;linkedin) &gt; <span class="php-num">0</span> ) {
+</span><span id="147" class="l">            <span class="php-keyword1">if</span>( (<span class="php-keyword2">strpos</span>(<span class="php-quote">'http://'</span>,<span class="php-var">$this</span>-&gt;linkedin) == <span class="php-num">0</span> ) || (<span class="php-keyword2">strpos</span>(<span class="php-quote">'https://'</span>,<span class="php-var">$this</span>-&gt;linkedin) == <span class="php-num">0</span> ) ) {
 </span><span id="148" class="l">                <span class="php-comment">// absolute url</span>
 </span><span id="149" class="l">                <span class="php-var">$linkedin</span> = <span class="php-var">$this</span>-&gt;linkedin;
 </span><span id="150" class="l">
 </span><span id="151" class="l">            } <span class="php-keyword1">else</span> {
 </span><span id="152" class="l">                <span class="php-comment">// relative url</span>
-</span><span id="153" class="l">                <span class="php-var">$linkedin</span> = <span class="php-quote">'www.linkedin.com/pub/'</span> . <span class="php-var">$this</span>-&gt;linkedin;
+</span><span id="153" class="l">                <span class="php-var">$linkedin</span> = <span class="php-quote">'http://linkedin.com/pub/'</span> . <span class="php-var">$this</span>-&gt;linkedin;
 </span><span id="154" class="l">            }
 </span><span id="155" class="l">
 </span><span id="156" class="l">            <span class="php-var">$html</span> = <span class="php-quote">'
@@ -587,7 +593,7 @@
 </span><span id="159" class="l">                    apply_filters( <span class="php-quote">'epl_author_icon_linkedin'</span> , __(<span class="php-quote">'LinkedIn'</span>, <span class="php-quote">'easy-property-listings'</span> )).
 </span><span id="160" class="l">                <span class="php-quote">'&lt;/a&gt;'</span>;
 </span><span id="161" class="l">        }
-</span><span id="162" class="l">        <span class="php-var">$html</span> = apply_filters(<span class="php-quote">'epl_author_linkedin_html'</span>,<span class="php-var">$html</span>);
+</span><span id="162" class="l">        <span class="php-var">$html</span> = apply_filters(<span class="php-quote">'epl_author_linkedin_html'</span>,<span class="php-var">$html</span>,<span class="php-var">$this</span>);
 </span><span id="163" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$html</span>;
 </span><span id="164" class="l">    }
 </span><span id="165" class="l">
@@ -604,7 +610,7 @@
 </span><span id="176" class="l">                    apply_filters( <span class="php-quote">'epl_author_icon_skype'</span> , __(<span class="php-quote">'Skype'</span>, <span class="php-quote">'easy-property-listings'</span> )).
 </span><span id="177" class="l">                <span class="php-quote">'&lt;/a&gt;'</span>;
 </span><span id="178" class="l">        }
-</span><span id="179" class="l">        <span class="php-var">$html</span> = apply_filters(<span class="php-quote">'epl_author_skype_html'</span>,<span class="php-var">$html</span>);
+</span><span id="179" class="l">        <span class="php-var">$html</span> = apply_filters(<span class="php-quote">'epl_author_skype_html'</span>,<span class="php-var">$html</span>,<span class="php-var">$this</span>);
 </span><span id="180" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$html</span>;
 </span><span id="181" class="l">    }
 </span><span id="182" class="l">
@@ -640,7 +646,7 @@
 </span></span><span id="212" class="l"><span class="php-quote">                &lt;/span&gt;
 </span></span><span id="213" class="l"><span class="php-quote">        '</span>;
 </span><span id="214" class="l">        }
-</span><span id="215" class="l">        <span class="php-keyword1">return</span> <span class="php-var">$html</span>;
+</span><span id="215" class="l">        <span class="php-keyword1">return</span> apply_filters(<span class="php-quote">'epl_author_description_html'</span>,<span class="php-var">$html</span>,<span class="php-var">$this</span>);
 </span><span id="216" class="l">    }
 </span><span id="217" class="l">
 </span><span id="218" class="l">    <span class="php-comment">/**
@@ -712,6 +718,6 @@
 	</div>
 </div>
 <script src="resources/combined.js?cbef3f9ce5d56cd9035f1d2078dbba925910f027"></script>
-<script src="elementlist.js?be98cd4b937bd8144823cfe14488f7ad29f49cbd"></script>
+<script src="elementlist.js?83742947b8dd5e81b29c9f604d79ea21354f7e58"></script>
 </body>
 </html>

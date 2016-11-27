@@ -139,6 +139,10 @@
 							CPT						</a>
 							</li>
 					<li class="main">
+						<a href="package-EPL.Classes.Cron.html">
+							Cron						</a>
+							</li>
+					<li class="main">
 						<a href="package-EPL.Classes.Forms.html">
 							Forms						</a>
 							</li>
@@ -393,11 +397,13 @@
 				<li><a href="class-EPL_Contact.html">EPL_Contact</a></li>
 				<li><a href="class-EPL_Contact_Reports_Table.html">EPL_Contact_Reports_Table</a></li>
 				<li><a href="class-EPL_CPT.html">EPL_CPT</a></li>
+				<li><a href="class-EPL_Cron.html">EPL_Cron</a></li>
 				<li><a href="class-EPL_FORM_BUILDER.html">EPL_FORM_BUILDER</a></li>
 				<li><a href="class-EPL_Graph.html">EPL_Graph</a></li>
 				<li><a href="class-EPL_License.html">EPL_License</a></li>
 				<li><a href="class-EPL_METABOX.html">EPL_METABOX</a></li>
 				<li><a href="class-EPL_Property_Meta.html">EPL_Property_Meta</a></li>
+				<li><a href="class-EPL_SEARCH.html">EPL_SEARCH</a></li>
 				<li><a href="class-EPL_Search_Fields.html">EPL_Search_Fields</a></li>
 				<li><a href="class-EPL_SL_Plugin_Updater.html">EPL_SL_Plugin_Updater</a></li>
 				<li><a href="class-EPL_Welcome.html">EPL_Welcome</a></li>
@@ -458,7 +464,7 @@
 </span><span id="30" class="l">        <span class="php-var">$count</span> = <span class="php-var">$key</span> == <span class="php-quote">'property_external_link'</span> ? <span class="php-quote">''</span>: <span class="php-keyword2">substr</span>(<span class="php-var">$key</span>, -<span class="php-num">1</span>);
 </span><span id="31" class="l">
 </span><span id="32" class="l">        <span class="php-keyword1">if</span>( !<span class="php-keyword1">empty</span>(<span class="php-var">$link</span>) ) { <span class="xlang">?&gt;</span>
-</span><span id="33" class="l">            &lt;button type=<span class="php-quote">&quot;button&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-button epl-external-link&quot;</span> onclick=<span class="php-quote">&quot;location.href='&lt;?php echo </span><span class="php-var">$link</span><span class="php-quote">; ?&gt;'&quot;</span>&gt;
+</span><span id="33" class="l">            &lt;button type=<span class="php-quote">&quot;button&quot;</span> <span class="php-keyword1">class</span>=<span class="php-quote">&quot;epl-button epl-external-link&quot;</span> onclick=<span class="php-quote">&quot;window.open('&lt;?php echo </span><span class="php-var">$link</span><span class="php-quote">; ?&gt;')&quot;</span>&gt;
 </span><span id="34" class="l">                <span class="xlang">&lt;?php</span>
 </span><span id="35" class="l">
 </span><span id="36" class="l">                    <span class="php-keyword1">if</span>( has_filter(<span class="php-quote">'epl_button_label_'</span>.<span class="php-var">$key</span>) ) {
@@ -484,6 +490,6 @@
 	</div>
 </div>
 <script src="resources/combined.js?cbef3f9ce5d56cd9035f1d2078dbba925910f027"></script>
-<script src="elementlist.js?be98cd4b937bd8144823cfe14488f7ad29f49cbd"></script>
+<script src="elementlist.js?83742947b8dd5e81b29c9f604d79ea21354f7e58"></script>
 </body>
 </html>

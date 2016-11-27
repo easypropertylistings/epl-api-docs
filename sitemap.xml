@@ -49,6 +49,9 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.CPT.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Cron.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Forms.html</loc>
 </url>
 <url>
@@ -231,6 +234,9 @@
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_CPT.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/class-EPL_Cron.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_FORM_BUILDER.html</loc>
 </url>
 <url>
@@ -244,6 +250,9 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_Property_Meta.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/class-EPL_SEARCH.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_Search_Fields.html</loc>
