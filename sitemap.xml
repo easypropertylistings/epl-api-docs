@@ -55,9 +55,6 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Forms.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.License.html</loc>
-</url>
-<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Metaboxs.html</loc>
 </url>
 <url>
@@ -149,6 +146,15 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Hooks.WebLink.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.License.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.License.Classes.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.License.Classes.License.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Meta.html</loc>
