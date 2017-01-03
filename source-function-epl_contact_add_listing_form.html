@@ -1689,7 +1689,7 @@
 </span><span id="1244" class="l">    <span class="php-var">$url</span> = admin_url(<span class="php-quote">'admin.php?page=epl-contacts&amp;view=overview&amp;id='</span>.<span class="php-var">$value</span>);
 </span><span id="1245" class="l">    <span class="php-var">$contact</span> = <span class="php-keyword1">new</span> EPL_Contact(<span class="php-var">$value</span>);
 </span><span id="1246" class="l">
-</span><span id="1247" class="l">    <span class="php-keyword1">if</span>( !<span class="php-var">$contact</span> )
+</span><span id="1247" class="l">    <span class="php-keyword1">if</span>( !<span class="php-var">$contact</span> || <span class="php-var">$contact</span>-&gt;ID &lt;= <span class="php-num">0</span> )
 </span><span id="1248" class="l">        <span class="php-keyword1">return</span>;
 </span><span id="1249" class="l">
 </span><span id="1250" class="l">    <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;tr class=&quot;form-field&quot;&gt;&lt;td&gt;'</span>;
