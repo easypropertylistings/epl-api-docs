@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="robots" content="noindex">
 
-	<title>File lib/includes/template-functions.php | Easy Property Listings 3.1.12 Code Reference</title>
+	<title>File lib/includes/template-functions.php | Easy Property Listings 3.1.14 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -26,7 +26,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.1.12 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.1.14 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -738,7 +738,7 @@
 </span><span id="293" class="l"><span class="php-keyword1">function</span> epl_property_author_default() {
 </span><span id="294" class="l">    <span class="php-keyword1">global</span> <span class="php-var">$epl_author_secondary</span>;
 </span><span id="295" class="l">    epl_get_template_part(<span class="php-quote">'content-author-box.php'</span>);
-</span><span id="296" class="l">    <span class="php-keyword1">if</span>( epl_listing_has_secondary_author() ) {
+</span><span id="296" class="l">    <span class="php-keyword1">if</span>( is_epl_post() &amp;&amp; epl_listing_has_secondary_author() ) {
 </span><span id="297" class="l">        epl_get_template_part(<span class="php-quote">'content-author-box.php'</span>,<span class="php-keyword1">array</span>(<span class="php-quote">'epl_author'</span>   =&gt;  <span class="php-var">$epl_author_secondary</span>));
 </span><span id="298" class="l">        epl_reset_post_author();
 </span><span id="299" class="l">    }
@@ -778,7 +778,7 @@
 </span><span id="333" class="l"><span class="php-keyword1">function</span> epl_property_author_box_simple_card() {
 </span><span id="334" class="l">    <span class="php-keyword1">global</span> <span class="php-var">$property</span>,<span class="php-var">$epl_author</span>,<span class="php-var">$epl_author_secondary</span>;
 </span><span id="335" class="l">    epl_get_template_part(<span class="php-quote">'content-author-box-simple-card.php'</span>);
-</span><span id="336" class="l">    <span class="php-keyword1">if</span>( epl_listing_has_secondary_author() ) {
+</span><span id="336" class="l">    <span class="php-keyword1">if</span>( is_epl_post() &amp;&amp; epl_listing_has_secondary_author() ) {
 </span><span id="337" class="l">            epl_get_template_part(<span class="php-quote">'content-author-box-simple-card.php'</span>,<span class="php-keyword1">array</span>(<span class="php-quote">'epl_author'</span>   =&gt;  <span class="php-var">$epl_author_secondary</span>));
 </span><span id="338" class="l">    }
 </span><span id="339" class="l">    epl_reset_post_author();
@@ -792,7 +792,7 @@
 </span><span id="347" class="l"><span class="php-keyword1">function</span> epl_property_author_box_simple_grav() {
 </span><span id="348" class="l">    <span class="php-keyword1">global</span> <span class="php-var">$property</span>,<span class="php-var">$epl_author</span>,<span class="php-var">$epl_author_secondary</span>;
 </span><span id="349" class="l">    epl_get_template_part(<span class="php-quote">'content-author-box-simple-grav.php'</span>);
-</span><span id="350" class="l">    <span class="php-keyword1">if</span>( epl_listing_has_secondary_author() ) {
+</span><span id="350" class="l">    <span class="php-keyword1">if</span>( is_epl_post() &amp;&amp; epl_listing_has_secondary_author() ) {
 </span><span id="351" class="l">            epl_get_template_part(<span class="php-quote">'content-author-box-simple-grav.php'</span>,<span class="php-keyword1">array</span>(<span class="php-quote">'epl_author'</span>   =&gt;  <span class="php-var">$epl_author_secondary</span>));
 </span><span id="352" class="l">    }
 </span><span id="353" class="l">    epl_reset_post_author();
@@ -890,7 +890,7 @@
 </span><span id="445" class="l">
 </span><span id="446" class="l">    <span class="php-comment">// Second Author</span>
 </span><span id="447" class="l">    <span class="php-keyword1">if</span> ( is_single() &amp;&amp; !<span class="php-keyword2">is_null</span>(<span class="php-var">$property</span>) ) {
-</span><span id="448" class="l">        <span class="php-keyword1">if</span>( epl_listing_has_secondary_author() ) {
+</span><span id="448" class="l">        <span class="php-keyword1">if</span>( is_epl_post() &amp;&amp; epl_listing_has_secondary_author() ) {
 </span><span id="449" class="l">                <span class="php-var">$epl_author</span> = <span class="php-var">$epl_author_secondary</span>;
 </span><span id="450" class="l">                epl_get_template_part(<span class="php-quote">'widget-content-author-tall.php'</span>,<span class="php-var">$arg_list</span>);
 </span><span id="451" class="l">        }
@@ -2689,7 +2689,7 @@
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.1.12 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.1.14 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js?cbef3f9ce5d56cd9035f1d2078dbba925910f027"></script>
