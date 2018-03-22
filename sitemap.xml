@@ -37,6 +37,12 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Welcome.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Assets.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Assets.SVG.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.html</loc>
 </url>
 <url>
@@ -128,6 +134,9 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Hooks.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Hooks.EnergyCertificate.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Hooks.ExternalLinks.html</loc>
