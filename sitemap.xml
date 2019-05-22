@@ -16,6 +16,9 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.DashboardWidget.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Elements.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Functions.html</loc>
 </url>
 <url>
@@ -59,6 +62,9 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Forms.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Listing.Elements.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Metaboxs.html</loc>
@@ -116,9 +122,6 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Functions.Front.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Functions.FrontEnd.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Functions.Global.html</loc>
@@ -237,6 +240,9 @@
 
 
 <url>
+	<loc>http://docs.easypropertylistings.com.au/class-EPL_Advanced_Shortcode_Listing.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_Author_Meta.html</loc>
 </url>
 <url>
@@ -259,6 +265,9 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_License.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/class-EPL_LISTING_ELEMENTS.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_METABOX.html</loc>

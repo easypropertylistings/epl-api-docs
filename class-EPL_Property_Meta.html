@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_Property_Meta | Easy Property Listings 3.2.3 Code Reference</title>
+	<title>Class EPL_Property_Meta | Easy Property Listings 3.3 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.2.3 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -92,6 +92,10 @@
 							DashboardWidget						</a>
 							</li>
 					<li class="main">
+						<a href="package-EPL.Admin.Elements.html">
+							Elements						</a>
+							</li>
+					<li class="main">
 						<a href="package-EPL.Admin.Functions.html">
 							Functions						</a>
 							</li>
@@ -154,6 +158,10 @@
 					<li class="main">
 						<a href="package-EPL.Classes.Forms.html">
 							Forms						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Listing.Elements.html">
+							Listing-Elements						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Classes.Metaboxs.html">
@@ -236,10 +244,6 @@
 					<li class="main">
 						<a href="package-EPL.Functions.Front.html">
 							Front						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Functions.FrontEnd.html">
-							FrontEnd						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Functions.Global.html">
@@ -460,7 +464,7 @@
 				<a href="http://opensource.org/licenses/gpl-2.0.php">GNU Public License</a><br>
 				<b>Since:</b>
 				2.0<br>
-			<b>Located at</b> <a href="source-class-EPL_Property_Meta.html#17-1584" title="Go to source code">lib/includes/class-epl-property-meta.php</a>
+			<b>Located at</b> <a href="source-class-EPL_Property_Meta.html#17-2054" title="Go to source code">lib/includes/class-epl-property-meta.php</a>
 		<br>
 	</div>
 
@@ -596,7 +600,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_inspection_times">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#141-202" title="Go to source code">get_property_inspection_times</a>( <span>string <var>$meta_key</var> = <span class="php-quote">'property_inspection_times'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#141-211" title="Go to source code">get_property_inspection_times</a>( <span>string <var>$ical</var> = <span class="php-keyword1">true</span></span>, <span> <var>$meta_key</var> = <span class="php-quote">'property_inspection_times'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Outputs the inspection times based on settings format</p>
@@ -608,8 +612,10 @@
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
+						<dt><var>$ical</var></dt>
+						<dd>$meta_key The meta key to get the value from default is property_inspection_times</dd>
 						<dt><var>$meta_key</var></dt>
-						<dd>The meta key to get the value from default is property_inspection_times</dd>
+						<dd></dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -638,7 +644,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_epl_settings">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#204-219" title="Go to source code">get_epl_settings</a>( <span>string <var>$key</var></span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#213-228" title="Go to source code">get_epl_settings</a>( <span>string <var>$key</var></span> )</code>
 
 			<div class="description short">
 				<p>Get the setting based on the key</p>
@@ -682,7 +688,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_feature_taxonomy">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#221-229" title="Go to source code">get_property_feature_taxonomy</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#230-238" title="Go to source code">get_property_feature_taxonomy</a>( )</code>
 
 			<div class="description short">
 				<p>Process Property Features Taxonomy</p>
@@ -719,7 +725,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_suburb_profile">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#231-243" title="Go to source code">get_suburb_profile</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#240-252" title="Go to source code">get_suburb_profile</a>( )</code>
 
 			<div class="description short">
 				<p>Suburb profile</p>
@@ -756,7 +762,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_auction">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#245-270" title="Go to source code">get_property_auction</a>( <span> <var>$admin</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#254-291" title="Go to source code">get_property_auction</a>( <span> <var>$admin</var> = <span class="php-keyword1">false</span> </span> )</code>
 
 			<div class="description short">
 				<p>Auction Date/Time</p>
@@ -798,7 +804,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_com_rent">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#272-282" title="Go to source code">get_property_com_rent</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#293-303" title="Go to source code">get_property_com_rent</a>( )</code>
 
 			<div class="description short">
 				<p>Commercial Rent</p>
@@ -835,7 +841,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_price_display">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#284-313" title="Go to source code">get_property_price_display</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#305-334" title="Go to source code">get_property_price_display</a>( )</code>
 
 			<div class="description short">
 				<p>Price Display</p>
@@ -872,7 +878,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_price_sold_display">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#315-332" title="Go to source code">get_property_price_sold_display</a>( <span> <var>$admin</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#336-353" title="Go to source code">get_property_price_sold_display</a>( <span> <var>$admin</var> = <span class="php-keyword1">false</span> </span> )</code>
 
 			<div class="description short">
 				<p>Sold price display</p>
@@ -909,7 +915,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_price_lease_display">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#334-350" title="Go to source code">get_property_price_lease_display</a>( <span> <var>$admin</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#355-371" title="Go to source code">get_property_price_lease_display</a>( <span> <var>$admin</var> = <span class="php-keyword1">false</span> </span> )</code>
 
 			<div class="description short">
 				<p>Lease price display</p>
@@ -946,7 +952,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_price_sold_date">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#352-369" title="Go to source code">get_property_price_sold_date</a>( <span>integer <var>$sold_price</var> = <span class="php-keyword1">null</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#373-390" title="Go to source code">get_property_price_sold_date</a>( <span>integer <var>$sold_price</var> = <span class="php-keyword1">null</span> </span> )</code>
 
 			<div class="description short">
 				<p>Sold date display</p>
@@ -988,7 +994,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_rent">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#371-392" title="Go to source code">get_property_rent</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#392-413" title="Go to source code">get_property_rent</a>( )</code>
 
 			<div class="description short">
 				<p>Rental Price</p>
@@ -1025,7 +1031,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_bond">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#394-413" title="Go to source code">get_property_bond</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#415-434" title="Go to source code">get_property_bond</a>( )</code>
 
 			<div class="description short">
 				<p>Rental Bond</p>
@@ -1062,7 +1068,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_available">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#415-438" title="Go to source code">get_property_available</a>( <span>boolean <var>$admin</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#436-471" title="Go to source code">get_property_available</a>( <span>boolean <var>$admin</var> = <span class="php-keyword1">false</span> </span> )</code>
 
 			<div class="description short">
 				<p>Rental Available Date</p>
@@ -1104,7 +1110,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_land_category">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#440-461" title="Go to source code">get_property_land_category</a>( <span> <var>$tag</var> = <span class="php-quote">'div'</span> </span>, <span> <var>$class</var> = <span class="php-quote">'land-category'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#473-494" title="Go to source code">get_property_land_category</a>( <span> <var>$tag</var> = <span class="php-quote">'div'</span> </span>, <span> <var>$class</var> = <span class="php-quote">'land-category'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Land category</p>
@@ -1141,7 +1147,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_formatted_property_address">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#464-481" title="Go to source code">get_formatted_property_address</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#497-514" title="Go to source code">get_formatted_property_address</a>( )</code>
 
 			<div class="description short">
 				<p>Formatted Address based on selected display option</p>
@@ -1178,7 +1184,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_category">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#483-504" title="Go to source code">get_property_category</a>( <span>string <var>$tag</var> = <span class="php-quote">'div'</span> </span>, <span>string <var>$class</var> = <span class="php-quote">'property-category'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#516-537" title="Go to source code">get_property_category</a>( <span>string <var>$tag</var> = <span class="php-quote">'div'</span> </span>, <span>string <var>$class</var> = <span class="php-quote">'property-category'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Listing Category</p>
@@ -1222,7 +1228,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_commercial_category">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#506-526" title="Go to source code">get_property_commercial_category</a>( <span>string <var>$tag</var> = <span class="php-quote">'div'</span> </span>, <span>string <var>$class</var> = <span class="php-quote">'commercial-category'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#539-559" title="Go to source code">get_property_commercial_category</a>( <span>string <var>$tag</var> = <span class="php-quote">'div'</span> </span>, <span>string <var>$class</var> = <span class="php-quote">'commercial-category'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Commercial Category</p>
@@ -1266,7 +1272,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_rural_category">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#528-548" title="Go to source code">get_property_rural_category</a>( <span>string <var>$tag</var> = <span class="php-quote">'div'</span> </span>, <span>string <var>$class</var> = <span class="php-quote">'rural-category'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#561-581" title="Go to source code">get_property_rural_category</a>( <span>string <var>$tag</var> = <span class="php-quote">'div'</span> </span>, <span>string <var>$class</var> = <span class="php-quote">'rural-category'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Rural Category</p>
@@ -1310,7 +1316,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_price_class">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#550-560" title="Go to source code">get_price_class</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#583-593" title="Go to source code">get_price_class</a>( )</code>
 
 			<div class="description short">
 				<p>Price Class</p>
@@ -1347,7 +1353,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_tax">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#562-583" title="Go to source code">get_property_tax</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#595-616" title="Go to source code">get_property_tax</a>( )</code>
 
 			<div class="description short">
 				<p>Tax</p>
@@ -1384,7 +1390,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_price_plain_value">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#585-676" title="Go to source code">get_price_plain_value</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#618-709" title="Go to source code">get_price_plain_value</a>( )</code>
 
 			<div class="description short">
 				<p>Plain price value</p>
@@ -1421,7 +1427,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_price">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#678-821" title="Go to source code">get_price</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#711-854" title="Go to source code">get_price</a>( )</code>
 
 			<div class="description short">
 				<p>Get Price</p>
@@ -1458,7 +1464,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_price_sticker">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#823-897" title="Go to source code">get_price_sticker</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#856-935" title="Go to source code">get_price_sticker</a>( )</code>
 
 			<div class="description short">
 				<p>Price Sticker</p>
@@ -1495,7 +1501,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_l_price">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#899-963" title="Go to source code">get_l_price</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#937-1001" title="Go to source code">get_l_price</a>( )</code>
 
 			<div class="description short">
 				<p>Get list style price</p>
@@ -1532,7 +1538,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_year_built">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#965-990" title="Go to source code">get_property_year_built</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1003-1046" title="Go to source code">get_property_year_built</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Year Built</p>
@@ -1574,7 +1580,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_bed">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#992-1025" title="Go to source code">get_property_bed</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1048-1101" title="Go to source code">get_property_bed</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Bedrooms</p>
@@ -1616,7 +1622,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_bath">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1027-1059" title="Go to source code">get_property_bath</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1103-1157" title="Go to source code">get_property_bath</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Bathrooms</p>
@@ -1658,7 +1664,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_rooms">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1061-1086" title="Go to source code">get_property_rooms</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1159-1202" title="Go to source code">get_property_rooms</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Rooms</p>
@@ -1700,7 +1706,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_parking">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1088-1130" title="Go to source code">get_property_parking</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1204-1266" title="Go to source code">get_property_parking</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Parking</p>
@@ -1744,7 +1750,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_garage">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1132-1158" title="Go to source code">get_property_garage</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1268-1312" title="Go to source code">get_property_garage</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Garage</p>
@@ -1786,7 +1792,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_carport">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1160-1186" title="Go to source code">get_property_carport</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1314-1357" title="Go to source code">get_property_carport</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Carport</p>
@@ -1828,7 +1834,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_air_conditioning">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1188-1223" title="Go to source code">get_property_air_conditioning</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1359-1413" title="Go to source code">get_property_air_conditioning</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Air Conditioning</p>
@@ -1870,7 +1876,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_pool">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1225-1260" title="Go to source code">get_property_pool</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1415-1468" title="Go to source code">get_property_pool</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Pool</p>
@@ -1912,7 +1918,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_security_system">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1262-1289" title="Go to source code">get_property_security_system</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1470-1515" title="Go to source code">get_property_security_system</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Security System</p>
@@ -1954,7 +1960,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_land_value">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1291-1316" title="Go to source code">get_property_land_value</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1517-1587" title="Go to source code">get_property_land_value</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Land Value</p>
@@ -1996,7 +2002,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_building_area_value">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1318-1343" title="Go to source code">get_property_building_area_value</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1589-1659" title="Go to source code">get_property_building_area_value</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Building area</p>
@@ -2038,7 +2044,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_energy_rating">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1345-1375" title="Go to source code">get_property_energy_rating</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1661-1704" title="Go to source code">get_property_energy_rating</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Building Energy Rating</p>
@@ -2080,7 +2086,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_new_construction">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1377-1403" title="Go to source code">get_property_new_construction</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1706-1750" title="Go to source code">get_property_new_construction</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get New Construction</p>
@@ -2122,7 +2128,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_holiday_rental">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1405-1431" title="Go to source code">get_property_holiday_rental</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1752-1794" title="Go to source code">get_property_holiday_rental</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Holiday Rental</p>
@@ -2164,7 +2170,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_property_furnished">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1433-1459" title="Go to source code">get_property_furnished</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1796-1839" title="Go to source code">get_property_furnished</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Furnished</p>
@@ -2195,6 +2201,90 @@
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="get_property_pets" id="_get_property_pets">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_property_pets">#</a>
+			<code><a href="source-class-EPL_Property_Meta.html#1841-1884" title="Go to source code">get_property_pets</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+
+			<div class="description short">
+				<p>Get Pets</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get Pets</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$returntype</var></dt>
+						<dd>Options i = span, d = string, l = list item, t = text</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>based on $returntype Options i = span, d = string, l = list item, t = text
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.3<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_property_featured" id="_get_property_featured">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_property_featured">#</a>
+			<code><a href="source-class-EPL_Property_Meta.html#1886-1929" title="Go to source code">get_property_featured</a>( <span>string <var>$returntype</var> = <span class="php-quote">'i'</span> </span> )</code>
+
+			<div class="description short">
+				<p>Get Featured</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get Featured</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$returntype</var></dt>
+						<dd>Options i = span, d = string, l = list item, t = text</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>based on $returntype Options i = span, d = string, l = list item, t = text
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.3<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="get_additional_features_html" id="_get_additional_features_html">
 
 			<td class="attributes"><code>
@@ -2206,7 +2296,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_additional_features_html">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1461-1507" title="Go to source code">get_additional_features_html</a>( <span>string <var>$metakey</var></span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1931-1977" title="Go to source code">get_additional_features_html</a>( <span>string <var>$metakey</var></span> )</code>
 
 			<div class="description short">
 				<p>Get Additional Features by meta key</p>
@@ -2248,7 +2338,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_additional_rural_features_html">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1509-1525" title="Go to source code">get_additional_rural_features_html</a>( <span>string <var>$metakey</var></span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1979-1995" title="Go to source code">get_additional_rural_features_html</a>( <span>string <var>$metakey</var></span> )</code>
 
 			<div class="description short">
 				<p>Get Additional Rural Features by meta key</p>
@@ -2290,7 +2380,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_additional_commerical_features_html">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1527-1543" title="Go to source code">get_additional_commerical_features_html</a>( <span>string <var>$metakey</var></span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#1997-2013" title="Go to source code">get_additional_commerical_features_html</a>( <span>string <var>$metakey</var></span> )</code>
 
 			<div class="description short">
 				<p>Get Additional Commercial Features by meta key</p>
@@ -2332,7 +2422,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_class_from_metakey">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1545-1555" title="Go to source code">get_class_from_metakey</a>( <span>string <var>$key</var></span>, <span>string <var>$search</var> = <span class="php-quote">'property_'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#2015-2025" title="Go to source code">get_class_from_metakey</a>( <span>string <var>$key</var></span>, <span>string <var>$search</var> = <span class="php-quote">'property_'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get class name from meta key</p>
@@ -2376,7 +2466,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_label_from_metakey">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1557-1568" title="Go to source code">get_label_from_metakey</a>( <span>string <var>$key</var></span>, <span>string <var>$search</var> = <span class="php-quote">'property_'</span> </span> )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#2027-2038" title="Go to source code">get_label_from_metakey</a>( <span>string <var>$key</var></span>, <span>string <var>$search</var> = <span class="php-quote">'property_'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get Label from meta key</p>
@@ -2424,7 +2514,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_features_from_taxonomy">#</a>
-			<code><a href="source-class-EPL_Property_Meta.html#1570-1583" title="Go to source code">get_features_from_taxonomy</a>( )</code>
+			<code><a href="source-class-EPL_Property_Meta.html#2040-2053" title="Go to source code">get_features_from_taxonomy</a>( )</code>
 
 			<div class="description short">
 				<p>Get features from taxonomy</p>
@@ -2652,7 +2742,7 @@
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.2.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>

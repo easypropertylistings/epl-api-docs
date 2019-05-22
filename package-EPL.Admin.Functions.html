@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Package EPL\Admin\Functions | Easy Property Listings 3.2.3 Code Reference</title>
+	<title>Package EPL\Admin\Functions | Easy Property Listings 3.3 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.2.3 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -91,6 +91,10 @@
 						<a href="package-EPL.Admin.DashboardWidget.html">
 							DashboardWidget						</a>
 							</li>
+					<li class="main">
+						<a href="package-EPL.Admin.Elements.html">
+							Elements						</a>
+							</li>
 					<li class="active main">
 						<a href="package-EPL.Admin.Functions.html">
 							Functions						</a>
@@ -154,6 +158,10 @@
 					<li class="main">
 						<a href="package-EPL.Classes.Forms.html">
 							Forms						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Listing.Elements.html">
+							Listing-Elements						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Classes.Metaboxs.html">
@@ -236,10 +244,6 @@
 					<li class="main">
 						<a href="package-EPL.Functions.Front.html">
 							Front						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Functions.FrontEnd.html">
-							FrontEnd						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Functions.Global.html">
@@ -430,6 +434,19 @@
 				<li><a href="function-epl_extension_has_beta_support.html">epl_extension_has_beta_support</a></li>
 				<li><a href="function-epl_extension_notice_offer.html">epl_extension_notice_offer</a></li>
 				<li><a href="function-epl_flush_rewrite_rules.html">epl_flush_rewrite_rules</a></li>
+				<li><a href="function-epl_get_avatar_filter.html">epl_get_avatar_filter</a></li>
+				<li><a href="function-epl_get_tools_tab.html">epl_get_tools_tab</a></li>
+				<li><a href="function-epl_handle_tools_form.html">epl_handle_tools_form</a></li>
+				<li><a href="function-epl_serialize.html">epl_serialize</a></li>
+				<li><a href="function-epl_settings_import_export.html">epl_settings_import_export</a></li>
+				<li><a href="function-epl_settings_upgrade_tab.html">epl_settings_upgrade_tab</a></li>
+				<li><a href="function-epl_show_upgrade_tab.html">epl_show_upgrade_tab</a></li>
+				<li><a href="function-epl_sync_property_price_global.html">epl_sync_property_price_global</a></li>
+				<li><a href="function-epl_unserialize.html">epl_unserialize</a></li>
+				<li><a href="function-epl_update_featured_listing.html">epl_update_featured_listing</a></li>
+				<li><a href="function-epl_upgrade_admin_notice.html">epl_upgrade_admin_notice</a></li>
+				<li><a href="function-epl_upgrade_db.html">epl_upgrade_db</a></li>
+				<li><a href="function-epl_upgrade_db_to_3_3.html">epl_upgrade_db_to_3_3</a></li>
 			</ul>
 		</div>
 	</div>
@@ -484,16 +501,68 @@
 	<td class="name"><a href="function-epl_flush_rewrite_rules.html">epl_flush_rewrite_rules</a></td>
 	<td>Flush Rewrite Rules</td>
 </tr>
+<tr>
+	<td class="name"><a href="function-epl_get_avatar_filter.html">epl_get_avatar_filter</a></td>
+	<td>Filter the contacts comments</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-epl_get_tools_tab.html">epl_get_tools_tab</a></td>
+	<td>EPL Tools Tabs</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-epl_handle_tools_form.html">epl_handle_tools_form</a></td>
+	<td>Import and Export Form</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-epl_serialize.html">epl_serialize</a></td>
+	<td>Serialize Variable</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-epl_settings_import_export.html">epl_settings_import_export</a></td>
+	<td>Import Tools Settings Screen</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-epl_settings_upgrade_tab.html">epl_settings_upgrade_tab</a></td>
+	<td>Settings upgrade tab screen</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-epl_show_upgrade_tab.html">epl_show_upgrade_tab</a></td>
+	<td>Display Upgrade Tab</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-epl_sync_property_price_global.html">epl_sync_property_price_global</a></td>
+	<td>Update the property_price_global when saving or updating an EPL post</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-epl_unserialize.html">epl_unserialize</a></td>
+	<td>Un-serialize Variable</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-epl_update_featured_listing.html">epl_update_featured_listing</a></td>
+	<td>Update a featured listing when pressing the star icon</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-epl_upgrade_admin_notice.html">epl_upgrade_admin_notice</a></td>
+	<td>Upgrade Database Notice</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-epl_upgrade_db.html">epl_upgrade_db</a></td>
+	<td>Upgrade EPL Database to 3.3</td>
+</tr>
+<tr>
+	<td class="name"><a href="function-epl_upgrade_db_to_3_3.html">epl_upgrade_db_to_3_3</a></td>
+	<td>Check if neede to upgrade EPL Database to 3.3</td>
+</tr>
 	</table>
 </div>
 </div>
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.2.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js?cbef3f9ce5d56cd9035f1d2078dbba925910f027"></script>
-<script src="elementlist.js?bd065462ddc994d900455ca92eac5e6615798a46"></script>
+<script src="elementlist.js?3ecd133a655c95508cf0852eb1a93770012fd478"></script>
 </body>
 </html>
