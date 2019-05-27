@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="robots" content="noindex">
 
-	<title>File lib/includes/class-epl-listing-elements.php | Easy Property Listings 3.3 Code Reference</title>
+	<title>File lib/shortcodes/class-epl-listing-elements.php | Easy Property Listings 3.3.1 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -26,7 +26,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3.1 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -522,32 +522,32 @@
 </span><span id="57" class="l">    }
 </span><span id="58" class="l">
 </span><span id="59" class="l">    <span class="php-keyword1">function</span> epl_action(<span class="php-var">$atts</span>) {
-</span><span id="60" class="l">        <span class="php-keyword1">if</span>( !<span class="php-keyword1">isset</span>(<span class="php-var">$atts</span>[<span class="php-quote">'action'</span>]) )
+</span><span id="60" class="l">        <span class="php-keyword1">if</span>( !<span class="php-keyword1">isset</span>(<span class="php-var">$atts</span>[<span class="php-quote">'action_key'</span>]) )
 </span><span id="61" class="l">            <span class="php-keyword1">return</span>;
 </span><span id="62" class="l">        <span class="php-keyword2">ob_start</span>();
-</span><span id="63" class="l">        do_action(<span class="php-var">$atts</span>[<span class="php-quote">'action'</span>]);
+</span><span id="63" class="l">        do_action(<span class="php-var">$atts</span>[<span class="php-quote">'action_key'</span>]);
 </span><span id="64" class="l">        <span class="php-keyword1">return</span> <span class="php-keyword2">ob_get_clean</span>();
 </span><span id="65" class="l">    }
 </span><span id="66" class="l">
 </span><span id="67" class="l">    <span class="php-keyword1">function</span> epl_meta(<span class="php-var">$atts</span>) {
 </span><span id="68" class="l">
-</span><span id="69" class="l">        <span class="php-keyword1">if</span>( !<span class="php-keyword1">isset</span>(<span class="php-var">$atts</span>[<span class="php-quote">'key'</span>]) )
+</span><span id="69" class="l">        <span class="php-keyword1">if</span>( !<span class="php-keyword1">isset</span>(<span class="php-var">$atts</span>[<span class="php-quote">'meta_key'</span>]) )
 </span><span id="70" class="l">            <span class="php-keyword1">return</span>;
 </span><span id="71" class="l">
-</span><span id="72" class="l">        <span class="php-keyword1">return</span> get_property_meta(<span class="php-var">$atts</span>[<span class="php-quote">'key'</span>]);
+</span><span id="72" class="l">        <span class="php-keyword1">return</span> get_property_meta(<span class="php-var">$atts</span>[<span class="php-quote">'meta_key'</span>]);
 </span><span id="73" class="l">    }
 </span><span id="74" class="l">
 </span><span id="75" class="l">    <span class="php-keyword1">function</span> post(<span class="php-var">$atts</span>) {
 </span><span id="76" class="l">
 </span><span id="77" class="l">        <span class="php-keyword1">global</span> <span class="php-var">$property</span>;
-</span><span id="78" class="l">        <span class="php-keyword1">switch</span>(<span class="php-var">$atts</span>[<span class="php-quote">'key'</span>]) {
+</span><span id="78" class="l">        <span class="php-keyword1">switch</span>(<span class="php-var">$atts</span>[<span class="php-quote">'post_key'</span>]) {
 </span><span id="79" class="l">
 </span><span id="80" class="l">            <span class="php-keyword1">case</span> <span class="php-quote">'permalink'</span> :
 </span><span id="81" class="l">                <span class="php-keyword1">return</span> get_permalink(<span class="php-var">$property</span>-&gt;post-&gt;ID);
 </span><span id="82" class="l">            <span class="php-keyword1">break</span>;
 </span><span id="83" class="l">
 </span><span id="84" class="l">            <span class="php-keyword1">default</span> :
-</span><span id="85" class="l">                <span class="php-keyword1">return</span> <span class="php-keyword1">isset</span>(<span class="php-var">$property</span>-&gt;post-&gt;{<span class="php-var">$atts</span>[<span class="php-quote">'key'</span>]}) ? <span class="php-var">$property</span>-&gt;post-&gt;{<span class="php-var">$atts</span>[<span class="php-quote">'key'</span>]} : <span class="php-quote">''</span>;
+</span><span id="85" class="l">                <span class="php-keyword1">return</span> <span class="php-keyword1">isset</span>(<span class="php-var">$property</span>-&gt;post-&gt;{<span class="php-var">$atts</span>[<span class="php-quote">'post_key'</span>]}) ? <span class="php-var">$property</span>-&gt;post-&gt;{<span class="php-var">$atts</span>[<span class="php-quote">'post_key'</span>]} : <span class="php-quote">''</span>;
 </span><span id="86" class="l">            <span class="php-keyword1">break</span>;
 </span><span id="87" class="l">
 </span><span id="88" class="l">        }
@@ -580,7 +580,7 @@
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.3.1 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js?cbef3f9ce5d56cd9035f1d2078dbba925910f027"></script>
