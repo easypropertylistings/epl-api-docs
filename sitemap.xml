@@ -211,7 +211,7 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Templates.Themes.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Templates.Themes.Heuman.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Templates.Themes.iThemes.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Templates.Themes.iThemesBuilder.html</loc>
@@ -267,10 +267,13 @@
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_License.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/class-EPL_LISTING_ELEMENTS.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/class-EPL_Listing_Elements.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_METABOX.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/class-EPL_Pagination_Call.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_Property_Meta.html</loc>
