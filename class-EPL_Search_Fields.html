@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_Search_Fields | Easy Property Listings 3.3.3 Code Reference</title>
+	<title>Class EPL_Search_Fields | Easy Property Listings 3.4 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3.3 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -166,6 +166,10 @@
 					<li class="main">
 						<a href="package-EPL.Classes.Metaboxs.html">
 							Metaboxs						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Pagination.html">
+							Pagination						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Classes.PropertyMeta.html">
@@ -410,10 +414,6 @@
 							Search						</a>
 							</li>
 								</ul></li></ul></li>
-					<li>
-						<a href="package-None.html">
-							None						</a>
-							</li>
 			</ul>
 		</div>
 
@@ -467,7 +467,7 @@
 				Taher Atashbar <a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#116;&#97;&#104;&#101;&#x72;&#x2e;&#x61;&#116;&#97;&#115;&#104;&#x62;&#x61;&#x72;&#64;&#103;&#109;&#97;&#x69;&#x6c;&#x2e;c&#111;&#109;">&#116;&#97;&#104;&#101;&#x72;&#x2e;&#x61;&#116;&#97;&#115;&#104;&#x62;&#x61;&#x72;&#64;&#103;&#109;&#97;&#x69;&#x6c;&#x2e;c&#111;&#109;</a><br>
 				<b>Since:</b>
 				3.0<br>
-			<b>Located at</b> <a href="source-class-EPL_Search_Fields.html#17-368" title="Go to source code">lib/includes/class-epl-search-fields.php</a>
+			<b>Located at</b> <a href="source-class-EPL_Search_Fields.html#17-375" title="Go to source code">lib/includes/class-epl-search-fields.php</a>
 		<br>
 	</div>
 
@@ -533,15 +533,15 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$field</var></dt>
-						<dd></dd>
+						<dd>The field.</dd>
 						<dt><var>$config</var></dt>
-						<dd></dd>
+						<dd>Configuration.</dd>
 						<dt><var>$value</var></dt>
-						<dd></dd>
+						<dd>Value.</dd>
 						<dt><var>$post_type</var></dt>
-						<dd></dd>
+						<dd>Post type name.</dd>
 						<dt><var>$property_status</var></dt>
-						<dd></dd>
+						<dd>Listing status.</dd>
 					</dl></div>
 
 
@@ -566,7 +566,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render_checkbox">#</a>
-			<code><a href="source-class-EPL_Search_Fields.html#82-109" title="Go to source code">render_checkbox</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
+			<code><a href="source-class-EPL_Search_Fields.html#82-113" title="Go to source code">render_checkbox</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
 
 			<div class="description short">
 				<p>Renders search frontend Checkbox field.</p>
@@ -579,15 +579,15 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$field</var></dt>
-						<dd></dd>
+						<dd>The field.</dd>
 						<dt><var>$config</var></dt>
-						<dd></dd>
+						<dd>Configuration.</dd>
 						<dt><var>$value</var></dt>
-						<dd></dd>
+						<dd>Value.</dd>
 						<dt><var>$post_type</var></dt>
-						<dd></dd>
+						<dd>Post type name.</dd>
 						<dt><var>$property_status</var></dt>
-						<dd></dd>
+						<dd>Listing status.</dd>
 					</dl></div>
 
 
@@ -612,7 +612,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render_select">#</a>
-			<code><a href="source-class-EPL_Search_Fields.html#111-166" title="Go to source code">render_select</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
+			<code><a href="source-class-EPL_Search_Fields.html#115-170" title="Go to source code">render_select</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
 
 			<div class="description short">
 				<p>Renders search frontend Select field.</p>
@@ -625,15 +625,15 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$field</var></dt>
-						<dd></dd>
+						<dd>The field.</dd>
 						<dt><var>$config</var></dt>
-						<dd></dd>
+						<dd>Configuration.</dd>
 						<dt><var>$value</var></dt>
-						<dd></dd>
+						<dd>Value.</dd>
 						<dt><var>$post_type</var></dt>
-						<dd></dd>
+						<dd>Post type name.</dd>
 						<dt><var>$property_status</var></dt>
-						<dd></dd>
+						<dd>Listing status.</dd>
 					</dl></div>
 
 
@@ -658,7 +658,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render_multiple_select">#</a>
-			<code><a href="source-class-EPL_Search_Fields.html#168-210" title="Go to source code">render_multiple_select</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
+			<code><a href="source-class-EPL_Search_Fields.html#172-214" title="Go to source code">render_multiple_select</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
 
 			<div class="description short">
 				<p>Renders search frontend Multiple Select field.</p>
@@ -671,15 +671,15 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$field</var></dt>
-						<dd></dd>
+						<dd>The field.</dd>
 						<dt><var>$config</var></dt>
-						<dd></dd>
+						<dd>Configuration.</dd>
 						<dt><var>$value</var></dt>
-						<dd></dd>
+						<dd>Value.</dd>
 						<dt><var>$post_type</var></dt>
-						<dd></dd>
+						<dd>Post type name.</dd>
 						<dt><var>$property_status</var></dt>
-						<dd></dd>
+						<dd>Listing status.</dd>
 					</dl></div>
 
 
@@ -704,7 +704,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render_number">#</a>
-			<code><a href="source-class-EPL_Search_Fields.html#212-246" title="Go to source code">render_number</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
+			<code><a href="source-class-EPL_Search_Fields.html#216-250" title="Go to source code">render_number</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
 
 			<div class="description short">
 				<p>Renders search frontend Number field.</p>
@@ -717,15 +717,15 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$field</var></dt>
-						<dd></dd>
+						<dd>The field.</dd>
 						<dt><var>$config</var></dt>
-						<dd></dd>
+						<dd>Configuration.</dd>
 						<dt><var>$value</var></dt>
-						<dd></dd>
+						<dd>Value.</dd>
 						<dt><var>$post_type</var></dt>
-						<dd></dd>
+						<dd>Post type name.</dd>
 						<dt><var>$property_status</var></dt>
-						<dd></dd>
+						<dd>Listing status.</dd>
 					</dl></div>
 
 
@@ -750,7 +750,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render_hidden">#</a>
-			<code><a href="source-class-EPL_Search_Fields.html#248-273" title="Go to source code">render_hidden</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
+			<code><a href="source-class-EPL_Search_Fields.html#252-277" title="Go to source code">render_hidden</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
 
 			<div class="description short">
 				<p>Renders search frontend Hidden field.</p>
@@ -763,15 +763,15 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$field</var></dt>
-						<dd></dd>
+						<dd>The field.</dd>
 						<dt><var>$config</var></dt>
-						<dd></dd>
+						<dd>Configuration.</dd>
 						<dt><var>$value</var></dt>
-						<dd></dd>
+						<dd>Value.</dd>
 						<dt><var>$post_type</var></dt>
-						<dd></dd>
+						<dd>Post type name.</dd>
 						<dt><var>$property_status</var></dt>
-						<dd></dd>
+						<dd>Listing status.</dd>
 					</dl></div>
 
 
@@ -796,7 +796,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render_radio">#</a>
-			<code><a href="source-class-EPL_Search_Fields.html#275-319" title="Go to source code">render_radio</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
+			<code><a href="source-class-EPL_Search_Fields.html#279-325" title="Go to source code">render_radio</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
 
 			<div class="description short">
 				<p>Renders search frontend Radio field.</p>
@@ -809,15 +809,15 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$field</var></dt>
-						<dd></dd>
+						<dd>The field.</dd>
 						<dt><var>$config</var></dt>
-						<dd></dd>
+						<dd>Configuration.</dd>
 						<dt><var>$value</var></dt>
-						<dd></dd>
+						<dd>Value.</dd>
 						<dt><var>$post_type</var></dt>
-						<dd></dd>
+						<dd>Post type name.</dd>
 						<dt><var>$property_status</var></dt>
-						<dd></dd>
+						<dd>Listing status.</dd>
 					</dl></div>
 
 
@@ -842,7 +842,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render_checkbox_multiple">#</a>
-			<code><a href="source-class-EPL_Search_Fields.html#321-366" title="Go to source code">render_checkbox_multiple</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
+			<code><a href="source-class-EPL_Search_Fields.html#327-373" title="Go to source code">render_checkbox_multiple</a>( <span>array <var>$field</var></span>, <span>string <var>$config</var> = <span class="php-quote">''</span></span>, <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$post_type</var> = <span class="php-quote">''</span></span>, <span>string <var>$property_status</var> = <span class="php-quote">''</span> </span> )</code>
 
 			<div class="description short">
 				<p>Renders search frontend Radio field.</p>
@@ -855,15 +855,15 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$field</var></dt>
-						<dd></dd>
+						<dd>The field.</dd>
 						<dt><var>$config</var></dt>
-						<dd></dd>
+						<dd>Configuration.</dd>
 						<dt><var>$value</var></dt>
-						<dd></dd>
+						<dd>Value.</dd>
 						<dt><var>$post_type</var></dt>
-						<dd></dd>
+						<dd>Post type name.</dd>
 						<dt><var>$property_status</var></dt>
-						<dd></dd>
+						<dd>Listing status.</dd>
 					</dl></div>
 
 
@@ -894,7 +894,7 @@
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.3.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>

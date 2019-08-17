@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_SL_Plugin_Updater | Easy Property Listings 3.3.3 Code Reference</title>
+	<title>Class EPL_SL_Plugin_Updater | Easy Property Listings 3.4 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3.3 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -166,6 +166,10 @@
 					<li class="main">
 						<a href="package-EPL.Classes.Metaboxs.html">
 							Metaboxs						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Pagination.html">
+							Pagination						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Classes.PropertyMeta.html">
@@ -410,10 +414,6 @@
 							Search						</a>
 							</li>
 								</ul></li></ul></li>
-					<li>
-						<a href="package-None.html">
-							None						</a>
-							</li>
 			</ul>
 		</div>
 
@@ -468,7 +468,7 @@
 				1.6.6<br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-EPL_SL_Plugin_Updater.html#19-497" title="Go to source code">lib/includes/EPL_SL_Plugin_Updater.php</a>
+			<b>Located at</b> <a href="source-class-EPL_SL_Plugin_Updater.html#23-585" title="Go to source code">lib/includes/class-epl-sl-plugin-updater.php</a>
 		<br>
 	</div>
 
@@ -488,7 +488,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-EPL_SL_Plugin_Updater.html#35-63" title="Go to source code">__construct</a>( <span>string <var>$_api_url</var></span>, <span>string <var>$_plugin_file</var></span>, <span>array <var>$_api_data</var> = <span class="php-keyword1">null</span> </span> )</code>
+			<code><a href="source-class-EPL_SL_Plugin_Updater.html#81-109" title="Go to source code">__construct</a>( <span>string <var>$_api_url</var></span>, <span>string <var>$_plugin_file</var></span>, <span>array <var>$_api_data</var> = <span class="php-keyword1">null</span> </span> )</code>
 
 			<div class="description short">
 				<p>Class constructor.</p>
@@ -531,7 +531,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_init">#</a>
-			<code><a href="source-class-EPL_SL_Plugin_Updater.html#65-80" title="Go to source code">init</a>( )</code>
+			<code><a href="source-class-EPL_SL_Plugin_Updater.html#111-126" title="Go to source code">init</a>( )</code>
 
 			<div class="description short">
 				<p>Set up WordPress filters to hook into WP's update process.</p>
@@ -564,7 +564,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_check_update">#</a>
-			<code><a href="source-class-EPL_SL_Plugin_Updater.html#82-133" title="Go to source code">check_update</a>( <span>array <var>$_transient_data</var></span> )</code>
+			<code><a href="source-class-EPL_SL_Plugin_Updater.html#128-185" title="Go to source code">check_update</a>( <span>array <var>$_transient_data</var></span> )</code>
 
 			<div class="description short">
 				<p>Check for Updates at the defined API endpoint and modify the update array.</p>
@@ -611,22 +611,22 @@ See wp-includes/update.php line 121 for the original wp_update_plugins() functio
 
 			<td class="name"><div>
 			<a class="anchor" href="#_show_update_notification">#</a>
-			<code><a href="source-class-EPL_SL_Plugin_Updater.html#135-235" title="Go to source code">show_update_notification</a>( <span>string <var>$file</var></span>, <span>array <var>$plugin</var></span> )</code>
+			<code><a href="source-class-EPL_SL_Plugin_Updater.html#187-294" title="Go to source code">show_update_notification</a>( <span>string <var>$file</var></span>, <span>array <var>$plugin</var></span> )</code>
 
 			<div class="description short">
-				<p>show update nofication row -- needed for multisite subsites, because WP won't tell you otherwise!</p>
+				<p>Show update nofication row -- needed for multisite subsites, because WP won't tell you otherwise!</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>show update nofication row -- needed for multisite subsites, because WP won't tell you otherwise!</p>
+				<p>Show update nofication row -- needed for multisite subsites, because WP won't tell you otherwise!</p>
 
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$file</var></dt>
-						<dd></dd>
+						<dd>PLugin file.</dd>
 						<dt><var>$plugin</var></dt>
-						<dd></dd>
+						<dd>Plugin name.</dd>
 					</dl></div>
 
 
@@ -647,7 +647,7 @@ See wp-includes/update.php line 121 for the original wp_update_plugins() functio
 
 			<td class="name"><div>
 			<a class="anchor" href="#_plugins_api_filter">#</a>
-			<code><a href="source-class-EPL_SL_Plugin_Updater.html#238-312" title="Go to source code">plugins_api_filter</a>( <span>mixed <var>$_data</var></span>, <span>string <var>$_action</var> = <span class="php-quote">''</span></span>, <span>object <var>$_args</var> = <span class="php-keyword1">null</span> </span> )</code>
+			<code><a href="source-class-EPL_SL_Plugin_Updater.html#297-370" title="Go to source code">plugins_api_filter</a>( <span>mixed <var>$_data</var></span>, <span>string <var>$_action</var> = <span class="php-quote">''</span></span>, <span>object <var>$_args</var> = <span class="php-keyword1">null</span> </span> )</code>
 
 			<div class="description short">
 				<p>Updates information on the "View version x.x details" page with custom data.</p>
@@ -660,11 +660,11 @@ See wp-includes/update.php line 121 for the original wp_update_plugins() functio
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$_data</var></dt>
-						<dd></dd>
+						<dd>Data.</dd>
 						<dt><var>$_action</var></dt>
-						<dd></dd>
+						<dd>Action name.</dd>
 						<dt><var>$_args</var></dt>
-						<dd></dd>
+						<dd>Arguments.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -686,34 +686,34 @@ See wp-includes/update.php line 121 for the original wp_update_plugins() functio
 
 			<td class="attributes"><code>
 				 public 
-				object
+				array
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_http_request_args">#</a>
-			<code><a href="source-class-EPL_SL_Plugin_Updater.html#315-328" title="Go to source code">http_request_args</a>( <span>array <var>$args</var></span>, <span>string <var>$url</var></span> )</code>
+			<code><a href="source-class-EPL_SL_Plugin_Updater.html#373-387" title="Go to source code">http_request_args</a>( <span>array <var>$args</var></span>, <span>string <var>$url</var></span> )</code>
 
 			<div class="description short">
-				<p>Disable SSL verification in order to prevent download update failures</p>
+				<p>Disable SSL verification in order to prevent download update failures.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>Disable SSL verification in order to prevent download update failures</p>
+				<p>Disable SSL verification in order to prevent download update failures.</p>
 
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$args</var></dt>
-						<dd></dd>
+						<dd>Arguments.</dd>
 						<dt><var>$url</var></dt>
-						<dd></dd>
+						<dd>URL.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						object<br>$array
+						array<br>$array
 					</div>
 
 
@@ -733,14 +733,14 @@ See wp-includes/update.php line 121 for the original wp_update_plugins() functio
 
 			<td class="name"><div>
 			<a class="anchor" href="#_show_changelog">#</a>
-			<code><a href="source-class-EPL_SL_Plugin_Updater.html#395-461" title="Go to source code">show_changelog</a>( )</code>
+			<code><a href="source-class-EPL_SL_Plugin_Updater.html#461-537" title="Go to source code">show_changelog</a>( )</code>
 
 			<div class="description short">
-				
+				<p>Display change log</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Display change log</p>
 
 
 
@@ -755,24 +755,33 @@ See wp-includes/update.php line 121 for the original wp_update_plugins() functio
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_cached_version_info">#</a>
-			<code><a href="source-class-EPL_SL_Plugin_Updater.html#464-474" title="Go to source code">get_cached_version_info</a>( <span> <var>$cache_key</var> = <span class="php-quote">''</span> </span> )</code>
+			<code><a href="source-class-EPL_SL_Plugin_Updater.html#539-556" title="Go to source code">get_cached_version_info</a>( <span>string <var>$cache_key</var> = <span class="php-quote">''</span> </span> )</code>
 
 			<div class="description short">
-				
+				<p>Get cached version info</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Get cached version info</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$cache_key</var></dt>
+						<dd>The cache key.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
 
 
 
@@ -791,16 +800,23 @@ See wp-includes/update.php line 121 for the original wp_update_plugins() functio
 
 			<td class="name"><div>
 			<a class="anchor" href="#_set_version_info_cache">#</a>
-			<code><a href="source-class-EPL_SL_Plugin_Updater.html#476-486" title="Go to source code">set_version_info_cache</a>( <span> <var>$value</var> = <span class="php-quote">''</span></span>, <span> <var>$cache_key</var> = <span class="php-quote">''</span> </span> )</code>
+			<code><a href="source-class-EPL_SL_Plugin_Updater.html#558-574" title="Go to source code">set_version_info_cache</a>( <span>string <var>$value</var> = <span class="php-quote">''</span></span>, <span>string <var>$cache_key</var> = <span class="php-quote">''</span> </span> )</code>
 
 			<div class="description short">
-				
+				<p>Set version info cache</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Set version info cache</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd>The value.</dd>
+						<dt><var>$cache_key</var></dt>
+						<dd>The cache key.</dd>
+					</dl></div>
 
 
 
@@ -826,7 +842,7 @@ See wp-includes/update.php line 121 for the original wp_update_plugins() functio
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.3.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>

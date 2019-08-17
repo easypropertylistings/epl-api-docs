@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_Author_Meta | Easy Property Listings 3.3.3 Code Reference</title>
+	<title>Class EPL_Author_Meta | Easy Property Listings 3.4 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3.3 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -166,6 +166,10 @@
 					<li class="main">
 						<a href="package-EPL.Classes.Metaboxs.html">
 							Metaboxs						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Pagination.html">
+							Pagination						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Classes.PropertyMeta.html">
@@ -410,10 +414,6 @@
 							Search						</a>
 							</li>
 								</ul></li></ul></li>
-					<li>
-						<a href="package-None.html">
-							None						</a>
-							</li>
 			</ul>
 		</div>
 
@@ -440,6 +440,9 @@
 	<h1>Class EPL_Author_Meta</h1>
 
 
+	<div class="description">
+	<p>EPL_Author_Meta Class</p>
+	</div>
 
 
 
@@ -459,7 +462,9 @@
 				Copyright (c) 2019, Merv Barrett<br>
 				<b>License:</b>
 				<a href="http://opensource.org/licenses/gpl-2.0.php">GNU Public License</a><br>
-			<b>Located at</b> <a href="source-class-EPL_Author_Meta.html#22-692" title="Go to source code">lib/includes/class-epl-author-meta.php</a>
+				<b>Since:</b>
+				1.3.0<br>
+			<b>Located at</b> <a href="source-class-EPL_Author_Meta.html#24-878" title="Go to source code">lib/includes/class-epl-author-meta.php</a>
 		<br>
 	</div>
 
@@ -479,24 +484,28 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#43-66" title="Go to source code">__construct</a>( <span>[type] <var>$author_id</var></span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#175-200" title="Go to source code">__construct</a>( <span>string <var>$author_id</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>Get things started</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Get things started</p>
 
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$author_id</var></dt>
-						<dd></dd>
+						<dd>The author WordPress user ID.</dd>
 					</dl></div>
 
 
 
+					<h4>Since</h4>
+					<div class="list">
+							1.3.0<br>
+					</div>
 
 
 			</div>
@@ -506,35 +515,39 @@
 
 			<td class="attributes"><code>
 				 public 
-				[type]
+				boolean|mixed
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#68-78" title="Go to source code">__get</a>( <span>[type] <var>$property</var></span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#202-220" title="Go to source code">__get</a>( <span>array <var>$property</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>Get the global property object</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Get the global property object</p>
 
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$property</var></dt>
-						<dd></dd>
+						<dd>Array of property object.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						[type]
+						boolean|mixed<br>$return Array of values.
 					</div>
 
 
+					<h4>Since</h4>
+					<div class="list">
+							1.3.0<br>
+					</div>
 
 
 			</div>
@@ -551,7 +564,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_author_name">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#80-88" title="Go to source code">get_author_name</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#222-231" title="Go to source code">get_author_name</a>( )</code>
 
 			<div class="description short">
 				<p>Author Name</p>
@@ -566,7 +579,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							1.3.0<br>
 					</div>
 
 
@@ -584,7 +597,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_email">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#90-98" title="Go to source code">get_email</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#233-242" title="Go to source code">get_email</a>( )</code>
 
 			<div class="description short">
 				<p>Get Email</p>
@@ -599,7 +612,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 3.2<br>
+							3.2.0<br>
 					</div>
 
 
@@ -610,14 +623,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|string|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_email_html">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#100-129" title="Go to source code">get_email_html</a>( <span> <var>$html</var> = <span class="php-quote">''</span> </span>, <span> <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#244-277" title="Go to source code">get_email_html</a>( <span>string <var>$html</var> = <span class="php-quote">''</span></span>, <span>string <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Author Email html Box</p>
@@ -627,12 +640,23 @@
 				<p>Author Email html Box</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd>String of html.</dd>
+						<dt><var>$style</var></dt>
+						<dd>Option of returntype.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|string|
+					</div>
 
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							1.3.0<br>
 					</div>
 
 
@@ -650,7 +674,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_twitter">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#131-152" title="Go to source code">get_twitter</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#279-299" title="Go to source code">get_twitter</a>( )</code>
 
 			<div class="description short">
 				<p>Get Twitter</p>
@@ -665,7 +689,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 3.2<br>
+							3.2.0<br>
 					</div>
 
 
@@ -683,7 +707,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_instagram">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#154-175" title="Go to source code">get_instagram</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#301-321" title="Go to source code">get_instagram</a>( )</code>
 
 			<div class="description short">
 				<p>Get Instagram</p>
@@ -698,7 +722,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 3.3<br>
+							3.3.0<br>
 					</div>
 
 
@@ -716,7 +740,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_youtube">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#177-198" title="Go to source code">get_youtube</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#323-343" title="Go to source code">get_youtube</a>( )</code>
 
 			<div class="description short">
 				<p>Get YouTube</p>
@@ -731,7 +755,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 3.3<br>
+							3.3.0<br>
 					</div>
 
 
@@ -749,7 +773,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_pinterest">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#200-221" title="Go to source code">get_pinterest</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#345-365" title="Go to source code">get_pinterest</a>( )</code>
 
 			<div class="description short">
 				<p>Get Pinterest</p>
@@ -764,7 +788,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 3.3<br>
+							3.3.0<br>
 					</div>
 
 
@@ -775,26 +799,41 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|string|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_twitter_html">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#228-254" title="Go to source code">get_twitter_html</a>( <span> <var>$html</var> = <span class="php-quote">''</span> </span>, <span> <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#367-402" title="Go to source code">get_twitter_html</a>( <span>string <var>$html</var> = <span class="php-quote">''</span></span>, <span>string <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
-				
+				<p>Author Twitter html Box</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Author Twitter html Box</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd>String of html.</dd>
+						<dt><var>$style</var></dt>
+						<dd>Option of returntype.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|string|
+					</div>
 
 
-
+					<h4>Since</h4>
+					<div class="list">
+							1.3.0<br>
+					</div>
 
 
 			</div>
@@ -804,26 +843,41 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|string|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_instagram_html">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#261-287" title="Go to source code">get_instagram_html</a>( <span> <var>$html</var> = <span class="php-quote">''</span> </span>, <span> <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#404-439" title="Go to source code">get_instagram_html</a>( <span>string <var>$html</var> = <span class="php-quote">''</span></span>, <span>string <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
-				
+				<p>Author Instagram html Box</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Author Instagram html Box</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd>String of html.</dd>
+						<dt><var>$style</var></dt>
+						<dd>Option of returntype.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|string|
+					</div>
 
 
-
+					<h4>Since</h4>
+					<div class="list">
+							3.3.0<br>
+					</div>
 
 
 			</div>
@@ -833,26 +887,41 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|string|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_youtube_html">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#294-320" title="Go to source code">get_youtube_html</a>( <span> <var>$html</var> = <span class="php-quote">''</span> </span>, <span> <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#441-476" title="Go to source code">get_youtube_html</a>( <span>string <var>$html</var> = <span class="php-quote">''</span></span>, <span>string <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
-				
+				<p>Author Youtube html Box</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Author Youtube html Box</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd>String of html.</dd>
+						<dt><var>$style</var></dt>
+						<dd>Option of returntype.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|string|
+					</div>
 
 
-
+					<h4>Since</h4>
+					<div class="list">
+							3.3.0<br>
+					</div>
 
 
 			</div>
@@ -862,26 +931,41 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|string|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_pinterest_html">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#327-353" title="Go to source code">get_pinterest_html</a>( <span> <var>$html</var> = <span class="php-quote">''</span> </span>, <span> <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#478-513" title="Go to source code">get_pinterest_html</a>( <span>string <var>$html</var> = <span class="php-quote">''</span></span>, <span>string <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
-				
+				<p>Author Pinterest html Box</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Author Pinterest html Box</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd>String of html.</dd>
+						<dt><var>$style</var></dt>
+						<dd>Option of returntype.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|string|
+					</div>
 
 
-
+					<h4>Since</h4>
+					<div class="list">
+							3.3.0<br>
+					</div>
 
 
 			</div>
@@ -898,7 +982,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_google">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#355-377" title="Go to source code">get_google</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#515-536" title="Go to source code">get_google</a>( )</code>
 
 			<div class="description short">
 				<p>Get Google</p>
@@ -913,7 +997,8 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 3.2<br>
+							3.2.0<br>
+							3.3.0 Depreciated as Google Plus no longer exists.<br>
 					</div>
 
 
@@ -924,14 +1009,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|string|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_google_html">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#379-410" title="Go to source code">get_google_html</a>( <span> <var>$html</var> = <span class="php-quote">''</span> </span>, <span> <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#538-574" title="Go to source code">get_google_html</a>( <span>string <var>$html</var> = <span class="php-quote">''</span></span>, <span>string <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Author Google html Box</p>
@@ -941,12 +1026,24 @@
 				<p>Author Google html Box</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd>String of html.</dd>
+						<dt><var>$style</var></dt>
+						<dd>Option of returntype.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|string|
+					</div>
 
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							3.3.0 Depreciated as Google Plus no longer exists.<br>
+							1.3.0<br>
 					</div>
 
 
@@ -964,7 +1061,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_facebook">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#412-435" title="Go to source code">get_facebook</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#576-597" title="Go to source code">get_facebook</a>( )</code>
 
 			<div class="description short">
 				<p>Get Facebook</p>
@@ -979,7 +1076,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 3.2<br>
+							3.2.0<br>
 					</div>
 
 
@@ -990,14 +1087,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|string|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_facebook_html">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#437-468" title="Go to source code">get_facebook_html</a>( <span> <var>$html</var> = <span class="php-quote">''</span> </span>, <span> <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#599-634" title="Go to source code">get_facebook_html</a>( <span>string <var>$html</var> = <span class="php-quote">''</span></span>, <span>string <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Author Facebook html Box</p>
@@ -1007,12 +1104,23 @@
 				<p>Author Facebook html Box</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd>String of html.</dd>
+						<dt><var>$style</var></dt>
+						<dd>Option of returntype.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|string|
+					</div>
 
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							1.3.0<br>
 					</div>
 
 
@@ -1030,7 +1138,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_linkedin">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#470-492" title="Go to source code">get_linkedin</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#636-657" title="Go to source code">get_linkedin</a>( )</code>
 
 			<div class="description short">
 				<p>Get linkedin</p>
@@ -1045,7 +1153,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 3.2<br>
+							3.2.0<br>
 					</div>
 
 
@@ -1056,14 +1164,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|string|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_linkedin_html">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#494-526" title="Go to source code">get_linkedin_html</a>( <span> <var>$html</var> = <span class="php-quote">''</span> </span>, <span> <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#659-695" title="Go to source code">get_linkedin_html</a>( <span>string <var>$html</var> = <span class="php-quote">''</span></span>, <span>string <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Author LinkedIn html Box</p>
@@ -1073,12 +1181,23 @@
 				<p>Author LinkedIn html Box</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd>String of html.</dd>
+						<dt><var>$style</var></dt>
+						<dd>Option of returntype.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|string|
+					</div>
 
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							1.3.0<br>
 					</div>
 
 
@@ -1096,7 +1215,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_skype">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#528-550" title="Go to source code">get_skype</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#697-717" title="Go to source code">get_skype</a>( )</code>
 
 			<div class="description short">
 				<p>Get skype</p>
@@ -1111,7 +1230,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 3.2<br>
+							3.2.0<br>
 					</div>
 
 
@@ -1122,14 +1241,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|string|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_skype_html">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#552-584" title="Go to source code">get_skype_html</a>( <span> <var>$html</var> = <span class="php-quote">''</span> </span>, <span> <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#719-755" title="Go to source code">get_skype_html</a>( <span>string <var>$html</var> = <span class="php-quote">''</span></span>, <span>string <var>$style</var> = <span class="php-quote">'i'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Author Skype html Box</p>
@@ -1139,12 +1258,23 @@
 				<p>Author Skype html Box</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd>String of html.</dd>
+						<dt><var>$style</var></dt>
+						<dd>Option of returntype.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|string|
+					</div>
 
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							1.3.0<br>
 					</div>
 
 
@@ -1155,14 +1285,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_video_html">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#586-597" title="Go to source code">get_video_html</a>( <span> <var>$html</var> = <span class="php-quote">''</span></span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#757-771" title="Go to source code">get_video_html</a>( <span>string <var>$html</var> = <span class="php-quote">''</span> </span> )</code>
 
 			<div class="description short">
 				<p>Author video html Box</p>
@@ -1172,12 +1302,21 @@
 				<p>Author video html Box</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd>String of video embed.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|
+					</div>
 
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							1.3.0<br>
 					</div>
 
 
@@ -1195,7 +1334,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_description">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#599-607" title="Go to source code">get_description</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#773-782" title="Go to source code">get_description</a>( )</code>
 
 			<div class="description short">
 				<p>Get description</p>
@@ -1210,7 +1349,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 3.2<br>
+							3.2.0<br>
 					</div>
 
 
@@ -1221,14 +1360,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_description_html">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#609-629" title="Go to source code">get_description_html</a>( <span> <var>$html</var> = <span class="php-quote">''</span></span> )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#784-810" title="Go to source code">get_description_html</a>( <span>string <var>$html</var> = <span class="php-quote">''</span> </span> )</code>
 
 			<div class="description short">
 				<p>Author description html</p>
@@ -1238,12 +1377,21 @@
 				<p>Author description html</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$html</var></dt>
+						<dd>String of html output.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|
+					</div>
 
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							1.3.0<br>
 					</div>
 
 
@@ -1261,7 +1409,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_author_mobile">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#631-639" title="Go to source code">get_author_mobile</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#812-821" title="Go to source code">get_author_mobile</a>( )</code>
 
 			<div class="description short">
 				<p>Author mobile</p>
@@ -1276,7 +1424,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							1.3.0<br>
 					</div>
 
 
@@ -1294,7 +1442,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_author_office_phone">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#641-649" title="Go to source code">get_author_office_phone</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#823-832" title="Go to source code">get_author_office_phone</a>( )</code>
 
 			<div class="description short">
 				<p>Author office phone</p>
@@ -1309,7 +1457,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 3.3<br>
+							3.3.0<br>
 					</div>
 
 
@@ -1327,14 +1475,14 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_author_id">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#651-659" title="Go to source code">get_author_id</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#834-843" title="Go to source code">get_author_id</a>( )</code>
 
 			<div class="description short">
-				<p>Author Id</p>
+				<p>Author ID</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>Author Id</p>
+				<p>Author ID</p>
 
 
 
@@ -1342,7 +1490,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							1.3.0<br>
 					</div>
 
 
@@ -1360,7 +1508,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_author_slogan">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#661-669" title="Go to source code">get_author_slogan</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#845-854" title="Go to source code">get_author_slogan</a>( )</code>
 
 			<div class="description short">
 				<p>Author Slogan</p>
@@ -1375,7 +1523,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							1.3.0<br>
 					</div>
 
 
@@ -1393,7 +1541,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_author_position">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#671-679" title="Go to source code">get_author_position</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#856-865" title="Go to source code">get_author_position</a>( )</code>
 
 			<div class="description short">
 				<p>Author Position</p>
@@ -1408,7 +1556,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							1.3.0<br>
 					</div>
 
 
@@ -1426,7 +1574,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_author_contact_form">#</a>
-			<code><a href="source-class-EPL_Author_Meta.html#681-691" title="Go to source code">get_author_contact_form</a>( )</code>
+			<code><a href="source-class-EPL_Author_Meta.html#867-877" title="Go to source code">get_author_contact_form</a>( )</code>
 
 			<div class="description short">
 				<p>Author Contact Form</p>
@@ -1441,7 +1589,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							version 1.3<br>
+							1.3.0<br>
 					</div>
 
 
@@ -1465,7 +1613,7 @@
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.3.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>

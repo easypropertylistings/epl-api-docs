@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_Contact_Reports_Table | Easy Property Listings 3.3.3 Code Reference</title>
+	<title>Class EPL_Contact_Reports_Table | Easy Property Listings 3.4 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3.3 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -166,6 +166,10 @@
 					<li class="main">
 						<a href="package-EPL.Classes.Metaboxs.html">
 							Metaboxs						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Pagination.html">
+							Pagination						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Classes.PropertyMeta.html">
@@ -410,10 +414,6 @@
 							Search						</a>
 							</li>
 								</ul></li></ul></li>
-					<li>
-						<a href="package-None.html">
-							None						</a>
-							</li>
 			</ul>
 		</div>
 
@@ -479,7 +479,7 @@ WP_List_Table
 				<a href="http://opensource.org/licenses/gpl-2.0.php">GNU Public License</a><br>
 				<b>Since:</b>
 				3.0<br>
-			<b>Located at</b> <a href="source-class-EPL_Contact_Reports_Table.html#20-464" title="Go to source code">lib/includes/admin/contacts/class-contact-table.php</a>
+			<b>Located at</b> <a href="source-class-EPL_Contact_Reports_Table.html#25-509" title="Go to source code">lib/includes/admin/contacts/class-epl-contact-reports-table.php</a>
 		<br>
 	</div>
 
@@ -499,7 +499,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#53-69" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#58-76" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
 				<p>Get things started</p>
@@ -536,7 +536,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_search_box">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#71-100" title="Go to source code">search_box</a>( <span>string <var>$text</var></span>, <span>string <var>$input_id</var></span> )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#78-115" title="Go to source code">search_box</a>( <span>string <var>$text</var></span>, <span>string <var>$input_id</var></span> )</code>
 
 			<div class="description short">
 				<p>Show the search field</p>
@@ -549,9 +549,9 @@ WP_List_Table
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$text</var></dt>
-						<dd>Label for the search box</dd>
+						<dd>Label for the search box.</dd>
 						<dt><var>$input_id</var></dt>
-						<dd>ID of the search box</dd>
+						<dd>ID of the search box.</dd>
 					</dl></div>
 
 
@@ -576,7 +576,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_primary_column_name">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#102-112" title="Go to source code">get_primary_column_name</a>( )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#117-127" title="Go to source code">get_primary_column_name</a>( )</code>
 
 			<div class="description short">
 				<p>Gets the name of the primary column.</p>
@@ -613,7 +613,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_column_default">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#114-147" title="Go to source code">column_default</a>( <span>array <var>$item</var></span>, <span>string <var>$column_name</var></span> )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#129-162" title="Go to source code">column_default</a>( <span>array <var>$item</var></span>, <span>string <var>$column_name</var></span> )</code>
 
 			<div class="description short">
 				<p>This function renders most of the columns in the list table.</p>
@@ -626,9 +626,9 @@ WP_List_Table
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$item</var></dt>
-						<dd>Contains all the data of the contacts</dd>
+						<dd>Contains all the data of the contacts.</dd>
 						<dt><var>$column_name</var></dt>
-						<dd>The name of the column</dd>
+						<dd>The name of the column.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -650,24 +650,33 @@ WP_List_Table
 
 			<td class="attributes"><code>
 				 public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_column_name">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#149-161" title="Go to source code">column_name</a>( <span> <var>$item</var></span> )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#164-183" title="Go to source code">column_name</a>( <span>array <var>$item</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>Name for each columns</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Name for each columns</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$item</var></dt>
+						<dd>Column items.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
 
 
@@ -679,24 +688,33 @@ WP_List_Table
 
 			<td class="attributes"><code>
 				 public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_column_type">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#163-165" title="Go to source code">column_type</a>( <span> <var>$item</var></span> )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#185-193" title="Go to source code">column_type</a>( <span>array <var>$item</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>Type for each column</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Type for each column</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$item</var></dt>
+						<dd>Column items.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
 
 
@@ -708,24 +726,33 @@ WP_List_Table
 
 			<td class="attributes"><code>
 				 public 
-				
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_column_summary">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#167-186" title="Go to source code">column_summary</a>( <span> <var>$item</var></span> )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#195-222" title="Go to source code">column_summary</a>( <span>array <var>$item</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>Column summary for each column.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Column summary for each column.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$item</var></dt>
+						<dd>Column items.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
 
 
 
@@ -744,7 +771,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_columns">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#188-208" title="Go to source code">get_columns</a>( )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#224-244" title="Go to source code">get_columns</a>( )</code>
 
 			<div class="description short">
 				<p>Retrieve the table columns</p>
@@ -778,14 +805,14 @@ WP_List_Table
 
 			<td class="attributes"><code>
 				 public 
-				[type]
+				string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_column_cb">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#210-219" title="Go to source code">column_cb</a>( <span>[type] <var>$item</var></span> )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#246-257" title="Go to source code">column_cb</a>( <span>array <var>$item</var></span> )</code>
 
 			<div class="description short">
 				<p>Render checkbox column</p>
@@ -798,12 +825,12 @@ WP_List_Table
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$item</var></dt>
-						<dd>[description]</dd>
+						<dd>Column items.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						[type]<br>[description]
+						string
 					</div>
 
 
@@ -823,7 +850,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_sortable_columns">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#221-234" title="Go to source code">get_sortable_columns</a>( )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#259-272" title="Go to source code">get_sortable_columns</a>( )</code>
 
 			<div class="description short">
 				<p>Get the sortable columns</p>
@@ -860,7 +887,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_paged">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#237-246" title="Go to source code">get_paged</a>( )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#275-284" title="Go to source code">get_paged</a>( )</code>
 
 			<div class="description short">
 				<p>Retrieve the current page number</p>
@@ -897,7 +924,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_search">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#248-257" title="Go to source code">get_search</a>( )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#286-295" title="Go to source code">get_search</a>( )</code>
 
 			<div class="description short">
 				<p>Retrieves the search query string</p>
@@ -934,7 +961,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_name_search">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#259-268" title="Go to source code">get_name_search</a>( )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#297-306" title="Go to source code">get_name_search</a>( )</code>
 
 			<div class="description short">
 				<p>Retrieves the search query string</p>
@@ -971,7 +998,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_reports_data">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#270-360" title="Go to source code">reports_data</a>( )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#308-397" title="Go to source code">reports_data</a>( )</code>
 
 			<div class="description short">
 				<p>Build all the reports data</p>
@@ -1008,7 +1035,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_process_bulk_action">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#362-381" title="Go to source code">process_bulk_action</a>( )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#399-418" title="Go to source code">process_bulk_action</a>( )</code>
 
 			<div class="description short">
 				<p>Process bulk contact operations</p>
@@ -1041,7 +1068,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_prepare_items">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#383-414" title="Go to source code">prepare_items</a>( )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#420-453" title="Go to source code">prepare_items</a>( )</code>
 
 			<div class="description short">
 				<p>Setup the final data for the table</p>
@@ -1081,7 +1108,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_bulk_actions">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#416-428" title="Go to source code">get_bulk_actions</a>( )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#455-467" title="Go to source code">get_bulk_actions</a>( )</code>
 
 			<div class="description short">
 				<p>Get bulk contact actions</p>
@@ -1114,7 +1141,7 @@ WP_List_Table
 
 			<td class="name"><div>
 			<a class="anchor" href="#_extra_tablenav">#</a>
-			<code><a href="source-class-EPL_Contact_Reports_Table.html#430-463" title="Go to source code">extra_tablenav</a>( <span> <var>$which</var></span> )</code>
+			<code><a href="source-class-EPL_Contact_Reports_Table.html#469-508" title="Go to source code">extra_tablenav</a>( <span>string <var>$which</var></span> )</code>
 
 			<div class="description short">
 				<p>Output the contact categories</p>
@@ -1124,6 +1151,11 @@ WP_List_Table
 				<p>Output the contact categories</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$which</var></dt>
+						<dd>nav location.</dd>
+					</dl></div>
 
 
 
@@ -1159,7 +1191,7 @@ WP_List_Table
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-EPL_Contact_Reports_Table.html#29-35" title="Go to source code"><var>$per_page</var></a>
+					<a href="source-class-EPL_Contact_Reports_Table.html#34-40" title="Go to source code"><var>$per_page</var></a>
 
 				<div class="description short">
 					<p>Number of items per page</p>
@@ -1188,7 +1220,7 @@ WP_List_Table
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-EPL_Contact_Reports_Table.html#37-43" title="Go to source code"><var>$count</var></a>
+					<a href="source-class-EPL_Contact_Reports_Table.html#42-48" title="Go to source code"><var>$count</var></a>
 
 				<div class="description short">
 					<p>Number of contacts found</p>
@@ -1217,7 +1249,7 @@ WP_List_Table
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-EPL_Contact_Reports_Table.html#45-51" title="Go to source code"><var>$total</var></a>
+					<a href="source-class-EPL_Contact_Reports_Table.html#50-56" title="Go to source code"><var>$total</var></a>
 
 				<div class="description short">
 					<p>Total contacts</p>
@@ -1251,7 +1283,7 @@ WP_List_Table
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.3.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>

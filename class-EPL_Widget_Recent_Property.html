@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_Widget_Recent_Property | Easy Property Listings 3.3.3 Code Reference</title>
+	<title>Class EPL_Widget_Recent_Property | Easy Property Listings 3.4 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3.3 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -166,6 +166,10 @@
 					<li class="main">
 						<a href="package-EPL.Classes.Metaboxs.html">
 							Metaboxs						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Pagination.html">
+							Pagination						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Classes.PropertyMeta.html">
@@ -410,10 +414,6 @@
 							Search						</a>
 							</li>
 								</ul></li></ul></li>
-					<li>
-						<a href="package-None.html">
-							None						</a>
-							</li>
 			</ul>
 		</div>
 
@@ -481,7 +481,7 @@ WP_Widget
 				<a href="http://opensource.org/licenses/gpl-2.0.php">GNU Public License</a><br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-EPL_Widget_Recent_Property.html#15-456" title="Go to source code">lib/widgets/widget-listing.php</a>
+			<b>Located at</b> <a href="source-class-EPL_Widget_Recent_Property.html#17-558" title="Go to source code">lib/widgets/class-epl-widget-recent-property.php</a>
 		<br>
 	</div>
 
@@ -501,19 +501,23 @@ WP_Widget
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-EPL_Widget_Recent_Property.html#22-25" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-EPL_Widget_Recent_Property.html#24-32" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
-				
+				<p>Construct the widget.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Construct the widget.</p>
 
 
 
 
 
+					<h4>Since</h4>
+					<div class="list">
+							1.0.0<br>
+					</div>
 
 
 			</div>
@@ -530,19 +534,30 @@ WP_Widget
 
 			<td class="name"><div>
 			<a class="anchor" href="#_widget">#</a>
-			<code><a href="source-class-EPL_Widget_Recent_Property.html#27-131" title="Go to source code">widget</a>( <span> <var>$args</var></span>, <span> <var>$instance</var></span> )</code>
+			<code><a href="source-class-EPL_Widget_Recent_Property.html#34-146" title="Go to source code">widget</a>( <span>array <var>$args</var></span>, <span>array <var>$instance</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>Widget function.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Widget function.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$args</var></dt>
+						<dd>Widget arguments.</dd>
+						<dt><var>$instance</var></dt>
+						<dd>Widget instance.</dd>
+					</dl></div>
 
 
 
-
-
+					<h4>Since</h4>
+					<div class="list">
+							1.0<br>
+					</div>
 
 
 			</div>
@@ -552,26 +567,41 @@ WP_Widget
 
 			<td class="attributes"><code>
 				 public 
-				
+				array
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_update">#</a>
-			<code><a href="source-class-EPL_Widget_Recent_Property.html#133-192" title="Go to source code">update</a>( <span> <var>$new_instance</var></span>, <span> <var>$old_instance</var></span> )</code>
+			<code><a href="source-class-EPL_Widget_Recent_Property.html#148-217" title="Go to source code">update</a>( <span>array <var>$new_instance</var></span>, <span>array <var>$old_instance</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>Widget update.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Widget update.</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$new_instance</var></dt>
+						<dd>Old values.</dd>
+						<dt><var>$old_instance</var></dt>
+						<dd>New values.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
 
 
-
+					<h4>Since</h4>
+					<div class="list">
+							1.0<br>
+					</div>
 
 
 			</div>
@@ -588,19 +618,28 @@ WP_Widget
 
 			<td class="name"><div>
 			<a class="anchor" href="#_form">#</a>
-			<code><a href="source-class-EPL_Widget_Recent_Property.html#194-455" title="Go to source code">form</a>( <span> <var>$instance</var></span> )</code>
+			<code><a href="source-class-EPL_Widget_Recent_Property.html#219-557" title="Go to source code">form</a>( <span>array <var>$instance</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>Render the widget form.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Render the widget form.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$instance</var></dt>
+						<dd>options.</dd>
+					</dl></div>
 
 
 
-
-
+					<h4>Since</h4>
+					<div class="list">
+							1.0<br>
+					</div>
 
 
 			</div>
@@ -623,7 +662,7 @@ WP_Widget
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.3.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>

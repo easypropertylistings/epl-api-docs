@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_Contact | Easy Property Listings 3.3.3 Code Reference</title>
+	<title>Class EPL_Contact | Easy Property Listings 3.4 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3.3 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -166,6 +166,10 @@
 					<li class="main">
 						<a href="package-EPL.Classes.Metaboxs.html">
 							Metaboxs						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Pagination.html">
+							Pagination						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Classes.PropertyMeta.html">
@@ -410,10 +414,6 @@
 							Search						</a>
 							</li>
 								</ul></li></ul></li>
-					<li>
-						<a href="package-None.html">
-							None						</a>
-							</li>
 			</ul>
 		</div>
 
@@ -463,8 +463,8 @@
 				<b>License:</b>
 				<a href="http://opensource.org/licenses/gpl-2.0.php">GNU Public License</a><br>
 				<b>Since:</b>
-				3.0<br>
-			<b>Located at</b> <a href="source-class-EPL_Contact.html#15-785" title="Go to source code">lib/includes/class-epl-contact.php</a>
+				3.0.0<br>
+			<b>Located at</b> <a href="source-class-EPL_Contact.html#19-822" title="Go to source code">lib/includes/class-epl-contact.php</a>
 		<br>
 	</div>
 
@@ -484,7 +484,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-EPL_Contact.html#72-96" title="Go to source code">__construct</a>( <span> <var>$_id_or_email</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-EPL_Contact.html#82-107" title="Go to source code">__construct</a>( <span>boolean <var>$_id_or_email</var> = <span class="php-keyword1">false</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get things going</p>
@@ -494,12 +494,17 @@
 				<p>Get things going</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$_id_or_email</var></dt>
+						<dd>Contact ID or email.</dd>
+					</dl></div>
 
 
 
 					<h4>Since</h4>
 					<div class="list">
-							3.0<br>
+							3.0.0<br>
 					</div>
 
 
@@ -510,14 +515,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_contact_email">#</a>
-			<code><a href="source-class-EPL_Contact.html#98-105" title="Go to source code">get_contact_email</a>( <span> <var>$id</var></span> )</code>
+			<code><a href="source-class-EPL_Contact.html#109-118" title="Go to source code">get_contact_email</a>( <span>integer <var>$id</var></span> )</code>
 
 			<div class="description short">
 				<p>Get the primary email of contact / alias of get_primary_email</p>
@@ -527,7 +532,16 @@
 				<p>Get the primary email of contact / alias of get_primary_email</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$id</var></dt>
+						<dd>Contact ID.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed
+					</div>
 
 
 					<h4>Since</h4>
@@ -543,24 +557,35 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean|integer
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_update_contact_email">#</a>
-			<code><a href="source-class-EPL_Contact.html#107-116" title="Go to source code">update_contact_email</a>( <span> <var>$id</var></span>, <span> <var>$value</var></span> )</code>
+			<code><a href="source-class-EPL_Contact.html#120-132" title="Go to source code">update_contact_email</a>( <span>integer <var>$id</var></span>, <span>string <var>$value</var></span> )</code>
 
 			<div class="description short">
-				<p>update the primary email of contact</p>
+				<p>Update the primary email of contact</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>update the primary email of contact</p>
+				<p>Update the primary email of contact</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$id</var></dt>
+						<dd>Contact ID.</dd>
+						<dt><var>$value</var></dt>
+						<dd>Contact email.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean|integer
+					</div>
 
 
 					<h4>Since</h4>
@@ -583,7 +608,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_contact_by">#</a>
-			<code><a href="source-class-EPL_Contact.html#188-271" title="Go to source code">get_contact_by</a>( <span>string <var>$field</var> = <span class="php-quote">'id'</span></span>, <span>mixed <var>$value</var> = <span class="php-num">0</span> </span> )</code>
+			<code><a href="source-class-EPL_Contact.html#203-284" title="Go to source code">get_contact_by</a>( <span>string <var>$field</var> = <span class="php-quote">'id'</span></span>, <span>mixed <var>$value</var> = <span class="php-num">0</span> </span> )</code>
 
 			<div class="description short">
 				<p>Retrieves a single contact from the database</p>
@@ -596,9 +621,9 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$field</var></dt>
-						<dd>$column id or email</dd>
+						<dd>Type of field option, id or email.</dd>
 						<dt><var>$value</var></dt>
-						<dd>The Contact ID or email to search</dd>
+						<dd>The Contact ID or email to search.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -620,14 +645,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed|WP_Error
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#___get">#</a>
-			<code><a href="source-class-EPL_Contact.html#273-285" title="Go to source code">__get</a>( <span> <var>$key</var></span> )</code>
+			<code><a href="source-class-EPL_Contact.html#286-301" title="Go to source code">__get</a>( <span>string <var>$key</var></span> )</code>
 
 			<div class="description short">
 				<p>Magic __get function to dispatch a call to retrieve a private property</p>
@@ -637,12 +662,21 @@
 				<p>Magic __get function to dispatch a call to retrieve a private property</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd>Meta key.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed|WP_Error
+					</div>
 
 
 					<h4>Since</h4>
 					<div class="list">
-							3.0<br>
+							3.0.0<br>
 					</div>
 
 
@@ -660,7 +694,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_create">#</a>
-			<code><a href="source-class-EPL_Contact.html#287-344" title="Go to source code">create</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>() </span> )</code>
+			<code><a href="source-class-EPL_Contact.html#303-362" title="Go to source code">create</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 			<div class="description short">
 				<p>Creates a contact</p>
@@ -673,7 +707,7 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$data</var></dt>
-						<dd>Array of attributes for a contact</dd>
+						<dd>Array of attributes for a contact.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -695,14 +729,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean|WP_Post
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_contact_exists">#</a>
-			<code><a href="source-class-EPL_Contact.html#346-376" title="Go to source code">contact_exists</a>( <span> <var>$email</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-EPL_Contact.html#364-396" title="Go to source code">contact_exists</a>( <span>null <var>$email</var> = <span class="php-keyword1">null</span> </span> )</code>
 
 			<div class="description short">
 				<p>Checking for contact</p>
@@ -712,7 +746,16 @@
 				<p>Checking for contact</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$email</var></dt>
+						<dd>Contact email address.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean|WP_Post
+					</div>
 
 
 					<h4>Since</h4>
@@ -735,7 +778,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_update">#</a>
-			<code><a href="source-class-EPL_Contact.html#378-422" title="Go to source code">update</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>() </span> )</code>
+			<code><a href="source-class-EPL_Contact.html#398-442" title="Go to source code">update</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 			<div class="description short">
 				<p>Update a contact record</p>
@@ -748,7 +791,7 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$data</var></dt>
-						<dd>Array of data attributes for a contact (checked via whitelist)</dd>
+						<dd>Array of data attributes for a contact (checked via whitelist).</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -777,7 +820,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_attach_listing">#</a>
-			<code><a href="source-class-EPL_Contact.html#424-472" title="Go to source code">attach_listing</a>( <span>integer <var>$listing_id</var> = <span class="php-num">0</span></span> )</code>
+			<code><a href="source-class-EPL_Contact.html#444-489" title="Go to source code">attach_listing</a>( <span>integer <var>$listing_id</var> = <span class="php-num">0</span> </span> )</code>
 
 			<div class="description short">
 				<p>Attach listing to the contact then triggers increasing stats</p>
@@ -790,12 +833,12 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$listing_id</var></dt>
-						<dd>The listing ID to attach to the contact</dd>
+						<dd>The listing ID to attach to the contact.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						boolean<br>If the attachment was successfuly
+						boolean<br>If the attachment was successfully
 					</div>
 
 
@@ -819,7 +862,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_remove_listing">#</a>
-			<code><a href="source-class-EPL_Contact.html#475-527" title="Go to source code">remove_listing</a>( <span>integer <var>$listing_id</var> = <span class="php-num">0</span> </span> )</code>
+			<code><a href="source-class-EPL_Contact.html#492-541" title="Go to source code">remove_listing</a>( <span>integer <var>$listing_id</var> = <span class="php-num">0</span> </span> )</code>
 
 			<div class="description short">
 				<p>Remove a listing from this contact, then triggers reducing stats</p>
@@ -832,7 +875,7 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$listing_id</var></dt>
-						<dd>The Payment ID to remove</dd>
+						<dd>The Payment ID to remove.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -861,14 +904,14 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_listings">#</a>
-			<code><a href="source-class-EPL_Contact.html#530-538" title="Go to source code">get_listings</a>( )</code>
+			<code><a href="source-class-EPL_Contact.html#544-552" title="Go to source code">get_listings</a>( )</code>
 
 			<div class="description short">
-				<p>get listings of contact</p>
+				<p>Get listings of contact</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>get listings of contact</p>
+				<p>Get listings of contact</p>
 
 
 
@@ -894,14 +937,14 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_listing_count">#</a>
-			<code><a href="source-class-EPL_Contact.html#540-550" title="Go to source code">get_listing_count</a>( )</code>
+			<code><a href="source-class-EPL_Contact.html#554-564" title="Go to source code">get_listing_count</a>( )</code>
 
 			<div class="description short">
-				<p>get listings count</p>
+				<p>Get listings count</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>get listings count</p>
+				<p>Get listings count</p>
 
 
 
@@ -927,7 +970,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_notes">#</a>
-			<code><a href="source-class-EPL_Contact.html#552-577" title="Go to source code">get_notes</a>( <span>integer <var>$number</var> = <span class="php-num">10</span></span>, <span>integer <var>$paged</var> = <span class="php-num">1</span> </span>, <span>string <var>$orderby</var> = <span class="php-quote">'comment_date'</span></span>, <span>string <var>$order</var> = <span class="php-quote">'DESC'</span></span> )</code>
+			<code><a href="source-class-EPL_Contact.html#566-591" title="Go to source code">get_notes</a>( <span>integer <var>$number</var> = <span class="php-num">10</span></span>, <span>integer <var>$paged</var> = <span class="php-num">1</span></span>, <span>string <var>$orderby</var> = <span class="php-quote">'comment_date'</span></span>, <span>string <var>$order</var> = <span class="php-quote">'DESC'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Get the parsed notes for a contact as an array</p>
@@ -940,18 +983,18 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$number</var></dt>
-						<dd></dd>
+						<dd>Number of notes per page.</dd>
 						<dt><var>$paged</var></dt>
-						<dd></dd>
+						<dd>Paged query.</dd>
 						<dt><var>$orderby</var></dt>
-						<dd></dd>
+						<dd>Order by option.</dd>
 						<dt><var>$order</var></dt>
-						<dd></dd>
+						<dd>Order option.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						array<br>The notes requsted
+						array<br>The notes requested
 					</div>
 
 
@@ -971,7 +1014,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_notes_count">#</a>
-			<code><a href="source-class-EPL_Contact.html#579-588" title="Go to source code">get_notes_count</a>( )</code>
+			<code><a href="source-class-EPL_Contact.html#593-608" title="Go to source code">get_notes_count</a>( )</code>
 
 			<div class="description short">
 				<p>Get the total number of notes we have after parsing</p>
@@ -984,7 +1027,7 @@
 
 					<h4>Returns</h4>
 					<div class="list">
-						integer<br>The number of notes for the contact
+						integer<br>The number of notes for the contact.
 					</div>
 
 
@@ -1008,7 +1051,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_add_note">#</a>
-			<code><a href="source-class-EPL_Contact.html#590-629" title="Go to source code">add_note</a>( <span>string <var>$note</var> = <span class="php-quote">''</span></span>, <span> <var>$note_type</var> = <span class="php-quote">'note'</span></span>, <span> <var>$listing_id</var> = <span class="php-num">0</span> </span> )</code>
+			<code><a href="source-class-EPL_Contact.html#610-652" title="Go to source code">add_note</a>( <span>string <var>$note</var> = <span class="php-quote">''</span></span>, <span>string <var>$note_type</var> = <span class="php-quote">'note'</span></span>, <span>integer <var>$listing_id</var> = <span class="php-num">0</span> </span> )</code>
 
 			<div class="description short">
 				<p>Add a note for the contact</p>
@@ -1021,16 +1064,16 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$note</var></dt>
-						<dd>The note to add</dd>
+						<dd>The note to add.</dd>
 						<dt><var>$note_type</var></dt>
-						<dd></dd>
+						<dd>Type of note.</dd>
 						<dt><var>$listing_id</var></dt>
-						<dd></dd>
+						<dd>Listing ID.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
-						string|boolean<br>The new note if added succesfully, false otherwise
+						string|boolean<br>The new note if added successfully, false otherwise
 					</div>
 
 
@@ -1054,14 +1097,14 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete">#</a>
-			<code><a href="source-class-EPL_Contact.html#631-638" title="Go to source code">delete</a>( )</code>
+			<code><a href="source-class-EPL_Contact.html#654-661" title="Go to source code">delete</a>( )</code>
 
 			<div class="description short">
-				<p>delete the contact</p>
+				<p>Delete the contact</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>delete the contact</p>
+				<p>Delete the contact</p>
 
 
 
@@ -1080,14 +1123,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				boolean|integer
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_update_meta">#</a>
-			<code><a href="source-class-EPL_Contact.html#640-647" title="Go to source code">update_meta</a>( <span> <var>$key</var></span>, <span> <var>$value</var></span> )</code>
+			<code><a href="source-class-EPL_Contact.html#663-673" title="Go to source code">update_meta</a>( <span>string <var>$key</var></span>, <span>string <var>$value</var></span> )</code>
 
 			<div class="description short">
 				<p>Update Contact Meta</p>
@@ -1097,7 +1140,18 @@
 				<p>Update Contact Meta</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd>Meta key name.</dd>
+						<dt><var>$value</var></dt>
+						<dd>Meta value.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						boolean|integer
+					</div>
 
 
 					<h4>Since</h4>
@@ -1113,14 +1167,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				mixed
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_meta">#</a>
-			<code><a href="source-class-EPL_Contact.html#649-656" title="Go to source code">get_meta</a>( <span> <var>$key</var></span> )</code>
+			<code><a href="source-class-EPL_Contact.html#675-684" title="Go to source code">get_meta</a>( <span>string <var>$key</var></span> )</code>
 
 			<div class="description short">
 				<p>Get Contact Meta</p>
@@ -1130,7 +1184,16 @@
 				<p>Get Contact Meta</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd>Meta key name.</dd>
+					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						mixed
+					</div>
 
 
 					<h4>Since</h4>
@@ -1153,7 +1216,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_activity_type">#</a>
-			<code><a href="source-class-EPL_Contact.html#658-667" title="Go to source code">get_activity_type</a>( <span> <var>$key</var></span> )</code>
+			<code><a href="source-class-EPL_Contact.html#686-696" title="Go to source code">get_activity_type</a>( <span>string <var>$key</var></span> )</code>
 
 			<div class="description short">
 				<p>Returns activity type label for activity type</p>
@@ -1166,7 +1229,7 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$key</var></dt>
-						<dd></dd>
+						<dd>Meta key name.</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -1175,6 +1238,10 @@
 					</div>
 
 
+					<h4>Since</h4>
+					<div class="list">
+							3.0<br>
+					</div>
 
 
 			</div>
@@ -1191,7 +1258,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_activity_types">#</a>
-			<code><a href="source-class-EPL_Contact.html#669-683" title="Go to source code">get_activity_types</a>( )</code>
+			<code><a href="source-class-EPL_Contact.html#698-715" title="Go to source code">get_activity_types</a>( )</code>
 
 			<div class="description short">
 				<p>Returns all activity types</p>
@@ -1210,7 +1277,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							3.0<br>
+							3.0.0<br>
 					</div>
 
 
@@ -1228,7 +1295,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_epl_contact_get_address">#</a>
-			<code><a href="source-class-EPL_Contact.html#685-704" title="Go to source code">epl_contact_get_address</a>( )</code>
+			<code><a href="source-class-EPL_Contact.html#717-737" title="Go to source code">epl_contact_get_address</a>( )</code>
 
 			<div class="description short">
 				<p>Returns Contact Address</p>
@@ -1247,7 +1314,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							3.0<br>
+							3.0.0<br>
 					</div>
 
 
@@ -1265,7 +1332,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_primary_email">#</a>
-			<code><a href="source-class-EPL_Contact.html#706-715" title="Go to source code">get_primary_email</a>( <span> <var>$id</var></span> )</code>
+			<code><a href="source-class-EPL_Contact.html#739-749" title="Go to source code">get_primary_email</a>( <span>integer <var>$id</var></span> )</code>
 
 			<div class="description short">
 				<p>Returns Contact Primary Email</p>
@@ -1275,6 +1342,11 @@
 				<p>Returns Contact Primary Email</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$id</var></dt>
+						<dd>User ID.</dd>
+					</dl></div>
 
 					<h4>Returns</h4>
 					<div class="list">
@@ -1284,7 +1356,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							3.0<br>
+							3.0.0<br>
 					</div>
 
 
@@ -1302,7 +1374,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_emails">#</a>
-			<code><a href="source-class-EPL_Contact.html#717-739" title="Go to source code">get_emails</a>( )</code>
+			<code><a href="source-class-EPL_Contact.html#751-774" title="Go to source code">get_emails</a>( )</code>
 
 			<div class="description short">
 				<p>Returns Contact Email</p>
@@ -1321,7 +1393,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							3.0<br>
+							3.0.0<br>
 					</div>
 
 
@@ -1339,7 +1411,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_phones">#</a>
-			<code><a href="source-class-EPL_Contact.html#741-763" title="Go to source code">get_phones</a>( )</code>
+			<code><a href="source-class-EPL_Contact.html#776-800" title="Go to source code">get_phones</a>( )</code>
 
 			<div class="description short">
 				<p>Returns Contact Phone</p>
@@ -1358,7 +1430,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							3.0<br>
+							3.0.0<br>
 					</div>
 
 
@@ -1376,7 +1448,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_category_label">#</a>
-			<code><a href="source-class-EPL_Contact.html#765-774" title="Go to source code">get_category_label</a>( )</code>
+			<code><a href="source-class-EPL_Contact.html#802-811" title="Go to source code">get_category_label</a>( )</code>
 
 			<div class="description short">
 				<p>Returns Contact Category Label</p>
@@ -1395,7 +1467,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							3.0<br>
+							3.0.0<br>
 					</div>
 
 
@@ -1413,7 +1485,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_category_name">#</a>
-			<code><a href="source-class-EPL_Contact.html#776-784" title="Go to source code">get_category_name</a>( )</code>
+			<code><a href="source-class-EPL_Contact.html#813-821" title="Go to source code">get_category_name</a>( )</code>
 
 			<div class="description short">
 				<p>Returns Contact Category Name</p>
@@ -1432,7 +1504,7 @@
 
 					<h4>Since</h4>
 					<div class="list">
-							3.0<br>
+							3.0.0<br>
 					</div>
 
 
@@ -1462,7 +1534,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-EPL_Contact.html#22-27" title="Go to source code"><var>$ID</var></a>
+					<a href="source-class-EPL_Contact.html#26-32" title="Go to source code"><var>$ID</var></a>
 
 				<div class="description short">
 					<p>The contact ID</p>
@@ -1473,7 +1545,7 @@
 
 						<h4>Since</h4>
 						<div class="list">
-								3.0<br>
+								3.0.0<br>
 						</div>
 				</div>
 			</td>
@@ -1491,7 +1563,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-EPL_Contact.html#29-34" title="Go to source code"><var>$listing_count</var></a>
+					<a href="source-class-EPL_Contact.html#34-40" title="Go to source code"><var>$listing_count</var></a>
 
 				<div class="description short">
 					<p>The contact's listing count</p>
@@ -1502,7 +1574,7 @@
 
 						<h4>Since</h4>
 						<div class="list">
-								3.0<br>
+								3.0.0<br>
 						</div>
 				</div>
 			</td>
@@ -1516,11 +1588,11 @@
 		<tr data-order="email" id="$email">
 			<td class="attributes"><code>
 				public  
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-EPL_Contact.html#37-42" title="Go to source code"><var>$email</var></a>
+					<a href="source-class-EPL_Contact.html#42-48" title="Go to source code"><var>$email</var></a>
 
 				<div class="description short">
 					<p>The contact's email</p>
@@ -1531,7 +1603,7 @@
 
 						<h4>Since</h4>
 						<div class="list">
-								3.0<br>
+								3.0.0<br>
 						</div>
 				</div>
 			</td>
@@ -1545,11 +1617,11 @@
 		<tr data-order="name" id="$name">
 			<td class="attributes"><code>
 				public  
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-EPL_Contact.html#44-49" title="Go to source code"><var>$name</var></a>
+					<a href="source-class-EPL_Contact.html#50-56" title="Go to source code"><var>$name</var></a>
 
 				<div class="description short">
 					<p>The contact's name</p>
@@ -1560,7 +1632,7 @@
 
 						<h4>Since</h4>
 						<div class="list">
-								3.0<br>
+								3.0.0<br>
 						</div>
 				</div>
 			</td>
@@ -1574,11 +1646,11 @@
 		<tr data-order="date_created" id="$date_created">
 			<td class="attributes"><code>
 				public  
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-EPL_Contact.html#51-56" title="Go to source code"><var>$date_created</var></a>
+					<a href="source-class-EPL_Contact.html#58-64" title="Go to source code"><var>$date_created</var></a>
 
 				<div class="description short">
 					<p>The contact's creation date</p>
@@ -1589,7 +1661,7 @@
 
 						<h4>Since</h4>
 						<div class="list">
-								3.0<br>
+								3.0.0<br>
 						</div>
 				</div>
 			</td>
@@ -1603,11 +1675,11 @@
 		<tr data-order="listing_ids" id="$listing_ids">
 			<td class="attributes"><code>
 				public  
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-EPL_Contact.html#58-63" title="Go to source code"><var>$listing_ids</var></a>
+					<a href="source-class-EPL_Contact.html#66-72" title="Go to source code"><var>$listing_ids</var></a>
 
 				<div class="description short">
 					<p>The listing IDs associated with the contact</p>
@@ -1632,11 +1704,11 @@
 		<tr data-order="notes" id="$notes">
 			<td class="attributes"><code>
 				public  
-				
+				string
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-EPL_Contact.html#65-70" title="Go to source code"><var>$notes</var></a>
+					<a href="source-class-EPL_Contact.html#74-80" title="Go to source code"><var>$notes</var></a>
 
 				<div class="description short">
 					<p>Contact Notes</p>
@@ -1670,7 +1742,7 @@
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.3.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>

@@ -70,6 +70,9 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Metaboxs.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Pagination.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.PropertyMeta.html</loc>
 </url>
 <url>
@@ -233,9 +236,6 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Search.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/package-None.html</loc>
 </url>
 
 

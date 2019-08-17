@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_License | Easy Property Listings 3.3.3 Code Reference</title>
+	<title>Class EPL_License | Easy Property Listings 3.4 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3.3 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -166,6 +166,10 @@
 					<li class="main">
 						<a href="package-EPL.Classes.Metaboxs.html">
 							Metaboxs						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Pagination.html">
+							Pagination						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Classes.PropertyMeta.html">
@@ -410,10 +414,6 @@
 							Search						</a>
 							</li>
 								</ul></li></ul></li>
-					<li>
-						<a href="package-None.html">
-							None						</a>
-							</li>
 			</ul>
 		</div>
 
@@ -468,7 +468,7 @@
 				1.1<br>
 				<b>Since:</b>
 				1.0<br>
-			<b>Located at</b> <a href="source-class-EPL_License.html#17-576" title="Go to source code">lib/includes/EPL_License_Handler.php</a>
+			<b>Located at</b> <a href="source-class-EPL_License.html#21-664" title="Go to source code">lib/includes/class-epl-license.php</a>
 		<br>
 	</div>
 
@@ -488,7 +488,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-EPL_License.html#34-92" title="Go to source code">__construct</a>( <span>string <var>$_file</var></span>, <span>string <var>$_item_name</var></span>, <span>string <var>$_version</var></span>, <span>string <var>$_author</var></span>, <span>string <var>$_optname</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$_api_url</var> = <span class="php-keyword1">null</span></span>, <span> <var>$_item_id</var> = <span class="php-keyword1">null</span> </span> )</code>
+			<code><a href="source-class-EPL_License.html#79-137" title="Go to source code">__construct</a>( <span>string <var>$_file</var></span>, <span>string <var>$_item_name</var></span>, <span>string <var>$_version</var></span>, <span>string <var>$_author</var></span>, <span>string <var>$_optname</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$_api_url</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$_item_id</var> = <span class="php-keyword1">null</span> </span> )</code>
 
 			<div class="description short">
 				<p>Class constructor</p>
@@ -501,19 +501,19 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$_file</var></dt>
-						<dd></dd>
+						<dd>File.</dd>
 						<dt><var>$_item_name</var></dt>
-						<dd></dd>
+						<dd>Item name.</dd>
 						<dt><var>$_version</var></dt>
-						<dd></dd>
+						<dd>Version.</dd>
 						<dt><var>$_author</var></dt>
-						<dd></dd>
+						<dd>Author name.</dd>
 						<dt><var>$_optname</var></dt>
-						<dd></dd>
+						<dd>Options.</dd>
 						<dt><var>$_api_url</var></dt>
-						<dd></dd>
+						<dd>API URL.</dd>
 						<dt><var>$_item_id</var></dt>
-						<dd></dd>
+						<dd>Item ID.</dd>
 					</dl></div>
 
 
@@ -534,7 +534,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_auto_updater">#</a>
-			<code><a href="source-class-EPL_License.html#133-171" title="Go to source code">auto_updater</a>( )</code>
+			<code><a href="source-class-EPL_License.html#180-218" title="Go to source code">auto_updater</a>( )</code>
 
 			<div class="description short">
 				<p>Auto updater</p>
@@ -563,7 +563,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_activate_license">#</a>
-			<code><a href="source-class-EPL_License.html#173-253" title="Go to source code">activate_license</a>( )</code>
+			<code><a href="source-class-EPL_License.html#220-303" title="Go to source code">activate_license</a>( )</code>
 
 			<div class="description short">
 				<p>Activate the license key</p>
@@ -592,7 +592,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_deactivate_license">#</a>
-			<code><a href="source-class-EPL_License.html#255-315" title="Go to source code">deactivate_license</a>( )</code>
+			<code><a href="source-class-EPL_License.html#305-369" title="Go to source code">deactivate_license</a>( )</code>
 
 			<div class="description short">
 				<p>Deactivate the license key</p>
@@ -600,6 +600,35 @@
 
 			<div class="description detailed hidden">
 				<p>Deactivate the license key</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="maybe_validate_license" id="_maybe_validate_license">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_maybe_validate_license">#</a>
+			<code><a href="source-class-EPL_License.html#371-402" title="Go to source code">maybe_validate_license</a>( )</code>
+
+			<div class="description short">
+				<p>Check if validating license</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Check if validating license</p>
 
 
 
@@ -621,7 +650,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_license_notices">#</a>
-			<code><a href="source-class-EPL_License.html#430-481" title="Go to source code">license_notices</a>( )</code>
+			<code><a href="source-class-EPL_License.html#497-569" title="Go to source code">license_notices</a>( )</code>
 
 			<div class="description short">
 				<p>Outputs any notices generated by the class.</p>
@@ -654,7 +683,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_notices">#</a>
-			<code><a href="source-class-EPL_License.html#484-540" title="Go to source code">notices</a>( )</code>
+			<code><a href="source-class-EPL_License.html#572-624" title="Go to source code">notices</a>( )</code>
 
 			<div class="description short">
 				<p>Admin notices for errors</p>
@@ -683,7 +712,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_plugin_row_license_missing">#</a>
-			<code><a href="source-class-EPL_License.html#542-561" title="Go to source code">plugin_row_license_missing</a>( <span> <var>$plugin_data</var></span>, <span> <var>$version_info</var></span> )</code>
+			<code><a href="source-class-EPL_License.html#626-647" title="Go to source code">plugin_row_license_missing</a>( <span>array <var>$plugin_data</var></span>, <span>array <var>$version_info</var></span> )</code>
 
 			<div class="description short">
 				<p>Displays message inline on plugin row that the license key is missing</p>
@@ -693,6 +722,13 @@
 				<p>Displays message inline on plugin row that the license key is missing</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$plugin_data</var></dt>
+						<dd>Data.</dd>
+						<dt><var>$version_info</var></dt>
+						<dd>Version info.</dd>
+					</dl></div>
 
 
 
@@ -709,14 +745,14 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				array
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_register_beta_support">#</a>
-			<code><a href="source-class-EPL_License.html#563-575" title="Go to source code">register_beta_support</a>( <span>array <var>$products</var></span> )</code>
+			<code><a href="source-class-EPL_License.html#649-663" title="Go to source code">register_beta_support</a>( <span>array <var>$products</var></span> )</code>
 
 			<div class="description short">
 				<p>Adds this plugin to the beta page</p>
@@ -729,9 +765,13 @@
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$products</var></dt>
-						<dd></dd>
+						<dd>Beta products.</dd>
 					</dl></div>
 
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
 
 
 					<h4>Since</h4>
@@ -760,7 +800,7 @@
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.3.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>

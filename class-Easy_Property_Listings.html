@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Easy_Property_Listings | Easy Property Listings 3.3.3 Code Reference</title>
+	<title>Class Easy_Property_Listings | Easy Property Listings 3.4 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3.3 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -166,6 +166,10 @@
 					<li class="main">
 						<a href="package-EPL.Classes.Metaboxs.html">
 							Metaboxs						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Pagination.html">
+							Pagination						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Classes.PropertyMeta.html">
@@ -410,10 +414,6 @@
 							Search						</a>
 							</li>
 								</ul></li></ul></li>
-					<li>
-						<a href="package-None.html">
-							None						</a>
-							</li>
 			</ul>
 		</div>
 
@@ -444,6 +444,9 @@
 	<h1>Class Easy_Property_Listings</h1>
 
 
+	<div class="description">
+	<p>Main Easy_Property_Listings Class</p>
+	</div>
 
 
 
@@ -457,9 +460,13 @@
 		<b>Final</b><br>
 		
 		
-		
+		<b>Package:</b> <a href="package-EPL.html">EPL</a><br>
 
-			<b>Located at</b> <a href="source-class-Easy_Property_Listings.html#40-331" title="Go to source code">easy-property-listings.php</a>
+				<b>Author:</b>
+				Merv Barrett<br>
+				<b>Since:</b>
+				1.0<br>
+			<b>Located at</b> <a href="source-class-Easy_Property_Listings.html#37-342" title="Go to source code">easy-property-listings.php</a>
 		<br>
 	</div>
 
@@ -472,26 +479,45 @@
 
 			<td class="attributes"><code>
 				 public static
-				
+				<code><a href="class-Easy_Property_Listings.html">Easy_Property_Listings</a></code>
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_instance">#</a>
-			<code><a href="source-class-Easy_Property_Listings.html#69-84" title="Go to source code">instance</a>( )</code>
+			<code><a href="source-class-Easy_Property_Listings.html#57-85" title="Go to source code">instance</a>( )</code>
 
 			<div class="description short">
-				
+				<p>Main Easy_Property_Listings Instance</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Main Easy_Property_Listings Instance</p>
+
+<p>Insures that only one instance of Easy_Property_Listings exists in memory at any one time.
+Also prevents needing to define globals all over the place.</p>
 
 
 
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-Easy_Property_Listings.html">Easy_Property_Listings</a></code><br>one true Easy_Property_Listings
+					</div>
 
 
+					<h4>Since</h4>
+					<div class="list">
+							1.0<br>
+					</div>
+					<h4>See</h4>
+					<div class="list">
+							<code><a href="function-EPL.html">EPL()</a></code><br>
+					</div>
+					<h4>Uses</h4>
+					<div class="list">
+							Easy_Property_Listings::includes() Include the required files<br>
+					</div>
 
 
 			</div>
@@ -508,19 +534,23 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_setup_constants">#</a>
-			<code><a href="source-class-Easy_Property_Listings.html#93-146" title="Go to source code">setup_constants</a>( )</code>
+			<code><a href="source-class-Easy_Property_Listings.html#87-155" title="Go to source code">setup_constants</a>( )</code>
 
 			<div class="description short">
-				
+				<p>Setup plugin constants</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Setup plugin constants</p>
 
 
 
 
 
+					<h4>Since</h4>
+					<div class="list">
+							1.0<br>
+					</div>
 
 
 			</div>
@@ -537,14 +567,14 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_load_textdomain">#</a>
-			<code><a href="source-class-Easy_Property_Listings.html#300-330" title="Go to source code">load_textdomain</a>( )</code>
+			<code><a href="source-class-Easy_Property_Listings.html#311-341" title="Go to source code">load_textdomain</a>( )</code>
 
 			<div class="description short">
-				<p>Loads the plugin language files</p>
+				<p>Loads the plugin language files.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>Loads the plugin language files</p>
+				<p>Loads the plugin language files.</p>
 
 
 
@@ -582,7 +612,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-Easy_Property_Listings.html#48-54" title="Go to source code"><var>$search_fields</var></a>
+					<a href="source-class-Easy_Property_Listings.html#49-55" title="Go to source code"><var>$search_fields</var></a>
 
 				<div class="description short">
 					<p>EPL search fields displayer object.</p>
@@ -616,7 +646,7 @@
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.3.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>

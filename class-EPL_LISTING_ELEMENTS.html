@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_Listing_Elements | Easy Property Listings 3.3.3 Code Reference</title>
+	<title>Class EPL_Listing_Elements | Easy Property Listings 3.4 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.3.3 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -166,6 +166,10 @@
 					<li class="main">
 						<a href="package-EPL.Classes.Metaboxs.html">
 							Metaboxs						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Pagination.html">
+							Pagination						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Classes.PropertyMeta.html">
@@ -410,10 +414,6 @@
 							Search						</a>
 							</li>
 								</ul></li></ul></li>
-					<li>
-						<a href="package-None.html">
-							None						</a>
-							</li>
 			</ul>
 		</div>
 
@@ -440,6 +440,9 @@
 	<h1>Class EPL_Listing_Elements</h1>
 
 
+	<div class="description">
+	<p>EPL_Advanced_Shortcode_Listing Class</p>
+	</div>
 
 
 
@@ -459,7 +462,9 @@
 				Copyright (c) 2019, Merv Barrett<br>
 				<b>License:</b>
 				<a href="http://opensource.org/licenses/gpl-2.0.php">GNU Public License</a><br>
-			<b>Located at</b> <a href="source-class-EPL_Listing_Elements.html#15-113" title="Go to source code">lib/shortcodes/class-epl-listing-elements.php</a>
+				<b>Since:</b>
+				3.3.0<br>
+			<b>Located at</b> <a href="source-class-EPL_Listing_Elements.html#17-216" title="Go to source code">lib/shortcodes/class-epl-listing-elements.php</a>
 		<br>
 	</div>
 
@@ -479,19 +484,23 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-EPL_Listing_Elements.html#17-26" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-EPL_Listing_Elements.html#24-38" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
-				
+				<p>Construct the shortcode.</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Construct the shortcode.</p>
 
 
 
 
 
+					<h4>Since</h4>
+					<div class="list">
+							3.3.0<br>
+					</div>
 
 
 			</div>
@@ -501,26 +510,39 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				false|string|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_listing_element">#</a>
-			<code><a href="source-class-EPL_Listing_Elements.html#28-60" title="Go to source code">listing_element</a>( <span> <var>$atts</var></span> )</code>
+			<code><a href="source-class-EPL_Listing_Elements.html#40-118" title="Go to source code">listing_element</a>( <span>array <var>$atts</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>Output example code or value if in th loop</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Output example code or value if in th loop</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$atts</var></dt>
+						<dd>Array of attributes.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						false|string|
+					</div>
 
 
-
+					<h4>Since</h4>
+					<div class="list">
+							3.3<br>
+					</div>
 
 
 			</div>
@@ -530,26 +552,39 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				false|string|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_epl_action">#</a>
-			<code><a href="source-class-EPL_Listing_Elements.html#62-68" title="Go to source code">epl_action</a>( <span> <var>$atts</var></span> )</code>
+			<code><a href="source-class-EPL_Listing_Elements.html#120-135" title="Go to source code">epl_action</a>( <span>array <var>$atts</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>Output action</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Output action</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$atts</var></dt>
+						<dd>Array of attributes for the action.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						false|string|
+					</div>
 
 
-
+					<h4>Since</h4>
+					<div class="list">
+							3.3<br>
+					</div>
 
 
 			</div>
@@ -559,26 +594,39 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				string|
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_epl_meta">#</a>
-			<code><a href="source-class-EPL_Listing_Elements.html#70-76" title="Go to source code">epl_meta</a>( <span> <var>$atts</var></span> )</code>
+			<code><a href="source-class-EPL_Listing_Elements.html#137-152" title="Go to source code">epl_meta</a>( <span>array <var>$atts</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>Get meta</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Get meta</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$atts</var></dt>
+						<dd>Array of attributes for the meta field.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string|
+					</div>
 
 
-
+					<h4>Since</h4>
+					<div class="list">
+							3.3<br>
+					</div>
 
 
 			</div>
@@ -588,26 +636,39 @@
 
 			<td class="attributes"><code>
 				 public 
-				
+				false|string
 				
 				</code>
 			</td>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_post">#</a>
-			<code><a href="source-class-EPL_Listing_Elements.html#78-93" title="Go to source code">post</a>( <span> <var>$atts</var></span> )</code>
+			<code><a href="source-class-EPL_Listing_Elements.html#154-181" title="Go to source code">post</a>( <span>array <var>$atts</var></span> )</code>
 
 			<div class="description short">
-				
+				<p>Get post</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Get post</p>
 
 
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$atts</var></dt>
+						<dd>Array of attributes for the post object.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						false|string
+					</div>
 
 
-
+					<h4>Since</h4>
+					<div class="list">
+							3.3<br>
+					</div>
 
 
 			</div>
@@ -624,19 +685,23 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_epl_suburb_profile">#</a>
-			<code><a href="source-class-EPL_Listing_Elements.html#95-99" title="Go to source code">epl_suburb_profile</a>( )</code>
+			<code><a href="source-class-EPL_Listing_Elements.html#183-192" title="Go to source code">epl_suburb_profile</a>( )</code>
 
 			<div class="description short">
-				
+				<p>Get suburb profile</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Get suburb profile</p>
 
 
 
 
 
+					<h4>Since</h4>
+					<div class="list">
+							3.3<br>
+					</div>
 
 
 			</div>
@@ -653,19 +718,23 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_epl_formatted_address">#</a>
-			<code><a href="source-class-EPL_Listing_Elements.html#101-105" title="Go to source code">epl_formatted_address</a>( )</code>
+			<code><a href="source-class-EPL_Listing_Elements.html#194-203" title="Go to source code">epl_formatted_address</a>( )</code>
 
 			<div class="description short">
-				
+				<p>Get formatted listing address</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Get formatted listing address</p>
 
 
 
 
 
+					<h4>Since</h4>
+					<div class="list">
+							3.3<br>
+					</div>
 
 
 			</div>
@@ -682,19 +751,23 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_epl_the_excerpt">#</a>
-			<code><a href="source-class-EPL_Listing_Elements.html#107-111" title="Go to source code">epl_the_excerpt</a>( )</code>
+			<code><a href="source-class-EPL_Listing_Elements.html#205-214" title="Go to source code">epl_the_excerpt</a>( )</code>
 
 			<div class="description short">
-				
+				<p>Get the excerpt</p>
 			</div>
 
 			<div class="description detailed hidden">
-				
+				<p>Get the excerpt</p>
 
 
 
 
 
+					<h4>Since</h4>
+					<div class="list">
+							3.3<br>
+					</div>
 
 
 			</div>
@@ -717,7 +790,7 @@
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.3.3 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>
