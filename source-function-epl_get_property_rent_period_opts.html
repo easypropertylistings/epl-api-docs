@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="robots" content="noindex">
 
-	<title>File lib/includes/functions.php | Easy Property Listings 3.4.4 Code Reference</title>
+	<title>File lib/includes/functions.php | Easy Property Listings 3.4.6 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -26,7 +26,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4.4 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4.6 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -889,8 +889,8 @@
 </span></span><span id="423" class="l"><span class="php-comment"> *
 </span></span><span id="424" class="l"><span class="php-comment"> * @param string $before Output string before.
 </span></span><span id="425" class="l"><span class="php-comment"> * @param string $after Output string after.
-</span></span><span id="426" class="l"><span class="php-comment"> * @param bool $echo Echo the result.
-</span></span><span id="427" class="l"><span class="php-comment"> * @return the string/list for values
+</span></span><span id="426" class="l"><span class="php-comment"> * @param bool   $echo Echo the result.
+</span></span><span id="427" class="l"><span class="php-comment"> * @return string/list for values
 </span></span><span id="428" class="l"><span class="php-comment"> */</span>
 </span><span id="429" class="l"><span class="php-keyword1">function</span> epl_the_status( <span class="php-var">$before</span> = <span class="php-quote">''</span>, <span class="php-var">$after</span> = <span class="php-quote">''</span>, <span class="php-var">$echo</span> = <span class="php-keyword1">true</span> ) {
 </span><span id="430" class="l">    <span class="php-var">$status</span> = epl_get_the_status();
@@ -1354,13 +1354,13 @@
 </span></span><span id="888" class="l"><span class="php-comment"> * Processing Function for WP All Import and FeedSync
 </span></span><span id="889" class="l"><span class="php-comment"> * [epl_feedsync_switch_date_time({firstDate[1]},&quot;Australia/Perth&quot;,&quot;Australia/Sydney&quot;)]
 </span></span><span id="890" class="l"><span class="php-comment"> *
-</span></span><span id="891" class="l"><span class="php-comment"> * @param bool $date_time Swtich date time.
+</span></span><span id="891" class="l"><span class="php-comment"> * @param bool   $date_time Swtich date time.
 </span></span><span id="892" class="l"><span class="php-comment"> * @param string $old_time_zone Old Timezone.
 </span></span><span id="893" class="l"><span class="php-comment"> * @param string $new_timezone New timezone.
 </span></span><span id="894" class="l"><span class="php-comment"> * @param string $format Date format.
 </span></span><span id="895" class="l"><span class="php-comment"> *
 </span></span><span id="896" class="l"><span class="php-comment"> * @return integer
-</span></span><span id="897" class="l"><span class="php-comment"> * @throws Exception
+</span></span><span id="897" class="l"><span class="php-comment"> * @throws exception Exception.
 </span></span><span id="898" class="l"><span class="php-comment"> * @since 3.0
 </span></span><span id="899" class="l"><span class="php-comment"> */</span>
 </span><span id="900" class="l"><span class="php-keyword1">function</span> epl_feedsync_switch_date_time( <span class="php-var">$date_time</span> = <span class="php-keyword1">false</span>, <span class="php-var">$old_time_zone</span> = <span class="php-quote">'Australia/Perth'</span>, <span class="php-var">$new_timezone</span> = <span class="php-quote">'Australia/Sydney'</span>, <span class="php-var">$format</span> = <span class="php-quote">'Y-m-d H:i:s'</span> ) {
@@ -1472,7 +1472,7 @@
 </span><span id="1006" class="l">            <span class="php-keyword1">if</span> ( <span class="php-keyword1">isset</span>( <span class="php-var">$field</span>[<span class="php-quote">'opts'</span>] ) &amp;&amp; ! <span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'opts'</span>] ) ) {
 </span><span id="1007" class="l">                <span class="php-keyword1">foreach</span> ( <span class="php-var">$field</span>[<span class="php-quote">'opts'</span>] <span class="php-keyword1">as</span> <span class="php-var">$k</span> =&gt; <span class="php-var">$v</span> ) {
 </span><span id="1008" class="l">                    <span class="php-var">$selected</span> = <span class="php-quote">''</span>;
-</span><span id="1009" class="l">                    <span class="php-keyword1">if</span> ( <span class="php-keyword2">in_array</span>( <span class="php-var">$k</span>, <span class="php-var">$val</span>, <span class="php-keyword1">true</span> ) ) {
+</span><span id="1009" class="l">                    <span class="php-keyword1">if</span> ( <span class="php-keyword2">in_array</span>( <span class="php-var">$k</span>, <span class="php-var">$val</span> ) ) { <span class="php-comment">//phpcs:ignore</span>
 </span><span id="1010" class="l">                        <span class="php-var">$selected</span> = <span class="php-quote">'selected'</span>;
 </span><span id="1011" class="l">                    }
 </span><span id="1012" class="l">
@@ -1506,7 +1506,7 @@
 </span><span id="1040" class="l">                    <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$val</span> ) ) {
 </span><span id="1041" class="l">
 </span><span id="1042" class="l">                        <span class="php-var">$val</span> = (<span class="php-keyword1">array</span>) <span class="php-var">$val</span>;
-</span><span id="1043" class="l">                        <span class="php-keyword1">if</span> ( <span class="php-keyword2">in_array</span>( <span class="php-var">$k</span>, <span class="php-var">$val</span>, <span class="php-keyword1">true</span> ) ) {
+</span><span id="1043" class="l">                        <span class="php-keyword1">if</span> ( <span class="php-keyword2">in_array</span>( <span class="php-var">$k</span>, <span class="php-var">$val</span> ) ) { <span class="php-comment">//phpcs:ignore</span>
 </span><span id="1044" class="l">                            <span class="php-var">$checked</span> = <span class="php-quote">'checked'</span>;
 </span><span id="1045" class="l">                        }
 </span><span id="1046" class="l">                    }
@@ -1602,7 +1602,7 @@
 </span><span id="1136" class="l">                <span class="php-var">$atts</span> .= <span class="php-quote">' maxlength=&quot;'</span> . absint( <span class="php-var">$field</span>[<span class="php-quote">'maxlength'</span>] ) . <span class="php-quote">'&quot;'</span>;
 </span><span id="1137" class="l">            }
 </span><span id="1138" class="l">
-</span><span id="1139" class="l">            <span class="php-keyword1">if</span> ( !<span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
+</span><span id="1139" class="l">            <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
 </span><span id="1140" class="l">                <span class="php-var">$atts</span> .= <span class="php-quote">' autocomplete=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) . <span class="php-quote">'&quot;'</span>;
 </span><span id="1141" class="l">            }
 </span><span id="1142" class="l">            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;input type=&quot;text&quot; name=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) . <span class="php-quote">'&quot; id=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) . <span class="php-quote">'&quot; value=&quot;'</span> . esc_attr( <span class="php-var">$val</span> ) . <span class="php-quote">'&quot; class=&quot;validate[custom[onlyNumberWithDecimal]]&quot; '</span> . wp_kses_post( <span class="php-var">$atts</span> ) . <span class="php-quote">' /&gt;'</span>;
@@ -1613,15 +1613,15 @@
 </span><span id="1147" class="l">            <span class="php-keyword1">if</span> ( <span class="php-keyword1">isset</span>( <span class="php-var">$field</span>[<span class="php-quote">'maxlength'</span>] ) &amp;&amp; <span class="php-var">$field</span>[<span class="php-quote">'maxlength'</span>] &gt; <span class="php-num">0</span> ) {
 </span><span id="1148" class="l">                <span class="php-var">$atts</span> .= <span class="php-quote">' maxlength=&quot;'</span> . absint( <span class="php-var">$field</span>[<span class="php-quote">'maxlength'</span>] ) . <span class="php-quote">'&quot;'</span>;
 </span><span id="1149" class="l">            }
-</span><span id="1150" class="l">            <span class="php-keyword1">if</span> ( !<span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
+</span><span id="1150" class="l">            <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
 </span><span id="1151" class="l">                <span class="php-var">$atts</span> .= <span class="php-quote">' autocomplete=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) . <span class="php-quote">'&quot;'</span>;
 </span><span id="1152" class="l">            }
 </span><span id="1153" class="l">            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;input type=&quot;number&quot; name=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) . <span class="php-quote">'&quot; id=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) . <span class="php-quote">'&quot; value=&quot;'</span> . esc_attr( <span class="php-keyword2">stripslashes</span>( <span class="php-var">$val</span> ) ) . <span class="php-quote">'&quot; class=&quot;validate[custom[onlyNumber]]&quot; '</span> . wp_kses_post( <span class="php-var">$atts</span> ) . <span class="php-quote">' /&gt;'</span>;
 </span><span id="1154" class="l">            <span class="php-keyword1">break</span>;
 </span><span id="1155" class="l">
 </span><span id="1156" class="l">        <span class="php-keyword1">case</span> <span class="php-quote">'date'</span>:
-</span><span id="1157" class="l">            <span class="php-var">$atts</span>       = <span class="php-quote">''</span>;
-</span><span id="1158" class="l">            <span class="php-keyword1">if</span> ( !<span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
+</span><span id="1157" class="l">            <span class="php-var">$atts</span> = <span class="php-quote">''</span>;
+</span><span id="1158" class="l">            <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
 </span><span id="1159" class="l">                <span class="php-var">$atts</span> .= <span class="php-quote">' autocomplete=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) . <span class="php-quote">'&quot;'</span>;
 </span><span id="1160" class="l">            }
 </span><span id="1161" class="l">            <span class="php-var">$format</span>     = <span class="php-keyword1">isset</span>( <span class="php-var">$field</span>[<span class="php-quote">'format'</span>] ) ? <span class="php-var">$field</span>[<span class="php-quote">'format'</span>] : <span class="php-quote">'Y-m-d'</span>;
@@ -1631,7 +1631,7 @@
 </span><span id="1165" class="l">
 </span><span id="1166" class="l">        <span class="php-keyword1">case</span> <span class="php-quote">'auction-date'</span>:
 </span><span id="1167" class="l">            <span class="php-var">$atts</span> = <span class="php-quote">''</span>;
-</span><span id="1168" class="l">            <span class="php-keyword1">if</span> ( !<span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
+</span><span id="1168" class="l">            <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
 </span><span id="1169" class="l">                <span class="php-var">$atts</span> .= <span class="php-quote">' autocomplete=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) . <span class="php-quote">'&quot;'</span>;
 </span><span id="1170" class="l">            }
 </span><span id="1171" class="l">            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;input type=&quot;text&quot; name=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) . <span class="php-quote">'&quot; id=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) . <span class="php-quote">'&quot; value=&quot;'</span> . esc_attr( <span class="php-keyword2">stripslashes</span>( <span class="php-var">$val</span> ) ) . <span class="php-quote">'&quot; '</span> . wp_kses_post( <span class="php-var">$atts</span> ) . <span class="php-quote">' /&gt;'</span>;
@@ -1639,7 +1639,7 @@
 </span><span id="1173" class="l">
 </span><span id="1174" class="l">        <span class="php-keyword1">case</span> <span class="php-quote">'sold-date'</span>:
 </span><span id="1175" class="l">            <span class="php-var">$atts</span> = <span class="php-quote">''</span>;
-</span><span id="1176" class="l">            <span class="php-keyword1">if</span> ( !<span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
+</span><span id="1176" class="l">            <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
 </span><span id="1177" class="l">                <span class="php-var">$atts</span> .= <span class="php-quote">' autocomplete=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) . <span class="php-quote">'&quot;'</span>;
 </span><span id="1178" class="l">            }
 </span><span id="1179" class="l">            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;input type=&quot;text&quot; name=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) . <span class="php-quote">'&quot; id=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) . <span class="php-quote">'&quot; value=&quot;'</span> . esc_attr( <span class="php-keyword2">stripslashes</span>( <span class="php-var">$val</span> ) ) . <span class="php-quote">'&quot; '</span> . wp_kses_post( <span class="php-var">$atts</span> ) . <span class="php-quote">' /&gt;'</span>;
@@ -1647,10 +1647,10 @@
 </span><span id="1181" class="l">
 </span><span id="1182" class="l">        <span class="php-keyword1">case</span> <span class="php-quote">'email'</span>:
 </span><span id="1183" class="l">            <span class="php-var">$atts</span> = <span class="php-quote">''</span>;
-</span><span id="1184" class="l">            <span class="php-keyword1">if</span> ( !<span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
+</span><span id="1184" class="l">            <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
 </span><span id="1185" class="l">                <span class="php-var">$atts</span> .= <span class="php-quote">' autocomplete=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) . <span class="php-quote">'&quot;'</span>;
 </span><span id="1186" class="l">            }
-</span><span id="1187" class="l">            <span class="php-keyword1">if</span> ( !<span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
+</span><span id="1187" class="l">            <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
 </span><span id="1188" class="l">                <span class="php-var">$atts</span> .= <span class="php-quote">' autocomplete=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) . <span class="php-quote">'&quot;'</span>;
 </span><span id="1189" class="l">            }
 </span><span id="1190" class="l">            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;input type=&quot;text&quot; name=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) . <span class="php-quote">'&quot; id=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) . <span class="php-quote">'&quot; value=&quot;'</span> . esc_attr( <span class="php-keyword2">stripslashes</span>( <span class="php-var">$val</span> ) ) . <span class="php-quote">'&quot; class=&quot;validate[custom[email]]&quot; '</span> . wp_kses_post( <span class="php-var">$atts</span> ) . <span class="php-quote">' /&gt;'</span>;
@@ -1658,7 +1658,7 @@
 </span><span id="1192" class="l">
 </span><span id="1193" class="l">        <span class="php-keyword1">case</span> <span class="php-quote">'url'</span>:
 </span><span id="1194" class="l">            <span class="php-var">$atts</span> = <span class="php-quote">''</span>;
-</span><span id="1195" class="l">            <span class="php-keyword1">if</span> ( !<span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
+</span><span id="1195" class="l">            <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
 </span><span id="1196" class="l">                <span class="php-var">$atts</span> .= <span class="php-quote">' autocomplete=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) . <span class="php-quote">'&quot;'</span>;
 </span><span id="1197" class="l">            }
 </span><span id="1198" class="l">            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;input type=&quot;text&quot; name=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) . <span class="php-quote">'&quot; id=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) . <span class="php-quote">'&quot; value=&quot;'</span> . esc_attr( <span class="php-keyword2">stripslashes</span>( <span class="php-var">$val</span> ) ) . <span class="php-quote">'&quot; class=&quot;validate[custom[url]]&quot; '</span> . wp_kses_post( <span class="php-var">$atts</span> ) . <span class="php-quote">' /&gt;'</span>;
@@ -1673,7 +1673,7 @@
 </span><span id="1207" class="l">            <span class="php-keyword1">break</span>;
 </span><span id="1208" class="l">
 </span><span id="1209" class="l">        <span class="php-keyword1">case</span> <span class="php-quote">'help'</span>:
-</span><span id="1210" class="l">            <span class="php-var">$content</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$field</span>[<span class="php-quote">'content'</span>]) ? <span class="php-var">$field</span>[<span class="php-quote">'content'</span>] : <span class="php-quote">''</span>;
+</span><span id="1210" class="l">            <span class="php-var">$content</span> = <span class="php-keyword1">isset</span>( <span class="php-var">$field</span>[<span class="php-quote">'content'</span>] ) ? <span class="php-var">$field</span>[<span class="php-quote">'content'</span>] : <span class="php-quote">''</span>;
 </span><span id="1211" class="l">            <span class="php-var">$help_id</span> = <span class="php-keyword1">isset</span>( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) ? sanitize_key( <span class="php-var">$field</span>[<span class="php-quote">'name'</span>] ) : <span class="php-quote">''</span>;
 </span><span id="1212" class="l">            <span class="php-comment">//phpcs:ignore</span>
 </span><span id="1213" class="l">            <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;div class=&quot;epl-help-container&quot; id=&quot;'</span>.<span class="php-var">$help_id</span>.<span class="php-quote">'&quot;&gt;
@@ -1686,7 +1686,7 @@
 </span><span id="1220" class="l">            <span class="php-keyword1">if</span> ( <span class="php-keyword1">isset</span>( <span class="php-var">$field</span>[<span class="php-quote">'maxlength'</span>] ) &amp;&amp; <span class="php-var">$field</span>[<span class="php-quote">'maxlength'</span>] &gt; <span class="php-num">0</span> ) {
 </span><span id="1221" class="l">                <span class="php-var">$atts</span> .= <span class="php-quote">' maxlength=&quot;'</span> . <span class="php-var">$field</span>[<span class="php-quote">'maxlength'</span>] . <span class="php-quote">'&quot;'</span>;
 </span><span id="1222" class="l">            }
-</span><span id="1223" class="l">            <span class="php-keyword1">if</span> ( !<span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
+</span><span id="1223" class="l">            <span class="php-keyword1">if</span> ( ! <span class="php-keyword1">empty</span>( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) ) {
 </span><span id="1224" class="l">                <span class="php-var">$atts</span> .= <span class="php-quote">' autocomplete=&quot;'</span> . esc_attr( <span class="php-var">$field</span>[<span class="php-quote">'autocomplete'</span>] ) . <span class="php-quote">'&quot;'</span>;
 </span><span id="1225" class="l">            }
 </span><span id="1226" class="l">            <span class="php-var">$classes</span> = <span class="php-keyword1">isset</span>( <span class="php-var">$field</span>[<span class="php-quote">'class'</span>] ) ? <span class="php-var">$field</span>[<span class="php-quote">'class'</span>] : <span class="php-quote">''</span>;
@@ -3203,7 +3203,7 @@
 </span></span><span id="2737" class="l"><span class="php-comment"> * Recursive array map for multi dimensional array
 </span></span><span id="2738" class="l"><span class="php-comment"> *
 </span></span><span id="2739" class="l"><span class="php-comment"> * @param string $callback Callback.
-</span></span><span id="2740" class="l"><span class="php-comment"> * @param array $array Array.
+</span></span><span id="2740" class="l"><span class="php-comment"> * @param array  $array Array.
 </span></span><span id="2741" class="l"><span class="php-comment"> *
 </span></span><span id="2742" class="l"><span class="php-comment"> * @return array
 </span></span><span id="2743" class="l"><span class="php-comment"> * @since 3.3.5
@@ -3220,7 +3220,7 @@
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.4.4 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4.6 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js?cbef3f9ce5d56cd9035f1d2078dbba925910f027"></script>
