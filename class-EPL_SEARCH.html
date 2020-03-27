@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_SEARCH | Easy Property Listings 3.4.10 Code Reference</title>
+	<title>Class EPL_SEARCH | Easy Property Listings 3.4.24 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4.10 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4.24 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -180,6 +180,10 @@
 							Search						</a>
 							</li>
 					<li class="main">
+						<a href="package-EPL.Classes.Session.html">
+							Session						</a>
+							</li>
+					<li class="main">
 						<a href="package-EPL.Classes.Updater.html">
 							Updater						</a>
 							</li>
@@ -288,15 +292,9 @@
 							Map						</a>
 							</li>
 					<li class="main">
-						<a href="package-EPL.Hooks.Read.html">
-							Read<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Hooks.Read.More.html">
-							More						</a>
+						<a href="package-EPL.Hooks.ReadMore.html">
+							ReadMore						</a>
 							</li>
-								</ul></li>
 					<li class="main">
 						<a href="package-EPL.Hooks.WebLink.html">
 							WebLink						</a>
@@ -414,6 +412,20 @@
 							Search						</a>
 							</li>
 								</ul></li></ul></li>
+					<li>
+						<a href="package-None.html">
+							None						</a>
+							</li>
+					<li>
+						<a href="package-WordPress.html">
+							WordPress<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-WordPress.Session.html">
+							Session						</a>
+							</li>
+								</ul></li>
 			</ul>
 		</div>
 
@@ -460,12 +472,12 @@
 		<b>Package:</b> <a href="package-EPL.html">EPL</a>\<a href="package-EPL.Classes.html">Classes</a>\<a href="package-EPL.Classes.Search.html">Search</a><br>
 
 				<b>Copyright:</b>
-				Copyright (c) 2019, Merv Barrett<br>
+				Copyright (c) 2020, Merv Barrett<br>
 				<b>License:</b>
 				<a href="http://opensource.org/licenses/gpl-2.0.php">GNU Public License</a><br>
 				<b>Since:</b>
 				3.1<br>
-			<b>Located at</b> <a href="source-class-EPL_SEARCH.html#17-577" title="Go to source code">lib/includes/class-epl-search.php</a>
+			<b>Located at</b> <a href="source-class-EPL_SEARCH.html#17-579" title="Go to source code">lib/includes/class-epl-search.php</a>
 		<br>
 	</div>
 
@@ -763,7 +775,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_set_post_type">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#240-257" title="Go to source code">set_post_type</a>( )</code>
+			<code><a href="source-class-EPL_SEARCH.html#240-259" title="Go to source code">set_post_type</a>( )</code>
 
 			<div class="description short">
 				<p>Set post type for query</p>
@@ -776,6 +788,10 @@ but their value is used to query other meta data / post data / tax data</p>
 
 
 
+					<h4>Since</h4>
+					<div class="list">
+							3.4.12 Added support for 'all' post type.<br>
+					</div>
 
 
 			</div>
@@ -792,7 +808,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_modify_fields">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#259-271" title="Go to source code">modify_fields</a>( )</code>
+			<code><a href="source-class-EPL_SEARCH.html#261-273" title="Go to source code">modify_fields</a>( )</code>
 
 			<div class="description short">
 				<p>Modify meta keys according to data received, for special cases</p>
@@ -821,7 +837,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_set_query">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#274-283" title="Go to source code">set_query</a>( )</code>
+			<code><a href="source-class-EPL_SEARCH.html#276-285" title="Go to source code">set_query</a>( )</code>
 
 			<div class="description short">
 				<p>Set queries meta, Tax</p>
@@ -850,7 +866,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_set_meta_query">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#285-296" title="Go to source code">set_meta_query</a>( )</code>
+			<code><a href="source-class-EPL_SEARCH.html#287-298" title="Go to source code">set_meta_query</a>( )</code>
 
 			<div class="description short">
 				<p>Set meta query for the search object</p>
@@ -879,7 +895,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_set_tax_query">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#298-306" title="Go to source code">set_tax_query</a>( )</code>
+			<code><a href="source-class-EPL_SEARCH.html#300-308" title="Go to source code">set_tax_query</a>( )</code>
 
 			<div class="description short">
 				<p>Set tax query for the search object</p>
@@ -908,7 +924,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_prepare_query">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#308-360" title="Go to source code">prepare_query</a>( )</code>
+			<code><a href="source-class-EPL_SEARCH.html#310-362" title="Go to source code">prepare_query</a>( )</code>
 
 			<div class="description short">
 				<p>Prepare the query</p>
@@ -937,7 +953,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_epl_search_query_pre_search">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#362-394" title="Go to source code">epl_search_query_pre_search</a>( )</code>
+			<code><a href="source-class-EPL_SEARCH.html#364-396" title="Go to source code">epl_search_query_pre_search</a>( )</code>
 
 			<div class="description short">
 				<p>Pre search query</p>
@@ -966,7 +982,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_prepare_meta_query">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#396-412" title="Go to source code">prepare_meta_query</a>( <span>array <var>$query_field</var></span>, <span>string <var>$value</var></span> )</code>
+			<code><a href="source-class-EPL_SEARCH.html#398-414" title="Go to source code">prepare_meta_query</a>( <span>array <var>$query_field</var></span>, <span>string <var>$value</var></span> )</code>
 
 			<div class="description short">
 				<p>Prepare meta query</p>
@@ -1002,7 +1018,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_is_query_multiple">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#414-427" title="Go to source code">is_query_multiple</a>( <span>array <var>$query_field</var></span> )</code>
+			<code><a href="source-class-EPL_SEARCH.html#416-429" title="Go to source code">is_query_multiple</a>( <span>array <var>$query_field</var></span> )</code>
 
 			<div class="description short">
 				<p>Checks if given meta query is multiple</p>
@@ -1040,7 +1056,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_multiple_relation">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#429-439" title="Go to source code">multiple_relation</a>( <span>array <var>$query_field</var></span> )</code>
+			<code><a href="source-class-EPL_SEARCH.html#431-441" title="Go to source code">multiple_relation</a>( <span>array <var>$query_field</var></span> )</code>
 
 			<div class="description short">
 				<p>Returns relationship for the multiple query</p>
@@ -1078,7 +1094,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_multiple_meta_query">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#441-476" title="Go to source code">multiple_meta_query</a>( <span>array <var>$query_field</var></span>, <span>string <var>$data</var></span> )</code>
+			<code><a href="source-class-EPL_SEARCH.html#443-478" title="Go to source code">multiple_meta_query</a>( <span>array <var>$query_field</var></span>, <span>string <var>$data</var></span> )</code>
 
 			<div class="description short">
 				<p>Set multiple meta query</p>
@@ -1114,7 +1130,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_single_meta_query">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#478-508" title="Go to source code">single_meta_query</a>( <span>array <var>$query_field</var></span>, <span>string <var>$data</var></span> )</code>
+			<code><a href="source-class-EPL_SEARCH.html#480-510" title="Go to source code">single_meta_query</a>( <span>array <var>$query_field</var></span>, <span>string <var>$data</var></span> )</code>
 
 			<div class="description short">
 				<p>Set single meta query</p>
@@ -1150,7 +1166,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_preprocess_meta_query">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#510-534" title="Go to source code">preprocess_meta_query</a>( )</code>
+			<code><a href="source-class-EPL_SEARCH.html#512-536" title="Go to source code">preprocess_meta_query</a>( )</code>
 
 			<div class="description short">
 				<p>Preprocess meta query</p>
@@ -1179,7 +1195,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_prepare_tax_query">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#536-555" title="Go to source code">prepare_tax_query</a>( <span>array <var>$query_field</var></span>, <span>string <var>$value</var></span> )</code>
+			<code><a href="source-class-EPL_SEARCH.html#538-557" title="Go to source code">prepare_tax_query</a>( <span>array <var>$query_field</var></span>, <span>string <var>$value</var></span> )</code>
 
 			<div class="description short">
 				<p>Prepare taxonomy query</p>
@@ -1215,7 +1231,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_prepare_special_query">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#557-566" title="Go to source code">prepare_special_query</a>( <span>array <var>$query_field</var></span>, <span>string <var>$value</var></span> )</code>
+			<code><a href="source-class-EPL_SEARCH.html#559-568" title="Go to source code">prepare_special_query</a>( <span>array <var>$query_field</var></span>, <span>string <var>$value</var></span> )</code>
 
 			<div class="description short">
 				<p>Prepare special query</p>
@@ -1251,7 +1267,7 @@ but their value is used to query other meta data / post data / tax data</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_posts">#</a>
-			<code><a href="source-class-EPL_SEARCH.html#568-576" title="Go to source code">get_posts</a>( )</code>
+			<code><a href="source-class-EPL_SEARCH.html#570-578" title="Go to source code">get_posts</a>( )</code>
 
 			<div class="description short">
 				<p>Return array of posts based on search data</p>
@@ -1290,7 +1306,7 @@ but their value is used to query other meta data / post data / tax data</p>
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.4.10 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4.24 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>

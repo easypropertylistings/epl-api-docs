@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Hook Reference | Easy Property Listings 3.4.10 Code Reference</title>
+	<title>Hook Reference | Easy Property Listings 3.4.24 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4.10 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4.24 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -179,6 +179,10 @@
 							Search						</a>
 							</li>
 					<li class="main">
+						<a href="package-EPL.Classes.Session.html">
+							Session						</a>
+							</li>
+					<li class="main">
 						<a href="package-EPL.Classes.Updater.html">
 							Updater						</a>
 							</li>
@@ -287,15 +291,9 @@
 							Map						</a>
 							</li>
 					<li class="main">
-						<a href="package-EPL.Hooks.Read.html">
-							Read<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Hooks.Read.More.html">
-							More						</a>
+						<a href="package-EPL.Hooks.ReadMore.html">
+							ReadMore						</a>
 							</li>
-								</ul></li>
 					<li class="main">
 						<a href="package-EPL.Hooks.WebLink.html">
 							WebLink						</a>
@@ -413,6 +411,20 @@
 							Search						</a>
 							</li>
 								</ul></li></ul></li>
+					<li>
+						<a href="package-None.html">
+							None						</a>
+							</li>
+					<li>
+						<a href="package-WordPress.html">
+							WordPress<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="package-WordPress.Session.html">
+							Session						</a>
+							</li>
+								</ul></li>
 			</ul>
 		</div>
 
@@ -435,6 +447,7 @@
 				<li><a href="class-EPL_Property_Meta.html">EPL_Property_Meta</a></li>
 				<li><a href="class-EPL_SEARCH.html">EPL_SEARCH</a></li>
 				<li><a href="class-EPL_Search_Fields.html">EPL_Search_Fields</a></li>
+				<li><a href="class-EPL_Session.html">EPL_Session</a></li>
 				<li><a href="class-EPL_SL_Plugin_Updater.html">EPL_SL_Plugin_Updater</a></li>
 				<li><a href="class-EPL_Welcome.html">EPL_Welcome</a></li>
 				<li><a href="class-EPL_Widget_Author.html">EPL_Widget_Author</a></li>
@@ -586,11 +599,6 @@
 						<td>themes.php</td>
 					</tr>
 <tr>
-						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_compatibility_archive_class">epl_compatibility_archive_class</a></td>
-						<td>action</td>
-						<td>loop-listing-blog-default-compatibility.php</td>
-					</tr>
-<tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_display_author_social_icons">epl_display_author_social_icons</a></td>
 						<td>filter</td>
 						<td>content-author-box-tab-details.php, widget-content-author-tall.php</td>
@@ -603,12 +611,12 @@
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_address">epl_property_address</a></td>
 						<td>action</td>
-						<td>content-listing-single.php, loop-listing-blog-default-compatibility.php, loop-listing-blog-default.php, loop-listing-blog-table-open.php, loop-listing-blog-table.php</td>
+						<td>content-listing-single.php, loop-listing-blog-default.php, loop-listing-blog-table-open.php, loop-listing-blog-table.php</td>
 					</tr>
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_after_content">epl_property_after_content</a></td>
 						<td>action</td>
-						<td>loop-listing-blog-default-compatibility.php, loop-listing-blog-default.php, loop-listing-blog-table-open.php, loop-listing-blog-table.php</td>
+						<td>loop-listing-blog-default.php, loop-listing-blog-table-open.php, loop-listing-blog-table.php</td>
 					</tr>
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_after_title">epl_property_after_title</a></td>
@@ -618,7 +626,7 @@
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_archive_featured_image">epl_property_archive_featured_image</a></td>
 						<td>action</td>
-						<td>loop-listing-blog-card.php, loop-listing-blog-default-compatibility.php, loop-listing-blog-default.php</td>
+						<td>loop-listing-blog-card.php, loop-listing-blog-default.php</td>
 					</tr>
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_available_dates">epl_property_available_dates</a></td>
@@ -628,7 +636,7 @@
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_before_content">epl_property_before_content</a></td>
 						<td>action</td>
-						<td>loop-listing-blog-default-compatibility.php, loop-listing-blog-default.php, loop-listing-blog-table-open.php, loop-listing-blog-table.php</td>
+						<td>loop-listing-blog-default.php, loop-listing-blog-table-open.php, loop-listing-blog-table.php</td>
 					</tr>
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_before_title">epl_property_before_title</a></td>
@@ -663,17 +671,17 @@
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_heading">epl_property_heading</a></td>
 						<td>action</td>
-						<td>content-listing-single-compatibility.php, content-listing-single.php, loop-listing-blog-default-compatibility.php, loop-listing-blog-default.php, loop-listing-blog-slim.php, widget-content-listing-hide-image.php, widget-content-listing.php</td>
+						<td>content-listing-single-compatibility.php, content-listing-single.php, loop-listing-blog-default.php, loop-listing-blog-slim.php, widget-content-listing-hide-image.php, widget-content-listing.php</td>
 					</tr>
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_icons">epl_property_icons</a></td>
 						<td>action</td>
-						<td>content-listing-single-compatibility.php, content-listing-single.php, loop-listing-blog-card.php, loop-listing-blog-default-compatibility.php, loop-listing-blog-default.php, loop-listing-blog-slim.php, loop-listing-blog-table-open.php, loop-listing-blog-table.php</td>
+						<td>content-listing-single-compatibility.php, content-listing-single.php, loop-listing-blog-card.php, loop-listing-blog-default.php, loop-listing-blog-slim.php, loop-listing-blog-table-open.php, loop-listing-blog-table.php</td>
 					</tr>
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_inspection_times">epl_property_inspection_times</a></td>
 						<td>action</td>
-						<td>content-listing-single-compatibility.php, content-listing-single.php, loop-listing-blog-default-compatibility.php, loop-listing-blog-default.php, loop-listing-blog-slim.php, loop-listing-blog-table-open.php</td>
+						<td>content-listing-single-compatibility.php, content-listing-single.php, loop-listing-blog-default.php, loop-listing-blog-slim.php, loop-listing-blog-table-open.php</td>
 					</tr>
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_land_category">epl_property_land_category</a></td>
@@ -708,7 +716,7 @@
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_price">epl_property_price</a></td>
 						<td>action</td>
-						<td>content-listing-single-compatibility.php, content-listing-single.php, loop-listing-blog-card.php, loop-listing-blog-default-compatibility.php, loop-listing-blog-default.php, loop-listing-blog-slim.php, loop-listing-blog-table-open.php, loop-listing-blog-table.php</td>
+						<td>content-listing-single-compatibility.php, content-listing-single.php, loop-listing-blog-card.php, loop-listing-blog-default.php, loop-listing-blog-slim.php, loop-listing-blog-table-open.php, loop-listing-blog-table.php</td>
 					</tr>
 <tr>
 						<td><a href="https://github.com/easypropertylistings/Easy-Property-Listings/search?utf8=%E2%9C%93&q=epl_property_price_after">epl_property_price_after</a></td>
@@ -826,7 +834,7 @@
 						<td>shortcode-listing-auction.php, shortcode-listing-category.php, shortcode-listing-open.php, shortcode-listing-tax-feature.php, shortcode-listing-tax-location.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Advanced_Shortcode_Listing.html#571">epl_shortcode_listing_advanced_args</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Advanced_Shortcode_Listing.html#569">epl_shortcode_listing_advanced_args</a></td>
 						<td>filter</td>
 						<td>class-epl-advanced-shortcode-listing.php</td>
 					</tr>
@@ -976,12 +984,12 @@
 						<td>widget-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Widget_Recent_Property.html#442">epl_listing_widget_templates</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Widget_Recent_Property.html#451">epl_listing_widget_templates</a></td>
 						<td>filter</td>
 						<td>class-epl-widget-recent-property.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Widget_Recent_Property.html#420">epl_listing_widget_view</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Widget_Recent_Property.html#429">epl_listing_widget_view</a></td>
 						<td>filter</td>
 						<td>class-epl-widget-recent-property.php</td>
 					</tr>
@@ -1014,6 +1022,16 @@
 						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_search_widget_fields_frontend.html#712">epl_property_land_area_min</a></td>
 						<td>filter</td>
 						<td>widget-functions.php</td>
+					</tr>
+<tr>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Widget_Recent_Property.html#77">epl_recent_property_widget_default_args</a></td>
+						<td>filter</td>
+						<td>class-epl-widget-recent-property.php</td>
+					</tr>
+<tr>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Widget_Recent_Property.html#144">epl_recent_property_widget_query</a></td>
+						<td>filter</td>
+						<td>class-epl-widget-recent-property.php</td>
 					</tr>
 <tr>
 						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_preprocess_search_meta_query.html#1280">epl_search_field_option_separator</a></td>
@@ -1056,27 +1074,27 @@
 						<td>class-epl-widget-author.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Widget_Recent_Property.html#175">epl_widget_listing_property_status</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Widget_Recent_Property.html#184">epl_widget_listing_property_status</a></td>
 						<td>filter</td>
 						<td>class-epl-widget-recent-property.php</td>
 					</tr>
 </tbody></table></div><div class="panel panel-default"><div class="panel-heading"><h2>Class Hooks</h2></div><table class="summary table table-bordered table-striped"><thead><tr><th>Hook</th><th>Type</th><th>File(s)</th></tr></thead><tbody><tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_active_theme.html#2281">epl_active_theme</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_active_theme.html#2293">epl_active_theme</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_active_theme_name.html#2294">epl_active_theme_name</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_active_theme_name.html#2306">epl_active_theme_name</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_active_theme_name.html#2292">epl_active_theme_prefix</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_active_theme_name.html#2304">epl_active_theme_prefix</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_tools_utility_wrapper.html#1587">epl_add_custom_menus</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_tools_utility_wrapper.html#1593">epl_add_custom_menus</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -1086,37 +1104,42 @@
 						<td>conditional-tags.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_render_html_fields.html#1240">epl_admin_listing_map</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_render_html_fields.html#1262">epl_admin_listing_map</a></td>
 						<td>action</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_after_install.html#197">epl_after_install</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_after_install.html#200">epl_after_install</a></td>
 						<td>action</td>
 						<td>install.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_archive_title_callback.html#2923">epl_archive_title_default</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_METABOX.html#286">epl_after_meta_field_{$field[name]}</a></td>
+						<td>action</td>
+						<td>class-epl-metabox.php</td>
+					</tr>
+<tr>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_archive_title_callback.html#2950">epl_archive_title_default</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_archive_title_callback.html#2916">epl_archive_title_fallback</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_archive_title_callback.html#2943">epl_archive_title_fallback</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_archive_title_callback.html#2912">epl_archive_title_search_result</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_archive_title_callback.html#2939">epl_archive_title_search_result</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_tools_utility_wrapper.html#1590">epl_archive_utility_wrap_end</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_tools_utility_wrapper.html#1596">epl_archive_utility_wrap_end</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_tools_utility_wrapper.html#1585">epl_archive_utility_wrap_start</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_tools_utility_wrapper.html#1591">epl_archive_utility_wrap_start</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -1131,7 +1154,7 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_author_class.html#1859">epl_author_class</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_author_class.html#1865">epl_author_class</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -1286,7 +1309,7 @@
 						<td>class-epl-author-meta.php, template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_author_tab_author_id.html#1882">epl_author_profile_title</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_author_tab_author_id.html#1888">epl_author_profile_title</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -1311,17 +1334,17 @@
 						<td>class-epl-author-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_author_tab_image.html#1907">epl_author_tab_image</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_author_tab_image.html#1913">epl_author_tab_image</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_author_tabs.html#1845">epl_author_tabs</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_author_tabs.html#1851">epl_author_tabs</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_author_box.html#382">epl_author_template</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_author_box.html#377">epl_author_template</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -1356,12 +1379,17 @@
 						<td>class-epl-author-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_beta_enabled_extensions.html#2495">epl_beta_enabled_extensions</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_METABOX.html#259">epl_before_meta_field_{$field[name]}</a></td>
+						<td>action</td>
+						<td>class-epl-metabox.php</td>
+					</tr>
+<tr>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_beta_enabled_extensions.html#2492">epl_beta_enabled_extensions</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_render_html_fields.html#1057">epl_checkbox_single_check_options</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_render_html_fields.html#1079">epl_checkbox_single_check_options</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
@@ -1396,17 +1424,17 @@
 						<td>class-epl-contact.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_contact_capture_action.html#3080">epl_contact_capture_fail_msg</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_contact_capture_action.html#3113">epl_contact_capture_fail_msg</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_contact_capture_action.html#3075">epl_contact_capture_success_msg</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_contact_capture_action.html#3108">epl_contact_capture_success_msg</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_contact_categories.html#2349">epl_contact_categories</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_contact_categories.html#2348">epl_contact_categories</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
@@ -1491,12 +1519,12 @@
 						<td>conditional-tags.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_currency.html#230">epl_currency</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_currency.html#247">epl_currency</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_currency_position.html#246">epl_currency_position</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_currency_position.html#263">epl_currency_position</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
@@ -1506,17 +1534,17 @@
 						<td>user.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_decimal_separator.html#278">epl_decimal_separator</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_decimal_separator.html#295">epl_decimal_separator</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_admin_option_fields.html#1996">epl_display_options_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_admin_option_fields.html#2018">epl_display_options_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_labels.html#322">epl_display_{$key}</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_labels.html#339">epl_display_{$key}</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
@@ -1526,12 +1554,17 @@
 						<td>error-tracking.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_the_term_list.html#2176">epl_features_taxonomy_link_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_errors.html#57">epl_errors</a></td>
+						<td>filter</td>
+						<td>error-tracking.php</td>
+					</tr>
+<tr>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_the_term_list.html#2188">epl_features_taxonomy_link_filter</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_feedsync_format_strip_currency.html#879">epl_feedsync_format_strip_currency_symbol</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_feedsync_format_strip_currency.html#901">epl_feedsync_format_strip_currency_symbol</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
@@ -1546,32 +1579,32 @@
 						<td>formatting.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#2069">epl_get_additional_commerical_features_html</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#2068">epl_get_additional_commerical_features_html</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#2034">epl_get_additional_features_html</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#2033">epl_get_additional_features_html</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#2051">epl_get_additional_rural_features_html</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#2050">epl_get_additional_rural_features_html</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_countries_list.html#2507">epl_get_countries_list</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_countries_list.html#2504">epl_get_countries_list</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_currencies.html#214">epl_get_currencies</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_currencies.html#231">epl_get_currencies</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#2110">epl_get_features_from_taxonomy</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#2109">epl_get_features_from_taxonomy</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
@@ -1596,7 +1629,7 @@
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1270">epl_get_parking_spaces_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1269">epl_get_parking_spaces_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
@@ -1626,17 +1659,17 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1461">epl_get_property_air_conditioning</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1460">epl_get_property_air_conditioning</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1424">epl_get_property_air_conditioning_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1423">epl_get_property_air_conditioning_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1423">epl_get_property_air_conditioning_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1422">epl_get_property_air_conditioning_return_type</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
@@ -1711,27 +1744,27 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1671">epl_get_property_building_area_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1670">epl_get_property_building_area_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1712">epl_get_property_building_area_value</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1711">epl_get_property_building_area_value</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1404">epl_get_property_carport</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1403">epl_get_property_carport</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1375">epl_get_property_carport_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1374">epl_get_property_carport_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1374">epl_get_property_carport_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1373">epl_get_property_carport_return_type</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
@@ -1741,7 +1774,7 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#2006">epl_get_property_com_car_spaces_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#2005">epl_get_property_com_car_spaces_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
@@ -1756,17 +1789,17 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1757">epl_get_property_energy_rating</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1756">epl_get_property_energy_rating</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1731">epl_get_property_energy_rating_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1730">epl_get_property_energy_rating_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1727">epl_get_property_energy_rating_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1726">epl_get_property_energy_rating_return_type</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
@@ -1776,137 +1809,137 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1958">epl_get_property_featured_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1957">epl_get_property_featured_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1953">epl_get_property_featured_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1952">epl_get_property_featured_return_type</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1893">epl_get_property_furnished</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1892">epl_get_property_furnished</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1866">epl_get_property_furnished_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1865">epl_get_property_furnished_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1861">epl_get_property_furnished_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1860">epl_get_property_furnished_return_type</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1356">epl_get_property_garage</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1355">epl_get_property_garage</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1327">epl_get_property_garage_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1326">epl_get_property_garage_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1325">epl_get_property_garage_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1324">epl_get_property_garage_return_type</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1847">epl_get_property_holiday_rental</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1846">epl_get_property_holiday_rental</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1816">epl_get_property_holiday_rental_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1815">epl_get_property_holiday_rental_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1819">epl_get_property_holiday_rental_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1818">epl_get_property_holiday_rental_return_type</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_icons.html#797">epl_get_property_icon_{$icon)}</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_icons.html#800">epl_get_property_icon_{$icon)}</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_icons.html#762">epl_get_property_icons</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_icons.html#765">epl_get_property_icons</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1600">epl_get_property_land_area_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1599">epl_get_property_land_area_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1641">epl_get_property_land_value</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1640">epl_get_property_land_value</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_meta.html#493">epl_get_property_meta_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_meta.html#510">epl_get_property_meta_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1803">epl_get_property_new_construction</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1802">epl_get_property_new_construction</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1776">epl_get_property_new_construction_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1775">epl_get_property_new_construction_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1772">epl_get_property_new_construction_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1771">epl_get_property_new_construction_return_type</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1306">epl_get_property_parking</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1305">epl_get_property_parking</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1260">epl_get_property_parking_spaces_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1258">epl_get_property_parking_spaces_return_type</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1939">epl_get_property_pet_friendly</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1938">epl_get_property_pet_friendly</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1912">epl_get_property_pet_friendly_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1911">epl_get_property_pet_friendly_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1907">epl_get_property_pet_friendly_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1906">epl_get_property_pet_friendly_return_type</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1520">epl_get_property_pool</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1519">epl_get_property_pool</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1483">epl_get_property_pool_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1482">epl_get_property_pool_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1482">epl_get_property_pool_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1481">epl_get_property_pool_return_type</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
@@ -1931,7 +1964,7 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1985">epl_get_property_property_featured</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1984">epl_get_property_property_featured</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
@@ -1961,17 +1994,17 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1570">epl_get_property_security_system</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1569">epl_get_property_security_system</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1540">epl_get_property_security_system_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1539">epl_get_property_security_system_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1539">epl_get_property_security_system_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1538">epl_get_property_security_system_return_type</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
@@ -1996,27 +2029,27 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_sales_by_date.html#2213">epl_get_sales_by_date_args</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_sales_by_date.html#2212">epl_get_sales_by_date_args</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_the_content.html#2593">epl_get_the_content</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_the_content.html#2620">epl_get_the_content</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_the_excerpt.html#2697">epl_get_the_excerpt</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_the_excerpt.html#2724">epl_get_the_excerpt</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_the_status.html#471">epl_get_the_status</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_the_status.html#488">epl_get_the_status</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_the_under_offer.html#600">epl_get_the_under_offer</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_the_under_offer.html#617">epl_get_the_under_offer</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
@@ -2026,12 +2059,12 @@
 						<td>admin-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_unique_post_meta_values.html#2107">epl_get_unique_post_meta_values</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_unique_post_meta_values.html#2129">epl_get_unique_post_meta_values</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#2017">epl_get_{$metakey}_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#2016">epl_get_{$metakey}_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
@@ -2041,12 +2074,12 @@
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_create_ical_file.html#2073">epl_ical_args</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_create_ical_file.html#2079">epl_ical_args</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_icons.html#763">epl_icons_return_type</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_icons.html#766">epl_icons_return_type</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2056,7 +2089,7 @@
 						<td>options-global.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_inspection_date_format.html#2817">epl_inspection_date_format</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_inspection_date_format.html#2844">epl_inspection_date_format</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2066,17 +2099,17 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_inspection_time_format.html#2836">epl_inspection_time_format</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_inspection_time_format.html#2863">epl_inspection_time_format</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_inspection_times.html#891">epl_inspection_times_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_inspection_times.html#894">epl_inspection_times_label</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_status_opts.html#2528">epl_leased_label_status_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_status_opts.html#2525">epl_leased_label_status_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
@@ -2086,42 +2119,42 @@
 						<td>help.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_load_meta_commercial_category.html#715">epl_listing_meta_commercial_category</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_load_meta_commercial_category.html#732">epl_listing_meta_commercial_category</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_load_meta_commercial_rent_period.html#754">epl_listing_meta_commercial_rent_period</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_load_meta_commercial_rent_period.html#771">epl_listing_meta_commercial_rent_period</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_load_meta_land_category.html#680">epl_listing_meta_land_category</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_load_meta_land_category.html#697">epl_listing_meta_land_category</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_load_meta_property_category.html#646">epl_listing_meta_property_category</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_load_meta_property_category.html#663">epl_listing_meta_property_category</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_load_meta_rural_category.html#789">epl_listing_meta_rural_category</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_load_meta_rural_category.html#806">epl_listing_meta_rural_category</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-get_epl_listing_toolbar_items.html#1624">epl_listing_toolbar_items</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-get_epl_listing_toolbar_items.html#1630">epl_listing_toolbar_items</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-get_epl_listing_toolbar_items.html#1651">epl_listing_toolbar_{$tool)}</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-get_epl_listing_toolbar_items.html#1657">epl_listing_toolbar_{$tool)}</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_widget.html#490">epl_listing_widget_template</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_widget.html#493">epl_listing_widget_template</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2131,12 +2164,12 @@
 						<td>help-single.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_blog.html#344">epl_loop_template</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_blog.html#345">epl_loop_template</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_load_meta_commercial_category_value.html#738">epl_meta_commercial_category_value</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_load_meta_commercial_category_value.html#755">epl_meta_commercial_category_value</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
@@ -2151,42 +2184,42 @@
 						<td>pagination.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_area_unit_opts.html#2600">epl_opts_area_unit_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_area_unit_opts.html#2597">epl_opts_area_unit_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_com_authority_opts.html#2580">epl_opts_property_com_authority_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_com_authority_opts.html#2577">epl_opts_property_com_authority_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_com_listing_type_opts.html#2639">epl_opts_property_com_listing_type_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_com_listing_type_opts.html#2636">epl_opts_property_com_listing_type_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_com_property_extent_opts.html#2673">epl_opts_property_com_property_extent_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_com_property_extent_opts.html#2670">epl_opts_property_com_property_extent_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_com_tenancy_opts.html#2656">epl_opts_property_com_tenancy_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_com_tenancy_opts.html#2653">epl_opts_property_com_tenancy_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_exclusivity_opts.html#2564">epl_opts_property_exclusivity_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_exclusivity_opts.html#2561">epl_opts_property_exclusivity_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_status_opts.html#2518">epl_opts_property_status_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_status_opts.html#2515">epl_opts_property_status_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_rent_period_opts.html#2619">epl_opts_rent_period_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_rent_period_opts.html#2616">epl_opts_rent_period_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
@@ -2261,7 +2294,7 @@
 						<td>admin-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_post_types.html#169">epl_post_types</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_post_types.html#186">epl_post_types</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
@@ -2281,12 +2314,12 @@
 						<td>admin-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_SEARCH.html#533">epl_preprocess_search_meta_query</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_SEARCH.html#535">epl_preprocess_search_meta_query</a></td>
 						<td>filter</td>
 						<td>class-epl-search.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_SEARCH.html#554">epl_preprocess_search_tax_query</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_SEARCH.html#556">epl_preprocess_search_tax_query</a></td>
 						<td>filter</td>
 						<td>class-epl-search.php</td>
 					</tr>
@@ -2296,17 +2329,17 @@
 						<td>pagination.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_currency_formatted_amount.html#290">epl_price_number_format</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_currency_formatted_amount.html#307">epl_price_number_format</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_currency_formatted_amount.html#291">epl_price_number_format_commercial_lease</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_currency_formatted_amount.html#308">epl_price_number_format_commercial_lease</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1258">epl_property_additional_features_list</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1264">epl_property_additional_features_list</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2316,12 +2349,12 @@
 						<td>class-epl-property-meta.php, template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_the_address.html#638">epl_property_address_separator_city</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_the_address.html#641">epl_property_address_separator_city</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_the_address.html#637">epl_property_address_separator_suburb</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_the_address.html#640">epl_property_address_separator_suburb</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2331,7 +2364,7 @@
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_authority_opts.html#2543">epl_property_authority_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_authority_opts.html#2540">epl_property_authority_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
@@ -2346,12 +2379,12 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_feeling_lucky.html#2624">epl_property_blog</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_feeling_lucky.html#2651">epl_property_blog</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_blog.html#353">epl_property_blog_template</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_blog.html#349">epl_property_blog_template</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2361,27 +2394,27 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1678">epl_property_building_area_format</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1677">epl_property_building_area_format</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1675">epl_property_building_area_format_decimal</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1674">epl_property_building_area_format_decimal</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1667">epl_property_building_area_unit_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1666">epl_property_building_area_unit_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_meta_property_category_value.html#666">epl_property_category_value</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_listing_meta_property_category_value.html#683">epl_property_category_value</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1218">epl_property_common_features_list</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1224">epl_property_common_features_list</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2391,17 +2424,17 @@
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_gallery.html#2009">epl_property_gallery_shortcode</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_gallery.html#2015">epl_property_gallery_shortcode</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1196">epl_property_general_feature_{$general_feature)}</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1201">epl_property_general_feature_{$general_feature)}</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1108">epl_property_general_features_list</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1112">epl_property_general_features_list</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2411,17 +2444,17 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1607">epl_property_land_area_format</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1606">epl_property_land_area_format</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1604">epl_property_land_area_format_decimal</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1603">epl_property_land_area_format_decimal</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1596">epl_property_land_area_unit_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1595">epl_property_land_area_unit_label</a></td>
 						<td>filter</td>
 						<td>class-epl-property-meta.php</td>
 					</tr>
@@ -2431,17 +2464,17 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_search_not_found_callback.html#3002">epl_property_search_not_found_message</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_search_not_found_callback.html#3029">epl_property_search_not_found_message</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_search_not_found_callback.html#3000">epl_property_search_not_found_title</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_search_not_found_callback.html#3027">epl_property_search_not_found_title</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_feeling_lucky.html#2620">epl_property_single</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_feeling_lucky.html#2647">epl_property_single</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2456,7 +2489,7 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_available_dates.html#872">epl_property_sub_title_available_from_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_available_dates.html#875">epl_property_sub_title_available_from_label</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2466,32 +2499,32 @@
 						<td>class-epl-property-meta.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section_after.html#1341">epl_property_sub_title_commercial_features</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section_after.html#1347">epl_property_sub_title_commercial_features</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1289">epl_property_sub_title_plus_outgoings</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1295">epl_property_sub_title_plus_outgoings</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_commercial_category.html#853">epl_property_sub_title_plus_outgoings_label</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_commercial_category.html#856">epl_property_sub_title_plus_outgoings_label</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1270">epl_property_sub_title_property_features</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1276">epl_property_sub_title_property_features</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section_after.html#1387">epl_property_sub_title_rural_features</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section_after.html#1393">epl_property_sub_title_rural_features</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_video_html.html#1045">epl_property_video_width</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_video_html.html#1048">epl_property_video_width</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2516,12 +2549,12 @@
 						<td>class-epl-search.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_SEARCH.html#516">epl_search_field_option_separator</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_SEARCH.html#518">epl_search_field_option_separator</a></td>
 						<td>filter</td>
 						<td>class-epl-search.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_SEARCH.html#515">epl_search_field_range_separator</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_SEARCH.html#517">epl_search_field_range_separator</a></td>
 						<td>filter</td>
 						<td>class-epl-search.php</td>
 					</tr>
@@ -2556,7 +2589,7 @@
 						<td>class-epl-search.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_SEARCH.html#565">epl_search_special_query</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_SEARCH.html#567">epl_search_special_query</a></td>
 						<td>filter</td>
 						<td>class-epl-search.php</td>
 					</tr>
@@ -2571,12 +2604,17 @@
 						<td>class-epl-search-fields.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_shortcode_results_message_callback.html#2982">epl_shortcode_results_message_title</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Session.html#328">epl_session_start_uri_blacklist</a></td>
+						<td>filter</td>
+						<td>class-epl-session.php</td>
+					</tr>
+<tr>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_shortcode_results_message_callback.html#3009">epl_shortcode_results_message_title</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_shortcode_results_message_callback.html#2985">epl_shortcode_results_message_title_open</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_shortcode_results_message_callback.html#3012">epl_shortcode_results_message_title_open</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2591,52 +2629,57 @@
 						<td>class-epl-search.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_SL_Plugin_Updater.html#583">epl_sl_api_request_verify_ssl</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_SL_Plugin_Updater.html#582">epl_sl_api_request_verify_ssl</a></td>
 						<td>filter</td>
 						<td>class-epl-sl-plugin-updater.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_status_opts.html#2524">epl_sold_label_status_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_property_status_opts.html#2521">epl_sold_label_status_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_sorting_options.html#1503">epl_sorting_options</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_sorting_options.html#1509">epl_sorting_options</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-get_epl_listing_toolbar_items.html#1646">epl_sorting_tool</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-get_epl_listing_toolbar_items.html#1652">epl_sorting_tool</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-get_epl_listing_toolbar_items.html#1642">epl_switch_views</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Session.html#313">epl_start_session</a></td>
+						<td>filter</td>
+						<td>class-epl-session.php</td>
+					</tr>
+<tr>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-get_epl_listing_toolbar_items.html#1648">epl_switch_views</a></td>
 						<td>action</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_switch_views.html#1673">epl_switch_views_sorting_title_grid</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_switch_views.html#1679">epl_switch_views_sorting_title_grid</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_switch_views.html#1671">epl_switch_views_sorting_title_list</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_switch_views.html#1677">epl_switch_views_sorting_title_list</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_sorting_tool.html#1698">epl_switch_views_sorting_title_sort</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_sorting_tool.html#1704">epl_switch_views_sorting_title_sort</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_template_class.html#2243">epl_template_class</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_template_class.html#2255">epl_template_class</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_template_path.html#2026">epl_template_path</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_template_path.html#2032">epl_template_path</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
@@ -2651,49 +2694,59 @@
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_the_address.html#416">epl_the_address</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_the_address.html#433">epl_the_address</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_the_excerpt.html#2671">epl_the_excerpt</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_the_excerpt.html#2698">epl_the_excerpt</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1266">epl_the_property_feature_list_after</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1272">epl_the_property_feature_list_after</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1088">epl_the_property_feature_list_before</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1092">epl_the_property_feature_list_before</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1224">epl_the_property_feature_list_before_additional_features</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1230">epl_the_property_feature_list_before_additional_features</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1203">epl_the_property_feature_list_before_common_features</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_property_tab_section.html#1209">epl_the_property_feature_list_before_common_features</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_the_property_meta.html#505">epl_the_property_meta_filter</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_the_property_meta.html#522">epl_the_property_meta_filter</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_thousands_separator.html#262">epl_thousands_separator</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_thousands_separator.html#279">epl_thousands_separator</a></td>
 						<td>filter</td>
 						<td>functions.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_trim_excerpt.html#2662">epl_trim_excerpt</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Property_Meta.html#1263">epl_total_parking_spaces</a></td>
+						<td>filter</td>
+						<td>class-epl-property-meta.php</td>
+					</tr>
+<tr>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_trim_excerpt.html#2689">epl_trim_excerpt</a></td>
 						<td>filter</td>
 						<td>template-functions.php</td>
+					</tr>
+<tr>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-EPL_Session.html#280">epl_use_php_sessions</a></td>
+						<td>filter</td>
+						<td>class-epl-session.php</td>
 					</tr>
 <tr>
 						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_process_admin_actions.html#56">epl_{sanitize_text_field(wp_unslash($_GET[epl-action]))}</a></td>
@@ -2971,7 +3024,7 @@
 						<td>contacts.php</td>
 					</tr>
 <tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_new_admin_option_fields.html#219">epl_extensions_options_filter_new</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-function-epl_get_new_admin_option_fields.html#218">epl_extensions_options_filter_new</a></td>
 						<td>filter</td>
 						<td>menu-extensions.php</td>
 					</tr>
@@ -3126,15 +3179,15 @@
 						<td>menu-extensions.php</td>
 					</tr>
 </tbody></table></div><div class="panel panel-default"><div class="panel-heading"><h2>Other Hooks</h2></div><table class="summary table table-bordered table-striped"><thead><tr><th>Hook</th><th>Type</th><th>File(s)</th></tr></thead><tbody><tr>
-						<td><a href="http://docs.easypropertylistings.com.au/source-class-Easy_Property_Listings.html#321">epl_languages_directory</a></td>
+						<td><a href="http://docs.easypropertylistings.com.au/source-class-Easy_Property_Listings.html#326">epl_languages_directory</a></td>
 						<td>filter</td>
 						<td>easy-property-listings.php</td>
 					</tr>
 </tbody></table></div></div><div id="footer">
-		Easy Property Listings 3.4.10 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4.24 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js?cbef3f9ce5d56cd9035f1d2078dbba925910f027"></script>
-<script src="elementlist.js?809116fd8cfa99f5432b615896bb8d4200a964a8"></script>
+<script src="elementlist.js?0fad4c6107e61c32b084e6f4b9760fba766ea974"></script>
 </body>
 </html>

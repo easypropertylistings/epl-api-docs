@@ -79,6 +79,9 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Search.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Session.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Updater.html</loc>
 </url>
 <url>
@@ -154,10 +157,7 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Hooks.Map.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Hooks.Read.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Hooks.Read.More.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Hooks.ReadMore.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Hooks.WebLink.html</loc>
@@ -237,6 +237,15 @@
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Search.html</loc>
 </url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-None.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-WordPress.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-WordPress.Session.html</loc>
+</url>
 
 
 <url>
@@ -283,6 +292,9 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_Search_Fields.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/class-EPL_Session.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_SL_Plugin_Updater.html</loc>
