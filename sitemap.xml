@@ -13,7 +13,25 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Actions.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.DashboardWidget.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Classes.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Classes.ContactsTable.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Classes.ReportsGraph.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Classes.Welcome.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Contacts.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.ContactsActions.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.ContactsFunctions.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Elements.html</loc>
@@ -25,7 +43,19 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Help.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.HelpSingle.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Menus.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.MenusAddons.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.MenusExtensions.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.MenusLicenses.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Plugins.html</loc>
@@ -34,13 +64,16 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Reports.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.ReportsGraphing.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.User.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Welcome.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Assets.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Assets.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Assets.ScriptsStyles.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Assets.SVG.html</loc>
@@ -49,25 +82,31 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Author.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.AuthorMeta.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Contact.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.CPT.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Cron.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Cron.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.CustomPostType.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Forms.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Listing.Elements.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.License.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Metaboxs.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.ListingAdvanced.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.ListingElements.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.MetaboxesCustomFields.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Pagination.html</loc>
@@ -100,18 +139,6 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Compatibility.Shortcodes.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Contacts.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Contacts.Actions.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Contacts.Functions.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Contacts.Table.html</loc>
-</url>
-<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Functions.html</loc>
 </url>
 <url>
@@ -119,9 +146,6 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Functions.ConditionalTags.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Functions.CPT.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Functions.ErrorTracking.html</loc>
@@ -140,6 +164,9 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Functions.Pagination.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Functions.Settings.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Functions.Templates.html</loc>
@@ -166,28 +193,49 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Hooks.WebLink.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.License.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.License.Classes.html</loc>
-</url>
-<url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.License.Classes.License.html</loc>
-</url>
-<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Meta.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Scripts.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Meta.InitCustomFields.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Scripts.Styles.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Meta.Meta.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Settings.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.PostTypes.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.PostTypes.Business.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.PostTypes.Commercial.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.PostTypes.CommercialLand.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.PostTypes.Contact.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.PostTypes.Functions.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.PostTypes.Land.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.PostTypes.Property.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.PostTypes.Rental.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.PostTypes.Rural.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.CommercialListingSearch.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.ContactForm.html</loc>
@@ -196,19 +244,46 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.Listing.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.ListingAdvanced.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.ListingAuction.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.ListingCategory.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.ListingFeature.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.ListingLocation.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.ListingMetaDoc.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.ListingOpen.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.ListingSearch.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Shortcode.Map.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Taxonomy.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Taxonomy.BusinessCategories.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Taxonomy.ContactTag.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Taxonomy.Features.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Taxonomy.Location.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Templates.html</loc>
@@ -226,19 +301,31 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Author.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Admin.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Contact.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Admin.Dashboard.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Gallery.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Classes.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Listing.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Classes.Author.html</loc>
 </url>
 <url>
-	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Search.html</loc>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Classes.ContactCapture.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Classes.Gallery.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Classes.Listing.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Classes.Search.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Widget.Functions.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/package-None.html</loc>
