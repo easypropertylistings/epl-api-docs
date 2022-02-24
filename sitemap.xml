@@ -82,6 +82,9 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.AuthorLoader.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.AuthorMeta.html</loc>
 </url>
 <url>
@@ -340,6 +343,12 @@
 
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_Advanced_Shortcode_Listing.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/class-EPL_Author.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/class-EPL_Author_Loader.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_Author_Meta.html</loc>
