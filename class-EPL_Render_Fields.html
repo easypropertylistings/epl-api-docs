@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_Render_Fields | Easy Property Listings 3.4.47 Code Reference</title>
+	<title>Class EPL_Render_Fields | Easy Property Listings 3.4.48 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4.47 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.4.48 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -609,7 +609,9 @@
 				2.3<br>
 				<b>Since:</b>
 				3.4.29 Moved from meta-boxes into its own class for more extensibility.<br>
-			<b>Located at</b> <a href="source-class-EPL_Render_Fields.html#19-723" title="Go to source code">lib/includes/class-epl-render-fields.php</a>
+				<b>Since:</b>
+				3.4.48 New: Field type textarea_html which works like the editor field type but without loading the MCE buttons.<br>
+			<b>Located at</b> <a href="source-class-EPL_Render_Fields.html#19-742" title="Go to source code">lib/includes/class-epl-render-fields.php</a>
 		<br>
 	</div>
 
@@ -629,7 +631,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#43-75" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#44-76" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
 				<p>Constructs a new instance.</p>
@@ -658,7 +660,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_process_field_params">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#77-107" title="Go to source code">process_field_params</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#78-108" title="Go to source code">process_field_params</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Process field paramaters.</p>
@@ -698,7 +700,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_min">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#109-118" title="Go to source code">get_min</a>( <span>array <var>$field</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#110-119" title="Go to source code">get_min</a>( <span>array <var>$field</var></span> )</code>
 
 			<div class="description short">
 				<p>Gets the minimum.</p>
@@ -736,7 +738,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_is_multiple">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#120-129" title="Go to source code">is_multiple</a>( <span>array <var>$field</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#121-130" title="Go to source code">is_multiple</a>( <span>array <var>$field</var></span> )</code>
 
 			<div class="description short">
 				<p>Determines whether the specified field is multiple.</p>
@@ -774,7 +776,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_max">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#131-140" title="Go to source code">get_max</a>( <span>array <var>$field</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#132-141" title="Go to source code">get_max</a>( <span>array <var>$field</var></span> )</code>
 
 			<div class="description short">
 				<p>Gets the maximum.</p>
@@ -812,7 +814,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_maxlength">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#142-151" title="Go to source code">get_maxlength</a>( <span>array <var>$field</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#143-152" title="Go to source code">get_maxlength</a>( <span>array <var>$field</var></span> )</code>
 
 			<div class="description short">
 				<p>Gets the maxlength.</p>
@@ -850,7 +852,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_placeholder">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#153-162" title="Go to source code">get_placeholder</a>( <span>array <var>$field</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#154-163" title="Go to source code">get_placeholder</a>( <span>array <var>$field</var></span> )</code>
 
 			<div class="description short">
 				<p>Gets the placeholder.</p>
@@ -888,7 +890,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_autocomplete">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#164-173" title="Go to source code">get_autocomplete</a>( <span>array <var>$field</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#165-174" title="Go to source code">get_autocomplete</a>( <span>array <var>$field</var></span> )</code>
 
 			<div class="description short">
 				<p>Gets the autocomplete.</p>
@@ -926,7 +928,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_is_required">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#175-184" title="Go to source code">is_required</a>( <span>array <var>$field</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#176-185" title="Go to source code">is_required</a>( <span>array <var>$field</var></span> )</code>
 
 			<div class="description short">
 				<p>Determines whether the specified field is required.</p>
@@ -964,7 +966,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_id">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#186-201" title="Go to source code">get_id</a>( <span>array <var>$field</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#187-202" title="Go to source code">get_id</a>( <span>array <var>$field</var></span> )</code>
 
 			<div class="description short">
 				<p>Gets the identifier.</p>
@@ -1002,7 +1004,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_name">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#203-212" title="Go to source code">get_name</a>( <span>array <var>$field</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#204-213" title="Go to source code">get_name</a>( <span>array <var>$field</var></span> )</code>
 
 			<div class="description short">
 				<p>Gets the name.</p>
@@ -1040,7 +1042,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_decimal_validation_class">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#214-223" title="Go to source code">get_decimal_validation_class</a>( <span>array <var>$field</var> = <span class="php-keyword1">array</span>() </span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#215-224" title="Go to source code">get_decimal_validation_class</a>( <span>array <var>$field</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 			<div class="description short">
 				<p>Gets the decimal validation class.</p>
@@ -1078,7 +1080,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_number_validation_class">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#225-234" title="Go to source code">get_number_validation_class</a>( <span>array <var>$field</var> = <span class="php-keyword1">array</span>() </span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#226-235" title="Go to source code">get_number_validation_class</a>( <span>array <var>$field</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 			<div class="description short">
 				<p>Gets the number validation class.</p>
@@ -1116,7 +1118,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_email_validation_class">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#236-245" title="Go to source code">get_email_validation_class</a>( <span>array <var>$field</var> = <span class="php-keyword1">array</span>() </span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#237-246" title="Go to source code">get_email_validation_class</a>( <span>array <var>$field</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 			<div class="description short">
 				<p>Gets the email validation class.</p>
@@ -1154,7 +1156,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_url_validation_class">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#247-256" title="Go to source code">get_url_validation_class</a>( <span>array <var>$field</var> = <span class="php-keyword1">array</span>() </span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#248-257" title="Go to source code">get_url_validation_class</a>( <span>array <var>$field</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 			<div class="description short">
 				<p>Gets the url validation class.</p>
@@ -1192,7 +1194,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_class">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#258-290" title="Go to source code">get_class</a>( <span>array <var>$field</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#259-291" title="Go to source code">get_class</a>( <span>array <var>$field</var></span> )</code>
 
 			<div class="description short">
 				<p>Gets the class.</p>
@@ -1230,7 +1232,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_data_attributes">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#292-330" title="Go to source code">get_data_attributes</a>( <span>array <var>$field</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#293-331" title="Go to source code">get_data_attributes</a>( <span>array <var>$field</var></span> )</code>
 
 			<div class="description short">
 				<p>Gets the data attributes.</p>
@@ -1268,7 +1270,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_is_name_array">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#332-344" title="Go to source code">is_name_array</a>( <span>array <var>$field</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#333-345" title="Go to source code">is_name_array</a>( <span>array <var>$field</var></span> )</code>
 
 			<div class="description short">
 				<p>Determines whether the specified field is name array.</p>
@@ -1306,7 +1308,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_opening_field_tag">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#346-416" title="Go to source code">get_opening_field_tag</a>( <span>string <var>$tag</var> = <span class="php-quote">'input'</span></span>, <span>array <var>$field</var> = []</span>, <span>boolean <var>$self_close</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#347-417" title="Go to source code">get_opening_field_tag</a>( <span>string <var>$tag</var> = <span class="php-quote">'input'</span></span>, <span>array <var>$field</var> = <span class="php-keyword1">array</span>()</span>, <span>boolean <var>$self_close</var> = <span class="php-keyword1">false</span> </span> )</code>
 
 			<div class="description short">
 				<p>Gets the opening field tag.</p>
@@ -1353,7 +1355,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#418-450" title="Go to source code">render</a>( <span>array <var>$field</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$val</var> = <span class="php-quote">''</span> </span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#419-451" title="Go to source code">render</a>( <span>array <var>$field</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$val</var> = <span class="php-quote">''</span> </span> )</code>
 
 			<div class="description short">
 				<p>Renders the field based on field type</p>
@@ -1389,7 +1391,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_select">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#452-502" title="Go to source code">select</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#453-503" title="Go to source code">select</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Renders select</p>
@@ -1425,7 +1427,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_checkbox">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#504-533" title="Go to source code">checkbox</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#505-534" title="Go to source code">checkbox</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Renders checkbox</p>
@@ -1461,7 +1463,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_checkbox_single">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#535-562" title="Go to source code">checkbox_single</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#536-563" title="Go to source code">checkbox_single</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Renders checkbox single</p>
@@ -1501,7 +1503,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_checkbox_option">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#564-587" title="Go to source code">checkbox_option</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#565-588" title="Go to source code">checkbox_option</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Renders checkbox option</p>
@@ -1541,7 +1543,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_radio">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#589-606" title="Go to source code">radio</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#590-607" title="Go to source code">radio</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Renders radio</p>
@@ -1577,7 +1579,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_file">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#608-636" title="Go to source code">file</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#609-637" title="Go to source code">file</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Renders file / image</p>
@@ -1613,7 +1615,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_editor">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#638-653" title="Go to source code">editor</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#639-654" title="Go to source code">editor</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Renders editor</p>
@@ -1649,7 +1651,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_textarea">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#655-665" title="Go to source code">textarea</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#656-666" title="Go to source code">textarea</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Renders textarea</p>
@@ -1674,6 +1676,46 @@
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="textarea_html" id="_textarea_html">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_textarea_html">#</a>
+			<code><a href="source-class-EPL_Render_Fields.html#668-680" title="Go to source code">textarea_html</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+
+			<div class="description short">
+				<p>Renders textarea_html</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Renders textarea_html</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd>The field.</dd>
+						<dt><var>$val</var></dt>
+						<dd>The value.</dd>
+					</dl></div>
+
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.4.48<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="locked" id="_locked">
 
 			<td class="attributes"><code>
@@ -1685,7 +1727,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_locked">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#667-675" title="Go to source code">locked</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#682-690" title="Go to source code">locked</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Renders locked</p>
@@ -1721,7 +1763,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_help">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#677-691" title="Go to source code">help</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#692-708" title="Go to source code">help</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Renders help</p>
@@ -1741,6 +1783,10 @@
 
 
 
+					<h4>Since</h4>
+					<div class="list">
+							3.4.48 Added escaping on id.<br>
+					</div>
 
 
 			</div>
@@ -1757,7 +1803,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_html">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#693-707" title="Go to source code">html</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#710-726" title="Go to source code">html</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Renders html</p>
@@ -1777,6 +1823,10 @@
 
 
 
+					<h4>Since</h4>
+					<div class="list">
+							3.4.48 Added escaping on id.<br>
+					</div>
 
 
 			</div>
@@ -1793,7 +1843,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render_default">#</a>
-			<code><a href="source-class-EPL_Render_Fields.html#709-722" title="Go to source code">render_default</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
+			<code><a href="source-class-EPL_Render_Fields.html#728-741" title="Go to source code">render_default</a>( <span>array <var>$field</var></span>, <span>string <var>$val</var></span> )</code>
 
 			<div class="description short">
 				<p>Renders default input types</p>
@@ -1845,7 +1895,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-EPL_Render_Fields.html#29-34" title="Go to source code"><var>$class_prefix</var></a>
+					<a href="source-class-EPL_Render_Fields.html#30-35" title="Go to source code"><var>$class_prefix</var></a>
 
 				<div class="description short">
 					<p>Default class prefix.</p>
@@ -1870,7 +1920,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-EPL_Render_Fields.html#36-41" title="Go to source code"><var>$post</var></a>
+					<a href="source-class-EPL_Render_Fields.html#37-42" title="Go to source code"><var>$post</var></a>
 
 				<div class="description short">
 					<p>Post object.</p>
@@ -1900,7 +1950,7 @@
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.4.47 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.4.48 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>
