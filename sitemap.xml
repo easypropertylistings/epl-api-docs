@@ -121,6 +121,9 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.RenderFields.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.RestAPI.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Classes.Search.html</loc>
 </url>
 <url>
@@ -391,6 +394,9 @@
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_Render_Fields.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/class-EPL_Rest_API.html</loc>
 </url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_SEARCH.html</loc>
