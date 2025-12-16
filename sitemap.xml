@@ -19,6 +19,15 @@
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Classes.ContactsTable.html</loc>
 </url>
 <url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Classes.EPL.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Classes.EPL.Admin.html</loc>
+</url>
+<url>
+	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Classes.EPL.Admin.Images.html</loc>
+</url>
+<url>
 	<loc>http://docs.easypropertylistings.com.au/package-EPL.Admin.Classes.ReportsGraph.html</loc>
 </url>
 <url>
@@ -347,6 +356,9 @@
 </url>
 
 
+<url>
+	<loc>http://docs.easypropertylistings.com.au/class-EPL_Admin_Images.html</loc>
+</url>
 <url>
 	<loc>http://docs.easypropertylistings.com.au/class-EPL_Advanced_Shortcode_Listing.html</loc>
 </url>
