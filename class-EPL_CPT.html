@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_CPT | Easy Property Listings 3.5.16 Code Reference</title>
+	<title>Class EPL_CPT | Easy Property Listings 3.5.18 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.5.16 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.5.18 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -628,7 +628,7 @@
 				<a href="http://opensource.org/licenses/gpl-2.0.php">GNU Public License</a><br>
 				<b>Since:</b>
 				2.3<br>
-			<b>Located at</b> <a href="source-class-EPL_CPT.html#17-1091" title="Go to source code">lib/includes/class-epl-cpt.php</a>
+			<b>Located at</b> <a href="source-class-EPL_CPT.html#17-1088" title="Go to source code">lib/includes/class-epl-cpt.php</a>
 		<br>
 	</div>
 
@@ -686,7 +686,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get">#</a>
-			<code><a href="source-class-EPL_CPT.html#202-223" title="Go to source code">get</a>( <span>string <var>$var</var></span> )</code>
+			<code><a href="source-class-EPL_CPT.html#202-223" title="Go to source code">get</a>( <span>string <var>$variable</var></span> )</code>
 
 			<div class="description short">
 				<p>Get</p>
@@ -700,7 +700,7 @@
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
-						<dt><var>$var</var></dt>
+						<dt><var>$variable</var></dt>
 						<dd>The variable you would like to retrieve.</dd>
 					</dl></div>
 
@@ -726,7 +726,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_set">#</a>
-			<code><a href="source-class-EPL_CPT.html#225-253" title="Go to source code">set</a>( <span>mixed <var>$var</var></span>, <span>mixed <var>$value</var></span> )</code>
+			<code><a href="source-class-EPL_CPT.html#225-253" title="Go to source code">set</a>( <span>mixed <var>$variable</var></span>, <span>mixed <var>$value</var></span> )</code>
 
 			<div class="description short">
 				<p>Set</p>
@@ -741,7 +741,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
-						<dt><var>$var</var></dt>
+						<dt><var>$variable</var></dt>
 						<dd>The variable you would like to create/overwrite.</dd>
 						<dt><var>$value</var></dt>
 						<dd>The value you would like to set to the variable.</dd>
@@ -765,7 +765,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_add_action">#</a>
-			<code><a href="source-class-EPL_CPT.html#255-269" title="Go to source code">add_action</a>( <span>string <var>$action</var></span>, <span>string <var>$function</var></span>, <span>integer <var>$priority</var> = <span class="php-num">10</span></span>, <span>integer <var>$accepted_args</var> = <span class="php-num">1</span> </span> )</code>
+			<code><a href="source-class-EPL_CPT.html#255-269" title="Go to source code">add_action</a>( <span>string <var>$action</var></span>, <span>string <var>$callback</var></span>, <span>integer <var>$priority</var> = <span class="php-num">10</span></span>, <span>integer <var>$accepted_args</var> = <span class="php-num">1</span> </span> )</code>
 
 			<div class="description short">
 				<p>Add Action</p>
@@ -781,7 +781,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 					<div class="list"><dl>
 						<dt><var>$action</var></dt>
 						<dd>Name of the action.</dd>
-						<dt><var>$function</var></dt>
+						<dt><var>$callback</var></dt>
 						<dd>Function to hook that will run on action.</dd>
 						<dt><var>$priority</var></dt>
 						<dd>Order in which to execute the function, relation to other functions hooked to this action.</dd>
@@ -807,7 +807,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_add_filter">#</a>
-			<code><a href="source-class-EPL_CPT.html#271-287" title="Go to source code">add_filter</a>( <span>string <var>$action</var></span>, <span>string <var>$function</var></span>, <span>integer <var>$priority</var> = <span class="php-num">10</span></span>, <span>integer <var>$accepted_args</var> = <span class="php-num">1</span> </span> )</code>
+			<code><a href="source-class-EPL_CPT.html#271-287" title="Go to source code">add_filter</a>( <span>string <var>$action</var></span>, <span>string <var>$callback</var></span>, <span>integer <var>$priority</var> = <span class="php-num">10</span></span>, <span>integer <var>$accepted_args</var> = <span class="php-num">1</span> </span> )</code>
 
 			<div class="description short">
 				<p>Add Filter</p>
@@ -823,7 +823,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 					<div class="list"><dl>
 						<dt><var>$action</var></dt>
 						<dd>Name of the action to hook to, e.g 'init'.</dd>
-						<dt><var>$function</var></dt>
+						<dt><var>$callback</var></dt>
 						<dd>Function to hook that will run on @action.</dd>
 						<dt><var>$priority</var></dt>
 						<dd>Order in which to execute the function, relation to other function hooked to this action.</dd>
@@ -1053,7 +1053,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_register_taxonomy">#</a>
-			<code><a href="source-class-EPL_CPT.html#471-585" title="Go to source code">register_taxonomy</a>( <span>string <var>$taxonomy_names</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>() </span> )</code>
+			<code><a href="source-class-EPL_CPT.html#471-584" title="Go to source code">register_taxonomy</a>( <span>string <var>$taxonomy_names</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 			<div class="description short">
 				<p>Register taxonomy</p>
@@ -1093,7 +1093,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_register_taxonomies">#</a>
-			<code><a href="source-class-EPL_CPT.html#587-612" title="Go to source code">register_taxonomies</a>( )</code>
+			<code><a href="source-class-EPL_CPT.html#586-611" title="Go to source code">register_taxonomies</a>( )</code>
 
 			<div class="description short">
 				<p>Register taxonomies</p>
@@ -1124,7 +1124,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_register_exisiting_taxonomies">#</a>
-			<code><a href="source-class-EPL_CPT.html#614-626" title="Go to source code">register_exisiting_taxonomies</a>( )</code>
+			<code><a href="source-class-EPL_CPT.html#613-625" title="Go to source code">register_exisiting_taxonomies</a>( )</code>
 
 			<div class="description short">
 				<p>Register Exisiting Taxonomies</p>
@@ -1155,7 +1155,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_add_admin_columns">#</a>
-			<code><a href="source-class-EPL_CPT.html#628-693" title="Go to source code">add_admin_columns</a>( <span>array <var>$columns</var></span> )</code>
+			<code><a href="source-class-EPL_CPT.html#627-692" title="Go to source code">add_admin_columns</a>( <span>array <var>$columns</var></span> )</code>
 
 			<div class="description short">
 				<p>Add admin columns</p>
@@ -1195,7 +1195,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_populate_admin_columns">#</a>
-			<code><a href="source-class-EPL_CPT.html#695-824" title="Go to source code">populate_admin_columns</a>( <span>string <var>$column</var></span>, <span>integer <var>$post_id</var></span> )</code>
+			<code><a href="source-class-EPL_CPT.html#694-823" title="Go to source code">populate_admin_columns</a>( <span>string <var>$column</var></span>, <span>integer <var>$post_id</var></span> )</code>
 
 			<div class="description short">
 				<p>Populate admin columns</p>
@@ -1237,7 +1237,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_filters">#</a>
-			<code><a href="source-class-EPL_CPT.html#826-836" title="Go to source code">filters</a>( <span>array <var>$filters</var> = <span class="php-keyword1">array</span>() </span> )</code>
+			<code><a href="source-class-EPL_CPT.html#825-835" title="Go to source code">filters</a>( <span>array <var>$filters</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 			<div class="description short">
 				<p>Filters</p>
@@ -1273,7 +1273,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_add_taxonomy_filters">#</a>
-			<code><a href="source-class-EPL_CPT.html#838-909" title="Go to source code">add_taxonomy_filters</a>( )</code>
+			<code><a href="source-class-EPL_CPT.html#837-908" title="Go to source code">add_taxonomy_filters</a>( )</code>
 
 			<div class="description short">
 				<p>Add taxtonomy filters</p>
@@ -1304,7 +1304,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_columns">#</a>
-			<code><a href="source-class-EPL_CPT.html#911-927" title="Go to source code">columns</a>( <span>array <var>$columns</var></span> )</code>
+			<code><a href="source-class-EPL_CPT.html#910-926" title="Go to source code">columns</a>( <span>array <var>$columns</var></span> )</code>
 
 			<div class="description short">
 				<p>Columns</p>
@@ -1340,7 +1340,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_populate_column">#</a>
-			<code><a href="source-class-EPL_CPT.html#929-941" title="Go to source code">populate_column</a>( <span>string <var>$column_name</var></span>, <span>string <var>$function</var></span> )</code>
+			<code><a href="source-class-EPL_CPT.html#928-939" title="Go to source code">populate_column</a>( <span>string <var>$column_name</var></span>, <span>string <var>$callback</var></span> )</code>
 
 			<div class="description short">
 				<p>Populate columns</p>
@@ -1356,7 +1356,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 					<div class="list"><dl>
 						<dt><var>$column_name</var></dt>
 						<dd>The name of the column to populate.</dd>
-						<dt><var>$function</var></dt>
+						<dt><var>$callback</var></dt>
 						<dd>An anonyous function to run when populating the column.</dd>
 					</dl></div>
 
@@ -1378,7 +1378,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_sortable">#</a>
-			<code><a href="source-class-EPL_CPT.html#943-960" title="Go to source code">sortable</a>( <span>array <var>$columns</var> = <span class="php-keyword1">array</span>() </span> )</code>
+			<code><a href="source-class-EPL_CPT.html#941-958" title="Go to source code">sortable</a>( <span>array <var>$columns</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 			<div class="description short">
 				<p>Sortable</p>
@@ -1414,7 +1414,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_make_columns_sortable">#</a>
-			<code><a href="source-class-EPL_CPT.html#962-984" title="Go to source code">make_columns_sortable</a>( <span>array <var>$columns</var></span> )</code>
+			<code><a href="source-class-EPL_CPT.html#960-982" title="Go to source code">make_columns_sortable</a>( <span>array <var>$columns</var></span> )</code>
 
 			<div class="description short">
 				<p>Make columns sortable</p>
@@ -1454,7 +1454,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_load_edit">#</a>
-			<code><a href="source-class-EPL_CPT.html#986-998" title="Go to source code">load_edit</a>( )</code>
+			<code><a href="source-class-EPL_CPT.html#984-995" title="Go to source code">load_edit</a>( )</code>
 
 			<div class="description short">
 				<p>Load edit</p>
@@ -1489,7 +1489,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_sort_columns">#</a>
-			<code><a href="source-class-EPL_CPT.html#1000-1060" title="Go to source code">sort_columns</a>( <span>array <var>$vars</var></span> )</code>
+			<code><a href="source-class-EPL_CPT.html#997-1057" title="Go to source code">sort_columns</a>( <span>array <var>$vars</var></span> )</code>
 
 			<div class="description short">
 				<p>Sort columns</p>
@@ -1533,7 +1533,7 @@ variables or create new ones. Cannot overwrite reserved variables.</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_menu_icon">#</a>
-			<code><a href="source-class-EPL_CPT.html#1062-1081" title="Go to source code">menu_icon</a>( <span>string <var>$icon</var> = <span class="php-quote">'dashicons-admin-page'</span> </span> )</code>
+			<code><a href="source-class-EPL_CPT.html#1059-1078" title="Go to source code">menu_icon</a>( <span>string <var>$icon</var> = <span class="php-quote">'dashicons-admin-page'</span> </span> )</code>
 
 			<div class="description short">
 				<p>Set menu icon</p>
@@ -1570,7 +1570,7 @@ dashicons are used. For more information see @link http://melchoyce.github.io/da
 
 			<td class="name"><div>
 			<a class="anchor" href="#_set_textdomain">#</a>
-			<code><a href="source-class-EPL_CPT.html#1083-1090" title="Go to source code">set_textdomain</a>( <span>string <var>$textdomain</var></span> )</code>
+			<code><a href="source-class-EPL_CPT.html#1080-1087" title="Go to source code">set_textdomain</a>( <span>string <var>$textdomain</var></span> )</code>
 
 			<div class="description short">
 				<p>Set textdomain</p>
@@ -1958,7 +1958,7 @@ in add_admin_columns().</p>
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.5.16 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.5.18 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>
