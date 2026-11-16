@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class EPL_Session | Easy Property Listings 3.5.29 Code Reference</title>
+	<title>Class EPL_Session | Easy Property Listings 3.6 Code Reference</title>
 
 	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
 	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
@@ -25,7 +25,7 @@
 	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.5.29 Code Reference</a>
+				<a href="index.html" class="navbar-brand">Easy Property Listings 3.6 Code Reference</a>
 			</div>
 			<div class="collapse navbar-collapse">
 
@@ -227,6 +227,10 @@
 					<li class="main">
 						<a href="package-EPL.Classes.License.html">
 							License						</a>
+							</li>
+					<li class="main">
+						<a href="package-EPL.Classes.Listing.html">
+							Listing						</a>
 							</li>
 					<li class="main">
 						<a href="package-EPL.Classes.ListingAdvanced.html">
@@ -638,7 +642,7 @@
 				<a href="http://opensource.org/licenses/gpl-2.0.php">GNU Public License</a><br>
 				<b>Since:</b>
 				3.4.15<br>
-			<b>Located at</b> <a href="source-class-EPL_Session.html#19-362" title="Go to source code">lib/includes/class-epl-session.php</a>
+			<b>Located at</b> <a href="source-class-EPL_Session.html#19-513" title="Go to source code">lib/includes/class-epl-session.php</a>
 		<br>
 	</div>
 
@@ -658,7 +662,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-EPL_Session.html#55-109" title="Go to source code">__construct</a>( )</code>
+			<code><a href="source-class-EPL_Session.html#72-132" title="Go to source code">__construct</a>( )</code>
 
 			<div class="description short">
 				<p>Get things started</p>
@@ -677,6 +681,7 @@ retrieves the WP Session instance</p>
 					<h4>Since</h4>
 					<div class="list">
 							3.4.15<br>
+							3.6 The bundled WP_Session library no longer starts a session on every request.<br>
 					</div>
 
 
@@ -694,7 +699,7 @@ retrieves the WP Session instance</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_init">#</a>
-			<code><a href="source-class-EPL_Session.html#111-126" title="Go to source code">init</a>( )</code>
+			<code><a href="source-class-EPL_Session.html#134-161" title="Go to source code">init</a>( )</code>
 
 			<div class="description short">
 				<p>Setup the WP_Session instance</p>
@@ -702,6 +707,10 @@ retrieves the WP Session instance</p>
 
 			<div class="description detailed hidden">
 				<p>Setup the WP_Session instance</p>
+
+<p>Loads the visitor's existing session. A new session is only started when something
+is stored in it (see set()), so pages for visitors without a session send no session
+cookie and can be cached.</p>
 
 
 
@@ -714,6 +723,120 @@ retrieves the WP Session instance</p>
 					<h4>Since</h4>
 					<div class="list">
 							3.4.15<br>
+							3.6 Starts a session only when the visitor already has one, or when lazy sessions are off.<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="lazy_session" id="_lazy_session">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_lazy_session">#</a>
+			<code><a href="source-class-EPL_Session.html#173-190" title="Go to source code">lazy_session</a>( )</code>
+
+			<div class="description short">
+				<p>Start the session only when something is stored in it?</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Start the session only when something is stored in it?</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.6<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="has_session_cookie" id="_has_session_cookie">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_has_session_cookie">#</a>
+			<code><a href="source-class-EPL_Session.html#192-205" title="Go to source code">has_session_cookie</a>( )</code>
+
+			<div class="description short">
+				<p>Does the request carry a session cookie?</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Does the request carry a session cookie?</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.6<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="start_session" id="_start_session">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_start_session">#</a>
+			<code><a href="source-class-EPL_Session.html#207-265" title="Go to source code">start_session</a>( )</code>
+
+			<div class="description short">
+				<p>Start the session and send its cookie</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Start the session and send its cookie</p>
+
+<p>Values stored before the session started are kept.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean<br>True when the session is started.
+					</div>
+
+
+					<h4>Since</h4>
+					<div class="list">
+							3.6<br>
 					</div>
 
 
@@ -731,7 +854,7 @@ retrieves the WP Session instance</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_id">#</a>
-			<code><a href="source-class-EPL_Session.html#129-137" title="Go to source code">get_id</a>( )</code>
+			<code><a href="source-class-EPL_Session.html#268-280" title="Go to source code">get_id</a>( )</code>
 
 			<div class="description short">
 				<p>Retrieve session ID</p>
@@ -751,6 +874,7 @@ retrieves the WP Session instance</p>
 					<h4>Since</h4>
 					<div class="list">
 							1.6<br>
+							3.6 Returns an empty string when no session is started.<br>
 					</div>
 
 
@@ -768,7 +892,7 @@ retrieves the WP Session instance</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get">#</a>
-			<code><a href="source-class-EPL_Session.html#140-183" title="Go to source code">get</a>( <span>string <var>$key</var></span> )</code>
+			<code><a href="source-class-EPL_Session.html#283-326" title="Go to source code">get</a>( <span>string <var>$key</var></span> )</code>
 
 			<div class="description short">
 				<p>Retrieve a session variable</p>
@@ -810,7 +934,7 @@ retrieves the WP Session instance</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_set">#</a>
-			<code><a href="source-class-EPL_Session.html#185-210" title="Go to source code">set</a>( <span>string <var>$key</var></span>, <span>integer|string|array <var>$value</var></span> )</code>
+			<code><a href="source-class-EPL_Session.html#328-360" title="Go to source code">set</a>( <span>string <var>$key</var></span>, <span>integer|string|array <var>$value</var></span> )</code>
 
 			<div class="description short">
 				<p>Set a session variable</p>
@@ -837,6 +961,7 @@ retrieves the WP Session instance</p>
 					<h4>Since</h4>
 					<div class="list">
 							3.4.15<br>
+							3.6 Starts the session, and sends its cookie, the first time a value is stored.<br>
 					</div>
 
 
@@ -854,7 +979,7 @@ retrieves the WP Session instance</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_set_expiration_variant_time">#</a>
-			<code><a href="source-class-EPL_Session.html#212-221" title="Go to source code">set_expiration_variant_time</a>( <span>integer <var>$exp</var></span> )</code>
+			<code><a href="source-class-EPL_Session.html#362-371" title="Go to source code">set_expiration_variant_time</a>( <span>integer <var>$exp</var></span> )</code>
 
 			<div class="description short">
 				<p>Force the cookie expiration variant time to 23 hours</p>
@@ -896,7 +1021,7 @@ retrieves the WP Session instance</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_set_expiration_time">#</a>
-			<code><a href="source-class-EPL_Session.html#223-232" title="Go to source code">set_expiration_time</a>( <span>integer <var>$exp</var></span> )</code>
+			<code><a href="source-class-EPL_Session.html#373-382" title="Go to source code">set_expiration_time</a>( <span>integer <var>$exp</var></span> )</code>
 
 			<div class="description short">
 				<p>Force the cookie expiration time to 24 hours</p>
@@ -938,7 +1063,7 @@ retrieves the WP Session instance</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_use_php_sessions">#</a>
-			<code><a href="source-class-EPL_Session.html#234-280" title="Go to source code">use_php_sessions</a>( )</code>
+			<code><a href="source-class-EPL_Session.html#384-425" title="Go to source code">use_php_sessions</a>( )</code>
 
 			<div class="description short">
 				<p>Starts a new session if one hasn't started yet.</p>
@@ -966,6 +1091,7 @@ or if the EPL_USE_PHP_SESSIONS constant is defined</p>
 					<h4>Since</h4>
 					<div class="list">
 							3.4.15<br>
+							3.6 Detecting PHP session support no longer writes to the session, so it no longer starts one on every request.<br>
 					</div>
 
 
@@ -983,7 +1109,7 @@ or if the EPL_USE_PHP_SESSIONS constant is defined</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_should_start_session">#</a>
-			<code><a href="source-class-EPL_Session.html#282-313" title="Go to source code">should_start_session</a>( )</code>
+			<code><a href="source-class-EPL_Session.html#427-458" title="Go to source code">should_start_session</a>( )</code>
 
 			<div class="description short">
 				<p>Determines if we should start sessions</p>
@@ -1020,7 +1146,7 @@ or if the EPL_USE_PHP_SESSIONS constant is defined</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_blacklist">#</a>
-			<code><a href="source-class-EPL_Session.html#315-347" title="Go to source code">get_blacklist</a>( )</code>
+			<code><a href="source-class-EPL_Session.html#460-492" title="Go to source code">get_blacklist</a>( )</code>
 
 			<div class="description short">
 				<p>Retrieve the URI blacklist</p>
@@ -1059,7 +1185,7 @@ or if the EPL_USE_PHP_SESSIONS constant is defined</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_maybe_start_session">#</a>
-			<code><a href="source-class-EPL_Session.html#349-361" title="Go to source code">maybe_start_session</a>( )</code>
+			<code><a href="source-class-EPL_Session.html#494-512" title="Go to source code">maybe_start_session</a>( )</code>
 
 			<div class="description short">
 				<p>Starts a new session if one hasn't started yet.</p>
@@ -1072,6 +1198,10 @@ or if the EPL_USE_PHP_SESSIONS constant is defined</p>
 
 
 
+					<h4>Since</h4>
+					<div class="list">
+							3.6 Only resumes an existing session; a new one starts when something is stored.<br>
+					</div>
 
 
 			</div>
@@ -1094,7 +1224,7 @@ or if the EPL_USE_PHP_SESSIONS constant is defined</p>
 	</div>
 
 	<div id="footer">
-		Easy Property Listings 3.5.29 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
+		Easy Property Listings 3.6 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
 	</div>
 </div>
 <script src="resources/combined.js"></script>
