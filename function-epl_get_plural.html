@@ -1,688 +1,3529 @@
-<!DOCTYPE html>
-<html>
+
+<!doctype html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
 
-	<title>Function epl_get_plural | Easy Property Listings 3.6.1 Code Reference</title>
-
-	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
-	<link rel="stylesheet" href="resources/style.css?73b3972bd68798df32c96484642398be648c7562">
-
+	<title>epl_get_plural | Easy Property Listings 3.6.1 Code Reference</title>
+	<link rel="stylesheet" href="https://docs.easypropertylistings.com.au/assets/main.css">
+	<script src="https://docs.easypropertylistings.com.au/assets/main.js" defer></script>
+	<link rel="stylesheet" href="https://docs.easypropertylistings.com.au/assets/epl.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P47N8PC940"></script>
 	<script>
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', "G-P47N8PC940"]);
-		_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){ dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-P47N8PC940');
 	</script>
 </head>
 
-<body>
-	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a href="index.html" class="navbar-brand">Easy Property Listings 3.6.1 Code Reference</a>
-			</div>
-			<div class="collapse navbar-collapse">
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+		<a class="epl-brand" href="https://docs.easypropertylistings.com.au/index.html">easy<b>property</b>listings<span>3.6.1 Code Reference</span></a>
 
-				<form id="search" class="navbar-form navbar-left" role="search">
-					<input type="hidden" name="cx" value="">
-					<input type="hidden" name="ie" value="UTF-8">
-					<div class="form-group">
-						<input type="text" name="q" class="search-query form-control" placeholder="Search">
-					</div>
-				</form>
-
-				<ul class="nav navbar-nav">
-					<li>
-<span>Package</span>					</li>
-					<li class="active">
-<span>Function</span>					</li>
-
-					<li class="divider-vertical"></li>
-
-					<li>
-						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-					</li>
-
-						<li>
-							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
-								<span>Todo</span>
-							</a>
-						</li>
-
-					<li class="divider-vertical"></li>
-
-					<li class="hooks">
-						<a href="hook-docs.html" title="Hooks"><span>Hook Reference</span></a>
-					</li>
-
-
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<div id="left">
-	<div id="menu">
-
-		<div id="groups">
-				<h3>Packages</h3>
+		<div class="menu-section">
+			<h3>Classes</h3>
 			<ul>
-					<li class="main">
-						<a href="package-EPL.html">
-							EPL<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Admin.html">
-							Admin<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Admin.Actions.html">
-							Actions						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.Classes.html">
-							Classes<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Admin.Classes.ContactsTable.html">
-							ContactsTable						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.Classes.EPL.html">
-							EPL<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Admin.Classes.EPL.Admin.html">
-							Admin<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Admin.Classes.EPL.Admin.Images.html">
-							Images						</a>
-							</li>
-								</ul></li></ul></li>
-					<li class="main">
-						<a href="package-EPL.Admin.Classes.ReportsGraph.html">
-							ReportsGraph						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.Classes.Welcome.html">
-							Welcome						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Admin.Contacts.html">
-							Contacts						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.ContactsActions.html">
-							ContactsActions						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.ContactsFunctions.html">
-							ContactsFunctions						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.Elements.html">
-							Elements						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.Functions.html">
-							Functions						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.Help.html">
-							Help						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.HelpSingle.html">
-							HelpSingle						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.Menus.html">
-							Menus						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.MenusAddons.html">
-							MenusAddons						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.MenusExtensions.html">
-							MenusExtensions						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.MenusLicenses.html">
-							MenusLicenses						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.Plugins.html">
-							Plugins						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.Reports.html">
-							Reports						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.ReportsGraphing.html">
-							ReportsGraphing						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Admin.User.html">
-							User						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Assets.html">
-							Assets<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Assets.ScriptsStyles.html">
-							ScriptsStyles						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Assets.SVG.html">
-							SVG						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Classes.html">
-							Classes<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Classes.AuthorLoader.html">
-							AuthorLoader						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.AuthorMeta.html">
-							AuthorMeta						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.Contact.html">
-							Contact						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.Cron.html">
-							Cron						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.CustomPostType.html">
-							CustomPostType						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.Forms.html">
-							Forms						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.License.html">
-							License						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.Listing.html">
-							Listing						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.ListingAdvanced.html">
-							ListingAdvanced						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.ListingElements.html">
-							ListingElements						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.MetaboxesCustomFields.html">
-							MetaboxesCustomFields						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.Pagination.html">
-							Pagination						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.PropertyMeta.html">
-							PropertyMeta						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.RenderFields.html">
-							RenderFields						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.RestAPI.html">
-							RestAPI						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.Search.html">
-							Search						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.Session.html">
-							Session						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Classes.Updater.html">
-							Updater						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Compatibility.html">
-							Compatibility<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Compatibility.Extensions.html">
-							Extensions						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Compatibility.Functions.html">
-							Functions						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Compatibility.Shortcodes.html">
-							Shortcodes						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Functions.html">
-							Functions<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Functions.Actions.html">
-							Actions						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Functions.ConditionalTags.html">
-							ConditionalTags						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Functions.ErrorTracking.html">
-							ErrorTracking						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Functions.Formatting.html">
-							Formatting						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Functions.Front.html">
-							Front						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Functions.Global.html">
-							Global						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Functions.Install.html">
-							Install						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Functions.Pagination.html">
-							Pagination						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Functions.Settings.html">
-							Settings						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Functions.Templates.html">
-							Templates						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Hooks.html">
-							Hooks<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Hooks.EnergyCertificate.html">
-							EnergyCertificate						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Hooks.ExternalLinks.html">
-							ExternalLinks						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Hooks.FloorPlan.html">
-							FloorPlan						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Hooks.Map.html">
-							Map						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Hooks.ReadMore.html">
-							ReadMore						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Hooks.WebLink.html">
-							WebLink						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Includes.html">
-							Includes<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Includes.UserMeta.html">
-							UserMeta						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Meta.html">
-							Meta<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Meta.InitCustomFields.html">
-							InitCustomFields						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Meta.Meta.html">
-							Meta						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.PostTypes.html">
-							PostTypes<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.PostTypes.Business.html">
-							Business						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.PostTypes.Commercial.html">
-							Commercial						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.PostTypes.CommercialLand.html">
-							CommercialLand						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.PostTypes.Contact.html">
-							Contact						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.PostTypes.Functions.html">
-							Functions						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.PostTypes.Land.html">
-							Land						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.PostTypes.Property.html">
-							Property						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.PostTypes.Rental.html">
-							Rental						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.PostTypes.Rural.html">
-							Rural						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.html">
-							Shortcode<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Shortcode.CommercialListingSearch.html">
-							CommercialListingSearch						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.ContactForm.html">
-							ContactForm						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.Listing.html">
-							Listing						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.ListingAdvanced.html">
-							ListingAdvanced						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.ListingAuction.html">
-							ListingAuction						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.ListingCategory.html">
-							ListingCategory						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.ListingFeature.html">
-							ListingFeature						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.ListingLocation.html">
-							ListingLocation						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.ListingMetaDoc.html">
-							ListingMetaDoc						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.ListingOpen.html">
-							ListingOpen						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.ListingResults.html">
-							ListingResults						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.ListingSearch.html">
-							ListingSearch						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Shortcode.Map.html">
-							Map						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Taxonomy.html">
-							Taxonomy<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Taxonomy.BusinessCategories.html">
-							BusinessCategories						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Taxonomy.ContactTag.html">
-							ContactTag						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Taxonomy.Features.html">
-							Features						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Taxonomy.Location.html">
-							Location						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Templates.html">
-							Templates<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Templates.Themes.html">
-							Themes<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Templates.Themes.iThemes.html">
-							iThemes						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Templates.Themes.iThemesBuilder.html">
-							iThemesBuilder						</a>
-							</li>
-								</ul></li></ul></li>
-					<li class="main">
-						<a href="package-EPL.Widget.html">
-							Widget<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Widget.Admin.html">
-							Admin<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Widget.Admin.Dashboard.html">
-							Dashboard						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Widget.Classes.html">
-							Classes<span></span>
-						</a>
-							<ul>
-					<li class="main">
-						<a href="package-EPL.Widget.Classes.Author.html">
-							Author						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Widget.Classes.ContactCapture.html">
-							ContactCapture						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Widget.Classes.Gallery.html">
-							Gallery						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Widget.Classes.Listing.html">
-							Listing						</a>
-							</li>
-					<li class="main">
-						<a href="package-EPL.Widget.Classes.Search.html">
-							Search						</a>
-							</li>
-								</ul></li>
-					<li class="main">
-						<a href="package-EPL.Widget.Functions.html">
-							Functions						</a>
-							</li>
-								</ul></li></ul></li>
 					<li>
-						<a href="package-None.html">
-							None						</a>
-							</li>
-					<li>
-						<a href="package-WordPress.html">
-							WordPress<span></span>
+						<a href="https://docs.easypropertylistings.com.au/Easy_Property_Listings.html">
+							Easy_Property_Listings
 						</a>
-							<ul>
+					</li>
 					<li>
-						<a href="package-WordPress.Session.html">
-							Session						</a>
-							</li>
-								</ul></li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Admin_Images.html">
+							EPL_Admin_Images
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Admin_Messages.html">
+							EPL_Admin_Messages
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Advanced_Shortcode_Listing.html">
+							EPL_Advanced_Shortcode_Listing
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Author.html">
+							EPL_Author
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Author_Loader.html">
+							EPL_Author_Loader
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Author_Meta.html">
+							EPL_Author_Meta
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Contact.html">
+							EPL_Contact
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Contact_Reports_Table.html">
+							EPL_Contact_Reports_Table
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_CPT.html">
+							EPL_CPT
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Cron.html">
+							EPL_Cron
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor.html">
+							EPL_Elementor
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Agent_Bio.html">
+							EPL_Elementor_Agent_Bio
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Agent_Box.html">
+							EPL_Elementor_Agent_Box
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Agent_Contact.html">
+							EPL_Elementor_Agent_Contact
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Agent_Document.html">
+							EPL_Elementor_Agent_Document
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Agent_Name.html">
+							EPL_Elementor_Agent_Name
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Agent_Photo.html">
+							EPL_Elementor_Agent_Photo
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Agent_Position.html">
+							EPL_Elementor_Agent_Position
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Agent_Social.html">
+							EPL_Elementor_Agent_Social
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Listing_Advanced.html">
+							EPL_Elementor_Listing_Advanced
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Listing_Agents.html">
+							EPL_Elementor_Listing_Agents
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Listing_Document.html">
+							EPL_Elementor_Listing_Document
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Listing_Results.html">
+							EPL_Elementor_Listing_Results
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Listing_Search.html">
+							EPL_Elementor_Listing_Search
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Listings.html">
+							EPL_Elementor_Listings
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Loop_Card_Document.html">
+							EPL_Elementor_Loop_Card_Document
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Pagination.html">
+							EPL_Elementor_Pagination
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Address.html">
+							EPL_Elementor_Property_Address
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Buttons.html">
+							EPL_Elementor_Property_Buttons
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Content.html">
+							EPL_Elementor_Property_Content
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Excerpt.html">
+							EPL_Elementor_Property_Excerpt
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Features.html">
+							EPL_Elementor_Property_Features
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Gallery.html">
+							EPL_Elementor_Property_Gallery
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Heading.html">
+							EPL_Elementor_Property_Heading
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Icons.html">
+							EPL_Elementor_Property_Icons
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Image.html">
+							EPL_Elementor_Property_Image
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Inspection.html">
+							EPL_Elementor_Property_Inspection
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Map.html">
+							EPL_Elementor_Property_Map
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Meta.html">
+							EPL_Elementor_Property_Meta
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Price.html">
+							EPL_Elementor_Property_Price
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Status.html">
+							EPL_Elementor_Property_Status
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Taxonomy.html">
+							EPL_Elementor_Property_Taxonomy
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Title.html">
+							EPL_Elementor_Property_Title
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Property_Video.html">
+							EPL_Elementor_Property_Video
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Single_Document.html">
+							EPL_Elementor_Single_Document
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Single_Extensions.html">
+							EPL_Elementor_Single_Extensions
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Staff_Listings.html">
+							EPL_Elementor_Staff_Listings
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Template_Router.html">
+							EPL_Elementor_Template_Router
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Template_Seeder.html">
+							EPL_Elementor_Template_Seeder
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_FORM_BUILDER.html">
+							EPL_FORM_BUILDER
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Graph.html">
+							EPL_Graph
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_License.html">
+							EPL_License
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Listing_Elements.html">
+							EPL_Listing_Elements
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_METABOX.html">
+							EPL_METABOX
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Pagination_Call.html">
+							EPL_Pagination_Call
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Property_Meta.html">
+							EPL_Property_Meta
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Render_Fields.html">
+							EPL_Render_Fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Rest_API.html">
+							EPL_Rest_API
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_SEARCH.html">
+							EPL_SEARCH
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Search_Fields.html">
+							EPL_Search_Fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Session.html">
+							EPL_Session
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Shortcode_Listing.html">
+							EPL_Shortcode_Listing
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_SL_Plugin_Updater.html">
+							EPL_SL_Plugin_Updater
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Welcome.html">
+							EPL_Welcome
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Widget_Author.html">
+							EPL_Widget_Author
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Widget_Contact_Capture.html">
+							EPL_Widget_Contact_Capture
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Widget_Property_Gallery.html">
+							EPL_Widget_Property_Gallery
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Widget_Property_Search.html">
+							EPL_Widget_Property_Search
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Widget_Recent_Property.html">
+							EPL_Widget_Recent_Property
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/Recursive_ArrayAccess.html">
+							Recursive_ArrayAccess
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/WP_Session.html">
+							WP_Session
+						</a>
+					</li>
 			</ul>
 		</div>
-
-
-		<div id="elements">
-
-
-
-
-
+		<div class="menu-section">
+			<h3>Traits</h3>
+			<ul>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/EPL_Elementor_Dynamic_Widget.html">
+							EPL_Elementor_Dynamic_Widget
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
 			<h3>Functions</h3>
 			<ul>
-				<li><a href="function-epl_add_dashboard_widgets.html">epl_add_dashboard_widgets</a></li>
-				<li><a href="function-epl_dashboard_activity_widget.html">epl_dashboard_activity_widget</a></li>
-				<li><a href="function-epl_dashboard_recent_comments.html">epl_dashboard_recent_comments</a></li>
-				<li><a href="function-epl_dashboard_recent_posts.html">epl_dashboard_recent_posts</a></li>
-				<li class="active"><a href="function-epl_get_plural.html">epl_get_plural</a></li>
-				<li><a href="function-epl_posts_highlights.html">epl_posts_highlights</a></li>
-				<li><a href="function-epl_status_dashboard_widget_callback.html">epl_status_dashboard_widget_callback</a></li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sd_author_box_compat.html">
+							epl_sd_author_box_compat
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_new_excerpt_more.html">
+							epl_property_new_excerpt_more
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_youtube_id_from_url.html">
+							epl_get_youtube_id_from_url
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-shortcode_exists.html">
+							shortcode_exists
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_timezone_string.html">
+							wp_timezone_string
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_timezone.html">
+							wp_timezone
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-current_datetime.html">
+							current_datetime
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_array_replace_recursive.html">
+							epl_array_replace_recursive
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_default_settings.html">
+							epl_get_default_settings
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_install.html">
+							epl_install
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_uninstall.html">
+							epl_uninstall
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_after_install.html">
+							epl_after_install
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_plugin_updates.html">
+							epl_plugin_updates
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sanitize_amount.html">
+							epl_sanitize_amount
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_format_amount.html">
+							epl_format_amount
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_currency_filter.html">
+							epl_currency_filter
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_currency_decimal_filter.html">
+							epl_currency_decimal_filter
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_format_the_excerpt.html">
+							epl_format_the_excerpt
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sanitize_key.html">
+							epl_sanitize_key
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_user_link_meta_keys.html">
+							epl_get_user_link_meta_keys
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_user_text_meta_keys.html">
+							epl_get_user_text_meta_keys
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sanitize_user_link_meta.html">
+							epl_sanitize_user_link_meta
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sanitize_user_text_meta.html">
+							epl_sanitize_user_text_meta
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_profile_link_protocols.html">
+							epl_get_profile_link_protocols
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_user_meta_sanitizers.html">
+							epl_register_user_meta_sanitizers
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-EPL.html">
+							EPL
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_author_meta.html">
+							epl_get_author_meta
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_the_property_address.html">
+							epl_the_property_address
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_address.html">
+							epl_get_property_address
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_display_label_postcode.html">
+							epl_display_label_postcode
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_display_label_bond.html">
+							epl_display_label_bond
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_display_label_suburb.html">
+							epl_display_label_suburb
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_blog_default.html">
+							epl_property_blog_default
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_blog_slim.html">
+							epl_property_blog_slim
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_blog_table.html">
+							epl_property_blog_table
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_blog_table_open.html">
+							epl_property_blog_table_open
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_sold_leased.html">
+							epl_property_sold_leased
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_author_card.html">
+							epl_property_author_card
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_excerpt_length.html">
+							epl_excerpt_length
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_allowed_request_actions.html">
+							epl_get_allowed_request_actions
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_do_request_action.html">
+							epl_do_request_action
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_process_actions.html">
+							epl_process_actions
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_process_admin_actions.html">
+							epl_process_admin_actions
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_print_errors.html">
+							epl_print_errors
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_errors.html">
+							epl_get_errors
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_set_error.html">
+							epl_set_error
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_clear_errors.html">
+							epl_clear_errors
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_unset_error.html">
+							epl_unset_error
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_var_dump.html">
+							epl_var_dump
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_print_r.html">
+							epl_print_r
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_list_listings_contextual_help.html">
+							epl_list_listings_contextual_help
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_core_post_types.html">
+							epl_get_core_post_types
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_core_sales_post_types.html">
+							epl_get_core_sales_post_types
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_core_rental_post_types.html">
+							epl_get_core_rental_post_types
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_all_post_types.html">
+							epl_all_post_types
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-is_epl_core_post.html">
+							is_epl_core_post
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-is_epl_sales_post.html">
+							is_epl_sales_post
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-is_epl_rental_post.html">
+							is_epl_rental_post
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-is_epl_post.html">
+							is_epl_post
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-is_epl_post_single.html">
+							is_epl_post_single
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-is_epl_post_type.html">
+							is_epl_post_type
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-is_epl_post_archive.html">
+							is_epl_post_archive
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_has_secondary_author.html">
+							epl_listing_has_secondary_author
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_has_secondary_agent.html">
+							epl_listing_has_secondary_agent
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_has_third_agent.html">
+							epl_listing_has_third_agent
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_has_fourth_agent.html">
+							epl_listing_has_fourth_agent
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_is_agent_available.html">
+							epl_listing_is_agent_available
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_has_primary_agent.html">
+							epl_listing_has_primary_agent
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_has_any_meta.html">
+							epl_listing_has_any_meta
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_has_floor_plans.html">
+							epl_listing_has_floor_plans
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_has_video.html">
+							epl_listing_has_video
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_has_inspection_times.html">
+							epl_listing_has_inspection_times
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_has_auction_date.html">
+							epl_listing_has_auction_date
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_has_links.html">
+							epl_listing_has_links
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_admin_option_licence_fields.html">
+							epl_get_admin_option_licence_fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listings_contextual_help.html">
+							epl_listings_contextual_help
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_fancy_pagination.html">
+							epl_fancy_pagination
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_pagination_html.html">
+							epl_pagination_html
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_multipage_link.html">
+							epl_get_multipage_link
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_next_page_link.html">
+							epl_get_next_page_link
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_next_post_link.html">
+							epl_next_post_link
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_prev_page_link.html">
+							epl_get_prev_page_link
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_prev_post_link.html">
+							epl_prev_post_link
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_wp_default_pagination.html">
+							epl_wp_default_pagination
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-get_epl_image_sizes.html">
+							get_epl_image_sizes
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_image_sizes.html">
+							epl_image_sizes
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_image_size_names_choose.html">
+							epl_image_size_names_choose
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_author_archives.html">
+							epl_property_author_archives
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_custom_post_author_archive.html">
+							epl_custom_post_author_archive
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_populate_post_author_email.html">
+							epl_populate_post_author_email
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_populate_secondary_author_email.html">
+							epl_populate_secondary_author_email
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_populate_primary_agent_email.html">
+							epl_populate_primary_agent_email
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_populate_primary_agent_name.html">
+							epl_populate_primary_agent_name
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_populate_property_unique_id.html">
+							epl_populate_property_unique_id
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_populate_property_office_id.html">
+							epl_populate_property_office_id
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_elements_gui_button.html">
+							epl_add_elements_gui_button
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_elements_gui.html">
+							epl_listing_elements_gui
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-cal_days_in_month.html">
+							cal_days_in_month
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_flush_rewrite_rules.html">
+							epl_flush_rewrite_rules
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_dashboard_widget_offer_rough.html">
+							epl_dashboard_widget_offer_rough
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_admin_sidebar.html">
+							epl_admin_sidebar
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_dashboard_widget_offer.html">
+							epl_dashboard_widget_offer
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_dashboard_widget_offer_post_types.html">
+							epl_dashboard_widget_offer_post_types
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_dashboard_widget_offer_post_types_last.html">
+							epl_dashboard_widget_offer_post_types_last
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_extension_notice_offer.html">
+							epl_extension_notice_offer
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_extension_has_beta_support.html">
+							epl_extension_has_beta_support
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_tools_tab.html">
+							epl_get_tools_tab
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_show_upgrade_tab.html">
+							epl_show_upgrade_tab
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_show_reset_tab.html">
+							epl_show_reset_tab
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_serialize.html">
+							epl_serialize
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_unserialize.html">
+							epl_unserialize
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_settings_import_export.html">
+							epl_settings_import_export
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_settings_reset.html">
+							epl_settings_reset
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_settings_upgrade_tab.html">
+							epl_settings_upgrade_tab
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_handle_tools_form.html">
+							epl_handle_tools_form
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_verify_export_nonce.html">
+							epl_verify_export_nonce
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_verify_nonce.html">
+							epl_verify_nonce
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_validate_import_file.html">
+							epl_validate_import_file
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_export_settings.html">
+							epl_export_settings
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_import_settings.html">
+							epl_import_settings
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reset_settings.html">
+							epl_reset_settings
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_upgrade_admin_notice.html">
+							epl_upgrade_admin_notice
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_upgrade_db.html">
+							epl_upgrade_db
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_update_user_note_type.html">
+							epl_update_user_note_type
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_upgrade_db_to_3_3.html">
+							epl_upgrade_db_to_3_3
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sync_property_price_global.html">
+							epl_sync_property_price_global
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_avatar_filter.html">
+							epl_get_avatar_filter
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_update_featured_listing.html">
+							epl_update_featured_listing
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contacts_page.html">
+							epl_contacts_page
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_views.html">
+							epl_contact_views
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_tabs.html">
+							epl_contact_tabs
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contacts_list.html">
+							epl_contacts_list
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_render_contact_view.html">
+							epl_render_contact_view
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_all_tags_view.html">
+							epl_all_tags_view
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_new_contact_view.html">
+							epl_new_contact_view
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contacts_view.html">
+							epl_contacts_view
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_meta_view.html">
+							epl_contact_meta_view
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_notes_view.html">
+							epl_contact_notes_view
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contacts_delete_view.html">
+							epl_contacts_delete_view
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contacts_listing_view.html">
+							epl_contacts_listing_view
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_contact_screen_options.html">
+							epl_add_contact_screen_options
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_table_set_option.html">
+							epl_contact_table_set_option
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_contact_screen_opts.html">
+							epl_add_contact_screen_opts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_default_contact_views.html">
+							epl_register_default_contact_views
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_default_contact_tabs.html">
+							epl_register_default_contact_tabs
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_delete_contact_tab.html">
+							epl_register_delete_contact_tab
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_next_contact_link.html">
+							epl_get_next_contact_link
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_prev_contact_link.html">
+							epl_get_prev_contact_link
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_contact_fields.html">
+							epl_contact_contact_fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_access.html">
+							epl_contact_access
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_admin_listing_map.html">
+							epl_admin_listing_map
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_admin_body_class.html">
+							epl_add_admin_body_class
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_admin_google_maps_api_notification.html">
+							epl_admin_google_maps_api_notification
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_plugin_action_links.html">
+							epl_plugin_action_links
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_plugin_row_meta.html">
+							epl_plugin_row_meta
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_page.html">
+							epl_reports_page
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_default_views.html">
+							epl_reports_default_views
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_reporting_view.html">
+							epl_get_reporting_view
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_tab_reports.html">
+							epl_reports_tab_reports
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_report_views.html">
+							epl_report_views
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_property.html">
+							epl_reports_property
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_rental.html">
+							epl_reports_rental
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_land.html">
+							epl_reports_land
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_commercial.html">
+							epl_reports_commercial
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_commercial_land.html">
+							epl_reports_commercial_land
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_business.html">
+							epl_reports_business
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_rural.html">
+							epl_reports_rural
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_access.html">
+							epl_reports_access
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_new_admin_option_fields.html">
+							epl_get_new_admin_option_fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_admin_menu.html">
+							epl_admin_menu
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_menu_general.html">
+							epl_menu_general
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_menu_settings.html">
+							epl_menu_settings
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_menu_extensions.html">
+							epl_menu_extensions
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_menu_licenses.html">
+							epl_menu_licenses
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_menu_addons.html">
+							epl_menu_addons
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_menu_help.html">
+							epl_menu_help
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_menu_tools.html">
+							epl_menu_tools
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_graph.html">
+							epl_reports_graph
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_parse_report_dates.html">
+							epl_parse_report_dates
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reports_graph_controls.html">
+							epl_reports_graph_controls
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_report_dates.html">
+							epl_get_report_dates
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_session_cache_expire.html">
+							wp_session_cache_expire
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_session_commit.html">
+							wp_session_commit
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_session_decode.html">
+							wp_session_decode
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_session_encode.html">
+							wp_session_encode
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_session_regenerate_id.html">
+							wp_session_regenerate_id
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_session_start.html">
+							wp_session_start
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_session_status.html">
+							wp_session_status
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_session_unset.html">
+							wp_session_unset
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_session_write_close.html">
+							wp_session_write_close
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_session_cleanup.html">
+							wp_session_cleanup
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-wp_session_register_garbage_collection.html">
+							wp_session_register_garbage_collection
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_listing_tax_feature_callback.html">
+							epl_shortcode_listing_tax_feature_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_listing_callback.html">
+							epl_shortcode_listing_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sorting_options_callback.html">
+							epl_sorting_options_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_edit_contact.html">
+							epl_edit_contact
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_delete.html">
+							epl_contact_delete
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_save_note.html">
+							epl_contact_save_note
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_save_listing.html">
+							epl_contact_save_listing
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_assign_existing_listing.html">
+							epl_contact_assign_existing_listing
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_meta_contact.html">
+							epl_meta_contact
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_new_contact.html">
+							epl_new_contact
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_category_update.html">
+							epl_contact_category_update
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_tag_add.html">
+							epl_contact_tag_add
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_tag_remove.html">
+							epl_contact_tag_remove
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_action_menus.html">
+							epl_contact_action_menus
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_entry_header.html">
+							epl_contact_entry_header
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_entry_header_editable.html">
+							epl_contact_entry_header_editable
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_assigned_tags.html">
+							epl_contact_assigned_tags
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_background_info.html">
+							epl_contact_background_info
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_avatar.html">
+							epl_contact_avatar
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_social_icons.html">
+							epl_contact_social_icons
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_contact_details.html">
+							epl_contact_contact_details
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_recent_interests.html">
+							epl_contact_recent_interests
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_recent_activities.html">
+							epl_contact_recent_activities
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_get_activities_html.html">
+							epl_contact_get_activities_html
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_get_listings_html.html">
+							epl_contact_get_listings_html
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_add_activity_form.html">
+							epl_contact_add_activity_form
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_add_listing_form.html">
+							epl_contact_add_listing_form
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_before_meta_field_property_owner.html">
+							epl_before_meta_field_property_owner
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_search_contact.html">
+							epl_search_contact
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_search_contact_listing.html">
+							epl_search_contact_listing
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_search_user.html">
+							epl_search_user
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_save_note_note_tab.html">
+							epl_contact_save_note_note_tab
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_listing_tax_location_callback.html">
+							epl_shortcode_listing_tax_location_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_option.html">
+							epl_get_option
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_saved_option.html">
+							epl_get_saved_option
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_refresh_settings_global.html">
+							epl_refresh_settings_global
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_refresh_settings_global_on_add.html">
+							epl_refresh_settings_global_on_add
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_is_divi_framework_theme.html">
+							epl_is_divi_framework_theme
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_is_builder_framework_theme.html">
+							epl_is_builder_framework_theme
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_is_genesis_framework_theme.html">
+							epl_is_genesis_framework_theme
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_is_twenty_twenty_theme.html">
+							epl_is_twenty_twenty_theme
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_is_avada_theme.html">
+							epl_is_avada_theme
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_thumbnail_sizes.html">
+							epl_get_thumbnail_sizes
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_remote_url_get.html">
+							epl_remote_url_get
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_ical_download_token.html">
+							epl_get_ical_download_token
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_post_type.html">
+							epl_register_post_type
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_active_post_types.html">
+							epl_get_active_post_types
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_post_types.html">
+							epl_get_post_types
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_currencies.html">
+							epl_get_currencies
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_currency.html">
+							epl_get_currency
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_currency_position.html">
+							epl_get_currency_position
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_thousands_separator.html">
+							epl_get_thousands_separator
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_decimal_separator.html">
+							epl_get_decimal_separator
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_currency_formatted_amount.html">
+							epl_currency_formatted_amount
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_labels.html">
+							epl_labels
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_the_address.html">
+							epl_the_address
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_the_address.html">
+							epl_get_the_address
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_the_status.html">
+							epl_the_status
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_the_status.html">
+							epl_get_the_status
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_meta.html">
+							epl_get_property_meta
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_the_property_meta.html">
+							epl_the_property_meta
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_tax_location_label.html">
+							epl_tax_location_label
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_meta_location_label.html">
+							epl_meta_location_label
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_the_under_offer.html">
+							epl_the_under_offer
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_the_under_offer.html">
+							epl_get_the_under_offer
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_meta_under_offer_label.html">
+							epl_meta_under_offer_label
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_load_meta_property_category.html">
+							epl_listing_load_meta_property_category
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_meta_property_category_value.html">
+							epl_listing_meta_property_category_value
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_load_meta_land_category.html">
+							epl_listing_load_meta_land_category
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_meta_land_category_value.html">
+							epl_listing_meta_land_category_value
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_load_meta_commercial_category.html">
+							epl_listing_load_meta_commercial_category
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_load_meta_commercial_category_value.html">
+							epl_listing_load_meta_commercial_category_value
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_load_meta_commercial_rent_period.html">
+							epl_listing_load_meta_commercial_rent_period
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_load_meta_commercial_rent_period_value.html">
+							epl_listing_load_meta_commercial_rent_period_value
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_load_meta_rural_category.html">
+							epl_listing_load_meta_rural_category
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_load_meta_rural_category_value.html">
+							epl_listing_load_meta_rural_category_value
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_feedsync_format_date.html">
+							epl_feedsync_format_date
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_feedsync_format_date_auction.html">
+							epl_feedsync_format_date_auction
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_feedsync_format_sub_number.html">
+							epl_feedsync_format_sub_number
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_feedsync_format_strip_currency.html">
+							epl_feedsync_format_strip_currency
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_feedsync_switch_date_time.html">
+							epl_feedsync_switch_date_time
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_render_html_fields.html">
+							epl_render_html_fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_admin_option_fields.html">
+							epl_get_admin_option_fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sold_label_status_filter_callback.html">
+							epl_sold_label_status_filter_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_under_offer_label_status_filter_callback.html">
+							epl_under_offer_label_status_filter_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_leased_label_status_filter_callback.html">
+							epl_leased_label_status_filter_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_query_cache.html">
+							epl_listing_query_cache
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_query_run.html">
+							epl_listing_query_run
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_query_cache_transient.html">
+							epl_listing_query_cache_transient
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_query_cache_expiration.html">
+							epl_listing_query_cache_expiration
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_query_cache_remember.html">
+							epl_listing_query_cache_remember
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_flush_listing_query_cache.html">
+							epl_flush_listing_query_cache
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_rebuild_listing_query_cache.html">
+							epl_rebuild_listing_query_cache
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_delete_listing_query_cache_version.html">
+							epl_delete_listing_query_cache_version
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_query_cache_ignores_meta_key.html">
+							epl_listing_query_cache_ignores_meta_key
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_query_cache_changed.html">
+							epl_listing_query_cache_changed
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_search_template_reserved_vars.html">
+							epl_search_template_reserved_vars
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_search_known_statuses.html">
+							epl_search_known_statuses
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_unique_post_meta_values.html">
+							epl_get_unique_post_meta_values
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_sales_by_date.html">
+							epl_get_sales_by_date
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_month_num_to_name.html">
+							epl_month_num_to_name
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_contacts.html">
+							epl_get_contacts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_search_listing.html">
+							epl_search_listing
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_contact_categories.html">
+							epl_get_contact_categories
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-get_category_label.html">
+							get_category_label
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_starts_with.html">
+							epl_starts_with
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_ends_with.html">
+							epl_ends_with
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_parse_atts.html">
+							epl_parse_atts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_beta_enabled_extensions.html">
+							epl_get_beta_enabled_extensions
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_countries_list.html">
+							epl_get_countries_list
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_status_opts.html">
+							epl_get_property_status_opts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_the_status_label.html">
+							epl_get_the_status_label
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_available_status_list.html">
+							epl_get_available_status_list
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_authority_opts.html">
+							epl_get_property_authority_opts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_exclusivity_opts.html">
+							epl_get_property_exclusivity_opts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_com_authority_opts.html">
+							epl_get_property_com_authority_opts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_com_authority_label.html">
+							epl_get_property_com_authority_label
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_listing_status.html">
+							epl_get_listing_status
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_listing_status_label.html">
+							epl_get_listing_status_label
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_area_unit_opts.html">
+							epl_get_property_area_unit_opts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_rent_period_opts.html">
+							epl_get_property_rent_period_opts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_com_listing_type_opts.html">
+							epl_get_property_com_listing_type_opts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_com_tenancy_opts.html">
+							epl_get_property_com_tenancy_opts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_com_property_extent_opts.html">
+							epl_get_property_com_property_extent_opts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_author_id_from_name.html">
+							epl_get_author_id_from_name
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_pmxi_import_post_saved.html">
+							epl_pmxi_import_post_saved
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_single_and_archive_functions.html">
+							epl_single_and_archive_functions
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_array_map_recursive.html">
+							epl_array_map_recursive
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sanitize_html_tags.html">
+							epl_sanitize_html_tags
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_generate_unique_tab_counter.html">
+							epl_generate_unique_tab_counter
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_generate_search_instance_counter.html">
+							epl_generate_search_instance_counter
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_meta_label.html">
+							epl_get_property_meta_label
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_local_timestamp.html">
+							epl_get_local_timestamp
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_settings.html">
+							epl_get_settings
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_settings.html">
+							epl_settings
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_admin_contact.html">
+							epl_property_admin_contact
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_custom_user_profile_fields.html">
+							epl_get_custom_user_profile_fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_custom_user_profile_fields.html">
+							epl_add_custom_user_profile_fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_save_custom_user_profile_fields.html">
+							epl_save_custom_user_profile_fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_googlemap_callback.html">
+							epl_shortcode_googlemap_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_googlemap_enqueue.html">
+							epl_shortcode_googlemap_enqueue
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_ons_init.html">
+							epl_add_ons_init
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_ons_get_feed.html">
+							epl_add_ons_get_feed
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_ons_page.html">
+							epl_add_ons_page
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_listing_category_callback.html">
+							epl_shortcode_listing_category_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_is_listing_results_page.html">
+							epl_is_listing_results_page
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_is_page_builder_preview.html">
+							epl_is_page_builder_preview
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_results_loop_callback.html">
+							epl_listing_results_loop_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_listing_advanced_callback.html">
+							epl_shortcode_listing_advanced_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_listing_search_callback.html">
+							epl_shortcode_listing_search_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_button_external_link.html">
+							epl_button_external_link
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_map_default_callback.html">
+							epl_property_map_default_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_map_api_key_warning.html">
+							epl_map_api_key_warning
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_button_energy_certificate.html">
+							epl_button_energy_certificate
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_button_read_more.html">
+							epl_button_read_more
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reset_property_object.html">
+							epl_reset_property_object
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_create_property_object.html">
+							epl_create_property_object
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_single.html">
+							epl_property_single
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_featured_image.html">
+							epl_property_featured_image
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_archive_featured_image.html">
+							epl_property_archive_featured_image
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_stickers_featured_image.html">
+							epl_stickers_featured_image
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_widgets_featured_image.html">
+							epl_property_widgets_featured_image
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_single_default.html">
+							epl_property_single_default
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_content_path.html">
+							epl_get_content_path
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_fallback_content_path.html">
+							epl_get_fallback_content_path
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_template_part.html">
+							epl_get_template_part
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_archive_custom_excerpt_length.html">
+							epl_archive_custom_excerpt_length
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_hide_listing_statuses.html">
+							epl_hide_listing_statuses
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_is_front_end_listing_query.html">
+							epl_is_front_end_listing_query
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_exclude_hidden_listing_statuses.html">
+							epl_exclude_hidden_listing_statuses
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_hidden_listing_ids.html">
+							epl_get_hidden_listing_ids
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_blog.html">
+							epl_property_blog
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_author_default.html">
+							epl_property_author_default
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_author_box.html">
+							epl_property_author_box
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_reset_post_author.html">
+							epl_reset_post_author
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_author_box_simple_card.html">
+							epl_property_author_box_simple_card
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_author_box_simple_grav.html">
+							epl_property_author_box_simple_grav
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_widget.html">
+							epl_property_widget
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_widget_list_option.html">
+							epl_property_widget_list_option
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_widget_image_only_option.html">
+							epl_property_widget_image_only_option
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_author_box_simple_card_tall.html">
+							epl_property_author_box_simple_card_tall
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_show_author_widget_by_username.html">
+							epl_show_author_widget_by_username
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_get_the_full_address.html">
+							epl_property_get_the_full_address
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_the_address.html">
+							epl_property_the_address
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_suburb.html">
+							epl_property_suburb
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_price.html">
+							epl_property_price
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_icons.html">
+							epl_get_property_icons
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_icons.html">
+							epl_property_icons
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_bb_icons.html">
+							epl_get_property_bb_icons
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_land_category.html">
+							epl_property_land_category
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_commercial_category.html">
+							epl_property_commercial_category
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_available_dates.html">
+							epl_property_available_dates
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_inspection_times.html">
+							epl_property_inspection_times
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_heading.html">
+							epl_get_property_heading
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_heading.html">
+							epl_property_heading
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_secondary_heading.html">
+							epl_property_secondary_heading
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_category.html">
+							epl_property_category
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_video_host.html">
+							epl_get_video_host
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_video_html.html">
+							epl_get_video_html
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_convert_youtube_embed_url.html">
+							epl_convert_youtube_embed_url
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_video_callback.html">
+							epl_property_video_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_tab_section.html">
+							epl_property_tab_section
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_tab_section_after.html">
+							epl_property_tab_section_after
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_price_sticker.html">
+							epl_get_price_sticker
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_property_price.html">
+							epl_get_property_price
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_widget_listing_address.html">
+							epl_widget_listing_address
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sorting_options.html">
+							epl_sorting_options
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_tools_utility_wrapper.html">
+							epl_tools_utility_wrapper
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listing_toolbar_items.html">
+							epl_listing_toolbar_items
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-get_epl_listing_toolbar_items.html">
+							get_epl_listing_toolbar_items
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_switch_views.html">
+							epl_switch_views
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sorting_tool.html">
+							epl_sorting_tool
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sorting_tabs.html">
+							epl_sorting_tabs
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_or_update_params.html">
+							epl_add_or_update_params
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_sorter_query_args.html">
+							epl_get_sorter_query_args
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_archive_sorting.html">
+							epl_archive_sorting
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_author_tabs.html">
+							epl_author_tabs
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_author_class.html">
+							epl_author_class
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_author_tab_author_id.html">
+							epl_author_tab_author_id
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_author_tab_image.html">
+							epl_author_tab_image
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_author_tab_description.html">
+							epl_author_tab_description
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_author_tab_video.html">
+							epl_author_tab_video
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_author_tab_contact_form.html">
+							epl_author_tab_contact_form
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_archive_utility_wrap_before.html">
+							epl_archive_utility_wrap_before
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_archive_utility_wrap_after.html">
+							epl_archive_utility_wrap_after
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_gallery.html">
+							epl_property_gallery
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_template_path.html">
+							epl_template_path
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_buttons_wrapper_before.html">
+							epl_buttons_wrapper_before
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_buttons_wrapper_after.html">
+							epl_buttons_wrapper_after
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_create_ical_file.html">
+							epl_create_ical_file
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_process_event_cal_request.html">
+							epl_process_event_cal_request
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_update_listing_coordinates.html">
+							epl_update_listing_coordinates
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_the_term_list.html">
+							epl_get_the_term_list
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-get_property_meta.html">
+							get_property_meta
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-the_property_meta.html">
+							the_property_meta
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_template_class.html">
+							epl_template_class
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_pagination.html">
+							epl_pagination
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_active_theme.html">
+							epl_get_active_theme
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_active_theme_name.html">
+							epl_get_active_theme_name
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_shortcode_list.html">
+							epl_get_shortcode_list
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_wp_doing_ajax.html">
+							epl_wp_doing_ajax
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_home_pagination_fix.html">
+							epl_home_pagination_fix
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_widget_status_class.html">
+							epl_property_widget_status_class
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_hide_map_from_front.html">
+							epl_hide_map_from_front
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_nopaging.html">
+							epl_nopaging
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_hide_author_box_from_front.html">
+							epl_hide_author_box_from_front
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_update_default_view.html">
+							epl_update_default_view
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_the_content_filters.html">
+							epl_the_content_filters
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_compatibility_archive_class_callback.html">
+							epl_compatibility_archive_class_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_apply_feeling_lucky_config.html">
+							epl_apply_feeling_lucky_config
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_remove_archive_thumbnail.html">
+							epl_remove_archive_thumbnail
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_remove_single_thumbnail.html">
+							epl_remove_single_thumbnail
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_the_content.html">
+							epl_the_content
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_feeling_lucky.html">
+							epl_feeling_lucky
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_trim_excerpt.html">
+							epl_trim_excerpt
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_the_excerpt.html">
+							epl_the_excerpt
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_the_excerpt.html">
+							epl_get_the_excerpt
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_syntax_highlight.html">
+							epl_syntax_highlight
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_strip_tags.html">
+							epl_strip_tags
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_esc_attr.html">
+							epl_esc_attr
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_post_count.html">
+							epl_get_post_count
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_inspection_date_format.html">
+							epl_get_inspection_date_format
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_inspection_time_format.html">
+							epl_get_inspection_time_format
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_inspection_format.html">
+							epl_inspection_format
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_count_total_contacts.html">
+							epl_count_total_contacts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_note_agents.html">
+							epl_contact_note_agents
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_is_contact_note.html">
+							epl_is_contact_note
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_can_see_contact_notes.html">
+							epl_can_see_contact_notes
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_filter_listing_comments_array.html">
+							epl_filter_listing_comments_array
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_exclude_contact_notes_sql.html">
+							epl_exclude_contact_notes_sql
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_hide_contact_notes_from_comment_queries.html">
+							epl_hide_contact_notes_from_comment_queries
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_hide_contact_notes_from_comment_feeds.html">
+							epl_hide_contact_notes_from_comment_feeds
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_archive_title_callback.html">
+							epl_archive_title_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_orderby_args.html">
+							epl_add_orderby_args
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_results_message_callback.html">
+							epl_shortcode_results_message_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_search_not_found_callback.html">
+							epl_property_search_not_found_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_post_class_listing_status_callback.html">
+							epl_property_post_class_listing_status_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_archive_author_callback.html">
+							epl_archive_author_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_capture_user_can_manage.html">
+							epl_contact_capture_user_can_manage
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_capture_get_ip.html">
+							epl_contact_capture_get_ip
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_capture_rate_limit_exceeded.html">
+							epl_contact_capture_rate_limit_exceeded
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_process_contact_capture_request.html">
+							epl_process_contact_capture_request
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_capture_action.html">
+							epl_contact_capture_action
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_post_id_from_unique_id.html">
+							epl_get_post_id_from_unique_id
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_stickers.html">
+							epl_stickers
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_stickers_array.html">
+							epl_get_stickers_array
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_sticker_is_condition_valid.html">
+							epl_sticker_is_condition_valid
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_status.html">
+							epl_property_status
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_body_classes.html">
+							epl_body_classes
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_total_agent_count.html">
+							epl_get_total_agent_count
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_agent_id_by_login.html">
+							epl_get_agent_id_by_login
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_active_agent_count.html">
+							epl_get_active_agent_count
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_single_author_wrapper_start.html">
+							epl_single_author_wrapper_start
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_single_author_wrapper_end.html">
+							epl_single_author_wrapper_end
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_value_bool_checker.html">
+							epl_value_bool_checker
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-render_content.html">
+							render_content
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_single_render_content.html">
+							epl_single_render_content
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_archive_render_content.html">
+							epl_archive_render_content
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_load_core_templates.html">
+							epl_load_core_templates
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_render_single_post.html">
+							epl_render_single_post
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_render_archive_post.html">
+							epl_render_archive_post
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_active_theme_name_twentysixteen.html">
+							epl_active_theme_name_twentysixteen
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_commercial_listing_search_callback.html">
+							epl_shortcode_commercial_listing_search_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_listing_meta_doc_callback.html">
+							epl_shortcode_listing_meta_doc_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_custom_post_type_business.html">
+							epl_register_custom_post_type_business
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_business_columns_heading.html">
+							epl_manage_business_columns_heading
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_business_columns_value.html">
+							epl_manage_business_columns_value
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_business_sortable_columns.html">
+							epl_manage_business_sortable_columns
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_capture_form.html">
+							epl_contact_capture_form
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_capture_form_callback.html">
+							epl_contact_capture_form_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_custom_post_type_commercial_land.html">
+							epl_register_custom_post_type_commercial_land
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_commercial_land_columns_heading.html">
+							epl_manage_commercial_land_columns_heading
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_commercial_land_columns_value.html">
+							epl_manage_commercial_land_columns_value
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_listing_auction_callback.html">
+							epl_shortcode_listing_auction_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_custom_post_type_commercial.html">
+							epl_register_custom_post_type_commercial
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_commercial_heading.html">
+							epl_manage_commercial_heading
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_commercial_columns_value.html">
+							epl_manage_commercial_columns_value
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_button_floor_plan.html">
+							epl_button_floor_plan
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_shortcode_property_open_callback.html">
+							epl_shortcode_property_open_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_button_mini_web.html">
+							epl_button_mini_web
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_custom_post_type_rural.html">
+							epl_register_custom_post_type_rural
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_rural_columns_heading.html">
+							epl_manage_rural_columns_heading
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_rural_columns_value.html">
+							epl_manage_rural_columns_value
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_admin_screens.html">
+							epl_get_admin_screens
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_admin_enqueue_scripts.html">
+							epl_admin_enqueue_scripts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_wp_enqueue_scripts.html">
+							epl_wp_enqueue_scripts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_admin_styles.html">
+							epl_admin_styles
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_range_slider_label_html.html">
+							epl_get_range_slider_label_html
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_custom_post_type_land.html">
+							epl_register_custom_post_type_land
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_land_columns_heading.html">
+							epl_manage_land_columns_heading
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_land_columns_value.html">
+							epl_manage_land_columns_value
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_taxonomy_business_listings.html">
+							epl_register_taxonomy_business_listings
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_custom_post_type_rental.html">
+							epl_register_custom_post_type_rental
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_rental_columns_heading.html">
+							epl_manage_rental_columns_heading
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_rental_columns_value.html">
+							epl_manage_rental_columns_value
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_widget_author.html">
+							epl_register_widget_author
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_custom_post_type_contact.html">
+							epl_register_custom_post_type_contact
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_property_address_suburb_column_orderby.html">
+							epl_property_address_suburb_column_orderby
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_custom_restrict_manage_posts.html">
+							epl_custom_restrict_manage_posts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_admin_posts_filter.html">
+							epl_admin_posts_filter
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_listings_sortable_columns.html">
+							epl_manage_listings_sortable_columns
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_custom_orderby.html">
+							epl_custom_orderby
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_listing_column_property_thumb_callback.html">
+							epl_manage_listing_column_property_thumb_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_listing_column_listing_callback.html">
+							epl_manage_listing_column_listing_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_manage_listing_column_labels.html">
+							epl_get_manage_listing_column_labels
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_listing_column_labels_callback.html">
+							epl_manage_listing_column_labels_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_listing_column_listing_id_callback.html">
+							epl_manage_listing_column_listing_id_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_listing_column_geo_callback.html">
+							epl_manage_listing_column_geo_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_listing_column_price_callback.html">
+							epl_manage_listing_column_price_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_listing_column_property_status_callback.html">
+							epl_manage_listing_column_property_status_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_listing_column_listing_type_callback.html">
+							epl_manage_listing_column_listing_type_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_show_agent_name_in_column.html">
+							epl_show_agent_name_in_column
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_listing_column_agent_callback.html">
+							epl_manage_listing_column_agent_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_listing_column_featured_callback.html">
+							epl_manage_listing_column_featured_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_taxonomy_features.html">
+							epl_register_taxonomy_features
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_load_svg_listing_icons_head.html">
+							epl_load_svg_listing_icons_head
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_load_svg_social_icons_head.html">
+							epl_load_svg_social_icons_head
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_whitelist_display_attr.html">
+							epl_whitelist_display_attr
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_svg_allowed_tags.html">
+							epl_get_svg_allowed_tags
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_init_svgs.html">
+							epl_init_svgs
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_widget_property_gallery.html">
+							epl_register_widget_property_gallery
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_taxonomy_location.html">
+							epl_register_taxonomy_location
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_widget_property_search.html">
+							epl_register_widget_property_search
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_widget_contact_form.html">
+							epl_register_widget_contact_form
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_dashboard_widgets.html">
+							epl_add_dashboard_widgets
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_status_dashboard_widget_callback.html">
+							epl_status_dashboard_widget_callback
+						</a>
+					</li>
+					<li class="active">
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_plural.html">
+							epl_get_plural
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_posts_highlights.html">
+							epl_posts_highlights
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_dashboard_activity_widget.html">
+							epl_dashboard_activity_widget
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_dashboard_recent_comments.html">
+							epl_dashboard_recent_comments
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_dashboard_recent_posts.html">
+							epl_dashboard_recent_posts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_taxonomy_contact_tag.html">
+							epl_register_taxonomy_contact_tag
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_contact_tag_bgcolor_field.html">
+							epl_add_contact_tag_bgcolor_field
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_edit_contact_tag_bgcolor_field.html">
+							epl_edit_contact_tag_bgcolor_field
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_save_contact_tag_bgcolor.html">
+							epl_save_contact_tag_bgcolor
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_contact_tag_bgcolor.html">
+							epl_get_contact_tag_bgcolor
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_update_contact_tag_bgcolor.html">
+							epl_update_contact_tag_bgcolor
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_meta_box_init.html">
+							epl_meta_box_init
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_add_meta_boxes.html">
+							epl_add_meta_boxes
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_meta_box_inner_custom_box.html">
+							epl_meta_box_inner_custom_box
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_save_meta_boxes.html">
+							epl_save_meta_boxes
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_custom_post_type_property.html">
+							epl_register_custom_post_type_property
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_property_columns_heading.html">
+							epl_manage_property_columns_heading
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_manage_property_columns_value.html">
+							epl_manage_property_columns_value
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_register_widget_recent_property.html">
+							epl_register_widget_recent_property
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_search_widget_fields.html">
+							epl_search_widget_fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_number_suffix_callback.html">
+							epl_number_suffix_callback
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_price_slider_array.html">
+							epl_get_price_slider_array
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_price_array.html">
+							epl_get_price_array
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_price_meta_key.html">
+							epl_get_price_meta_key
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_search_widget_fields_frontend.html">
+							epl_search_widget_fields_frontend
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_search_get_defaults.html">
+							epl_search_get_defaults
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_widget_render_backend_field.html">
+							epl_widget_render_backend_field
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_widget_render_frontend_fields.html">
+							epl_widget_render_frontend_fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_search.html">
+							epl_search
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_search_pre_get_posts.html">
+							epl_search_pre_get_posts
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_search_can_show_post_type.html">
+							epl_search_can_show_post_type
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_is_search.html">
+							epl_is_search
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_meta_values.html">
+							epl_get_meta_values
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_esc_like.html">
+							epl_esc_like
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_listings_where.html">
+							epl_listings_where
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_available_terms.html">
+							epl_get_available_terms
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_available_locations.html">
+							epl_get_available_locations
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_preprocess_search_meta_query.html">
+							epl_preprocess_search_meta_query
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_capture_get_widget_fields.html">
+							epl_contact_capture_get_widget_fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_capture_get_widget_defaults.html">
+							epl_contact_capture_get_widget_defaults
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_contact_capture_widget_form_fields.html">
+							epl_contact_capture_widget_form_fields
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_owners.html">
+							epl_get_owners
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_field_sliders.html">
+							epl_get_field_sliders
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_meta_boxes.html">
+							epl_get_meta_boxes
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_meta_field_labels.html">
+							epl_get_meta_field_labels
+						</a>
+					</li>
+					<li>
+						<a href="https://docs.easypropertylistings.com.au/function-epl_get_meta_field_label.html">
+							epl_get_meta_field_label
+						</a>
+					</li>
 			</ul>
 		</div>
 	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="https://docs.easypropertylistings.com.au/index.html">Overview</a>
+				</li>
+<li class="active"><a href="https://docs.easypropertylistings.com.au/function-epl_get_plural.html">Function</a></li>				<li>
+					<a href="https://docs.easypropertylistings.com.au/tree.html">Tree</a>
+				</li>
+				<li class="epl-hooks">
+					<a href="https://docs.easypropertylistings.com.au/hook-docs.html">Hooks</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="https://docs.easypropertylistings.com.au/assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+<a href="https://docs.easypropertylistings.com.au/function-epl_get_plural.html">epl_get_plural</a>		</h1>
+
+
+		<div class="classLikeDescription">
+	<div class="description"><p>Status Dashboard Widget Counter</p>
 </div>
+		</div>
+	<table class="table epl-since">
+		<tr><th class="table-heading" colspan="2">Since</th></tr>
+			<tr>
+				<td class="table-cell table-shrink"><code class="nowrap">1.3.0</code></td>
+				<td class="table-cell"></td>
+			</tr>
+	</table>
 
-<div id="splitter"></div>
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="https://docs.easypropertylistings.com.au/source-lib.widgets.widget-admin-dashboard.html#83-123" title="Go to source code">lib/widgets/widget-admin-dashboard.php</a>
+		</div>
 
-<div id="right">
-	<div id="rightInner">
-<div id="content" class="function">
-	<h1>Function epl_get_plural</h1>
+		<table class="table">
+			<tr>
+				<th class="table-heading" colspan="4">Parameters</th>
+			</tr>
 
-
-	<div class="description">
-	<p>Status Dashboard Widget Counter</p>
-	</div>
-
-	<div class="alert alert-info">
-		
-		<b>Package:</b> <a href="package-EPL.html">EPL</a>\<a href="package-EPL.Widget.html">Widget</a>\<a href="package-EPL.Widget.Admin.html">Admin</a>\<a href="package-EPL.Widget.Admin.Dashboard.html">Dashboard</a><br>
-				<b>Copyright:</b>
-				Copyright (c) 2022, Merv Barrett<br>
-				<b>License:</b>
-				<a href="http://opensource.org/licenses/gpl-2.0.php">GNU Public License</a><br>
-				<b>Since:</b>
-				1.3.0<br>
-		<b>Located at</b>
-		<a href="source-function-epl_get_plural.html#74-123" title="Go to source code">
-			lib/widgets/widget-admin-dashboard.php
-		</a><br>
-	</div>
-
-
-	<div class="panel panel-default">
-		<div class="panel-heading"><h2>Parameters summary</h2></div>
-		<table class="summary table table-bordered table-striped" id="parameters">
-		<tr id="$count">
-			<td class="name"><code>integer</code></td>
-			<td class="value"><code><var>$count</var></code></td>
-			<td>Number.</td>
-		</tr>
-		<tr id="$singular">
-			<td class="name"><code>string</code></td>
-			<td class="value"><code><var>$singular</var></code></td>
-			<td>Option for the case.</td>
-		</tr>
+				<tr id="$count">
+					<td class="table-cell table-shrink">
+						<code class="nowrap">int</code>
+					</td>
+					<td class="table-cell table-shrink">
+<code class="nowrap"><var>$count</var></code>					</td>
+					<td class="table-cell"><p>Number.</p>
+</td>
+					<td class="table-anchor">
+						<a href="#$count">#</a>
+					</td>
+				</tr>
+				<tr id="$singular">
+					<td class="table-cell table-shrink">
+						<code class="nowrap">string</code>
+					</td>
+					<td class="table-cell table-shrink">
+<code class="nowrap"><var>$singular</var></code>					</td>
+					<td class="table-cell"><p>Option for the case.</p>
+</td>
+					<td class="table-anchor">
+						<a href="#$singular">#</a>
+					</td>
+				</tr>
 		</table>
-	</div>
 
-	<div class="panel panel-default">
-		<div class="panel-heading"><h2>Return value summary</h2></div>
-		<table class="summary table table-bordered table-striped" id="returns">
-		<tr>
-			<td class="name"><code>
-				boolean|string
-			</code></td>
-			<td>
-				bool|string
-			</td>
-		</tr>
+		<table class="table">
+			<tr>
+				<th class="table-heading" colspan="2">Returns</th>
+			</tr>
+
+			<tr>
+				<td class="table-cell table-shrink">
+					<code class="nowrap">bool|string</code>
+				</td>
+			</tr>
 		</table>
+
+		</div>
+
+		<div class="layout-footer">
+			Easy Property Listings 3.6.1 Code Reference, generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
 	</div>
 
-
-</div>
+	<div class="layout-rest">
+		<div class="navbar"></div>
 	</div>
-
-	<div id="footer">
-		Easy Property Listings 3.6.1 Code Reference API documentation generated by <a href="http://apigen.org">ApiGen</a>
-	</div>
-</div>
-<script src="resources/combined.js?618ce78283b5b1b9bb9e537bce2391635504158b"></script>
-<script src="elementlist.js?337713e608ee3541ea483956db587a81938de6ee"></script>
 </body>
 </html>
